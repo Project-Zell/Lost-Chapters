@@ -1,37 +1,38 @@
-# Lost Chapters (Mod)
+# Lost Chapters
 
-Gray Sisterhood Module
-Actions:
-Aid Another
+## Gray Sisterhood Module
+### New Actions
+- [Aid Another](https://www.d20pfsrd.com/gamemastering/Combat/#TOC-Aid-Another)
 
-Archetypes:
-Dreadnought
-Sister-In-Arms
+### New Archetypes
+**Barbarian:**
+- [Dreadnought](https://www.d20pfsrd.com/classes/core-classes/barbarian/archetypes/paizo-barbarian-archetypes/dreadnought-barbarian-archetype/)
 
-Character Backgrounds:
-Battlefield Disciple
+**Cavalier:**
+- [Sister-In-Arms](https://www.d20pfsrd.com/classes/base-classes/cavalier/archetypes/paizo-cavalier-archetypes/sister-in-arms-cavalier-archetype/)
 
-Armor Enchantments:
-Benevolent
+### New Backgrounds
+- [Battlefield Disciple](https://www.d20pfsrd.com/traits/combat-traits/battlefield-disciple/)
 
-Weapon Enchantments:
-Benevolent
-About 30 new weapons with Benevolent enchantment, including 7 unique weapons.
-Feats:
-Bodyguard
-Harrying Partners
-Helpful
-Swift Aid
+### New Enchantments
+- [Benevolent (Armor)](https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/benevolent/)
+- [Benevolent (Weapon)](https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/benevolent/)
 
-Cavalier Order:
-Order of the Dragon
+### New Feats
+- [Bodyguard](https://www.d20pfsrd.com/feats/combat-feats/bodyguard-combat/)
+- [Harrying Partners](https://www.d20pfsrd.com/feats/combat-feats/harrying-partners-combat-teamwork/)
+- [Helpful](https://www.d20pfsrd.com/traits/combat-traits/helpful-combat/)
+- [Swift Aid](https://www.d20pfsrd.com/feats/combat-feats/swift-aid-combat/)
 
-Prestige classes:
-Sanguine Angel
+### New Cavalier Orders
+- [Order of the Dragon](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-dragon/)
 
-Oracle revelations:
-Succor
+### New Prestige Classes
+- [Sanguine Angel](https://www.d20pfsrd.com/classes/prestige-classes/other-paizo/s-z/sanguine-angel/)
 
-Spells:
-Shield of Fortification
-Shield of Fortification, Greater
+### New Oracle Mysteries
+- [Succor](https://www.d20pfsrd.com/classes/base-classes/oracle/mysteries/paizo-oracle-mysteries/succor/)
+
+### New Spells
+- [Shield of Fortification](https://www.d20pfsrd.com/magic/all-spells/s/shield-of-fortification/)
+- [Shield of Fortification, Greater](https://www.d20pfsrd.com/magic/all-spells/s/shield-of-fortification/)
