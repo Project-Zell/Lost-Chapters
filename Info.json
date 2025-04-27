@@ -1,0 +1,10 @@
+{
+    "Id": "LostChapters",
+    "DisplayName": "Lost Chapters",
+    "Author": "Zellel",
+    "Version": "0.1",
+    "ManagerVersion": "0.21.3",
+    "Requirements": [],
+    "AssemblyName": "LostChapters.dll",
+    "EntryMethod": "LostChapters.Main.Load"
+}

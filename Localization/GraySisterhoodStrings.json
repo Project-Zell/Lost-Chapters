@@ -1,0 +1,1086 @@
+[
+    {
+        "key": "DeadCalm.Name",
+        "engb": "Dead Calm",
+        "ruru": "Леденящее спокойствие",
+        "processtemplates": false
+    },
+    {
+        "key": "DeadCalm.Description",
+        "engb": "A dreadnought can enter a dispassionate killing spree as a free action, granting her additional combat prowess. At 1st level, a dreadnought can rage for a number of {g|Encyclopedia:Combat_Round}rounds{/g} per day equal to 4 + her {g|Encyclopedia:Constitution}Constitution{/g} modifier. For each level after 1st she possesses, the dreadnought can rage for 2 additional rounds per day. Temporary increases to Constitution, such as that gained from {g|SpellsBearsEndurance}bear's endurance{/g}, do not increase the total number of rounds that a dreadnought can rage per day. A dreadnought can enter a rage as a {g|Encyclopedia:Free_Action}free action{/g}. The total number of rounds of rage per day is renewed after {g|Encyclopedia:Rest}resting{/g} for 8 hours, although these hours need not be consecutive.\nWhile in a rage, a dreadnought gains a +1 {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:MeleeAttack}melee attack{/g} rolls, melee {g|Encyclopedia:Damage}damage rolls{/g}, thrown weapon damage rolls, {g|Encyclopedia:Saving_Throw}Will saving throws{/g}, and {g|Encyclopedia:Persuasion}Persuasion{/g} {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}checks{/g} made for intimidation. She takes no {g|Encyclopedia:Penalty}penalty{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}. She also gains 1 {g|Encyclopedia:Temporary_HP}temporary hit points{/g} per {g|Encyclopedia:Hit_Dice}Hit Die{/g}. These temporary hit points are lost first when a character takes damage, disappear when the rage ends, and are not replenished if the dreadnought enters a rage again within 1 minute of her previous rage. While in a rage, a dreadnought cannot charge.\nA dreadnought can end her rage as a free action. A dreadnought can't enter a new rage for 1 minute after she ends her rage, but can otherwise enter a rage multiple times per day. If a dreadnought falls {g|Encyclopedia:Injury_Death}unconscious{/g}, her rage immediately ends.",
+        "ruru": "Дредноут может впасть в хладнокровную убийственную ярость, что дает ему преимущество в бою. Начиная с 1 уровня дредноут каждый день может пребывать в ярости количество {g|Encyclopedia:Combat_Round}раундов{/g}, равное 4 + модификатор {g|Encyclopedia:Constitution}Выносливости{/g}. За каждый уровень после первого он может проводить в ярости на 2 раунда в день больше. Временные увеличения выносливости (например, полученные от {g|Encyclopedia:Spell}заклинаний{/g} вроде {g|SpellsBearsEndurance}медвежьей стойкости{/g}) не увеличивают это значение. Впадение в ярость – {g|Encyclopedia:Free_Action}свободное действие{/g}. Количество доступных дредноуту раундов ярости возвращается к максимуму после 8 часов {g|Encyclopedia:Rest}отдыха{/g}, но этот отдых не обязательно должен быть непрерывным.\nПока дредноут в ярости, он получает {g|Encyclopedia:Bonus}бонус{/g} +1 к броскам на попадание и {g|Encyclopedia:Damage}урон{/g} в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}, броскам на урон метательным оружием, {g|Encyclopedia:Saving_Throw}спасброскам воли{/g} и всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Persuasion}Убеждения{/g}, совершаемым для устрашения. Дредноут не получает {g|Encyclopedia:Penalty}штрафа{/g} к {g|Encyclopedia:Armor_Class}защите{/g} во время действия ярости. Также он получает 1 {g|Encyclopedia:Temporary_HP}временное очко здоровья{/g} за каждую {g|Encyclopedia:Hit_Dice}кость здоровья{/g}. Эти очки теряются первыми при получении урона. Они пропадают, когда кончается ярость, и не восстанавливаются, если дредноут, выйдя из ярости, вновь войдет в нее спустя менее чем минуту. Дредноут в ярости не способен совершать атаку с разбега.\nДредноут может в любой момент прервать приступ ярости ({g|Encyclopedia:Free_Action}свободное действие{/g}). Он не может впасть в ярость снова в течение 1 минуты после окончания предыдущей ярости, но других ограничений на повторное впадение в ярость в течение дня нет. Если дредноут оказывается {g|Encyclopedia:Injury_Death}без сознания{/g}, его ярость мгновенно прекращается.",
+        "processtemplates": false
+    },
+    {
+        "key": "DeadCalm.RageBuff.Description",
+        "engb": "While in a rage, a dreadnought gains a +1 {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:MeleeAttack}melee attack{/g} rolls, melee {g|Encyclopedia:Damage}damage rolls{/g}, thrown weapon damage rolls, {g|Encyclopedia:Saving_Throw}Will saving throws{/g}, and {g|Encyclopedia:Persuasion}Persuasion{/g} skill {g|Encyclopedia:Check}checks{/g} made for intimidation. She takes no {g|Encyclopedia:Penalty}penalty{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}. She also gains 1 temporary {g|Encyclopedia:HP}hit points{/g} per {g|Encyclopedia:Hit_Dice}Hit Die{/g}.",
+        "ruru": "Пока дредноут в ярости, он получает {g|Encyclopedia:Bonus}бонус{/g} +1 к броскам на {g|Encyclopedia:MeleeAttack}попадание{/g} и {g|Encyclopedia:Damage}урон{/g} в ближнем бою, броскам на урон метательным оружием, {g|Encyclopedia:Saving_Throw}спасброскам воли{/g} и всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Persuasion}Убеждения{/g}, совершаемым для устрашения. Дредноут не получает {g|Encyclopedia:Penalty}штрафа{/g} к {g|Encyclopedia:Armor_Class}защите{/g} во время действия ярости. Также он получает 1 временное {g|Encyclopedia:HP}очко здоровья{/g} за каждую {g|Encyclopedia:Hit_Dice}кость здоровья{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "DeadCalm.Cooldown.FeatureName",
+        "engb": "Dead Calm – Cooldown",
+        "ruru": "Dead Calm – Cooldown",
+        "processtemplates": false
+    },
+    {
+        "key": "DeadCalm.Cooldown.Description",
+        "engb": "A dreadnought can't enter a new rage for 1 minute after she ends her rage.",
+        "ruru": "Дредноут не может впасть в ярость снова в течение 1 минуты после окончания предыдущей ярости.",
+        "processtemplates": false
+    },
+    {
+        "key": "Dreadnought.Name",
+        "engb": "Dreadnought",
+        "ruru": "Дредноут",
+        "processtemplates": false
+    },
+    {
+        "key": "Dreadnought.Description",
+        "engb": "Unstoppable and fearless, the dreadnought turns the terror of her enemies into violent physical power.",
+        "ruru": "Неудержимый и бесстрашный, дредноут обращает страх своих врагов в неумолимую физическую силу.",
+        "processtemplates": false
+    },
+    {
+        "key": "DreadPressence.Name",
+        "engb": "Dread Pressence",
+        "ruru": "Ужасающее присутствие",
+        "processtemplates": false
+    },
+    {
+        "key": "DreadPressence.Description",
+        "engb": "At 11th level, a dreadnought's {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:MeleeAttack}melee attack{/g} rolls, melee {g|Encyclopedia:Damage}damage rolls{/g}, thrown weapon damage rolls, {g|Encyclopedia:Saving_Throw}Will saves{/g}, and {g|Encyclopedia:Persuasion}Persuasion{/g} {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}checks{/g} made for intimidation while raging increases to +2. In addition, the amount of {g|Encyclopedia:Temporary_HP}temporary hit points{/g} gained when entering a rage increases to 2 per {g|Encyclopedia:Hit_Dice}Hit Die{/g}.",
+        "ruru": "Начиная с 11 уровня, {g|Encyclopedia:Bonus}бонус{/g} к броскам на попадание и {g|Encyclopedia:Damage}урон{/g} в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}, броскам на урон метательным оружием, {g|Encyclopedia:Saving_Throw}спасброскам воли{/g}, и всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Persuasion}Убеждения{/g}, совершаемым для устрашения, который дредноут получает, впадая в ярость, увеличивается до +2. Кроме того, количество {g|Encyclopedia:Temporary_HP}временных очков здоровья{/g}, которые он получает, впадая в ярость, увеличивается до 2 за {g|Encyclopedia:Hit_Dice}кость здоровья{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "ExtraDeadCalm.Name",
+        "engb": "Extra Rage (Dreadnought)",
+        "ruru": "Дополнительная ярость (Дредноут)",
+        "processtemplates": false
+    },
+    {
+        "key": "ExtraDeadCalm.Description",
+        "engb": "Benefit: You can rage for 6 additional {g|Encyclopedia:Combat_Round}rounds{/g} per day.\nSpecial: You can gain Extra Rage multiple times. Its effects stack.",
+        "ruru": "Преимущество: Вы можете применять ярость дополнительные 6 {g|Encyclopedia:Combat_Round}раундов{/g} в день.\nПримечание: Вы можете брать эту черту несколько раз. Ее эффекты суммируются.",
+        "processtemplates": false
+    },
+    {
+        "key": "FearlessKiller.Name",
+        "engb": "Fearless Killer",
+        "ruru": "Бесстрашный убийца",
+        "processtemplates": false
+    },
+    {
+        "key": "FearlessKiller.Description",
+        "engb": "At 14th level, a dreadnought gains Fearless Rage as a bonus {g|Encyclopedia:Feat}feat{/g}.",
+        "ruru": "На 14 уровне дредноут получает Бесстрашную ярость в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "InstantDispassion.Name",
+        "engb": "Instant Dispassion",
+        "ruru": "Мгновенное равнодушие",
+        "processtemplates": false
+    },
+    {
+        "key": "InstantDispassion.Description",
+        "engb": "At 17th level, a dreadnought can quickly turn her compassion on and off. She can enter a rage as soon as she wants after ending a previous rage.",
+        "ruru": "Начиная с 17–го уровня, дредноут больше не испытывает ни капли жалости к своим врагам. Он снова может впасть в ярость в любой момент после окончания предыдущей ярости.",
+        "processtemplates": false
+    },
+    {
+        "key": "Pursuer.Name",
+        "engb": "Pursuer",
+        "ruru": "Преследователь",
+        "processtemplates": false
+    },
+    {
+        "key": "Pursuer.Description",
+        "engb": "At 20th level, a dreadnought's {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:MeleeAttack}melee attack{/g} rolls, melee {g|Encyclopedia:Damage}damage rolls{/g}, thrown weapon damage rolls, {g|Encyclopedia:Saving_Throw}Will saves{/g}, and {g|Encyclopedia:Persuasion}Persuasion{/g} {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}checks{/g} made for intimidation while raging increases to +3. In addition, the amount of {g|Encyclopedia:Temporary_HP}temporary hit points{/g} gained when entering a rage increases to 3 per {g|Encyclopedia:Hit_Dice}Hit Die{/g}.",
+        "ruru": "Начиная с 20 уровня, {g|Encyclopedia:Bonus}бонус{/g} к броскам на попадание и {g|Encyclopedia:Damage}урон{/g} в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}, броскам на урон метательным оружием, {g|Encyclopedia:Saving_Throw}спасброскам воли{/g}, и всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Persuasion}Убеждения{/g}, совершаемым для устрашения, который дредноут получает, впадая в ярость, увеличивается до +3. Кроме того, количество {g|Encyclopedia:Temporary_HP}временных очков здоровья{/g}, которые он получает, впадая в ярость, увеличивается до 3 за {g|Encyclopedia:Hit_Dice}кость здоровья{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "SteadyGait.Name",
+        "engb": "Steady Gait",
+        "ruru": "Устойчивый шаг",
+        "processtemplates": false
+    },
+    {
+        "key": "SteadyGait.Description",
+        "engb": "A dreadnought progress steadily, shrugging off attempts to slow her advance. The dreadnought gains a +1 {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against movement–impairing, ground–based, and trap {g|Encyclopedia:Spell}spells{/g} and effects.\nAt 5th level, and every 5 levels thereafter, this bonus increases by +1, up to a maximum of +5 at 20th level.",
+        "ruru": "Дредноут уверенно продвигается вперед, игнорируя попытки замедлить его продвижение. Дредноут получает {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против {g|Encyclopedia:Spell}заклинаний{/g} и эффектов ограничивающих движение (в том числе против ловушек и наземных эффектов).\nЭтот бонус увеличивается на 1 за каждые 5 уровней варвара, до максимума в +5 на 20 уровне.",
+        "processtemplates": false
+    },
+    {
+        "key": "DedicatedCommander.Name",
+        "engb": "Dedicated Commander",
+        "ruru": "Прирожденный командир",
+        "processtemplates": false
+    },
+    {
+        "key": "DedicatedCommander.Description",
+        "engb": "A sister–in–arms can inspire and direct allies with great efficiency. At 11th level, the sister–in–arms can use lion’s call or strategy order as a {g|Encyclopedia:Move_Action}move action{/g}.",
+        "ruru": "Сестра по оружию руководит союзниками с необычайной эффективностью. На 11 уровне сестра по оружию может использовать львиный зов и стратегию в качестве {g|Encyclopedia:Move_Action}сопутствующего действия{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "DevotedDefender.Name",
+        "engb": "Devoted Defender",
+        "ruru": "Верный страж",
+        "processtemplates": false
+    },
+    {
+        "key": "DevotedDefender.Description",
+        "engb": "At 3rd level, a sister–in–arms gains Bodyguard as a bonus {g|Encyclopedia:Feat}feat{/g}.",
+        "ruru": "На 3 уровне сестра по оружию получает Телохранителя в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "HalfheartedChallenge.Name",
+        "engb": "Halfhearted Challenge",
+        "ruru": "Cдержанный вызов",
+        "processtemplates": false
+    },
+    {
+        "key": "HalfheartedChallenge.Description",
+        "engb": "Once per day, a sister–in–arms can challenge a foe to combat. As a {g|Encyclopedia:Swift_Action}swift action{/g}, the sister–in–arms selects one target within sight to challenge. A sister–in–arms adds half her cavalier level (minimum 1) to {g|Encyclopedia:MeleeAttack}melee{/g} {g|Encyclopedia:Damage}damage{/g} rolls against her challenge target. Sister–in–arms can use this ability once per day at 1st level, plus one additional time per day for every three levels beyond 1st, to a maximum of seven times per day at 19th level.\nChallenging a foe requires much concentration from the sister–in–arms. She takes a –2 {g|Encyclopedia:Penalty}penalty{/g} to her {g|Encyclopedia:Armor_Class}Armor Class{/g}, except against attacks made by the target of her challenge.\nThe challenge remains in effect until the target is dead, {g|Encyclopedia:Injury_Death}unconscious{/g}, or until the combat ends. Each sister–in–arms challenge also includes an additional effect, which is detailed in the section describing the cavalier's order.",
+        "ruru": "Один раз в день сестра по оружию может бросить противнику вызов в бою. В качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} сестра по оружию выбирает одну цель в пределах видимости и бросает ей вызов. Сестра по оружию добавляет половину своего уровня всадника (минимум 1) к броскам на {g|Encyclopedia:Damage}урон{/g} в {g|Encyclopedia:MeleeAttack}ближнем бою{/g} против цели своего вызова. Сестра по оружию может применять эту способность раз в день на 1 уровне и еще по разу в день за каждые три уровня выше 1, вплоть до семи раз в день на 19 уровне.\nВызов врагу требует от сестры по оружию значительной концентрации. Сестра по оружию получает {g|Encyclopedia:Penalty}штраф{/g} –2 к своей {g|Encyclopedia:Armor_Class}защите{/g}, исключая атаки, совершенные целью ее вызова.\nВызов продолжает действовать, пока цель не {g|Encyclopedia:Injury_Death}умрет{/g}, не потеряет сознание или пока не закончится бой. Каждый вызов сестры по оружию также имеет другой эффект, приведенный в разделе, описывающем орден всадника.",
+        "processtemplates": false
+    },
+    {
+        "key": "MaidensLoyalty.Name",
+        "engb": "Maidens Loyalty",
+        "ruru": "Верность девы",
+        "processtemplates": false
+    },
+    {
+        "key": "MaidensLoyalty.Description",
+        "engb": "The loyalty of a sister–in–arms is absolute. At 4th level, a sister–in–arms gains a +2 {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}Will saving throws{/g} against charm, compulsion, and {g|ConditionConfusion}confusion{/g} effects. At 8th level and every 4 levels thereafter, this bonus increases by +1, up to a maximum of +6 at 20th level.",
+        "ruru": "Преданность сестры по оружию не знает границ. На 4 уровне сестра по оружию получает {g|Encyclopedia:Bonus}бонус{/g} +2 к {g|Encyclopedia:Saving_Throw}спасброскам Воли{/g} против эффектов очарования, принуждения и {g|ConditionConfusion}замешательства{/g}. На 8 уровне и каждые 4 уровня в дальнейшем, этот бонус увеличивается на 1, до максимума в +6 на 20 уровне.",
+        "processtemplates": false
+    },
+    {
+        "key": "MaidensOrder.Name",
+        "engb": "Maidens Order",
+        "ruru": "Орден девы",
+        "processtemplates": false
+    },
+    {
+        "key": "MaidensOrder.Description",
+        "engb": "A sister–in–arms does not choose an order. Instead, she is considered to belong to both the order of the dragon and the order of the lion, and she gains all of the benefits of both orders at the appropriate levels.",
+        "ruru": "Сестра по оружию не выбирает к какому ордену присягнуть на верность. Вместо этого считается, что она принадлежит как к ордену дракона, так и к ордену льва, и получает все преимущества обоих орденов на сответствующих уровнях.",
+        "processtemplates": false
+    },
+    {
+        "key": "SisterInArms.Name",
+        "engb": "Sister–In–Arms",
+        "ruru": "Сестра по оружию",
+        "processtemplates": false
+    },
+    {
+        "key": "SisterInArms.Description",
+        "engb": "Some of the most charismatic Gray Maidens combine their devotion to their sisters with the intense tactical training they received, learning to perfectly direct their companions and inspiring them to survive and emerge victorious. Known as sisters–in–arms, these scarred soldiers are highly respected by their fellow Maidens for their dedication.",
+        "ruru": "Некоторые из самых харизматичных Серых Дев проходят изнурительную тактическую подготовку, чтобы научиться идеально направлять своих сестер к победе с минимальными потерями. Известные как сестры по оружию, эти покрытые шрамами воительницы пользуются глубоким признанием среди сестер за свою самоотверженность.",
+        "processtemplates": false
+    },
+    {
+        "key": "SupremeCommander.Name",
+        "engb": "Supreme Commander",
+        "ruru": "Абсолютный лидер",
+        "processtemplates": false
+    },
+    {
+        "key": "SupremeCommander.Description",
+        "engb": "At 20th level, the sister–in–arms can use act as one, lion’s call, or strategy order as a {g|Encyclopedia:Swift_Action}swift action{/g}.",
+        "ruru": "На 20 уровне, сестра по оружию может использовать единый фронт, львиный зов и стратегию в качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "BattlefieldDiscipleBackground.Name",
+        "engb": "Battlefield Disciple",
+        "ruru": "Наученный битвой",
+        "processtemplates": false
+    },
+    {
+        "key": "BattlefieldDiscipleBackground.Description",
+        "engb": "Battlefield Disciple adds {g|Encyclopedia:Athletics}Athletics{/g} to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also becomes proficient with shortswords and long swords. In addition, when Battlefield Disciple use Aid Another to grant {g|Encyclopedia:Bonus}bonus{/g} to an ally, this bonus increases by +1.\nIf the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding {g|Encyclopedia:Bonus}bonuses{/g} from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a –1 {g|Encyclopedia:Armor_Check_Penalty}Armor Check Penalty{/g} reduction in case of armor proficiency.",
+        "ruru": "Наученный битвой добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Athletics}Атлетику{/g}. Он также учится обращаться с короткими мечами и длинными мечами. Кроме того, когда наученный битвой использует Помощь товарищу, чтобы предоставить союзнику {g|Encyclopedia:Bonus}бонус{/g}, этот бонус увеличивается на +1.\nЕсли у персонажа уже есть классовый навык, {g|Encyclopedia:Weapon_Proficiency}умение обращения с оружием{/g} или умение использования брони, даваемое биографией в рамках класса, выбранной в ходе создания персонажа, соответствующие {g|Encyclopedia:Bonus}бонусы{/g} биографии меняются на бонус мастерства +1 в случае навыков, бонус усиления +1 в случае умения обращения с оружием и снижением в виде {g|Encyclopedia:Armor_Check_Penalty}штрафа за броню{/g} –1 в случае умения использования брони.",
+        "processtemplates": false
+    },
+    {
+        "key": "BenevolentArmor.Name",
+        "engb": "Benevolent",
+        "ruru": "Милосердие",
+        "processtemplates": false
+    },
+    {
+        "key": "BenevolentArmor.Description",
+        "engb": "The {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} granted to an ally by Aid Another is increased by the enchantment bonus of this armor.",
+        "ruru": "{g|Encyclopedia:Bonus}Бонус{/g} к {g|Encyclopedia:Armor_Class}защите{/g}, даруемый сознику Помощью товарища, увеличен на бонус зачарования этой брони",
+        "processtemplates": false
+    },
+    {
+        "key": "BenevolentWeapon.Name",
+        "engb": "Benevolent",
+        "ruru": "Милосердие",
+        "processtemplates": false
+    },
+    {
+        "key": "BenevolentWeapon.Description",
+        "engb": "The {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} granted to an ally by Aid Another is increased by the enchantment bonus of this weapon.",
+        "ruru": "{g|Encyclopedia:Bonus}Бонус{/g} к {g|Encyclopedia:Attack}атаке{/g}, даруемый сознику Помощью товарища, увеличен на бонус зачарования этого оружия.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.Name",
+        "engb": "Aid Another",
+        "ruru": "Помощь товарищу",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.Description",
+        "engb": "As a {g|Encyclopedia:Standard_Actions}standard action{/g}, you can assist an ally in melee combat. You can grant either a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll, a +2 bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack, a +2 bonus on the next {g|Encyclopedia:Saving_Throw}saving throw{/g}, or a +2 bonus on the next {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g}. These bonuses apply as long as the aided ally remains within your melee range and last until the beginning of your next turn. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете помочь союзнику в ближнем бою. Вы можете предоставить {g|Encyclopedia:Bonus}бонус{/g} +2 к следующему броску на попадание {g|Encyclopedia:MeleeAttack}в ближнем бою{/g}, бонус +2 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя, бонус +2 к следующему {g|Encyclopedia:Saving_Throw}спасброску{/g}, либо бонус +2 к следующей {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Skills}навыка{/g}. Эти бонусы действуют до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.ArmorClassAbility.Name",
+        "engb": "Aid Another – Armor Class",
+        "ruru": "Помощь товарищу – Защита",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.ArmorClassAbility.Description",
+        "engb": "As a {g|Encyclopedia:Standard_Actions}standard action{/g}, you can assist an ally in melee combat. The target gain a +2 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack. This bonus lasts until the beginning of your next turn and applies as long as the aided ally remains within your melee range. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете помочь союзнику в ближнем бою. Цель получает {g|Encyclopedia:Bonus}бонус{/g} +2 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя. Этот бонус действует до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnotherArmorClassBuff.Name",
+        "engb": "Aid Another – Armor Class",
+        "ruru": "Помощь товарищу – Защита",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnotherArmorClassBuff.Description",
+        "engb": "You gain a +2 bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack. You must remain within melee range of the ally aiding you for this effect to apply.",
+        "ruru": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя. Этот бонус действует, пока вы находитесь в пределах досягаемости оружия ближнего боя союзника, который оказывает вам помощь.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.AttackAbility.Name",
+        "engb": "Aid Another – Attack",
+        "ruru": "Помощь товарищу – Атака",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.AttackAbility.Description",
+        "engb": "As a {g|Encyclopedia:Standard_Actions}standard action{/g}, you can assist an ally in melee combat. The target gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll. This bonus lasts until the beginning of your next turn and applies as long as the aided ally remains within your melee range. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете помочь союзнику в ближнем бою. Цель получает {g|Encyclopedia:Bonus}бонус{/g} +2 к следующему броску на попадание в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}. Этот бонус действует до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.AttackBuff.Name",
+        "engb": "Aid Another – Attack",
+        "ruru": "Помощь товарищу – Атака",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.AttackBuff.Description",
+        "engb": "You gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll. You must remain within melee range of the ally aiding you for this effect to apply.",
+        "ruru": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 к следующему броску на попадание в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}. Этот бонус действует, пока вы находитесь в пределах досягаемости оружия ближнего боя союзника, который оказывает вам помощь.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SaveAbility.Name",
+        "engb": "Aid Another – Saving Throw",
+        "ruru": "Помощь товарищу – Спасбросок",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SaveAbility.Description",
+        "engb": "As a {g|Encyclopedia:Standard_Actions}standard action{/g}, you can assist an ally in melee combat. The target gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:Saving_Throw}saving throws{/g}. These bonuses apply as long as the aided ally remains within your melee range and last until the beginning of your next turn. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете помочь союзнику в ближнем бою. Цель получает {g|Encyclopedia:Bonus}бонус{/g} +2 к следующему {g|Encyclopedia:Saving_Throw}спасброску{/g}. Этот бонус действует до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SaveBuff.Name",
+        "engb": "Aid Another – Saving Throw",
+        "ruru": "Помощь товарищу – Спасбросок",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SaveBuff.Description",
+        "engb": "You gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:Saving_Throw}saving throw{/g}. You must remain within melee range of the ally aiding you for this effect to apply.",
+        "ruru": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 к следующему {g|Encyclopedia:Saving_Throw}спасброску{/g}. Этот бонус действует, пока вы находитесь в пределах досягаемости оружия ближнего боя союзника, который оказывает вам помощь.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SkillCheckAbility.Name",
+        "engb": "Aid Another – Skill Check",
+        "ruru": "Помощь товарищу – Проверка навыка",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SkillCheckAbility.Description",
+        "engb": "As a {g|Encyclopedia:Standard_Actions}standard action{/g}, you can assist an ally in melee combat. The target gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g}. This bonus lasts until the beginning of your next turn and applies as long as the aided ally remains within your melee range. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете помочь союзнику в ближнем бою. Цель получает {g|Encyclopedia:Bonus}бонус{/g} +2 к следующей {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Skills}навыка{/g}. Этот бонус действует до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SkillCheckBuff.Name",
+        "engb": "Aid Another – Skill Check",
+        "ruru": "Помощь товарищу – Проверка навыка",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAnother.SkillCheckBuff.Description",
+        "engb": "You gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g}. You must remain within melee range of the ally aiding you for this effect to apply.",
+        "ruru": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 к следующей {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Skills}навыка{/g}. Этот бонус действует, пока вы находитесь в пределах досягаемости оружия ближнего боя союзника, который оказывает вам помощь.",
+        "processtemplates": false
+    },
+    {
+        "key": "Bodyguard.Name",
+        "engb": "Bodyguard",
+        "ruru": "Телохранитель",
+        "processtemplates": false
+    },
+    {
+        "key": "Bodyguard.Description",
+        "engb": "When an ally within your melee range is attacked, you may use an {g|Encyclopedia:Attack_Of_Opportunity}attack of opportunity{/g} to perform the Aid Another action, improving your ally's {g|Encyclopedia:Armor_Class}Armor Class{/g}.",
+        "ruru": "Когда кто–то атакует союзника, который находится в пределах досягаемости вашего оружия ближнего боя, вы можете потратить {g|Encyclopedia:Attack_Of_Opportunity}внеочередную атаку{/g} чтобы использовать способность Помощь товарищу на этом союзнике, повышая его {g|Encyclopedia:Armor_Class}защиту{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "Bodyguard.GameLogMessage",
+        "engb": "is bodyguarded by",
+        "ruru": "находится под защитой персонажа",
+        "processtemplates": false
+    },
+    {
+        "key": "HarryingPartners.Name",
+        "engb": "Harrying Partners",
+        "ruru": "Назойливые напарники",
+        "processtemplates": false
+    },
+    {
+        "key": "HarryingPartners.Description",
+        "engb": "When you use the Aid Another action to improve the {g|Encyclopedia:Armor_Class}Armor Class{/g} or {g|Encyclopedia:Attack}attack rolls{/g} of an ally who also has this feat, the benefit from Aid Another lasts until the beginning of your next turn.",
+        "ruru": "Когда вы используете Помощь товарищу чтобы дать {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}попаданию{/g} или {g|Encyclopedia:Armor_Class}защите{/g} для поддержки союзника, у которого тоже есть эта черта, бонусы от Помощи товарищу сохраняются до начала вашего следующего хода.",
+        "processtemplates": false
+    },
+    {
+        "key": "Helpful.Name",
+        "engb": "Helpful",
+        "ruru": "Полезный",
+        "processtemplates": false
+    },
+    {
+        "key": "Helpful.Description",
+        "engb": "Whenever you use the Aid Another action to provide a {g|Encyclopedia:Bonus}bonus{/g} to one of your allies, the bonus you provide increases by +1. Small-sized races with this feat increase the granted {g|Encyclopedia:Bonus}bonus{/g} by +2 instead.",
+        "ruru": "Всякий раз, когда вы используете способность Помощь товарищу для поддержки союзника, получаемый союзником {g|Encyclopedia:Bonus}бонус{/g} увеличивается на +1. Представители рас небольшого размера с этой чертой увеличивают получаемый союзником бонус на +2.",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.Name",
+        "engb": "Swift Aid",
+        "ruru": "Быстрая помощь",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.Description",
+        "engb": "As a {g|Encyclopedia:Swift_Action}swift action{/g}, you can perform the Aid Another action, granting your ally either a +1 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll or a +1 bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack.",
+        "ruru": "В качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} вы можете использовать Помощь товарищу чтобы предоставить ему либо {g|Encyclopedia:Bonus}бонус{/g} +1 к следующему броску на {g|Encyclopedia:MeleeAttack}попадание{/g} в ближнем бою, либо бонус +1 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя.",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.Ability.Name",
+        "engb": "Swift Aid",
+        "ruru": "Быстрая помощь",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.Ability.Description",
+        "engb": "As a {g|Encyclopedia:Swift_Action}swift action{/g}, you can assist an ally in melee combat. You can grant either a +1 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll or a +1 bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack. These bonuses apply as long as the aided ally remains within your melee range and last until the beginning of your next turn. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} вы можете помочь союзнику в ближнем бою. Вы можете предоставить либо {g|Encyclopedia:Bonus}бонус{/g} +1 к следующему броску на попадание в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}, либо бонус +1 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя. Эти бонусы действуют до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.ArmorClassAbility.Name",
+        "engb": "Swift Aid – Armor Class",
+        "ruru": "Быстрая помощь – Защита",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.ArmorClassAbility.Description",
+        "engb": "As a {g|Encyclopedia:Swift_Action}swift action{/g}, you can assist an ally in melee combat. The target gain a +1 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack. This bonus lasts until the beginning of your next turn and applies as long as the aided ally remains within your melee range. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} вы можете помочь союзнику в ближнем бою. Цель получает {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя. Этот бонус действует до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.ArmorClassBuff.Name",
+        "engb": "Swift Aid – Armor Class",
+        "ruru": "Быстрая помощь – Защита",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.ArmorClassBuff.Description",
+        "engb": "You gain a +1 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} against the next melee weapon attack. You must remain within melee range of the ally aiding you for this effect to apply.",
+        "ruru": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:Armor_Class}защите{/g} против следующей атаки оружием ближнего боя. Этот бонус действует, пока вы находитесь в пределах досягаемости оружия ближнего боя союзника, который оказывает вам помощь.",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.AttackAbility.Name",
+        "engb": "Swift Aid – Attack",
+        "ruru": "Быстрая помощь – Атака",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.AttackAbility.Description",
+        "engb": "As a {g|Encyclopedia:Swift_Action}swift action{/g}, you can assist an ally in melee combat. The target gain a +1 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll. This bonus lasts until the beginning of your next turn and applies as long as the aided ally remains within your melee range. Multiple characters can aid the same ally, and similar bonuses stack.",
+        "ruru": "В качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} вы можете помочь союзнику в ближнем бою. Цель получает {g|Encyclopedia:Bonus}бонус{/g} +1 к следующему броску на попадание в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}. Этот бонус действует до начала вашего следующего хода, пока союзник, которому вы помогаете, находится в пределах досягаемости вашего оружия ближнего боя. Несколько персонажей могут помогать одному и тому же союзнику, и аналогичные бонусы складываются.",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.AttackBuff.Name",
+        "engb": "Swift Aid – Attack",
+        "ruru": "Быстрая помощь – Атака",
+        "processtemplates": false
+    },
+    {
+        "key": "SwiftAid.AttackBuff.Description",
+        "engb": "You gain a +1 {g|Encyclopedia:Bonus}bonus{/g} on the next {g|Encyclopedia:MeleeAttack}melee attack{/g} roll. You must remain within melee range of the ally aiding you for this effect to apply.",
+        "ruru": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +1 к следующему броску на попадание в {g|Encyclopedia:MeleeAttack}ближнем бою{/g}. Этот бонус действует, пока вы находитесь в пределах досягаемости оружия ближнего боя союзника, который оказывает вам помощь.",
+        "processtemplates": false
+    },
+    {
+        "key": "CavalierOrderOfTheDragon.Name",
+        "engb": "Order of the Dragon",
+        "ruru": "Орден дракона",
+        "processtemplates": false
+    },
+    {
+        "key": "CavalierOrderOfTheDragon.Description",
+        "engb": "Cavaliers belonging to the order of the dragon dedicate themselves to a group of like–minded individuals, be it a mercenary company or a small band of adventurers. These cavaliers believe in loyalty and friendship, and are willing to lay down their lives to protect their allies.",
+        "ruru": "Всадники ордена дракона всецело отдают себя группе единомышленников, будь то наемная компания или небольшая группа приключенцев. Эти всадники верят в верность и дружбу и готовы отдать свою жизнь, чтобы защитить своих союзников.",
+        "processtemplates": false
+    },
+    {
+        "key": "CavalierOrderOfTheDragon.Challenge.Name",
+        "engb": "Challenge",
+        "ruru": "Вызов",
+        "processtemplates": false
+    },
+    {
+        "key": "CavalierOrderOfTheDragon.Challenge.Description",
+        "engb": "Whenever an order of the dragon cavalier issues a challenge, his allies receive a +1 circumstance {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:MeleeAttack}melee attacks{/g} rolls against the target of his challenge whenever he is {g|Encyclopedia:Threatened_Area}threatening{/g} the target. This bonus increases by +1 for every four levels the cavalier possesses.",
+        "ruru": "Всякий раз, когда всадник ордена дракона бросает вызов, его союзники получают {g|Encyclopedia:Bonus}бонус{/g} +1 к броскам на попадание в {g|Encyclopedia:MeleeAttack}ближнем бою{/g} против цели вызова, пока всадник {g|Encyclopedia:Threatened_Area}угрожает{/g} ей. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
+        "processtemplates": false
+    },
+    {
+        "key": "CavalierOrderOfTheDragon.Skills.Name",
+        "engb": "Skills",
+        "ruru": "Навыки",
+        "processtemplates": false
+    },
+    {
+        "key": "CavalierOrderOfTheDragon.Skills.Description",
+        "engb": "An order of the dragon cavalier adds {g|Encyclopedia:Perception}Perception{/g} to his list of class Skills.",
+        "ruru": "Всадник ордена дракона добавляет {g|Encyclopedia:Perception}Внимание{/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "ActAsOne.Name",
+        "engb": "Act as One",
+        "ruru": "Единый фронт",
+        "processtemplates": false
+    },
+    {
+        "key": "ActAsOne.Description",
+        "engb": "At 15th level, the cavalier can make a special charge attack as {g|Encyclopedia:Standard_Actions}standard action{/g}. At the start of the charge, the cavalier grants a +2 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Attack}attack rolls{/g}, a +2 bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g}, and the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g} to all allies within a 30 feet for 1 round. This ability can be used only once per combat.",
+        "ruru": "Начиная с 15 уровня, один раз за сражение, всадник может совершить особую атаку с разбега в качестве {g|Encyclopedia:Standard_Actions}основного действия{/g}. В начале разбега всадник дает всем союзникам в радиусе 30 футов {g|Encyclopedia:Bonus}бонус{/g} +2 к {g|Encyclopedia:Armor_Class}защите{/g}, бонус +2 к шансу {g|Encyclopedia:Attack}попадания{/g} и {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "ActAsOne.Buff.Name",
+        "engb": "Act as One",
+        "ruru": "Единый фронт",
+        "processtemplates": false
+    },
+    {
+        "key": "ActAsOne.Buff.Description",
+        "engb": "The cavalier grants a +2 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Attack}attack rolls{/g}, a +2 bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g}, and the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g} to all allies within a 30–foot range for one {g|Encyclopedia:Combat_Round}round{/g}.",
+        "ruru": "Всадник дает всем союзникам в радиусе 30 футов бонус +2 к {g|Encyclopedia:Armor_Class}защите{/g}, {g|Encyclopedia:Bonus}бонус{/g} +2 к шансу {g|Encyclopedia:Attack}попадания{/g} и {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAllies.Name",
+        "engb": "Aid Allies",
+        "ruru": "Помощь союзнику",
+        "processtemplates": false
+    },
+    {
+        "key": "AidAllies.Description",
+        "engb": "Whenever the cavalier uses the Aid Another action to provide a {g|Encyclopedia:Bonus}bonus{/g} to one of his allies, the bonus he provides increases by +1. This bonus increases by an additional +1 at 8th level and every six levels thereafter (to a maximum of +4 at 20th level).",
+        "ruru": "Начиная со 2 уровня, когда всадник использует способность Помощь товарищу для поддержки союзника, получаемый союзником {g|Encyclopedia:Bonus}бонус{/g} увеличивается на +1. На 8 уровне и каждые шесть уровней после этого этот бонус увеличивается на дополнительный +1, до максимум +4 на 20 уровне.",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.Name",
+        "engb": "Strategy",
+        "ruru": "Стратегия",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.Description",
+        "engb": "At 8th level, the cavalier can spend a {g|Encyclopedia:Standard_Actions}standard action{/g} to grant one of a number of {g|Encyclopedia:Bonus}bonuses{/g} to all allies within 30 feet. The cavalier can grant a +2 dodge bonus to {g|Encyclopedia:Armor_Class}Armor Class{/g} for 1 {g|Encyclopedia:Combat_Round}round{/g}, a +2 morale bonus on all {g|Encyclopedia:Attack}attack rolls{/g} for 1 round, or increase movement {g|Encyclopedia:Speed}speed{/g} by 30 feet for 1 round. This ability can be used only once per combat.",
+        "ruru": "На 8 уровне, один раз за сражение, в качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} всадник может даровать боевой {g|Encyclopedia:Bonus}бонус{/g} всем союзникам в радиусе 30 футов. Всадник может выбрать один из следующих бонусов: бонус уклонения +2 к {g|Encyclopedia:Armor_Class}защите{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}, бонус боевого духа +2 к броскам на {g|Encyclopedia:Attack}попадание{/g} на 1 раунд, или бонус к {g|Encyclopedia:Speed}скорости{/g} передвижения +30 футов на 1 раунд.",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.ArmorBuff.Name",
+        "engb": "Strategy – Armor Class",
+        "ruru": "Стратегия – Защита",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.ArmorBuff.Description",
+        "engb": "The cavalier grant a +2 dodge {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} for 1 {g|Encyclopedia:Combat_Round}round{/g} to all allies within 30 feet.",
+        "ruru": "Всадник дает всем союзникам {g|Encyclopedia:Bonus}бонус{/g} уклонения +2 к {g|Encyclopedia:Armor_Class}защите{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.AttackBuff.Name",
+        "engb": "Strategy – Attack",
+        "ruru": "Стратегия – Нападение",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.AttackBuff.Description",
+        "engb": "The cavalier grant a +2 morale {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Attack}attack rolls{/g} for 1 {g|Encyclopedia:Combat_Round}round{/g} to all allies within 30 feet.",
+        "ruru": "Всадник дает всем союзникам {g|Encyclopedia:Bonus}бонус{/g} морального духа +2 к броскам на {g|Encyclopedia:Attack}попадание{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.SpeedBuff.Name",
+        "engb": "Strategy – Movement Speed",
+        "ruru": "Стратегия – Маневренность",
+        "processtemplates": false
+    },
+    {
+        "key": "Strategy.SpeedBuff.Description",
+        "engb": "The cavalier increase {g|Encyclopedia:Speed}speed{/g} of all allies within 30 feet by 30 feet for 1 {g|Encyclopedia:Combat_Round}round{/g}.",
+        "ruru": "Всадник дает всем союзникам {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Speed}скорости{/g} передвижения +30 футов на 1 {g|Encyclopedia:Combat_Round}раунд{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "SanguineAngel.Name",
+        "engb": "Sanguine Angel",
+        "ruru": "Багряный ангел",
+        "processtemplates": false
+    },
+    {
+        "key": "SanguineAngel.Description",
+        "engb": "Sanguine angels are heartless soldiers who have turned to worship infernal demigoddesses. These vengeful devils reward the company’s elite with infernal powers.",
+        "ruru": "Багряные ангелы — безжалостные воительницы, посвятившие себя поклонению адским полубогиням. Эти мстительные существа наделяют темными силами самых выдающихся своих последователей.",
+        "processtemplates": false
+    },
+    {
+        "key": "AngelOfDeath.Name",
+        "engb": "Angel of Death",
+        "ruru": "Ангел смерти",
+        "processtemplates": false
+    },
+    {
+        "key": "AngelOfDeath.Description",
+        "engb": "At 10th level, a sanguine angel adds the outsider type to her creature type, and Hell becomes her native plane. She gains fire {g|Encyclopedia:Energy_Resistance}resistance{/g} 30. Her {g|Encyclopedia:MeleeAttack}melee attacks{/g} ignore the miss chance from less than total {g|Encyclopedia:Concealment}concealment{/g}, and she treats opponents with total concealment as if they had normal concealment (a 20% miss chance instead of 50%). Ebon–feathered wings emerge from the sanguine angel's back, granting her a movement speed of 50 feet with good maneuverability.",
+        "ruru": "На 10 уровне багряный ангел получает дополнительный тип «потустороннее существо» и теперь считает ад своим родным планом. Она также получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к огню 30. Ее {g|Encyclopedia:MeleeAttack}атаки в ближнем бою{/g} игнорируют вероятность промаха из–за неполной {g|Encyclopedia:Concealment}маскировки{/g}, а полная маскировка для нее считается неполной (20% шанс промаха вместо 50%). Из спины багряного ангела вырастают черные пернатые крылья, позволяющие передвигаться со скоростью 50 футов.",
+        "processtemplates": false
+    },
+    {
+        "key": "DevilDance.Name",
+        "engb": "Devil Dance",
+        "ruru": "Танец дьявола",
+        "processtemplates": false
+    },
+    {
+        "key": "DevilDance.Description",
+        "engb": "The sanguine angel recieves a bonus {g|Encyclopedia:Feat}feat{/g}. She may choose any feat that requires Two–Weapon Fighting, Shield Bash, or Bull Rush as a prerequisite. The sanguine angel must meet the prerequisites of the selected bonus feat. This feat can be selected multiple times.",
+        "ruru": "Багряный ангел получает дополнительную {g|Encyclopedia:Feat}черту{/g}. Она может выбрать любую черту, в качестве требования к которой указаны Парное оружие, Удар щитом или Таран. Багряный ангел должна соответствовать требованиям выбираемых черт. Эта черта может быть выбрана несколько раз.",
+        "processtemplates": false
+    },
+    {
+        "key": "ErinyesFury.Name",
+        "engb": "Erinyes Fury",
+        "ruru": "Фурия",
+        "processtemplates": false
+    },
+    {
+        "key": "ErinyesFury.Description",
+        "engb": "The sanguine angel can enter a dispassionate, murderous state. This functions as the dreadnought barbarian’s Dead Calm ability and is usable for a number of {g|Encyclopedia:Combat_Round}rounds{/g} each day equal to twice her class level. If the sanguine angel has levels in barbarian and has the dreadnought archetype, her sanguine angel levels instead stack with her barbarian levels to determine the duration of her rage.",
+        "ruru": "Багряный ангел может впасть в бесстрастную убийственную ярость. Эта ярость работает аналогично классовой способности дредноута Леденящее спокойствие и может быть использована 2 {g|Encyclopedia:Combat_Round}раунда{/g} в день за каждый уровень багряного ангела. Если у багряного ангела есть уровни в классе варвара и она выбрала архетип дредноута, уровни багряного ангела складываются с уровнями дредноута для определения продолжительности ее ярости.",
+        "processtemplates": false
+    },
+    {
+        "key": "EyeOfAlertness.Name",
+        "engb": "Eye of Alertness",
+        "ruru": "Бдительный взор",
+        "processtemplates": false
+    },
+    {
+        "key": "EyeOfAlertness.Description",
+        "engb": "Sanguine angel’s keen eyes pierce all deception. At 5th level, a sanguine angel gains Alertness as a bonus {g|Encyclopedia:Feat}feat{/g} and gains a +4 profane {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against {g|Encyclopedia:Spell}spells{/g} of Illusion school. In addition, as a {g|Encyclopedia:Swift_Action}swift action{/g}, the sanguine angel can take {g|Encyclopedia:Dice}1d4{/g} points of {g|Encyclopedia:Charisma}Charisma{/g} {g|Encyclopedia:AbilityDamage}damage{/g} to gain the benefits of the {g|SpellsTrueSeeing}true seeing{/g} spell for a number of minutes equal to her class level.",
+        "ruru": "Сквозь любую ложь багряные ангелы видят истину. На 5 уровне багряный ангел получает Бдительность в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}. Она также получает нечистый {g|Encyclopedia:Bonus}бонус{/g} +4 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против {g|Encyclopedia:Spell}заклинаний{/g} школы иллюзии. В качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} багряный ангел может нанести себе {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:AbilityDamage}урона{/g} {g|Encyclopedia:Charisma}Харизме{/g}, но взамен получить преимущество заклинания {g|SpellsTrueSeeing}истинное зрение{/g} на количество минут равное ее уровеню в классе.",
+        "processtemplates": false
+    },
+    {
+        "key": "FuriousHuntress.Name",
+        "engb": "Furious Huntress",
+        "ruru": "Неистовая охотница",
+        "processtemplates": false
+    },
+    {
+        "key": "FuriousHuntress.Description",
+        "engb": "The sanguine angel adds her {g|Encyclopedia:Strength}Strength{/g} modifier, rather than her {g|Encyclopedia:Dexterity}Dexterity{/g} modifier, to {g|Encyclopedia:Attack}attack rolls{/g} made with bows and crossbows.",
+        "ruru": "Багряный ангел добавляет свой модификатор {g|Encyclopedia:Strength}Силы{/g}, вместо модификатора {g|Encyclopedia:Dexterity}Ловкости{/g}, к {g|Encyclopedia:Attack}броскам на попадание{/g} из луков и арбалетов.",
+        "processtemplates": false
+    },
+    {
+        "key": "HardenedHeart.Name",
+        "engb": "Hardened Heart",
+        "ruru": "Черствое сердце",
+        "processtemplates": false
+    },
+    {
+        "key": "HardenedHeart.Description",
+        "engb": "A sanguine angel gains a {g|Encyclopedia:Bonus}bonus{/g} equal to twice her class level on all {g|Encyclopedia:Saving_Throw}saving throws{/g} against fear effects.",
+        "ruru": "Багряный ангел получает {g|Encyclopedia:Bonus}бонус{/g}, равный ее двойному уровню в классе, ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов страха.",
+        "processtemplates": false
+    },
+    {
+        "key": "Hollowness.Name",
+        "engb": "Hollowness",
+        "ruru": "Пустая оболочка",
+        "processtemplates": false
+    },
+    {
+        "key": "Hollowness.Description",
+        "engb": "At 9th level, a sanguine angel gains Diehard as a bonus {g|Encyclopedia:Feat}feat{/g}. In addition, she gains a +4 profane {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against emotion effects, and she is immune to fear effects.",
+        "ruru": "На 9 уровне багряный ангел получает Крепкий орешек в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}. Она становится невосприимчивой к страху и получает нечистый {g|Encyclopedia:Bonus}бонус{/g} +4 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов эмоций.",
+        "processtemplates": false
+    },
+    {
+        "key": "Kinslayer.Name",
+        "engb": "Kinslayer",
+        "ruru": "Братоубийца",
+        "processtemplates": false
+    },
+    {
+        "key": "Kinslayer.Description",
+        "engb": "The sanguine angel gains favored enemy humanoids +2, as per the ranger ability. If the sanguine angel already has the same favored enemy {g|Encyclopedia:Bonus}bonus{/g}, her existing bonus instead increases by 2. This {g|Encyclopedia:Feat}feat{/g} can be selected multiple times.",
+        "ruru": "Багряный ангел получает классовую способность рейнджера Заклятый враг — Гуманоиды. Если у багряного ангела уже есть {g|Encyclopedia:Bonus}бонусы{/g} заклятого врага против гуманоидов, эти бонусы увеличиваются на 2. Эта {g|Encyclopedia:Feat}черта{/g} может быть выбрана несколько раз.",
+        "processtemplates": false
+    },
+    {
+        "key": "MaidensShield.Name",
+        "engb": "Maidens Shield",
+        "ruru": "Щит девы",
+        "processtemplates": false
+    },
+    {
+        "key": "MaidensShield.Description",
+        "engb": "The sanguine angel gains Two–weapon Fighting as a bonus {g|Encyclopedia:Feat}feat{/g}. She also can use her {g|Encyclopedia:Strength}Strength{/g} instead of {g|Encyclopedia:Dexterity}Dexterity{/g} to qualify for feat requirements.",
+        "ruru": "Багряный ангел получает Парное оружие в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}. Кроме того, багряный ангел может использовать свою {g|Encyclopedia:Strength}Силу{/g} вместо {g|Encyclopedia:Dexterity}Ловкости{/g}, когда определяет, соответствует ли она требованиям той или иной черты.",
+        "processtemplates": false
+    },
+    {
+        "key": "MercilessMassacre.Name",
+        "engb": "Merciless Massacre",
+        "ruru": "Бойня",
+        "processtemplates": false
+    },
+    {
+        "key": "MercilessMassacre.Description",
+        "engb": "When the sanguine angel hits a {g|ConditionShaken}shaken{/g} or {g|ConditionFrightened}frightened{/g} creature with a {g|Encyclopedia:MeleeAttack}melee attack{/g}, she deal additional {g|Encyclopedia:Damage}damage{/g} to that creature equal to {g|Encyclopedia:Dice}1d8{/g} + her class level.",
+        "ruru": "Когда багряный ангел попадает по {g|ConditionShaken}потрясенному{/g} или {g|ConditionFrightened}испуганному{/g} врагу {g|Encyclopedia:MeleeAttack}атакой ближнего боя{/g}, она наносит цели дополнительный {g|Encyclopedia:Damage}урон{/g}, равный {g|Encyclopedia:Dice}1d8{/g} + ее уровень в классе.",
+        "processtemplates": false
+    },
+    {
+        "key": "Mystique.Name",
+        "engb": "Mystique",
+        "ruru": "Загадочная дева",
+        "processtemplates": false
+    },
+    {
+        "key": "Mystique.Description",
+        "engb": "At 7th level, a sanguine angel gains a +4 {g|Encyclopedia:Bonus}bonus{/g} on diplomacy and intimidate {g|Encyclopedia:Check}checks{/g}. Once per day, she can use {g|SpellsDominatePerson}dominate person{/g} as a {g|Encyclopedia:Special_Abilities}spell–like ability{/g}, using her character level as effictive {g|Encyclopedia:Caster_Level}caster level{/g}.",
+        "ruru": "На 7 уровне багряный ангел получает {g|Encyclopedia:Bonus}бонус{/g} +4 к {g|Encyclopedia:Check}проверкам{/g} дипломатии и запугивания. Один раз в день она может сотворить {g|SpellsDominatePerson}подчинение гуманоида{/g} как {g|Encyclopedia:Special_Abilities}псевдозаклинание{/g}, используя свой уровень персонажа в качестве {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "QueensSword.Name",
+        "engb": "Queens Sword",
+        "ruru": "Меч королевы",
+        "processtemplates": false
+    },
+    {
+        "key": "QueensSword.Description",
+        "engb": "At 5th and 9th level, if a sanguine angel has the Weapon Training (Heavy Blades) class ability, her weapon training {g|Encyclopedia:Bonus}bonus{/g} with heavy blades increases by 1.",
+        "ruru": "На 5 и 9 уровнях, если у багряного ангела есть способность Мастерство владения оружием (тяжелые клинки), ее {g|Encyclopedia:Bonus}бонус{/g} от этой способности увеличивается на 1.",
+        "processtemplates": false
+    },
+    {
+        "key": "TyrantsDiscipline.Name",
+        "engb": "Tyrants Discipline",
+        "ruru": "Тирания",
+        "processtemplates": false
+    },
+    {
+        "key": "TyrantsDiscipline.Description",
+        "engb": "At 2nd level, a sanguine angel draws upon her indoctrination, tactical training, and devotion to tyranny to develop potent talents. A sanguine angel selects a discipline from the following list at 2nd level and every 2 levels thereafter.",
+        "ruru": "Из–за своей тактической подготовки и преданности тирании багряный ангел развивает уникальные способности. С 2–го уровня и каждые 2 уровня после этого она может выбрать новую уникальную черту.",
+        "processtemplates": false
+    },
+    {
+        "key": "Unyielding.Name",
+        "engb": "Unyielding",
+        "ruru": "Непреклонность",
+        "processtemplates": false
+    },
+    {
+        "key": "Unyielding.Description",
+        "engb": "The sanguine angel gains {g|Encyclopedia:Damage_Reduction}DR{/g} 1/–. The damage reduction increases to 2/– at 8th level and to 3/– at 10th level.",
+        "ruru": "Багряный ангел получает {g|Encyclopedia:Damage_Reduction}снижения урона{/g} 1/–. На 8 уровне оно увеличивается до 2/–, а на 10 до 3/–.",
+        "processtemplates": false
+    },
+    {
+        "key": "VengefulSpirit.Name",
+        "engb": "Vengeful Spirit",
+        "ruru": "Мстительный дух",
+        "processtemplates": false
+    },
+    {
+        "key": "VengefulSpirit.Description",
+        "engb": "The sanguine angel adds her level to any levels of fighter she might have for the purpose of meeting the prerequisites for {g|Encyclopedia:Feat}feats{/g} (if she has no fighter levels, treat his sanguine angel levels as levels of fighter).",
+        "ruru": "Багряный ангел прибавляет свой уровень к уровню в классе воина, когда определяет, соответствует ли она требованиям той или иной {g|Encyclopedia:Feat}черты{/g} (если у багряного ангела нет ни одного уровня в классе воина, уровни багряного ангела считаются уровнями воина).",
+        "processtemplates": false
+    },
+    {
+        "key": "SuccorMystery.Name",
+        "engb": "Succor",
+        "ruru": "Cодействие ",
+        "processtemplates": false
+    },
+    {
+        "key": "SuccorMystery.Description",
+        "engb": "An oracle with the succor mystery adds {g|Encyclopedia:Mobility}Mobility{/g} and {g|Encyclopedia:Lore_Nature}Lore (nature){/g} to her list of class {g|Encyclopedia:Skills}skills{/g}.",
+        "ruru": "Оракул с тайной содействия добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Mobility}Подвижность{/g} и {g|Encyclopedia:Lore_Nature}Знание (природа){/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "CurseOfDampening.Name",
+        "engb": "Curse of Dampening",
+        "ruru": "Проклятие угасания",
+        "processtemplates": false
+    },
+    {
+        "key": "CurseOfDampening.Description",
+        "engb": "You diminish one target within 30 feet as a {g|Encyclopedia:Standard_Actions}standard action{/g}, making its attacks weaker. Whenever the target would roll to deal {g|Encyclopedia:Damage}damage{/g} with an attack or {g|Encyclopedia:Spell}spells{/g}, it deals the minimum amount of damage. This is a mind–affecting curse effect. This curse lasts for 1 {g|Encyclopedia:Combat_Round}round{/g} per 2 oracle levels you have (minimum 1). A successful {g|Encyclopedia:Saving_Throw}Will saving throw{/g} negates this effect. You can use this revelation once per day, plus one additional time at 11th level and 15th level. You must be at least 7th level before selecting this revelation.",
+        "ruru": "Оракул может ослабить одну цель в радиусе 30 футов в качестве {g|Encyclopedia:Standard_Actions}основного действия{/g}. Пока цель находится под действием этого эффекта, всякий раз, когда она совершает бросок на {g|Encyclopedia:Damage}урон{/g}, этот урон оказывается минимальным. Это проклятие, воздействующее на разум. Проклятие длится 1 {g|Encyclopedia:Combat_Round}раунд{/g} за каждые 2 уровня оракула (минимум 1 раунд). Успешный {g|Encyclopedia:Saving_Throw}спасбросок Воли{/g} нейтрализует эффект. Оракул может использовать это откровение 1 раз в день, плюс один дополнительный раз на 11 и 15 уровне. Для выбора этого таинства оракул должен быть как минимум 7 уровня.",
+        "processtemplates": false
+    },
+    {
+        "key": "CurseOfDampening.Buff.Description",
+        "engb": "Whenever the target would {g|Encyclopedia:Damage}roll to deal damage{/g} with an attack or {g|Encyclopedia:Spell}spells{/g}, it deals the minimum amount of damage. This is a mind–affecting curse effect.",
+        "ruru": "Пока цель находится под действием этого эффекта, всякий раз, когда она совершает бросок на {g|Encyclopedia:Damage}урон{/g}, этот урон становится минимальным. Это проклятие, воздействующее на разум.",
+        "processtemplates": false
+    },
+    {
+        "key": "EnhancedInflictionsRevelation.Name",
+        "engb": "Enhanced Inflictions",
+        "ruru": "Усиленное нанесение ран",
+        "processtemplates": false
+    },
+    {
+        "key": "EnhancedInflictionsRevelation.Description",
+        "engb": "You recognize that harming your enemies is sometimes the only way to help your allies, and so your wrath is particularly fierce. Whenever you cast an inflict {g|Encyclopedia:Spell}spell{/g} (a spell with the word “inflict” in the name), the maximum amount of {g|Encyclopedia:Damage}damage{/g} dealt by the spell is based on your oracle level, not the limit based on the spell. For example, an 11th–level oracle of succor with this revelation can cast {g|SpellsInflictLightWounds}inflict light wounds{/g} to deal {g|Encyclopedia:Dice}1d8{/g}+11 points of damage instead of the normal 1d8+5 maximum.",
+        "ruru": "Вы осознаете, что иногда для помощи союзникам необходимо причинить вред врагам, и именно поэтому ваш гнев становится особенно разрушительным. Каждый раз при сотворении вами {g|Encyclopedia:Spell}заклинания{/g} нанесения ран, максимальное количество {g|Encyclopedia:Damage}урона{/g}, наносимого этим заклинанием, основывается на вашем уровне оракула, а не на ограничении самого заклинания. Например, оракул содействия 11 уровня с этим откровением может сотворить заклинание {g|SpellsInflictLightWounds}нанесение легких ран{/g}, чтобы нанести {g|Encyclopedia:Dice}1d8{/g}+11 урона вместо обычного 1d8+5.",
+        "processtemplates": false
+    },
+    {
+        "key": "OracleSuccorFinalRevelation.Name",
+        "engb": "Final Revelation",
+        "ruru": "Последнее откровение",
+        "processtemplates": false
+    },
+    {
+        "key": "OracleSuccorFinalRevelation.Description",
+        "engb": "You become a beacon of aid and assistance to your allies and those you deem worthy of receiving your succoring magical benefits. Whenever you cast a {g|Encyclopedia:Healing}healing{/g} {g|Encyclopedia:Spell}spell{/g}, it becomes reach, as though using the {g|FeatureReachSpell}Reach Spell{/g} {g|Encyclopedia:Feat}feat{/g}, and is maximized, as though using the {g|FeatureMaximizeSpell}Maximize Spell{/g} feat.",
+        "ruru": "Вы становитесь источником поддержки и помощи для своих союзников и тех, кого считаете достойными ваших целительных даров. Все творимые вами {g|Encyclopedia:Healing}лечащие{/g} {g|Encyclopedia:Spell}заклинания{/g}, становятся дальнобойными, как при использовании метамагической {g|Encyclopedia:Feat}черты{/g} {g|FeatureReachSpell}Дальнобойное заклинание{/g}, и максимизированными, как при использовании метамагической черты {g|FeatureMaximizeSpell}Максимизированное заклинание{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "PerfectAid.Name",
+        "engb": "Perfect Aid",
+        "ruru": "Идеальная помощь",
+        "processtemplates": false
+    },
+    {
+        "key": "PerfectAid.Description",
+        "engb": "You can effortlessly give aid to your allies, whether that means providing them with help attacking or defending them in the heat of combat. You gain Bodyguard as a bonus {g|Encyclopedia:Feat}feat{/g}, and whenever you use the Aid Another action to provide a {g|Encyclopedia:Bonus}bonus{/g} to one of your allies, the bonus you provide increases by +1. This bonus increases by an additional +1 at 4th level and every five oracle levels thereafter (to a maximum of +5 at 19th level).",
+        "ruru": "В разгаре боя вы легко поддерживаете своих союзников, помогая им как в атаке, так и в защите. Вы получаете Телохранитель в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}. Каждый раз, когда вы используете способность Помощь товарищу для поддержки союзника, получаемый союзником {g|Encyclopedia:Bonus}бонус{/g} увеличивается на +1. На 4 уровне и каждые пять уровней после этого этот бонус увеличивается на дополнительный +1, до максимум +5 на 19 уровне.",
+        "processtemplates": false
+    },
+    {
+        "key": "PitifulFoeRevelation.Name",
+        "engb": "Pitiful Foe",
+        "ruru": "Жалкий враг",
+        "processtemplates": false
+    },
+    {
+        "key": "PitifulFoeRevelation.Description",
+        "engb": "You can temporarily curse one target within 30 feet as a {g|Encyclopedia:Standard_Actions}standard action{/g}, making it pitiful and ineffective in battle. While this ability is in effect, the target cannot make {g|Encyclopedia:Attack_Of_Opportunity}attacks of opportunity{/g} and automatically fails all rolls to confirm {g|Encyclopedia:Critical}critical hit{/g}. Additionally, whenever the target makes an {g|Encyclopedia:Attack}attack rolls{/g} or a {g|Encyclopedia:Saving_Throw}saving throws{/g}, it must roll twice and take the worse result. This is a mind–affecting curse effect. This curse lasts for 1 {g|Encyclopedia:Combat_Round}round{/g} per 2 oracle levels you have (minimum 1). A successful Will saving throw negates this effect. You can use this revelation once per day, plus one additional time at 7th and 15th levels.",
+        "ruru": "В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете наложить временное проклятие на одну цель в радиусе 30 футов, делая ее жалкой и неэффективной в бою. Пока цель находится под действием этого эффекта, она не может совершать {g|Encyclopedia:Attack_Of_Opportunity}внеочередные атаки{/g} и автоматически терпит неудачу при всех {g|Encyclopedia:Attack}бросках на попадание{/g} для подтверждения {g|Encyclopedia:Critical}критического удара{/g}. Также, всякий раз, когда цель совершает бросок на попадание или {g|Encyclopedia:Saving_Throw}спасбросок{/g}, она должна бросить кость дважды и выбрать худший результат. Это проклятие, воздействующее на разум. Проклятие длится 1 {g|Encyclopedia:Combat_Round}раунд{/g} за каждые 2 уровня оракула (минимум 1 раунд). Успешный спасбросок Воли нейтрализует эффект. Оракул может использовать это откровение 1 раз в день, плюс один дополнительный раз на 7 и 15 уровне.",
+        "processtemplates": false
+    },
+    {
+        "key": "PitifulFoeRevelation.Buff.Description",
+        "engb": "While this ability is in effect, the target cannot make {g|Encyclopedia:Attack_Of_Opportunity}attacks of opportunity{/g} and automatically fails all rolls to confirm {g|Encyclopedia:Critical}critical hit{/g}. Additionally, whenever the target makes an {g|Encyclopedia:Attack}attack rolls{/g} or a {g|Encyclopedia:Saving_Throw}saving throws{/g}, it must roll twice and take the worse result.",
+        "ruru": "Пока цель находится под действием этого эффекта, она не может совершать {g|Encyclopedia:Attack_Of_Opportunity}внеочередные атаки{/g} и автоматически терпит неудачу при всех {g|Encyclopedia:Attack}бросках на попадание{/g} для подтверждения {g|Encyclopedia:Critical}критического удара{/g}. Также, всякий раз, когда цель совершает бросок на {g|Encyclopedia:Attack}попадание{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g}, она должна бросить кость дважды и выбрать худший результат.",
+        "processtemplates": false
+    },
+    {
+        "key": "ShieldOfSuccor.Name",
+        "engb": "Shield of Succor",
+        "ruru": "Щит содействия",
+        "processtemplates": false
+    },
+    {
+        "key": "ShieldOfSuccor.Description",
+        "engb": "You can surround an ally with bolstering energies that supplement its health and grant it extra vigor. With a touch from you (a {g|Encyclopedia:Standard_Actions}standard action{/g}), one creature gains a ward of restorative energy, granting it a number of {g|Encyclopedia:Temporary_HP}temporary hit points{/g} equal to your {g|Encyclopedia:Charisma}Charisma{/g} modifier + {g|Encyclopedia:Dice}1d6{/g} per 2 oracle levels you have (maximum 10d6). These temporary hit points last 1 minute per oracle level you have. You can use this revelation once per day, plus one additional time at 11th and 19th levels. You must be at least 3rd level before selecting this revelation.",
+        "ruru": "Вы можете окружить союзника укрепляющей энергией, которая будет поддерживать его здоровье и жизненную силу. В качестве {g|Encyclopedia:Standard_Actions}основного действия{/g} вы можете коснуться союзника, предоставив ему {g|Encyclopedia:Temporary_HP}временные очки здоровья{/g} в количестве {g|Encyclopedia:Dice}1d6{/g} за каждые 2 уровня оракула (максимум 10d6) + ваш модификатор {g|Encyclopedia:Charisma}Харизмы{/g}, на количество минут равное вашему уровню оракула. Оракул может использовать это откровение 1 раз в день, плюс один дополнительный раз на 7 и 15 уровне. Для выбора этого таинства оракул должен быть как минимум 3 уровня.",
+        "processtemplates": false
+    },
+    {
+        "key": "TeamworkMastery.Name",
+        "engb": "Teamwork Mastery",
+        "ruru": "Мастерство командной тактики",
+        "processtemplates": false
+    },
+    {
+        "key": "TeamworkMastery.Description",
+        "engb": "You are an immaculate team player and can distribute your team–based insights to your allies with a touch. This revelation grants you a bonus teamwork {g|Encyclopedia:Feat}feat{/g}. You must meet the teamwork feat’s prerequisites, if any. Additionally, you can touch an ally as a {g|Encyclopedia:Standard_Actions}standard action{/g} to confer upon it the benefits of any one teamwork feat that you have. This effect persists for a number of {g|Encyclopedia:Combat_Round}rounds{/g} equal to 1/2 your oracle level (minimum 1). You can confer the benefits of a teamwork feat you have a number of times per day equal to 3 + your {g|Encyclopedia:Charisma}Charisma{/g} modifier.",
+        "ruru": "Вы — безупречный командный игрок и можете передавать свои командные знания союзникам с помощью прикосновения. Это откровение дает вам дополнительную командную {g|Encyclopedia:Feat}черту{/g}. Вы должны соответствовать всем требованиям этой черты. Кроме того, в качестве {g|Encyclopedia:Standard_Actions}основного действия{/g}, вы можете прикоснуться к союзнику, чтобы предоставить ему преимущества одной имеющейся у вас командной черты, на количество {g|Encyclopedia:Combat_Round}раундов{/g}, равное половине вашего уровня оракула (минимум 1). Оракул может использовать эту способность количество раз в день, равное 3 + его модификатор {g|Encyclopedia:Charisma}Харизмы{/g}.",
+        "processtemplates": false
+    },
+    {
+        "key": "BastardSwordPlus1BenevolentItem.Name",
+        "engb": "Benevolent Bastard Sword +1",
+        "ruru": "Милосердный меч-бастард +1",
+        "processtemplates": false
+    },
+    {
+        "key": "BastardSwordPlus2BenevolentAdamantineItem.Name",
+        "engb": "Benevolent Adamantine Bastard Sword +2",
+        "ruru": "Милосердный адамантиновый меч-бастард +2",
+        "processtemplates": false
+    },
+    {
+        "key": "BastardSwordPlus3BenevolentShockFrostItem.Name",
+        "engb": "Benevolent Shock Frost Bastard Sword +3",
+        "ruru": "Милосердный грозовой морозный меч-бастард +3",
+        "processtemplates": false
+    },
+    {
+        "key": "BastardSwordPlus4AxiomaticBenevolentItem.Name",
+        "engb": "Benevolent Axiomatic Bastard Sword +4",
+        "ruru": "Милосердный аксиоматический меч-бастард +4",
+        "processtemplates": false
+    },
+    {
+        "key": "BladeBreakerItem.Name",
+        "engb": "Blade Breaker",
+        "ruru": "Мечелом",
+        "processtemplates": false
+    },
+    {
+        "key": "BladeBreakerItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "CrimsonDancerItem.Name",
+        "engb": "Crimson Dancer",
+        "ruru": "Кровавая заря",
+        "processtemplates": false
+    },
+    {
+        "key": "CrimsonDancerItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "DragonspikeItem.Name",
+        "engb": "Dragonspike",
+        "ruru": "Шип дракона",
+        "processtemplates": false
+    },
+    {
+        "key": "DragonspikeItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "EstocPlus2BenevolentAlchemicalSilverItem.Name",
+        "engb": "Benevolent Silver Estoc +2",
+        "ruru": "Милосердный серебряный эсток +2",
+        "processtemplates": false
+    },
+    {
+        "key": "EstocPlus4BenevolentKeenCruelItem.Name",
+        "engb": "Benevolent Keen Cruel Estoc +4",
+        "ruru": "Милосердный острый жестокий эсток +4",
+        "processtemplates": false
+    },
+    {
+        "key": "EyeOfScornItem.Name",
+        "engb": "Eye of Scorn",
+        "ruru": "Презрение",
+        "processtemplates": false
+    },
+    {
+        "key": "EyeOfScornItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "FadingLightItem.Name",
+        "engb": "Fading Light",
+        "ruru": "Угасающий свет",
+        "processtemplates": false
+    },
+    {
+        "key": "FadingLightItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "FallensMercyItem.Name",
+        "engb": "Fallen's Mercy",
+        "ruru": "Милость павших",
+        "processtemplates": false
+    },
+    {
+        "key": "FallensMercyItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "HeralOfWinterItem.Name",
+        "engb": "Heral of Winter",
+        "ruru": "Вестник зимы",
+        "processtemplates": false
+    },
+    {
+        "key": "HeralOfWinterItem.Description",
+        "processtemplates": false
+    },
+    {
+        "key": "LongsordPlus1BenevolentItem.Name",
+        "engb": "Benevolent Longsword +1",
+        "ruru": "Милосердный длинный меч +1",
+        "processtemplates": false
+    },
+    {
+        "key": "LongsordPlus2BenevolentHolyItem.Name",
+        "engb": "Benevolent Holy Longsword +2",
+        "ruru": "Милосердный святой длинный меч +2",
+        "processtemplates": false
+    },
+    {
+        "key": "LongsordPlus3BenevolentItem.Name",
+        "engb": "Benevolent Longsword +3",
+        "ruru": "Милосердный длинный меч +3",
+        "processtemplates": false
+    },
+    {
+        "key": "LongsordPlus4BenevolentBrilliantEnergyItem.Name",
+        "engb": "Benevolent Brilliant Energy Longsword +4",
+        "ruru": "Милосердный энергетический длинный меч +4",
+        "processtemplates": false
+    },
+    {
+        "key": "LongspearPlus2BenevolentSacrificialItem.Name",
+        "engb": "Benevolent Sacrificial Longspear +2",
+        "ruru": "Милосердное жертвенное длинное копье +2",
+        "processtemplates": false
+    },
+    {
+        "key": "LongspearPlus3BenevolentColdIronBleedItem.Name",
+        "engb": "Benevolent Cold Iron Bleed Longspear +3",
+        "ruru": "Милосердное кровопускающее длинное копье из холодного железа +3",
+        "processtemplates": false
+    },
+    {
+        "key": "LongspearPlus4BenevolentHeartseekerSpeedItem.Name",
+        "engb": "Benevolent Heartseeker Speed Longspear +4",
+        "ruru": "Милосердное быстрое длинное копье сердценаведения +4",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortspearPlus1BenevolentMithralItem.Name",
+        "engb": "Benevolent Mithral Shortspear +1",
+        "ruru": "Милосердное мифральное короткое копье +1",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortspearPlus2BenevolentSpeedItem.Name",
+        "engb": "Benevolent Speed Shortspear +2",
+        "ruru": "Милосердное быстрое короткое копье +2",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortspearPlus3BenevolentGreaterShockItem.Name",
+        "engb": "Benevolent Greater Shock Shortspear +3",
+        "ruru": "Милосердное короткое копье великой грозы +3",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortspearPlus4BenevolentDruchiteLivingBaneItem.Name",
+        "engb": "Benevolent Druchite Living Bane Shortspear +4",
+        "ruru": "Милосердное друхитовое короткое копье убийцы живых +4 ",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortspearPlus5BenevolentUnstoppableNecroticItem.Name",
+        "engb": "Benevolent Unstoppable Necrotic Shortspear +5",
+        "ruru": "Милосердное неудержимое некротическое короткое копье +5",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortswordPlus1BenevolentItem.Name",
+        "engb": "Benevolent Shortsword +1",
+        "ruru": "Милосердный короткий меч +1",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortswordPlus2BenevolentAnarchicItem.Name",
+        "engb": "Benevolent Anarchic Shortsword +2",
+        "ruru": "Милосердный короткий меч +2 анарх",
+        "processtemplates": false
+    },
+    {
+        "key": "ShortswordPlus4BenevolentAdamantineGreaterCorrosiveItem.Name",
+        "engb": "Benevolent Adamantine Greater Corrosive Shortsword +4",
+        "ruru": "Милосердный адамантиновый короткий меч великой кислоты +4",
+        "processtemplates": false
+    },
+    {
+        "key": "StaffPlus3BenevolentUnholyItem.Name",
+        "engb": "Benevolent Unholy Quarterstaff +3",
+        "ruru": "Милосердный нечестивый посох +3",
+        "processtemplates": false
+    },
+    {
+        "key": "StaffPlus4BenevolentDisruptionRadiantItem.Name",
+        "engb": "Benevolent Disruption Radiant Quarterstaff +4",
+        "ruru": "Милосердный разрушительный сияющий посох +4",
+        "processtemplates": false
+    }
+]
