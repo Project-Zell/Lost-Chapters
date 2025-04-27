@@ -26,7 +26,8 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 - [Helpful](https://www.d20pfsrd.com/traits/combat-traits/helpful-combat/)
 - [Swift Aid](https://www.d20pfsrd.com/feats/combat-feats/swift-aid-combat/)
 
-### New Cavalier Orders
+### New Orders
+**Cavalier**
 - [Order of the Dragon](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-dragon/)
 
 ### New Prestige Classes
@@ -38,3 +39,37 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 ### New Spells
 - [Shield of Fortification](https://www.d20pfsrd.com/magic/all-spells/s/shield-of-fortification/)
 - [Shield of Fortification, Greater](https://www.d20pfsrd.com/magic/all-spells/s/shield-of-fortification/)
+
+## Custom Module
+Unthemed pack of official and homebrew content. Individual elements can be disabled in the *ModMenu*.
+
+### New Archetypes
+**Cavalier:**
+- Black Knight<sup>H</sup> - *WIP*
+- Hooded Wanderer<sup>H</sup> -
+
+**Slayer:**
+- Mage Slayer<sup>H</sup> -
+
+### New Backgrounds
+- [Fisherman](https://www.d20pfsrd.com/gamemastering/other-rules/variant-rules-3rd-party/adamant-entertainment/backgrounds-occupations/#TOC-Fisherman) - Skills: Perseption, Mobility. Gain *Deft Hands* as a bonus feat.
+- Forager<sup>H</sup> - Skills: Perseption. Proficiencies: Sickle. Gain +2 to initianive.
+- Gravedigger<sup>H</sup> - Skills: Athletics. Gain +2 to all *Fortitude Saves*. Gain *Toughness* as a bonus feat.
+- Highborn<sup>H</sup> - Skills: Persuasion. Proficiencies: Dueling Sword.
+- Tavern Server<sup>H</sup> - Skills: Mobility. Gain *Dodge* as a bonus feat.
+
+### New Feats
+- [Distracting Charge](https://www.d20pfsrd.com/feats/combat-feats/distracting-charge-combat-teamwork/)
+- [ScarredLegion](https://www.d20pfsrd.com/feats/general-feats/scarred-legion-teamwork/)
+
+### New Orders
+**Cavalier**
+- Order of the Bastion<sup>H</sup>
+- [Order of the Blue Rose](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-blue-rose/)
+- Order of the Calamity<sup>H</sup>
+- Order of the Emerald Path<sup>H</sup>
+- Order of the Fishbone<sup>H</sup>
+- [Order of the Tome](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-tome/)
+
+### New Prestige Classes
+- Plague Knight<sup>H</sup> -
