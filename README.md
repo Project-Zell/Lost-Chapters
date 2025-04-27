@@ -1,8 +1,10 @@
 # Lost Chapters
 
 ## Gray Sisterhood Module
+Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* action and various perks that increase its effectiveness.
+
 ### New Actions
-- [Aid Another](https://www.d20pfsrd.com/gamemastering/Combat/#TOC-Aid-Another)
+- [Aid Another](https://www.d20pfsrd.com/gamemastering/Combat/#TOC-Aid-Another) 
 
 ### New Archetypes
 **Barbarian:**
