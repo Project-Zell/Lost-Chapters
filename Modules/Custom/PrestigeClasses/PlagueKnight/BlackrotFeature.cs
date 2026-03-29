@@ -13,6 +13,9 @@ internal class BlackrotFeature
     private static readonly string Icon = $"{CustomModule.IconPath}/blackrot.png";
     public static void Configure()
     {
+        //Cast a blackrot disease that get sickened
+        //While effects is active you get a +1 to attack and damage for each disease on target
+
         FeatureConfigurator.New(FeatureName, Guid)
             .SetRanks(5)
             .SetIcon(Icon)

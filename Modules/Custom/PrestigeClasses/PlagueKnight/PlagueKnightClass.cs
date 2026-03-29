@@ -24,9 +24,7 @@ internal class PlagueKnightClass
         //l1 - Harbinger of Blight - Select a disease, you permanently diseased and apply this deasese when striking enemy with Blackrot
         //l5 - Incubating Pain - You no longer suffer penaltys from the desease
         //l10 - Requiem  - You gain bonuses instead of penaltys from a desease
-        //l7 - Rat Swarm - Summon 1d4 rats that spread your deasease on hit
-        //l2 - Infestation - Aura thath decrease AC and saves against poison
-        //l3/l6/l9 -Sneak Attack
+        //l3 - Infestation - Aura -4 penalty to diseace saves for all creatures in 15f.
 
         //Mythic Weapon Buff - permannent buff
         //Mythic Plague Bearer - can select additional disease
@@ -67,21 +65,14 @@ internal class PlagueKnightClass
             RatSwarmFeature.Configure();
             HarbingerOfBlightFeature.Configure();
 
-            var sneakAttack = FeatureRefs.SneakAttack.ToString();
-
             ProgressionConfigurator.New(Name, Guid)
-                .SetClasses(SanguineAngelClass.Guid)
-
+                .SetClasses(PlagueKnightClass.Guid)
+                .AddToLevelEntry(level: 01, features: HarbingerOfBlightFeature.Guid)
                 .AddToLevelEntry(level: 02, features: BlackrotFeature.Guid)
-                .AddToLevelEntry(level: 03, features: sneakAttack)
-                .AddToLevelEntry(level: 04, features: [BlackrotFeature.Guid, RatSwarmFeature.Guid])
-                .AddToLevelEntry(level: 06, features: [BlackrotFeature.Guid, sneakAttack])
+                .AddToLevelEntry(level: 04, features: BlackrotFeature.Guid)
+                .AddToLevelEntry(level: 06, features: BlackrotFeature.Guid)
                 .AddToLevelEntry(level: 08, features: BlackrotFeature.Guid)
-                .AddToLevelEntry(level: 09, features: sneakAttack)
                 .AddToLevelEntry(level: 10, features: BlackrotFeature.Guid)
-
-                .SetUIDeterminatorsGroup(VengefulSpiritFeature.Guid, HardenedHeartFeature.Guid)
-
                 .SetIsClassFeature(true)
                 .Configure();
         }

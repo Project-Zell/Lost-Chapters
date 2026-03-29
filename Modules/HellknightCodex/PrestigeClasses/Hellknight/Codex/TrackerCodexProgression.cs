@@ -9,7 +9,7 @@ internal class TrackerCodexProgression
 {
     public static readonly string Guid = "{38961edc-eb94-4d48-9c78-134e0caf4461}";
 
-    private static readonly string FeatureName = "Tracker";
+    private static readonly string FeatureName = "TrackerCodexProgression";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
@@ -20,12 +20,12 @@ internal class TrackerCodexProgression
         ProgressionConfigurator.New(FeatureName, Guid)
             .AddPrerequisiteNoFeature(FeatureRefs.AnimalCompanionRank.ToString())
             .SetClasses([CharacterClassRefs.HellknightClass.ToString(), CharacterClassRefs.HellknightSigniferClass.ToString()])
-            .AddToLevelEntry(level: 01, features: null)
-            .AddToLevelEntry(level: 05, features: null)
-            .AddToLevelEntry(level: 10, features: null)
-            .SetRanks(3)
-            .AddToUIGroups([null])
-            .SetIsClassFeature(true)
+            //.AddToLevelEntry(level: 01, features: null)
+            //.AddToLevelEntry(level: 05, features: null)
+            //.AddToLevelEntry(level: 10, features: null)
+            //.SetRanks(3)
+            //.AddToUIGroups([null])
+            //.SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
             .Configure();
@@ -44,9 +44,6 @@ internal class TrackerCodexProgression
             //no mount
             //check fx reset
             HellhoundCompanionUnit.Configure();
-
-
-
 
             FeatureConfigurator.New(FeatureName, Guid)
                 .AddToFeatureSelection(FeatureSelectionRefs.BasicFeatSelection.ToString())

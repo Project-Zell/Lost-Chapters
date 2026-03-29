@@ -7,6 +7,7 @@ using Kingmaker.UnitLogic;
 using Kingmaker.View;
 using Kingmaker.Visual;
 using System.Linq;
+using UnityEngine;
 
 namespace LostChapters.Modules.HellknightCodex.Components;
 internal class ResetSpawnFxOnStartOnLocationChange : UnitFactComponentDelegate, ISubscriber, ITeleportHandler, IGlobalSubscriber
@@ -15,6 +16,7 @@ internal class ResetSpawnFxOnStartOnLocationChange : UnitFactComponentDelegate, 
     private static readonly LogWrapper Logger = LogWrapper.Get("Hellhound");
     public void HandlePartyTeleport(AreaEnterPoint enterPoint)
     {
+
         var fxObjects = Owner.View.gameObject.GetComponents<SpawnFxOnStart>().ToList();
         fxObjects.ForEach(obj => { obj.ResetFx(); });
 
@@ -23,9 +25,6 @@ internal class ResetSpawnFxOnStartOnLocationChange : UnitFactComponentDelegate, 
             Logger.Info(obj.name);
             
         }
-
-        var ebalo = Owner.View.gameObject.GetComponents<SpawnFxOnStart>().ToList();
-
         Owner.View.gameObject.AddComponent<FxIsAlwaysVisible>();
     }
 }

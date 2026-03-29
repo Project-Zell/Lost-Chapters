@@ -15,7 +15,6 @@ internal class HellhoundClassProgression
     public static void CreateProgression()
     {
         ProgressionConfigurator.New(Progression, Guid)
-
             .AddToLevelEntry(level: 01, features: HellhoundHellbiteFeature.Guid)
             .AddToLevelEntry(level: 05, features: HellhoundHellbiteFeature.Guid)
             .AddToLevelEntry(level: 06, features: HellhoundSmartFeature.Guid)
