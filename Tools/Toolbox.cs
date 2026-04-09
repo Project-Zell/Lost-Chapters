@@ -1,8 +1,10 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Facts;
 using Kingmaker.Blueprints.Items.Armors;
@@ -22,6 +24,10 @@ using Kingmaker.UnitLogic.Mechanics.Conditions;
 using Kingmaker.Utility;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
+using System;
+using System.Drawing.Text;
+using System.Linq;
+using UnityEngine;
 
 namespace LostChapters.Tools;
 
@@ -156,5 +162,38 @@ internal static class Toolbox
             }
         }
         return count;
+    }
+
+    public static void AddPrerequisiteToList(string featureListGuid, string featureToAddGuid)
+    {
+        var featureReference = BlueprintTool.Get<BlueprintFeature>(featureToAddGuid).ToReference<BlueprintFeatureReference>();
+        Action<PrerequisiteFeaturesFromList> changePrerequisiteList = source => { source.m_Features = [.. source.m_Features, featureReference]; };
+
+        FeatureConfigurator.For(featureListGuid)
+            .EditComponent(changePrerequisiteList)
+            .Configure();
+    }
+
+    public static void ModifyFromPrerequisiteToList(string featureGuid)
+    {
+        var feature = BlueprintTool.Get<BlueprintFeature>(featureGuid);
+
+        var index = 0;
+        var prerequisite = new BlueprintFeature();
+
+        for (int i = 0; i < feature.Components.Count(); i++)
+        {
+            if (feature.Components[i] is PrerequisiteFeature prerequisiteFeature)
+            {
+                index = i;
+                prerequisite = prerequisiteFeature.m_Feature;
+                break;
+            }
+        }
+        feature.Components = [.. feature.Components.Take(index), .. feature.Components.Skip(index + 1)];
+
+        FeatureConfigurator.For(featureGuid)
+            .AddPrerequisiteFeaturesFromList(features: [prerequisite], group: Prerequisite.GroupType.All)
+            .Configure();
     }
 }

@@ -6,8 +6,6 @@ using LostChapters.Modules.Custom;
 using LostChapters.Modules.GraySisterhood;
 using LostChapters.Modules.HellknightCodex;
 using System;
-using System.Reflection;
-using UnityEngine;
 using UnityModManagerNet;
 
 namespace LostChapters;
@@ -15,6 +13,9 @@ namespace LostChapters;
 public static class Main
 {
     public static bool Enabled;
+
+    public static readonly string ModName = "LostChapters";
+
     private static readonly LogWrapper Logger = LogWrapper.Get("LostChapters");
     private static Settings settings;
 
@@ -121,15 +122,17 @@ public static class Main
     }
     private static void Configure()
     {
-        var harmony = new Harmony("LostChapters");
+        var harmony = new Harmony(ModName);
         harmony.PatchAll();
 
         LocalizationTool.LoadEmbeddedLocalizationPacks(
-            "LostChapters.Localization.GraySisterhoodStrings.json",
-            "LostChapters.Localization.CustomModuleStrings.json");
+            $"{ModName}.Localization.GraySisterhoodStrings.json",
+            $"{ModName}.Localization.CustomModuleStrings.json");
 
         GraySisterhoodModule.Configure();
         HellknightCodexModule.Configure();
         CustomModule.Configure();
+
+
     }
 }

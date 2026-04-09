@@ -1,4 +1,6 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+﻿using BlueprintCore.Actions.Builder;
+using BlueprintCore.Actions.Builder.ContextEx;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
@@ -14,6 +16,7 @@ internal class BasicProgression
         var ability = AbilityConfigurator.New($"Testinngsds.Ability", "{7d89ae63-4dc6-4ba1-aef6-b7672b5121dd}")
             .AllowTargeting(point: false, enemies: false, friends: false, self: true)
             .AddComponent<TestInventoryCharacter>()
+            .AddAbilityEffectRunAction(actions: ActionsBuilder.New().ApplyBuffPermanent(BuffRefs.Fx_HellHound00.ToString()))
             .AddHideDCFromTooltip()
             .AddHideFeatureInInspect()
             .SetType(AbilityType.Special)

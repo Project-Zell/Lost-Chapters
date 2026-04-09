@@ -28,6 +28,7 @@ internal class PlagueKnightClass
 
         //Mythic Weapon Buff - permannent buff
         //Mythic Plague Bearer - can select additional disease
+        //Bewildering Injury
 
         Progression.Configure();
 

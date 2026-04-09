@@ -1,6 +1,12 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+﻿using BlueprintCore.Actions.Builder;
+using BlueprintCore.Actions.Builder.ContextEx;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
+using BlueprintCore.Blueprints.References;
+using BlueprintCore.Conditions.Builder;
+using BlueprintCore.Conditions.Builder.ContextEx;
 using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.EntitySystem.Stats;
 
 namespace LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight.Plagues;
 
@@ -41,6 +47,8 @@ internal class GreenHazeFeature
         internal static void Configure()
         {
             FeatureConfigurator.New(FeatureName, Guid)
+                .AddBuffDescriptorImmunity(descriptor: SpellDescriptor.SightBased)
+                .AddSpellImmunityToSpellDescriptor(descriptor: SpellDescriptor.SightBased)
                 .SetIsClassFeature(true)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
@@ -53,7 +61,7 @@ internal class GreenHazeFeature
     {
         public static readonly string Guid = "{26ceac36-3942-4d40-ad16-1e536466e0ee}";
 
-        private static readonly string BuffName = $"{FeatureName}.Buff";
+        private static readonly string BuffName    = $"{FeatureName}.Buff";
         private static readonly string DisplayName = $"{FeatureName}.Name";
         private static readonly string Description = $"{FeatureName}.Description";
 
@@ -61,8 +69,13 @@ internal class GreenHazeFeature
 
         internal static void Configure()
         {
+            var action = ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(BuffRefs.Blind.ToString()),
+                ifFalse: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude).ConditionalSaved(
+                    failed: ActionsBuilder.New().ApplyBuffPermanent(BuffRefs.Blind.ToString())));
+
             BuffConfigurator.New(BuffName, Guid)
                 .AddSpellDescriptorComponent(SpellDescriptor.Disease)
+                .AddRestTrigger(action)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 //.SetIcon(Icon)

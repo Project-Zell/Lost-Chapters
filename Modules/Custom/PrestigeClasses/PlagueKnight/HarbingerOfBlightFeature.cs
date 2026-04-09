@@ -31,10 +31,10 @@ internal class HarbingerOfBlightFeature
         //C: Immune to cold, Blackroot deal additional 2d6 cold damage
         //3: Bubonic plague
         //B: At the start of the day roll for 1d4 damage to Constitution
-        //C: Get inherit +4 to Constitution. Can summon 1d3 plague rats two times per day. Rat apply Bubonicplague.
+        //C: Get inherit +4 to Constitution. Can summon 1d3 plague rats four times per day. Rat apply Bubonicplague.
         //4: Melting Madness
         //C: At the start of the day roll for 1d4 damage to Intelegense.
-        //B: Get two claw attacks while wearing heavy armor, get inherit +2 to fear affects
+        //B: Get two bite attacks, any of your bites apply melting madness, get inherit +2 to fear affects
         //5: Bleak Breath
         //B: At the start of the day roll for nauseated. 
         //C: All who steps in the aura shold roll for save of be nauseated.
