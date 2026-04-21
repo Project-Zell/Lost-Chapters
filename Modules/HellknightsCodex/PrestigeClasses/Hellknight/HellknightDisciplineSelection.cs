@@ -1,5 +1,6 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
+using LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight.Discipline;
 
 namespace LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight;
 
@@ -21,8 +22,9 @@ internal class HellknightDisciplineSelection
         SeekingJusticeFeature.Configure();
 
         BrutalityFeature.Configure();
-        HateredFeature.Configure();
+        HatredFeature.Configure();
         ObsessionFeature.Configure();
+        HellknightMalevolenceFeature.Configure();
 
         FeatureSelectionConfigurator.New(FeatureName, Guid)
             .AddToAllFeatures([
@@ -30,9 +32,10 @@ internal class HellknightDisciplineSelection
                 HellknightZealFeature.Guid,
 
                 SeekingJusticeFeature.Guid,
+                HellknightMalevolenceFeature.Guid,
 
                 BrutalityFeature.Guid,
-                HateredFeature.Guid,
+                HatredFeature.Guid,
                 ObsessionFeature.Guid,
                 ])
             .SetDisplayName(DisplayName)

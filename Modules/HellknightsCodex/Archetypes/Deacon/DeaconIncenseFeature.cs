@@ -1,6 +1,7 @@
 ﻿using BlueprintCore.Actions.Builder;
 using BlueprintCore.Actions.Builder.ContextEx;
 using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
+using BlueprintCore.Blueprints.CustomConfigurators;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
@@ -19,7 +20,7 @@ using Kingmaker.Utility;
 using LostChapters.Modules.HellknightCodex.Archetypes.Deacon.Incense;
 using LostChapters.Modules.HellknightCodex.Components;
 
-namespace LostChapters.Modules.HellknightCodex.Archetypes.Deacon;
+namespace LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 
 internal class DeaconIncenseFeature
 {
@@ -59,6 +60,19 @@ internal class DeaconIncenseFeature
                 .SetActivationType(AbilityActivationType.WithUnitCommand)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
+                .Configure();
+        }
+    }
+
+    internal class Resource
+    {
+        public static readonly string Guid = "{f1fc12f2-acac-4d0f-887b-c45450740696}";
+
+        private static readonly string ResourceName = $"{FeatureName}.Resource";
+
+        internal static void Configure()
+        {
+            AbilityResourceConfigurator.New(ResourceName, Guid)
                 .Configure();
         }
     }

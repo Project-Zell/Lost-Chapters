@@ -10,7 +10,7 @@ internal class InstantDispassionFeature
     private static readonly string DisplayName = "InstantDispassion.Name";
     private static readonly string Description = "InstantDispassion.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/instantdispassion.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/instantdispassion.png";
     
     internal static void Configure()
     {

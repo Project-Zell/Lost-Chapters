@@ -23,7 +23,7 @@ internal class CavalierOrderOfTheDragon
     private static readonly string DisplayName = "CavalierOrderOfTheDragon.Name";
     private static readonly string Description = "CavalierOrderOfTheDragon.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/orderofthedragon.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/orderofthedragon.png";
 
     public static void Configure()
     {

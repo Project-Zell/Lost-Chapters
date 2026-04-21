@@ -32,7 +32,7 @@ internal class ForgottenInsignia : UnitBuffComponentDelegate, IInitiatorRulebook
 
     public void OnEventAboutToTrigger(RuleCalculateAC evt)
     {
-        if (base.Context.MaybeCaster.HasFact(BlueprintTool.Get<BlueprintFeature>(ForbiddenInsigniaFeature.Guid)))
+        if (base.Context.MaybeCaster.HasFact(BlueprintTool.Get<BlueprintFeature>(ForbiddenRelicFeature.Guid)))
         {
             evt.AddModifier(-2, base.Fact, ModifierDescriptor.Morale);
         }

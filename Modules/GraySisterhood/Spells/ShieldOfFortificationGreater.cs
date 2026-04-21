@@ -23,7 +23,7 @@ internal class ShieldOfFortificationGreater
     private static readonly string DisplayName = "ShieldOfFortificationGreater.Name";
     private static readonly string Description = "ShieldOfFortificationGreater.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/shieldoffortificationgreater.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/shieldoffortificationgreater.png";
     internal static void Configure()
     {
         var duration = ContextDuration.VariableDice(diceType: DiceType.Zero, diceCount: 0, bonus: ContextValues.Rank(), rate: DurationRate.Minutes, isExtendable: true);

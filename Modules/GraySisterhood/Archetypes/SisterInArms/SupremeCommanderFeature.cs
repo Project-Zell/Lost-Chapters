@@ -19,7 +19,7 @@ internal class SupremeCommanderFeature
     private static readonly string DisplayName = "SupremeCommander.Name";
     private static readonly string Description = "SupremeCommander.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/supremecommander.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/supremecommander.png";
 
     internal static void Configure()
     {

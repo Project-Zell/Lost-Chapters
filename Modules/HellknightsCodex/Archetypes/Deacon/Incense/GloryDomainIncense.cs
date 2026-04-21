@@ -8,6 +8,7 @@ using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
 using Kingmaker.UnitLogic.Buffs.Components;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 using System;
 using System.Collections.Generic;
 using System.Linq;

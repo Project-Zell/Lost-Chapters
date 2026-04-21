@@ -9,6 +9,7 @@ using Kingmaker.Enums.Damage;
 using Kingmaker.RuleSystem;
 using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UnitLogic.Mechanics;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 
 namespace LostChapters.Modules.HellknightCodex.Archetypes.Deacon.Incense;
 

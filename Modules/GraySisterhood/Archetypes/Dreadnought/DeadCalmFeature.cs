@@ -34,7 +34,7 @@ internal class DeadCalmFeature
     private static readonly string DisplayName = "DeadCalm.Name";
     private static readonly string Description = "DeadCalm.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/deadcalm.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/deadcalm.png";
 
     internal static void Configure()
     {
@@ -299,7 +299,7 @@ internal class DeadCalmFeature
         private static readonly string DisplayName = "DeadCalm.Cooldown.Name";
         private static readonly string Description = "DeadCalm.Cooldown.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/deadcalmcooldown.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/deadcalmcooldown.png";
 
         internal static void Configure()
         {

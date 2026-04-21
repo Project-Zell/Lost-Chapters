@@ -11,7 +11,7 @@ internal class DedicatedCommanderFeature
     private static readonly string DisplayName = "DedicatedCommander.Name";
     private static readonly string Description = "DedicatedCommander.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/dedicatedcommander.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/dedicatedcommander.png";
 
     internal static void Configure()
     {

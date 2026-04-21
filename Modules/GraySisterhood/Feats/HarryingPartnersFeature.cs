@@ -25,7 +25,7 @@ internal class HarryingPartnersFeature
     private static readonly string DisplayName = "HarryingPartners.Name";
     private static readonly string Description = "HarryingPartners.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/harryingpartners.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/harryingpartners.png";
 
     public static void Configure()
     {

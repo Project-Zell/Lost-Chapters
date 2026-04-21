@@ -5,6 +5,7 @@ using BlueprintCore.Blueprints.References;
 using BlueprintCore.Conditions.Builder;
 using BlueprintCore.Conditions.Builder.ContextEx;
 using Kingmaker.Designers.Mechanics.Facts;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 
 namespace LostChapters.Modules.HellknightCodex.Archetypes.Deacon.Incense;
 

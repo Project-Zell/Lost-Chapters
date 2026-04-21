@@ -23,7 +23,7 @@ internal class ShieldOfFortification
     private static readonly string DisplayName = "ShieldOfFortification.Name";
     private static readonly string Description = "ShieldOfFortification.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/shieldoffortification.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/shieldoffortification.png";
 
     internal static void Configure()
     {

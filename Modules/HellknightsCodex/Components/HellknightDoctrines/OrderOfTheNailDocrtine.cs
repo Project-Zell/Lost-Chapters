@@ -6,7 +6,7 @@ using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
 
-namespace LostChapters.Modules.HellknightCodex.Components.HellknightDoctrine;
+namespace LostChapters.Modules.HellknightsCodex.Components.HellknightDoctrines;
 
 internal class OrderOfTheNailDocrtine : UnitFactComponentDelegate, ITargetRulebookHandler<RuleCalculateCMD>, IRulebookHandler<RuleCalculateCMD>, ISubscriber, ITargetRulebookSubscriber
 {
@@ -16,9 +16,9 @@ internal class OrderOfTheNailDocrtine : UnitFactComponentDelegate, ITargetRulebo
             return;
 
         var buff = BlueprintTool.Get<BlueprintBuff>(HellknightObidienceFeature.Buff.Guid);
-        var bonus = evt.Initiator.HasFact(buff) ? 4 : 2;
+        var bonus = Owner.HasFact(buff) ? 4 : 2;
 
-        evt.AddModifier(bonus, base.Fact, ModifierDescriptor.None);
+        evt.AddModifier(bonus, Fact, ModifierDescriptor.None);
     }
 
     public void OnEventDidTrigger(RuleCalculateCMD evt) { }

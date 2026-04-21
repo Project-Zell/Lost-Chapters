@@ -4,7 +4,8 @@ using HarmonyLib;
 using Kingmaker.Blueprints.JsonSystem;
 using LostChapters.Modules.Custom;
 using LostChapters.Modules.GraySisterhood;
-using LostChapters.Modules.HellknightCodex;
+using LostChapters.Modules.HellknightsCodex;
+using LostChapters.Modules.Other;
 using System;
 using UnityModManagerNet;
 
@@ -126,13 +127,13 @@ public static class Main
         harmony.PatchAll();
 
         LocalizationTool.LoadEmbeddedLocalizationPacks(
+            $"{ModName}.Localization.CustomModuleStrings.json",
             $"{ModName}.Localization.GraySisterhoodStrings.json",
-            $"{ModName}.Localization.CustomModuleStrings.json");
+            $"{ModName}.Localization.HellknightsCodexStrings.json");
 
+        OtherModule.Configure();
+        CustomModule.Configure();
         GraySisterhoodModule.Configure();
         HellknightCodexModule.Configure();
-        CustomModule.Configure();
-
-
     }
 }

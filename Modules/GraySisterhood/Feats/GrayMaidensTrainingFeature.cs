@@ -15,7 +15,7 @@ namespace LostChapters.Modules.GraySisterhood.Feats
         private static readonly string DisplayName = "GrayMaidensTraining.Name";
         private static readonly string Description = "GrayMaidensTraining.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/graymaidenstraining.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/graymaidenstraining.png";
 
         public static void Configure()
         {

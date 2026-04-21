@@ -4,9 +4,9 @@ using BlueprintCore.Conditions.Builder.ContextEx;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Enums;
-using LostChapters.Modules.HellknightCodex.Components;
 using LostChapters.Modules.HellknightCodex.Orders.Cavalier.EnneadStar;
-using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.DisciplineOld;
+using LostChapters.Modules.HellknightsCodex.Components;
+using LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight.Discipline;
 
 namespace LostChapters.Tools
 {
@@ -28,11 +28,11 @@ namespace LostChapters.Tools
                 .AddDamageBonusConditional(bonus: ContextValues.Rank(), conditions: orderFavoredWeaponToChaoticCondition)
                 .Configure();
 
-            HellknightDevotion devotion = new() { WeaponType = favoredWeaponReference, OrderBlueprint = orderGuid };
+            //HellknightDevotion devotion = new() { WeaponType = favoredWeaponReference, OrderBlueprint = orderGuid };
 
-            FeatureConfigurator.For(HellknightDevotionFeature.Guid)
-                .AddComponent(devotion)
-                .Configure();
+            //FeatureConfigurator.For(HellknightDevotionFeature.Guid)
+            //    .AddComponent(devotion)
+            //    .Configure();
         }
     }
 }

@@ -65,7 +65,7 @@ internal class SanguineAngelClass
             MaidensShieldFeature.Configure();
             MystiqueFeature.Configure();
             TyrantsDisciplineFeatureSelection.Configure();
-            QueensArcenalFeature.Configure();
+            QueensSwordFeature.Configure();
             VengefulSpiritFeature.Configure();
 
             ProgressionConfigurator.New(Name, Guid)
@@ -73,13 +73,13 @@ internal class SanguineAngelClass
                 
                 .AddToLevelEntry(level: 01, features: [VengefulSpiritFeature.Guid, HardenedHeartFeature.Guid, MaidensShieldFeature.Guid])
                 .AddToLevelEntry(level: 02, features: [TyrantsDisciplineFeatureSelection.Guid])
-                .AddToLevelEntry(level: 03, features: QueensArcenalFeature.Guid)
+                .AddToLevelEntry(level: 03, features: QueensSwordFeature.Guid)
                 .AddToLevelEntry(level: 04, features: [TyrantsDisciplineFeatureSelection.Guid, FeatureRefs.ArmorTraining.ToString()])
                 .AddToLevelEntry(level: 05, features: [EyeOfAlertnessFeature.Guid])
-                .AddToLevelEntry(level: 06, features: [TyrantsDisciplineFeatureSelection.Guid, QueensArcenalFeature.Guid])
+                .AddToLevelEntry(level: 06, features: [TyrantsDisciplineFeatureSelection.Guid, QueensSwordFeature.Guid])
                 .AddToLevelEntry(level: 07, features: [MystiqueFeature.Guid])
                 .AddToLevelEntry(level: 08, features: [TyrantsDisciplineFeatureSelection.Guid, FeatureRefs.ArmorTraining.ToString()])
-                .AddToLevelEntry(level: 09, features: [HollownessFeature.Guid, QueensArcenalFeature.Guid])
+                .AddToLevelEntry(level: 09, features: [HollownessFeature.Guid, QueensSwordFeature.Guid])
                 .AddToLevelEntry(level: 10, features: [TyrantsDisciplineFeatureSelection.Guid, AngelOfDeathFeature.Guid])
 
                 .SetUIDeterminatorsGroup(VengefulSpiritFeature.Guid, HardenedHeartFeature.Guid)

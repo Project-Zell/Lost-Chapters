@@ -1,26 +1,27 @@
 ﻿using BlueprintCore.Utils;
-using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.Items.Weapons;
+using Kingmaker.Blueprints.Classes;
 using Kingmaker.Enums;
 using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem.Rules;
 using Kingmaker.UnitLogic;
+using LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight.Discipline;
 
-namespace LostChapters.Modules.HellknightCodex.Components
+namespace LostChapters.Modules.HellknightsCodex.Components;
+
+internal class HellknightDevotion : UnitFactComponentDelegate, IRulebookHandler<RuleCalculateWeaponStats>, IInitiatorRulebookHandler<RuleCalculateWeaponStats>, IInitiatorRulebookSubscriber, ISubscriber
 {
-    internal class HellknightDevotion : UnitFactComponentDelegate, IInitiatorRulebookHandler<RuleCalculateWeaponStats>, IRulebookHandler<RuleCalculateWeaponStats>, ISubscriber, IInitiatorRulebookSubscriber
+    public WeaponCategory WeaponType;
+
+    public void OnEventAboutToTrigger(RuleCalculateWeaponStats evt)
     {
-        public BlueprintWeaponType WeaponType;
-        public Blueprint<BlueprintUnitFactReference> OrderBlueprint;
+        if (Owner.HasFact(BlueprintTool.Get<BlueprintFeature>(HellknightDevotionFeature.Guid)) is false)
+            return;
 
-        public void OnEventAboutToTrigger(RuleCalculateWeaponStats evt)
+        if (evt.Weapon != null && evt.Weapon.Blueprint.Category == WeaponType)
         {
-            if (evt.Weapon != null && evt.Weapon.Blueprint.Type == WeaponType && evt.Initiator.HasFact(OrderBlueprint.Reference))
-            {
-                evt.AdditionalCriticalMultiplier.Add(new Modifier(1, base.Fact, ModifierDescriptor.UntypedStackable));
-            }
+            evt.DoubleCriticalEdge = true;
         }
-
-        public void OnEventDidTrigger(RuleCalculateWeaponStats evt) { }
     }
+
+    public void OnEventDidTrigger(RuleCalculateWeaponStats evt) { }
 }

@@ -8,7 +8,7 @@ using Kingmaker.Utility;
 using LostChapters.Patches;
 using UnityEngine;
 
-namespace LostChapters.Modules.HellknightCodex.AnimalCompanions.Hellhound;
+namespace LostChapters.Modules.HellknightsCodex.AnimalCompanions.Hellhound;
 
 internal class AnimalCompanionUnitHellhound
 {
@@ -41,6 +41,7 @@ internal class AnimalCompanionUnitHellhound
             .SetBrain("cf986dd7ba9d4ec46ad8a3a0406d02ae")
             .SetBody(unitBody)
             .SetVisual(unitVisual)
+            .SetSkills(new BlueprintUnit.UnitSkills())
             .SetType(UnitTypeRefs.HellHound.ToString())
             .SetStrength(19)
             .SetDexterity(21)
@@ -48,12 +49,11 @@ internal class AnimalCompanionUnitHellhound
             .SetIntelligence(6)
             .SetWisdom(10)
             .SetCharisma(6)
-            .SetSpeed(50.Feet())
+            .SetSpeed(40.Feet())
             .SetMaxHP(0)
             .SetStartingInventory([])
             .SetAdditionalTemplates([])
             .SetFactionOverrides(new FactionOverrides())
-            .SetSkills(new BlueprintUnit.UnitSkills())
             .SetAddFacts([
                 FeatureRefs.TripDefenseFourLegs.ToString(),
                 FeatureRefs.SubtypeFire.ToString(),

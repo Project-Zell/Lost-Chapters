@@ -2,11 +2,13 @@
 using BlueprintCore.Blueprints.References;
 using LostChapters.Modules.HellknightCodex.Archetypes;
 using LostChapters.Modules.HellknightCodex.Archetypes.Deacon;
-using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight;
+using LostChapters.Modules.HellknightsCodex.Feats;
 using LostChapters.Modules.HellknightsCodex.Orders.Hellknight.Base;
+using LostChapters.Modules.HellknightsCodex.Orders.Hellknight.New;
+using LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight;
 using LostChapters.Tweaks;
 
-namespace LostChapters.Modules.HellknightCodex;
+namespace LostChapters.Modules.HellknightsCodex;
 
 internal class HellknightCodexModule
 {
@@ -23,13 +25,29 @@ internal class HellknightCodexModule
         //Prestige Classes
         HellknightClassChanger.Configure();
 
+        //Feats
+        CrossOrderTrainingFeature.Configure();
+
         //Orders
         OrderOfTheChainsFeature.Configure();
-        //OrderOfTheGateFeature.Configure();
-        //OrderOfTheGodclawFeature.Configure();
-        //OrderOfTheNailFeature.Configure();
-        //OrderOfThePyreFeature.Configure();
-        //OrderOfTheRackFeature.Configure();
+        OrderOfTheGateFeature.Configure();
+        OrderOfTheGodclawFeature.Configure();
+        OrderOfTheNailFeature.Configure();
+        OrderOfThePyreFeature.Configure();
+        OrderOfTheRackFeature.Configure();
+        OrderOfTheScorageFeature.Configure();
+        OrderOfTheCoilFeature.Configure();
+        OrderOfTheCragFeature.Configure();
+        OrderOfTheGlyphFeature.Configure();
+        OrderOfTheMawFeature.Configure();
+        OrderOfThePikeFeature.Configure();
+        OrderOfTheRotFeature.Configure();
+        OrderOfTheScarFeature.Configure();
+        OrderOfTheSunrustFeature.Configure();
+        OrderOfTheTorrentFeature.Configure();
+        OrderOfTheVeilFeature.Configure();
+        OrderOfTheWallFeature.Configure();
+
     }
 
     internal static void ConfigureItems()

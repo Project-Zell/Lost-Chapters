@@ -13,7 +13,7 @@ internal class MaidensLoyaltyFeature
     private static readonly string DisplayName = "MaidensLoyalty.Name";
     private static readonly string Description = "MaidensLoyalty.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/maidensloyalty.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/maidensloyalty.png";
 
     internal static void Configure()
     {

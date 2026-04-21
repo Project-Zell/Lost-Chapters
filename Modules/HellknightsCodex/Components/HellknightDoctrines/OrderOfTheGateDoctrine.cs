@@ -7,7 +7,7 @@ using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
 
-namespace LostChapters.Modules.HellknightCodex.Components.HellknightDoctrines;
+namespace LostChapters.Modules.HellknightsCodex.Components.HellknightDoctrines;
 
 internal class OrderOfTheGateDoctrine : UnitFactComponentDelegate, IInitiatorRulebookHandler<RuleSavingThrow>, IRulebookHandler<RuleSavingThrow>, ISubscriber, IInitiatorRulebookSubscriber
 {
@@ -17,11 +17,13 @@ internal class OrderOfTheGateDoctrine : UnitFactComponentDelegate, IInitiatorRul
             return;
 
         var buff = BlueprintTool.Get<BlueprintBuff>(HellknightObidienceFeature.Buff.Guid);
-        var bonus = evt.Initiator.HasFact(buff) ? 4 : 2;
+        var bonus = Owner.HasFact(buff) ? 4 : 2;
 
-        evt.AddTemporaryModifier(evt.Initiator.Stats.SaveWill.AddModifier(bonus, Fact, ModifierDescriptor.None));
-        evt.AddTemporaryModifier(evt.Initiator.Stats.SaveReflex.AddModifier(bonus, Fact, ModifierDescriptor.None));
-        evt.AddTemporaryModifier(evt.Initiator.Stats.SaveFortitude.AddModifier(bonus, Fact, ModifierDescriptor.None));
+        var modifierDescriptor = ModifierDescriptor.None;
+
+        evt.AddTemporaryModifier(evt.Initiator.Stats.SaveWill.AddModifier(bonus, Fact, modifierDescriptor));
+        evt.AddTemporaryModifier(evt.Initiator.Stats.SaveReflex.AddModifier(bonus, Fact, modifierDescriptor));
+        evt.AddTemporaryModifier(evt.Initiator.Stats.SaveFortitude.AddModifier(bonus, Fact, modifierDescriptor));
     }
 
     public void OnEventDidTrigger(RuleSavingThrow evt) { }

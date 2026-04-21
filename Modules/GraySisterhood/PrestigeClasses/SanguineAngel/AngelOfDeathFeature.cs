@@ -12,7 +12,7 @@ internal class AngelOfDeathFeature
     private static readonly string DisplayName = "AngelOfDeath.Name";
     private static readonly string Description = "AngelOfDeath.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/angelofdeath.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/angelofdeath.png";
 
     internal static void Configure()
     {

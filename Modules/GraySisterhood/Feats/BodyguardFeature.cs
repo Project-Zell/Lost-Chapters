@@ -20,7 +20,7 @@ internal class BodyguardFeature
     private static readonly string DisplayName = "Bodyguard.Name";
     private static readonly string Description = "Bodyguard.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/bodyguard.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/bodyguard.png";
     public static void Configure()
     {
         CooldownBuff.Configure();

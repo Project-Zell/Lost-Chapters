@@ -11,8 +11,9 @@ using Kingmaker.Enums;
 using Kingmaker.RuleSystem;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Mechanics;
+using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight;
 
-namespace LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
+namespace LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight.Discipline;
 
 internal class CensorChaosFeature
 {

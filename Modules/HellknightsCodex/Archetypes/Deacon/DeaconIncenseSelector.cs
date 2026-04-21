@@ -12,6 +12,8 @@ using Kingmaker.Enums;
 using Kingmaker.RuleSystem;
 using Kingmaker.UnitLogic.Mechanics;
 using LostChapters.Modules.HellknightCodex.Archetypes.Deacon.Incense;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon.Incense;
 
 namespace LostChapters.Modules.HellknightCodex.Archetypes.Deacon;
 
@@ -30,14 +32,12 @@ internal class DeaconIncenseSelector
         ArtificeDomainIncense.Configure();
         ChaosDomainIncense.Configure();
         CharmDomainIncense.Configure();
-        //
         CommunityDomainIncense.Configure();
         DarknessDomainIncense.Configure();
         DeathDomainIncense.Configure();
-        DestrucionDomainIncense.Configure();
+        DestructionDomainIncense.Configure();
         EarthDomainIncense.Configure();
         EvilDomainIncense.Configure();
-        //
         FireDomainIncense.Configure();
         GloryDomainIncense.Configure();
         GoodDomainIncense.Configure();
@@ -82,8 +82,8 @@ internal class DeaconIncenseSelector
                 DarknessDomainIncense.MajorFeature.Guid,
                 DeathDomainIncense.MinorFeature.Guid,
                 DeathDomainIncense.MajorFeature.Guid,
-                DestrucionDomainIncense.MinorFeature.Guid,
-                DestrucionDomainIncense.MajorFeature.Guid,
+                DestructionDomainIncense.MinorFeature.Guid,
+                DestructionDomainIncense.MajorFeature.Guid,
                 EarthDomainIncense.MinorFeature.Guid,
                 EarthDomainIncense.MajorFeature.Guid,
                 EvilDomainIncense.MinorFeature.Guid,

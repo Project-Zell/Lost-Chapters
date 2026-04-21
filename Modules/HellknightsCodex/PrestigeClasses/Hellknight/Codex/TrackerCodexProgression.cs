@@ -2,7 +2,7 @@
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Enums;
-using LostChapters.Modules.HellknightCodex.AnimalCompanions.Hellhound;
+using LostChapters.Modules.HellknightsCodex.AnimalCompanions.Hellhound;
 
 namespace LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Codex;
 

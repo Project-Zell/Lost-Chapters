@@ -1,11 +1,6 @@
 ﻿using BlueprintCore.Blueprints.Configurators.Items.Armors;
 using BlueprintCore.Blueprints.References;
 using LostChapters.Modules.GraySisterhood.Enchantments;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LostChapters.Modules.GraySisterhood.Items.Armors.Light
 {

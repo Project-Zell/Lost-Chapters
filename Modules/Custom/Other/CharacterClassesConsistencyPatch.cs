@@ -15,7 +15,8 @@ internal class CharacterClassesConsistencyPatch
     {
         AddToUIDeterminatorsGroup(ProgressionRefs.ArcanistProgression.ToString(), [
             FeatureRefs.ArcanistProficiencies.ToString(), 
-            FeatureRefs.ArcanistCantripsFeature.ToString()]);
+            FeatureRefs.ArcanistCantripsFeature.ToString(),
+            FeatureRefs.MetamorphClassSkills.ToString()]);
         
         AddToUIDeterminatorsGroup(ProgressionRefs.BarbarianProgression.ToString(), FeatureRefs.InstinctualWarriorProficiencies.ToString());
         

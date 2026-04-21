@@ -18,7 +18,7 @@ internal class OracleSuccorMysteryFeature
     private static readonly string DisplayName = "SuccorMystery.Name";
     private static readonly string Description = "SuccorMystery.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/succormystery.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/succormystery.png";
 
     public static void Configure()
     {

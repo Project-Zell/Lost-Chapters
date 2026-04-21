@@ -18,6 +18,7 @@ internal class BackgroundPrisoner
         FeatureConfigurator.New(FeatureName, Guid)
             .AddClassSkill(StatType.SkillPerception)
             .AddBackgroundClassSkill(StatType.SkillPerception)
+            .AddFacts([FeatureRefs.FastLearner.ToString()])
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)

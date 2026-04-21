@@ -1,8 +1,9 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Utils.Types;
 using Kingmaker.Enums;
-using LostChapters.Modules.HellknightCodex.Components.HellknightDoctrines;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight;
+using LostChapters.Modules.HellknightsCodex.Components;
+using LostChapters.Modules.HellknightsCodex.Components.HellknightDoctrines;
+using LostChapters.Modules.HellknightsCodex.Feats;
 
 namespace LostChapters.Modules.HellknightsCodex.Orders.Hellknight.Base;
 
@@ -10,20 +11,25 @@ internal class OrderOfTheGateFeature
 {
     public static readonly string Guid = "{7d7063fd-cc87-4861-b378-a78aecdadb0a}";
 
-    private static readonly string FeatureName = "OrderOfTheGate";
+    private static readonly string FeatureName = "OrderOfTheGateFeature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
     //private static readonly string Icon = $"{HellknightCodexModule.IconsPath}/orderofthechains.png";
 
+    private static readonly WeaponCategory FavoredWeapon = WeaponCategory.Dagger;
+
     internal static void Configure()
     {
-        OrderOfTheGateDoctrineFeature.Configure();
-        OrderOfTheGateFakeFeature.Configure();
+        FakeFeature.Configure();
 
         FeatureConfigurator.New(FeatureName, Guid)
-            .AddToFeatureSelection(HellknightOrderSelectionFeature.HellknightInitialOrderSelectionFeature.Guid)
-            .AddFacts([OrderOfTheGateDoctrineFeature.Guid])
+            .AddToFeatureSelection([HellknightOrderSelectionFeature.HellknightInitialOrderSelectionFeature.Guid, CrossOrderTrainingFeature.Guid])
+            .AddProficiencies(weaponProficiencies: [FavoredWeapon])
+            .AddWeaponCategoryAttackBonus(1, FavoredWeapon, ModifierDescriptor.Enhancement)
+            .AddComponent<OrderOfTheGateDoctrine>()
+            .AddComponent<HellknightDevotion>(component => component.WeaponType = FavoredWeapon)
+            .AddComponent<HellknightDedication>(component => component.WeaponType = FavoredWeapon)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
@@ -31,35 +37,11 @@ internal class OrderOfTheGateFeature
             .Configure();
     }
 
-    public class OrderOfTheGateDoctrineFeature
+    public class FakeFeature
     {
-        public static readonly string Guid = "{a7deb57e-af90-4ebc-9d48-dbc7ff3424e0}";
+        public static readonly string Guid = "{080fbb7e-96c4-4258-a321-9ceb3ee3d7fa}";
 
-        private static readonly string FeatureName = $"{FeatureName}.Doctrine";
-
-        internal static void Configure()
-        {
-            var favoredWeapon = WeaponCategory.Dagger;
-
-            var value = ContextValues.Rank();
-
-            FeatureConfigurator.New(FeatureName, Guid)
-                .AddProficiencies(weaponProficiencies: [favoredWeapon])
-                .AddWeaponCategoryAttackBonus(1, favoredWeapon, ModifierDescriptor.Enhancement)
-                .AddComponent<OrderOfTheGateDoctrine>()
-                .SetIsClassFeature(true)
-                .SetDisplayName(DisplayName)
-                .SetDescription(Description)
-                .SetHideInUI()
-                .Configure();
-        }
-    }
-
-    public class OrderOfTheGateFakeFeature
-    {
-        public static readonly string Guid = "{b50dc66a-fbd8-42db-bee4-7b15f9506acd}";
-
-        private static readonly string FeatureName = $"{FeatureName}.Fake";
+        private static readonly string FeatureName = $"{OrderOfTheGateFeature.FeatureName}.Fake";
 
         internal static void Configure()
         {

@@ -10,7 +10,7 @@ internal class DreadPressenceFeature
     private static readonly string DisplayName = "DreadPressence.Name";
     private static readonly string Description = "DreadPressence.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/dreadpressence.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/dreadpressence.png";
 
     internal static void Configure()
     {

@@ -11,38 +11,24 @@ internal class RevenantFeature
 {
     //Get blur against challenged target
 
-    public static readonly string Guid = "";
+    public static readonly string Guid = "{3bb6991c-9f2c-436d-a39d-5fd20ae44083}";
 
-    private static readonly string FeatureName = "";
-    private static readonly string DisplayName = ".Name";
-    private static readonly string Description = ".Description";
+    private static readonly string FeatureName = "RevenantFeature";
+    private static readonly string DisplayName = $"{FeatureName}.Name";
+    private static readonly string Description = $"{FeatureName}.Description";
 
     //private static readonly string Icon = $"{CustomModule.IconPath}/ .png";
 
     internal static void Configure()
     {
+       
+
         FeatureConfigurator.New(FeatureName, Guid)
+            .AddConcealment()
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
             //.SetIcon(Icon)
-            .Configure();
-
-        var s = new SiezeTheMoment();
-
-        var abilityGroup = (ActivatableAbilityGroup)63208;
-
-        var siezeBuff = BuffConfigurator.New("SizeBuff", "{0-1-1-2}")
-            .Configure();
-
-        ActivatableAbilityConfigurator.New("Size", "{0-0-1-2")
-            .SetGroup(abilityGroup)
-            .SetWeightInGroup(1)
-            .Configure();
-
-        ActivatableAbilityConfigurator.New("Preci", "{0-0-1-3")
-            .SetGroup(abilityGroup)
-            .SetWeightInGroup(1)
             .Configure();
     }
 }

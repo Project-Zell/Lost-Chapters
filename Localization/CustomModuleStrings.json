@@ -1,14 +1,20 @@
 [
     {
-        "key": "CrossroadsAmbush.Name",
+        "key": "CrossroadsAmbushFeature.Name",
         "engb": "Crossroads Ambush",
-        "ruru": "�H�p���p�t�p �~�p ���u���u�{���u�����{�u",
+        "ruru": "Засада на перекрестке",
         "processtemplates": false
     },
     {
-        "key": "CrossroadsAmbush.Description",
-        "engb": "At 3rd level, while a hooded wanderer wields a {g|Encyclopedia:Weapon_Proficiency}simple weapon{/g}, he gains the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}, allowing him to make a full {g|Encyclopedia:Attack}attack{/g} at the end of a charge. In addition, a hooded wanderer does not suffer any {g|Encyclopedia:Penalty}penalty{/g} to his {g|Encyclopedia:Armor_Class}Armor Class{/g} after making a charge attack.",
-        "ruru": "�H�p���p�t�p �~�p ���u���u�{���u�����{�u",
+        "key": "CrossroadsAmbushFeature.Description",
+        "engb": "Start at level what ever bro",
+        "ruru": "Засада на перекрестке",
+        "processtemplates": false
+    },
+    {
+        "key": "BlackKnight.Name",
+        "engb": "Black Knight",
+        "ruru": "Черный рыцарь",
         "processtemplates": false
     }
 ]

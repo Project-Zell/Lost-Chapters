@@ -7,6 +7,7 @@ using BlueprintCore.Conditions.Builder.ContextEx;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Enums;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 
 namespace LostChapters.Modules.HellknightCodex.Archetypes.Deacon.Incense
 {

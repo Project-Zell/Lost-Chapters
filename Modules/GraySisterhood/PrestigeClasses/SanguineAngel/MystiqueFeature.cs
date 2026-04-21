@@ -24,7 +24,7 @@ internal class MystiqueFeature
     private static readonly string DisplayName = "Mystique.Name";
     private static readonly string Description = "Mystique.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/mystique.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/mystique.png";
 
     internal static void Configure()
     {

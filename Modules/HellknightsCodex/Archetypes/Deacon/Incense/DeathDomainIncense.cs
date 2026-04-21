@@ -9,6 +9,7 @@ using Kingmaker.Enums.Damage;
 using Kingmaker.RuleSystem;
 using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UnitLogic.Mechanics;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 using System;
 using System.Collections.Generic;
 using System.Linq;

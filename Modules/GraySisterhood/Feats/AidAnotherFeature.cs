@@ -51,7 +51,7 @@ internal class AidAnotherFeature
 
         private static readonly string AbilityName = "AidAnother.BaseAbility";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanother.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanother.png";
 
         internal static void Configure()
         {
@@ -79,7 +79,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.AttackAbility.Name";
         private static readonly string Description = "AidAnother.AttackAbility.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanotherattack.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanotherattack.png";
 
         internal static void Configure()
         {
@@ -113,7 +113,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.AttackBuff.Name";
         private static readonly string Description = "AidAnother.AttackBuff.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanotherattack.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanotherattack.png";
 
         internal static void Configure()
         {
@@ -155,7 +155,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.ArmorClassAbility.Name";
         private static readonly string Description = "AidAnother.ArmorClassAbility.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanotherac.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanotherac.png";
 
         internal static void Configure()
         {
@@ -189,7 +189,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnotherArmorClassBuff.Name";
         private static readonly string Description = "AidAnotherArmorClassBuff.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanotherac.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanotherac.png";
 
         internal static void Configure()
         {
@@ -231,7 +231,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.SaveAbility.Name";
         private static readonly string Description = "AidAnother.SaveAbility.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanothersave.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanothersave.png";
 
         public static void Configure()
         {
@@ -265,7 +265,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.SaveBuff.Name";
         private static readonly string Description = "AidAnother.SaveBuff.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanothersave.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanothersave.png";
 
         internal static void Configure()
         {
@@ -307,7 +307,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.SkillCheckAbility.Name";
         private static readonly string Description = "AidAnother.SkillCheckAbility.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanotherskill.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanotherskill.png";
 
         internal static void Configure()
         {
@@ -341,7 +341,7 @@ internal class AidAnotherFeature
         private static readonly string DisplayName = "AidAnother.SkillCheckBuff.Name";
         private static readonly string Description = "AidAnother.SkillCheckBuff.Description";
 
-        private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/aidanotherskill.png";
+        private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/aidanotherskill.png";
 
         internal static void Configure()
         {

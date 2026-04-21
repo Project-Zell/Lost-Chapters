@@ -6,7 +6,7 @@ using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
 
-namespace LostChapters.Modules.HellknightCodex.Components.HellknightDoctrine;
+namespace LostChapters.Modules.HellknightsCodex.Components.HellknightDoctrines;
 
 internal class OrderOfTheChainsDocrtine : UnitFactComponentDelegate, IRulebookHandler<RuleCombatManeuver>, IInitiatorRulebookHandler<RuleCombatManeuver>, IInitiatorRulebookSubscriber, ISubscriber
 {
@@ -16,7 +16,7 @@ internal class OrderOfTheChainsDocrtine : UnitFactComponentDelegate, IRulebookHa
             return;
 
         var buff = BlueprintTool.Get<BlueprintBuff>(HellknightObidienceFeature.Buff.Guid);
-        var bonus = evt.Initiator.HasFact(buff) ? 4 : 2;
+        var bonus = Owner.HasFact(buff) ? 4 : 2;
 
         evt.AddModifier(bonus, Fact, ModifierDescriptor.None);
     }

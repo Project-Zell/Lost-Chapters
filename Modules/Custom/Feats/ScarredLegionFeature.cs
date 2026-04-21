@@ -1,11 +1,10 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Blueprints.Classes.Selection;
-using LostChapters.Tools;
+using Kingmaker.EntitySystem.Stats;
 using LostChapters.Modules.Custom.Components;
-using LostChapters.Modules.GraySisterhood;
+using LostChapters.Tools;
 
 namespace LostChapters.Modules.Custom.Feats;
 

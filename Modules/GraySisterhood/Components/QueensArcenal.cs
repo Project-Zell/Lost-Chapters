@@ -19,7 +19,7 @@ namespace LostChapters.Modules.GraySisterhood.Components
 
             if (IsConditionMeet())
             {
-                var bonus = evt.Initiator.Descriptor.Progression.Features.GetRank(BlueprintTool.Get<BlueprintFeature>(QueensArcenalFeature.Guid));
+                var bonus = evt.Initiator.Descriptor.Progression.Features.GetRank(BlueprintTool.Get<BlueprintFeature>(QueensSwordFeature.Guid));
                 evt.AddTemporaryModifier(evt.Initiator.Stats.AdditionalAttackBonus.AddModifier(bonus, Fact, ModifierDescriptor.UntypedStackable));
             }
         }
@@ -28,7 +28,7 @@ namespace LostChapters.Modules.GraySisterhood.Components
         {
             if (IsConditionMeet())
             {
-                var bonus = evt.Initiator.Descriptor.Progression.Features.GetRank(BlueprintTool.Get<BlueprintFeature>(QueensArcenalFeature.Guid));
+                var bonus = evt.Initiator.Descriptor.Progression.Features.GetRank(BlueprintTool.Get<BlueprintFeature>(QueensSwordFeature.Guid));
                 evt.AddTemporaryModifier(evt.Initiator.Stats.AdditionalDamage.AddModifier(bonus, Fact, ModifierDescriptor.UntypedStackable));
                 evt.AddTemporaryModifier(evt.Initiator.Stats.SaveWill.AddModifier(bonus, Fact, ModifierDescriptor.UntypedStackable));
             }

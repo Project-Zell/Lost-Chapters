@@ -1,6 +1,7 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
+using LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 
 namespace LostChapters.Modules.HellknightCodex.Archetypes.Deacon;
 
@@ -16,6 +17,7 @@ internal class DeaconArchetype
     {
         DeaconIncenseFeature.Configure();
         DeaconIncenseSelector.Configure();
+        DeaconImposibleIncenseSelector.Configure();
 
         var removeFeaturesEntryBuilder = LevelEntryBuilder.New()
             .AddEntry(level: 01, features: FeatureSelectionRefs.BlessingSelection.ToString())

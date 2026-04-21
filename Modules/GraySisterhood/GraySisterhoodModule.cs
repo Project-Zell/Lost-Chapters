@@ -25,12 +25,12 @@ namespace LostChapters.Modules.GraySisterhood;
 
 internal class GraySisterhoodModule
 {
-    internal static readonly string IconPath = "assets/graysisterhood/icons";
+    internal static readonly string IconsPath = "assets/graysisterhood/icons";
 
     internal static void Configure()
     {
         //Archetypes
-        DreadnoughtClass.Configure();
+        DreadnoughtArchetype.Configure();
         SisterInArms.Configure();
 
         //Backgrounds

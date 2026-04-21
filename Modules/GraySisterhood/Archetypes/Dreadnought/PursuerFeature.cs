@@ -10,7 +10,7 @@ internal class PursuerFeature
     private static readonly string DisplayName = "Pursuer.Name";
     private static readonly string Description = "Pursuer.Description";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/pursuer.png";
+    private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/pursuer.png";
     
     internal static void Configure()
     {

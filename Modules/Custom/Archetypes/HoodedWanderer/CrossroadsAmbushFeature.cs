@@ -14,9 +14,9 @@ internal class CrossroadsAmbushFeature
 {
     public static readonly string Guid = "{42bf49a3-71b6-4fac-8096-8493b6ec8b8c}";
 
-    private static readonly string FeatureName = "CrossroadsAmbush";
-    private static readonly string DisplayName = "CrossroadsAmbush.Name";
-    private static readonly string Description = "CrossroadsAmbush.Description";
+    private static readonly string FeatureName = "CrossroadsAmbushFeature";
+    private static readonly string DisplayName = $"{FeatureName}.Name";
+    private static readonly string Description = $"{FeatureName}.Description";
 
     private static readonly string Icon = $"{CustomModule.IconPath}/crossroadambush.png";
 

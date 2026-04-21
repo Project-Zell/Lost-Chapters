@@ -29,7 +29,7 @@ internal class SwiftAid
 
     private static readonly string FX_AssedID = "358e9c4bd0b52f443b72ad2332e038a4";
 
-    private static readonly string Icon = $"{GraySisterhoodModule.IconPath}/swiftaid.png";
+    //private static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/swiftaid.png";
 
     public static void Configure()
     {
@@ -66,7 +66,7 @@ internal class SwiftAid
                 .SetType(AbilityType.Special)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
-                .SetIcon(Icon)
+                //.SetIcon(Icon)
                 .Configure();
         }
     }
@@ -80,7 +80,7 @@ internal class SwiftAid
         private static readonly string DisplayName = "SwiftAid.AttackAbility.Name";
         private static readonly string Description = "SwiftAid.AttackAbility.Description";
 
-        public static readonly string Icon = $"{GraySisterhoodModule.IconPath}/swiftaidanotherattack.png";
+        //public static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/swiftaidanotherattack.png";
 
         internal static void Configure()
         {
@@ -97,7 +97,7 @@ internal class SwiftAid
                 .SetType(AbilityType.Special)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
-                .SetIcon(Icon)
+                //.SetIcon(Icon)
                 .SetActionType(UnitCommand.CommandType.Swift)
                 .SetAnimation(UnitAnimationActionCastSpell.CastAnimationStyle.Touch)
                 .AddAbilitySpawnFx(AbilitySpawnFxAnchor.SelectedTarget, prefabLink: FX_AssedID)
@@ -134,7 +134,7 @@ internal class SwiftAid
         private static readonly string DisplayName = "SwiftAid.ArmorClassAbility.Name";
         private static readonly string Description = "SwiftAid.ArmorClassAbility.Description";
 
-        public static readonly string Icon = $"{GraySisterhoodModule.IconPath}/swiftaidanotherac.png";
+        //public static readonly string Icon = $"{GraySisterhoodModule.IconsPath}/swiftaidanotherac.png";
 
         internal static void Configure()
         {
@@ -154,7 +154,7 @@ internal class SwiftAid
                 .SetType(AbilityType.Special)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
-                .SetIcon(Icon)
+                //.SetIcon(Icon)
                 .Configure();
         }
     }

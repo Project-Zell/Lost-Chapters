@@ -14,21 +14,9 @@ internal class BlackKnightTeamworkFeatSelection
     public static void Configure()
     {
         FeatureSelectionConfigurator.New(FeatureName, Guid)
-            .AddToAllFeatures(
-                FeatureRefs.AlliedSpellcaster.ToString(),
-                FeatureRefs.BackToBack.ToString(),
-                FeatureRefs.CoordinatedDefense.ToString(),
-                FeatureRefs.CoordinatedManeuvers.ToString(),
-                FeatureRefs.Outflank.ToString(),
-                FeatureRefs.PreciseStrike.ToString(),
-                FeatureRefs.ShakeItOff.ToString(),
-                FeatureRefs.ShieldedCaster.ToString(),
-                FeatureRefs.ShieldWall.ToString(),
-                FeatureRefs.SiezeTheMoment.ToString(),
-                FeatureRefs.TandemTrip.ToString(),
-                FeatureRefs.VolleyFireFeature.ToString())
+            .CopyFrom(FeatureSelectionRefs.TeamworkFeat.ToString())
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            .Configure();
+            .Configure(true);
     }
 }

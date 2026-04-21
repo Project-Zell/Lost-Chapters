@@ -1,5 +1,6 @@
 ﻿using LostChapters.Modules.Custom.Archetypes.BlackKnight;
 using LostChapters.Modules.Custom.Archetypes.CircuitJudge;
+using LostChapters.Modules.Custom.Archetypes.Demonologist;
 using LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
 using LostChapters.Modules.Custom.Archetypes.MageSlayer;
 using LostChapters.Modules.Custom.Backgrounds;
@@ -15,19 +16,27 @@ internal class CustomModule
 
     internal static void Configure()
     {
+        //Feats
         ArmoredMarauderFeature.Configure();
         ArmoredSwiftnessFeature.Configure();
         ReapingStalkerFeature.Configure();
 
-        BlackKnight.Configure();
+        //Archetypes
+        BlackKnightArchetype.Configure();
         CircuitJudgeArchetype.Configure();
         HoodedWandererArchetype.Configure();
-        MageSlayer.Configure();
+        MageSlayerArchetype.Configure();
+        DemonologistArchetype.Configure();
 
-
-        CharacterClassesConsistencyPatch.Configure();
-
-
+        //Backgrounds
+        BackgroundFisherman.Configure();
+        BackgroundForager.Configure();
+        BackgroundGravedigger.Configure();
+        BackgroundGrayEminence.Configure();
+        BackgroundHighborn.Configure();
+        BackgroundPrisoner.Configure();
+        BackgroundSentryGuard.Configure();
+        BackgroundTavernServer.Configure();
 
 
         return;
