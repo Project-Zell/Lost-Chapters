@@ -3,6 +3,7 @@ using BlueprintCore.Actions.Builder.ContextEx;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
+using BlueprintCore.Blueprints.References;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 
@@ -24,9 +25,6 @@ internal class CallOfTheAbyssFeature
 
         FeatureConfigurator.New(FeatureName, Guid)
             .AddFacts([Ability.Guid])
-            .AddOnSpawnBuff(
-                ifHaveFact: Buff.Guid,
-                buff: DemonSummonRageBuff.Guid)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)

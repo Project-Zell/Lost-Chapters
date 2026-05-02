@@ -14,6 +14,7 @@ internal class UnyieldingDevotionFeature
 
     internal static void Configure()
     {
+        //Summon Spirit Guardian/Paladin
         //Black Knight calls to his fallen order brothers spirits. One time per day, he can summon 3 ghost knights for 10 minutes.
         FeatureConfigurator.New(FeatureName, Guid)
             .SetIsClassFeature(true)

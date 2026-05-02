@@ -12,12 +12,13 @@ namespace LostChapters.Modules.Custom.Archetypes.Demonologist.SummonUnits;
 
 internal class BabauSummonUnit
 {
-    internal static readonly string Guid = "{5beab6e3-a4b6-46fe-b49a-d7913d668f65}";
+    internal static readonly string Guid = "{351ca3a1-69bd-435b-a045-00e79feaeea5}";
 
     internal static readonly string UnitName = "BabauSummonUnit";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     private static readonly BlueprintUnit BaseUnit = UnitRefs.CR6_BabauStandard.Reference.Get();
+    private static readonly string UnitType = UnitTypeRefs.DemonBabau.ToString();
 
     internal static void Configure()
     {
@@ -28,14 +29,17 @@ internal class BabauSummonUnit
 
         var unitSkills = new BlueprintUnit.UnitSkills()
         {
-            Acrobatics = 5,
-            Perception = 5,
-            Stealth = 9,
+            Acrobatics = 11,
+            Physique = 12,
+            Thievery = 11,
+            Perception = 19,
+            Stealth = 18,
         };
 
-        var dretchBrainCauseFear = "ea5e916732fd4dddb95146a923f72b96";
+        var dumbMonsterBrain = "5abc8884c6f15204c8604cb01a2efbab";
+        var babauDispelBrain = "4181d81cb6539d7499b766a39654c013";
 
-        AssetLink<PrefabLink> assetLink = Prefab.DismemberFxID;
+        AssetLink<PrefabLink> assetLink = SummonDemonVisual.SmallDismemberFx.Guid;
         var prefabLink = assetLink.Get();
 
         unitVisual.BloodPuddleFx = prefabLink;
@@ -44,44 +48,54 @@ internal class BabauSummonUnit
         var unitSelections = new SelectionEntry()
         {
             m_Selection = FeatureSelectionRefs.BasicFeatSelection.Reference.Get().ToReference<BlueprintFeatureSelectionReference>(),
-            m_Features = [FeatureRefs.Toughness.Reference.Get().ToReference<BlueprintFeatureReference>()]
+            m_Features = [
+                FeatureRefs.CombatReflexes.Reference.Get().ToReference<BlueprintFeatureReference>(),
+                FeatureRefs.Improved_Initiative.Reference.Get().ToReference<BlueprintFeatureReference>(),
+                FeatureRefs.IronWill.Reference.Get().ToReference<BlueprintFeatureReference>(),
+                FeatureRefs.SkillFocusStealth.Reference.Get().ToReference<BlueprintFeatureReference>()]
         };
 
         UnitConfigurator.New(UnitName, Guid)
             .AddClassLevels(
-                levels: 2,
+                levels: 7,
                 characterClass: CharacterClassRefs.OutsiderClass.ToString(),
                 raceStat: StatType.Constitution,
                 skills: [StatType.SkillPerception, StatType.SkillStealth],
-                selections: [unitSelections]
-            )
+                selections: [unitSelections])
             .AddBuffOnEntityCreated(BuffRefs.Unlootable.ToString())
             .AddFacts([
-                UnitFactRefs.NaturalArmor3.ToString(),
+                UnitFactRefs.NaturalArmor8.ToString(),
 
-            FeatureRefs.SubtypeDemon.ToString(),
-            FeatureRefs.DRColdIronOrGood5.ToString(),
-            FeatureRefs.SubtypeExtraplanar.ToString(),
-            FeatureRefs.DemonOfMagicFeature.ToString(),
+                FeatureRefs.SubtypeDemon.ToString(),
+                FeatureRefs.SubtypeExtraplanar.ToString(),
+                FeatureRefs.DemonOfSlaughterFeature.ToString(),
 
-            AbilityRefs.CauseFear.ToString()
+                FeatureRefs.DRColdIronOrGood10.ToString(),
+                FeatureRefs.SpellResistance11plusCR.ToString(),
+                FeatureRefs.BabauSneakAttackFeature.ToString(),
+                FeatureRefs.BabauProtectiveSlimeFeature.ToString(),
+
+                BuffRefs.SeeInvisibilitytBuff.ToString(),
+
+                AbilityRefs.DispelMagic.ToString()
             ])
             .SetAlignment(Alignment.ChaoticEvil)
             .SetPrefab(Prefab.PrefabID)
             .SetFaction(FactionRefs.Summoned.ToString())
-            .SetType(UnitTypeRefs.DemonDretch.ToString())
+            .SetType(UnitType)
             .SetSize(Size.Medium)
-            .SetBrain(dretchBrainCauseFear)
+            .SetBrain(dumbMonsterBrain)
+            .SetAlternativeBrains(babauDispelBrain)
             .SetBody(unitBody)
             .SetVisual(unitVisual)
             .SetSkills(unitSkills)
-            .SetBaseAttackBonus(2)
-            .SetStrength(12)
-            .SetDexterity(10)
-            .SetConstitution(14)
-            .SetIntelligence(5)
-            .SetWisdom(11)
-            .SetCharisma(11)
+            .SetBaseAttackBonus(7)
+            .SetStrength(21)
+            .SetDexterity(13)
+            .SetConstitution(20)
+            .SetIntelligence(14)
+            .SetWisdom(13)
+            .SetCharisma(16)
             .SetMaxHP(0)
             .SetSpeed(30.Feet())
             .SetStartingInventory([])
@@ -95,14 +109,17 @@ internal class BabauSummonUnit
 
     internal class Prefab
     {
-        internal static readonly string PrefabID = "{33daed16-905d-42b7-be4f-76029e609900}";
-        internal static readonly string DismemberFxID = "{ca73e0e8-3b9c-42fb-b011-9d6881e6303f}";
+        internal static readonly string PrefabID = "{87706d2b-64e6-4e74-9bf6-b85bba03e2e5}";
 
-        private static readonly string SourcePrefabID = "08d7013c13b587541bead70c4a254977";
+        private static readonly string SourcePrefabID = "cd82e8b7ae98b2e4f912f4106581a9f0";
 
         internal static void Configure()
         {
-            DemonologistSummons.Configure(unitName: UnitName, newPrefabID: PrefabID, sourcePrefabID: SourcePrefabID, dismemberFxID: DismemberFxID);
+            SummonDemonVisual.ConfigureUnit(
+                unitName: UnitName,
+                newPrefabID: PrefabID,
+                sourcePrefabID: SourcePrefabID,
+                fxSize: SummonDemonVisual.FxSize.Small);
         }
     }
 }

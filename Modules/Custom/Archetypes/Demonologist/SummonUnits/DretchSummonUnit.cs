@@ -36,7 +36,7 @@ internal class DretchSummonUnit
 
         var dretchBrainCauseFear = "ea5e916732fd4dddb95146a923f72b96";
         
-        AssetLink<PrefabLink> assetLink = Prefab.DismemberFxID;
+        AssetLink<PrefabLink> assetLink = SummonDemonVisual.SmallDismemberFx.Guid;
         var prefabLink = assetLink.Get();
         
         unitVisual.BloodPuddleFx = prefabLink;
@@ -56,13 +56,15 @@ internal class DretchSummonUnit
                 skills: [StatType.SkillPerception, StatType.SkillStealth],
                 selections: [unitSelections])
             .AddBuffOnEntityCreated(BuffRefs.Unlootable.ToString())
+            .AddBuffOnEntityCreated(SummonDemonVisual.SummonedDemonFx.FxID)
             .AddFacts([
                 UnitFactRefs.NaturalArmor3.ToString(),
 
                 FeatureRefs.SubtypeDemon.ToString(),
-                FeatureRefs.DRColdIronOrGood5.ToString(),
                 FeatureRefs.SubtypeExtraplanar.ToString(),
                 FeatureRefs.DemonOfMagicFeature.ToString(),
+                
+                FeatureRefs.DRColdIronOrGood5.ToString(),
 
                 AbilityRefs.CauseFear.ToString()
             ])
@@ -83,7 +85,7 @@ internal class DretchSummonUnit
             .SetWisdom(11)
             .SetCharisma(11)
             .SetMaxHP(0)
-            .SetSpeed(30.Feet())
+            .SetSpeed(25.Feet())
             .SetStartingInventory([])
             .SetAdditionalTemplates([])
             .SetFactionOverrides(new FactionOverrides())
@@ -96,13 +98,16 @@ internal class DretchSummonUnit
     internal class Prefab
     {
         internal static readonly string PrefabID = "{33daed16-905d-42b7-be4f-76029e609900}";
-        internal static readonly string DismemberFxID = "{ca73e0e8-3b9c-42fb-b011-9d6881e6303f}";
 
         private static readonly string SourcePrefabID = "08d7013c13b587541bead70c4a254977";
 
         internal static void Configure()
         {
-            DemonologistSummons.Configure(unitName: UnitName, newPrefabID: PrefabID, sourcePrefabID: SourcePrefabID, dismemberFxID: DismemberFxID);
+            SummonDemonVisual.ConfigureUnit(
+                unitName: UnitName, 
+                newPrefabID: PrefabID, 
+                sourcePrefabID: SourcePrefabID, 
+                fxSize: SummonDemonVisual.FxSize.Small);
         }
     }
 }

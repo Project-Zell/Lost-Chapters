@@ -196,4 +196,18 @@ internal static class Toolbox
             .AddPrerequisiteFeaturesFromList(features: [prerequisite], group: Prerequisite.GroupType.All)
             .Configure();
     }
+
+    public static void ChangeMaterialColor(GameObject gameObject, Color color)
+    {
+        var material = gameObject.GetComponent<ParticleSystemRenderer>().material;
+        material.SetColor("_BaseColor", color);
+        material.SetColor("_Color", color);
+    }
+
+    public static void ChangeStartColor(GameObject gameObject, Color color)
+    {
+        var particleSystem = gameObject.GetComponent<ParticleSystem>();
+        var main = particleSystem.main;
+        main.startColor = color;
+    }
 }

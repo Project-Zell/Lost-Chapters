@@ -1,11 +1,17 @@
 ﻿using BlueprintCore.Blueprints.Configurators;
+using BlueprintCore.Blueprints.Configurators.Items.Weapons;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
+using BlueprintCore.Utils;
 using BlueprintCore.Utils.Assets;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
 using Kingmaker.ResourceLinks;
+using Kingmaker.RuleSystem;
+using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.Utility;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist.SummonUnits;
@@ -29,8 +35,8 @@ internal class QuasitSummonUnit
 
         var unitSkills = new BlueprintUnit.UnitSkills()
         {
-            Acrobatics = 20,
             Diplomacy = 6,
+            Acrobatics = 20,
             KnowledgeWorld = 6,
             Perception = 7,
             Stealth = 16,
@@ -38,11 +44,16 @@ internal class QuasitSummonUnit
 
         var quasitBrainStandart = "a4fb2441561d0d948b393494bc4b8346";
 
-        AssetLink<PrefabLink> assetLink = Prefab.DismemberFxID;
+        AssetLink<PrefabLink> assetLink = SummonDemonVisual.SmallDismemberFx.Guid;
         var prefabLink = assetLink.Get();
 
         unitVisual.BloodPuddleFx = prefabLink;
         unitVisual.DismemberFx = prefabLink;
+
+        var quasitBite = BlueprintTool.Get<BlueprintItemWeapon>(ItemWeaponRefs.Bite1d8.ToString()).ToReference<BlueprintItemWeaponReference>();
+        var quasitClaw = BlueprintTool.Get<BlueprintItemWeapon>(ItemWeaponRefs.Claw1d6.ToString()).ToReference<BlueprintItemWeaponReference>();
+
+        unitBody.m_AdditionalLimbs = [quasitBite, quasitClaw, quasitClaw];
 
         var unitSelections = new SelectionEntry()
         {
@@ -54,25 +65,27 @@ internal class QuasitSummonUnit
 
         UnitConfigurator.New(UnitName, Guid)
             .AddClassLevels(
-                levels: 2,
+                levels: 1,
                 characterClass: CharacterClassRefs.OutsiderClass.ToString(),
                 raceStat: StatType.Constitution,
                 skills: [StatType.SkillPerception, StatType.SkillStealth],
                 selections: [unitSelections])
             .AddBuffOnEntityCreated(BuffRefs.Unlootable.ToString())
+            .AddBuffOnEntityCreated(SummonDemonVisual.SummonedDemonFx.Guid)
             .AddFacts([
                 UnitFactRefs.NaturalArmor2.ToString(),
 
                 FeatureRefs.SubtypeDemon.ToString(),
-                FeatureRefs.DRColdIronOrGood5.ToString(),
                 FeatureRefs.SubtypeExtraplanar.ToString(),
-                FeatureRefs.SpellResistance11plusCR.ToString(),
-                FeatureRefs.Airborne.ToString(),
-                FeatureRefs.FastHealing.ToString(),
-                FeatureRefs.QuasitPoisonFeature.ToString(),
                 FeatureRefs.DemonOfMagicFeature.ToString(),
 
-                AbilityRefs.CauseFear.ToString()
+                FeatureRefs.DRColdIronOrGood5.ToString(),
+                FeatureRefs.SpellResistance5plusCR.ToString(),
+                
+                FeatureRefs.Airborne.ToString(),
+                FeatureRefs.QuasitPoisonFeature.ToString(),
+
+                BuffRefs.FastHealing2.ToString()
             ])
             .SetAlignment(Alignment.ChaoticEvil)
             .SetPrefab(Prefab.PrefabID)
@@ -83,15 +96,15 @@ internal class QuasitSummonUnit
             .SetBody(unitBody)
             .SetVisual(unitVisual)
             .SetSkills(unitSkills)
-            .SetBaseAttackBonus(2)
-            .SetStrength(9)
-            .SetDexterity(17)
-            .SetConstitution(13)
-            .SetIntelligence(16)
-            .SetWisdom(14)
-            .SetCharisma(16)
+            .SetBaseAttackBonus(1)
+            .SetStrength(8)
+            .SetDexterity(14)
+            .SetConstitution(11)
+            .SetIntelligence(11)
+            .SetWisdom(12)
+            .SetCharisma(11)
             .SetMaxHP(0)
-            .SetSpeed(50.Feet())
+            .SetSpeed(35.Feet())
             .SetStartingInventory([])
             .SetAdditionalTemplates([])
             .SetFactionOverrides(new FactionOverrides())
@@ -104,13 +117,17 @@ internal class QuasitSummonUnit
     internal class Prefab
     {
         internal static readonly string PrefabID = "{d04e8017-72fe-4cbc-9fcf-b910c637aee0}";
-        internal static readonly string DismemberFxID = "{ac66885d-8708-4e0f-b2e0-71598b9737c9}";
 
         private static readonly string SourcePrefabID = "da63033598ff6f5439bb6b25445931d6";
 
         internal static void Configure()
         {
-            DemonologistSummons.Configure(unitName: UnitName, newPrefabID: PrefabID, sourcePrefabID: SourcePrefabID, dismemberFxID: DismemberFxID);
+            SummonDemonVisual.ConfigureUnit(
+                unitName: UnitName,
+                newPrefabID: PrefabID,
+                sourcePrefabID: SourcePrefabID,
+                fxSize: SummonDemonVisual.FxSize.Small,
+                unitScaleMod: 0.7f);
         }
     }
 }

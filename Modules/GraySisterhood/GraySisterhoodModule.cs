@@ -105,7 +105,6 @@ internal class GraySisterhoodModule
 
         //Unique Weapon
         BladeBreakerItem.Configure();
-        CrimsonDancerItem.Configure();
         GutSkewerItem.Configure();
         EyeOfScornItem.Configure();
         FadingLightItem.Configure();

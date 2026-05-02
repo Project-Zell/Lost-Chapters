@@ -36,7 +36,8 @@ internal class DemonologistArchetype
             .AddEntry(level: 19, features: FeatureSelectionRefs.ArcanistExploitSelection.ToString());
 
         var addFeaturesEntryBuilder = LevelEntryBuilder.New()
-            .AddEntry(level: 01, features: SummonDemon1Feature.Guid)
+            .AddEntry(level: 01, features: SummonDemonIFeature.Guid)
+            .AddEntry(level: 03, features: SummonDemonIIFeature.Guid)
             .AddEntry(level: 01, features: DemonologyFeature.Guid)
             .AddEntry(level: 03, features: CallOfTheAbyssFeature.Guid)
             .AddEntry(level: 05, features: DemonologistExploitSelection.Guid)

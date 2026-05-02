@@ -12,7 +12,8 @@ namespace LostChapters.Modules.HellknightsCodex;
 
 internal class HellknightCodexModule
 {
-    internal static readonly string IconsPath = "assets/hellknightcodex/icons";
+    internal static readonly string TexturePath = "assets/hellknightcodex/textures";
+    internal static readonly string IconsPath   = "assets/hellknightcodex/icons";
 
     internal static void Configure()
     {
