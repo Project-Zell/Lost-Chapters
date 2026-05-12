@@ -1,6 +1,9 @@
 ﻿using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
+using BlueprintCore.Blueprints.References;
+using BlueprintCore.Conditions.Builder;
+using BlueprintCore.Conditions.Builder.ContextEx;
 using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.FactLogic;
@@ -21,10 +24,9 @@ internal class RevenantFeature
 
     internal static void Configure()
     {
-       
+        ConditionsBuilder.New().HasBuffFromCaster(buff: BuffRefs.CavalierChallengeBuffTarget.ToString());
 
         FeatureConfigurator.New(FeatureName, Guid)
-            .AddConcealment()
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)

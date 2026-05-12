@@ -2,7 +2,7 @@
 using BlueprintCore.Blueprints.References;
 using LostChapters.Tools;
 
-namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
+namespace LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
 internal class ImpostorFeature
 {

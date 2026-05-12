@@ -4,6 +4,9 @@ using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Commands.Base;
+using Kingmaker.Visual.Animation.Kingmaker.Actions;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 
@@ -20,7 +23,6 @@ internal class CallOfTheAbyssFeature
     internal static void Configure()
     {
         Ability.Configure();
-        Buff.Configure();
         DemonSummonRageBuff.Configure();
 
         FeatureConfigurator.New(FeatureName, Guid)
@@ -43,10 +45,19 @@ internal class CallOfTheAbyssFeature
 
         internal static void Configure()
         {
+            Buff.Configure();
+
             var action = ActionsBuilder.New().ApplyBuffPermanent(Buff.Guid);
+            var resource = AbilityResourceRefs.ArcanistArcaneReservoirResource.ToString();
 
             AbilityConfigurator.New(AbilityName, Guid)
+                .AddAbilityCasterHasNoFacts([Buff.Guid])
+                .AddAbilityResourceLogic(requiredResource: resource, isSpendResource: true, amount: 1)
                 .AddAbilityEffectRunAction(action)
+                .SetType(AbilityType.Supernatural)
+                .SetCanTargetSelf(true)
+                .SetAnimation(UnitAnimationActionCastSpell.CastAnimationStyle.Omni)
+                .SetActionType(UnitCommand.CommandType.Free)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .Configure();

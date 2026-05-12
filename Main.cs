@@ -2,6 +2,7 @@ using BlueprintCore.Blueprints.Configurators.Root;
 using BlueprintCore.Utils;
 using HarmonyLib;
 using Kingmaker.Blueprints.JsonSystem;
+using LostChapters._wip.Brawler;
 using LostChapters.Modules.Custom;
 using LostChapters.Modules.GraySisterhood;
 using LostChapters.Modules.HellknightsCodex;
@@ -129,11 +130,16 @@ public static class Main
         LocalizationTool.LoadEmbeddedLocalizationPacks(
             $"{ModName}.Localization.CustomModuleStrings.json",
             $"{ModName}.Localization.GraySisterhoodStrings.json",
-            $"{ModName}.Localization.HellknightsCodexStrings.json");
+            $"{ModName}.Localization.HellknightsCodexStrings.json",
+            $"{ModName}.Localization.OtherLocalizedStrings.json");
+
+        BrawlerClass.Configure();
 
         OtherModule.Configure();
         CustomModule.Configure();
         GraySisterhoodModule.Configure();
         HellknightCodexModule.Configure();
+
+        
     }
 }

@@ -66,9 +66,7 @@ internal class AuraOfLawFeature
                     classes: [CharacterClassRefs.HellknightClass.ToString(), CharacterClassRefs.HellknightSigniferClass.ToString()]);
 
             var attackValue = ContextDice.Value(diceType: DiceType.Zero, bonus: ContextValues.Rank(type: AbilityRankType.StatBonus));
-            var attackConfig = ContextRankConfigs.StatBonus(
-                    type: AbilityRankType.StatBonus,
-                    stat: StatType.Charisma);
+            var attackConfig = ContextRankConfigs.StatBonus(type: AbilityRankType.StatBonus, stat: StatType.Charisma);
 
             AbilityConfigurator.New(AbilityName, Guid)
                 .AddAbilityEffectRunAction(action)

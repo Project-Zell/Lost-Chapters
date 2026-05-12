@@ -23,10 +23,10 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 - **Sister-In-Arms**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/archetypes/paizo-cavalier-archetypes/sister-in-arms-cavalier-archetype/)</sup>
     - **Halfhearted Challenge** - Alters Challenge. Add only half of the cavalier level to damage rolls against the challenged target.
     - **Maiden's Order** - Alters Order and replaces Mount. Instead of selecting an order, the cavalier treated as a member of both the Order of the Lion and the Order of the Dragon at the same time.
-    - **Devoted Defender** - Replaces CavalierÅfs Charge. Gain Bodyguard as a bonus feat.
+    - **Devoted Defender** - Replaces Cavalier's Charge. Gain Bodyguard as a bonus feat.
     - **Maiden's Loyalty** - Gain a bonus to saving throws against charm, compulsion, and confusion effects.
-    - **Dedicated Commander** - Replaces Mighty Charge. The cavalier can use LionÅfs Call and Strategy as a move action.
-    - **Supreme Commander** - Replaces Supreme Charge. The cavalier can use LionÅfs Call, Strategy, and Act as One as a swift action.
+    - **Dedicated Commander** - Replaces Mighty Charge. The cavalier can use Lion's Call and Strategy as a move action.
+    - **Supreme Commander** - Replaces Supreme Charge. The cavalier can use Lion's Call, Strategy, and Act as One as a swift action.
 
 ## Backgrounds
 - **Battlefield Disciple**<sup>[VN](https://www.d20pfsrd.com/traits/combat-traits/battlefield-disciple/)</sup> - *Skills*: Athletics. *Proficiencies*: Shortsword, Longsword. Bonuses granted by Aid Another increase by +1.
@@ -63,7 +63,7 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
         - **Furious Huntress** -
         - **Kinslayer** -
         - **Merciless Massacre** -
-        - **QueenÅfs Arsenal** -
+        - **Queen's Arsenal** -
         - **Unyielding** -
     - **Armored Angel** -
     - **Eye of Alertness** -
@@ -154,16 +154,16 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 - **Virtuous Grasp, Fortified** - Any evil enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become both alchemically nauseated and alchemically sickened for 1d4 rounds. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
 #
 #### Healing Domain
-- **LifeÅfs Breath** - An affected ally cures 1d6 points of damage.
-- **LifeÅfs Breath, Fortified** - An affected ally cures 2d6 + half the deacon's level points of damage.
+- **Life's Breath** - An affected ally cures 1d6 points of damage.
+- **Life's Breath, Fortified** - An affected ally cures 2d6 + half the deacon's level points of damage.
 #
 #### Knowledge Domain
 - **Visionary Mist** - An affected ally receives a +2 alchemical bonus to Intelligence. In addition, the ally receives a +2 alchemical bonus on saving throws to resist diseases.
 - **Visionary Mist, Fortified** - An affected ally receives a +4 alchemical bonus to Intelligence. In addition, the ally receives a +4 alchemical bonus on saving throws to resist diseases.
 #
 #### Law Domain
-- **JusticeÅfs Embrace** - Any chaotic enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
-- **JusticeÅfs Embrace, Fortified** - Any chaotic enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become both alchemically nauseated and alchemically sickened for 1d4 rounds. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
+- **Justice's Embrace** - Any chaotic enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
+- **Justice's Embrace, Fortified** - Any chaotic enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become both alchemically nauseated and alchemically sickened for 1d4 rounds. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
 #
 #### Liberation Domain
 - **Cleansing Shroud** - An affected ally receives a +1 bonus on effective caster level when making a dispel attempt. In addition, the ally receives a +2 alchemical bonus against MovementImpairing effects.
@@ -269,8 +269,8 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 ## Archetypes
 ### Arcanist:
 - **Demonologist**<sup>H</sup>
-    - **Demonic Studies** - Replaces Acranist Exploit selection at level 1. All Summon Monster spells in arcanist spellbook changed to Summon Demon. Additionally, Dominate Person and Dominate Person, Mass changed to Dominate Demon and Dominate Demon, Mass respectevly.
-    - **Speak of the Demon** - For each controlled demon, the arcanist takes a -1 penalty to Will saves. When a controlled demonÅfs hit points are reduced to 0 or lower, the arcanist must make a Will save or become confused for 1 round.
+    - **Demonic Studies** - Replaces Acranist Exploit selection at level 1. All Summon Monster spells in arcanist spellbook changed to Summon Demon spells respectevly. Additionally, Dominate Person and Dominate Person, Mass changed to Dominate Demon and Dominate Demon, Mass.
+    - **Speak of the Demon** - For each controlled demon, the arcanist takes a -1 penalty to Will saves. When a controlled demon's hit points are reduced to 0 or lower, the arcanist must make a Will save or become confused for 1 round.
     - **Call of the Abyss** - Replaces Arcanist Exploit selection at level 3. The arcanist can expend 1 point from the arcanist reservoir to cause the next summoned demons to enter a rage. This rage functions as standard barbarian rage. If the arcanist has rage powers, those powers also apply to the raging demons.
     - **Demonologist Exploit** - Alternate Arcanist Exploit selection. Demonogist might select a rage power, instead of the acranist exploit.
     - ??? - Replaces Magical Supremacy. The arcanist gains a Glabrezu as an animal companion. When the arcanist summons raging demons, the Glabrezu gains all benefits of the rage for 1 minute.
@@ -286,7 +286,7 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
     - **Forgotten Insignia** - Replaces Banner. All enemies within 30 feet of the cavalier take a morale penalty on saving throws against fear effects and to CMD.
     - **Forbidden Insignia** - Replaces Greater Banner. Enemies affected by Forgotten Insignia also take a morale penalty to AC.
     - **Solo Tactics** - Replaces Tactician and Greater Tactician. The cavalier gains Solo Tactics, as the inquisitor ability of the same name. Additionally, the cavalier can select a teamwork feats as a bonus feat.
-    - **Mount** - The cavalier gains Mount and CavalierÅfs Charge at 5th level, instead of at the normal levels dictated by cavalier progression.
+    - **Mount** - The cavalier gains Mount and Cavalier's Charge at 5th level, instead of at the normal levels dictated by cavalier progression.
 #
 - **Circuit Judge**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/archetypes/paizo-cavalier-archetypes/circuit-judge/)</sup>
     - **Conviction** - Alters Challenge. Functions as a standard challenge, but only works against chaotic enemies.
@@ -295,7 +295,7 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 #
 - **Hooded Wanderer**<sup>H</sup>
     - **Lone Wayfarer** - Replaces Mount. While standing in favored terrain, gain a 10-foot bonus to movement speed for each unique favored terrain selected.
-    - **Crossroads Ambush** - Replaces CavalierÅfs Charge. Gains the pounce special ability when wielding a simple weapon and does not suffer a penalty to AC after making a charge attack.
+    - **Crossroads Ambush** - Replaces Cavalier's Charge. Gains the pounce special ability when wielding a simple weapon and does not suffer a penalty to AC after making a charge attack.
     - **Terrain Mastery** - Replaces Tactician and Greater Tactician. The cavalier gain Terrain Mastery, as the rogue feature of the same name.
     - **No Respite** - Replaces Banner. The cavalier can move at normal speed in any armor. While standing in favored terrain, the cavalier gains a bonus to sawing throws against fatigue and exhaustion.
     - **Lost in Sight** - Gains Fast Stealth as a bonus feature.
@@ -320,14 +320,23 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 - **Tavern Server**<sup>H</sup> - *Skills*: Mobility. Gain Dodge as a bonus feat.
 
 ## Feats
-- **Armored Marauder**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/armored-marauder-ex/)</sup> -
-- **Armored Swiftness**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/armored-swiftness-ex/)</sup> -
+### Arcanist Exploits
+- **Arcanist Familiar**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/familiar-su)</sup>- 
+
+### Basic Feats
 - **Distracting Charge**<sup>[VN](https://www.d20pfsrd.com/feats/combat-feats/distracting-charge-combat-teamwork/)</sup>
 - **Double Edge**<sup>H</sup> -
 - **Horse Master**<sup>[VN](https://www.d20pfsrd.com/feats/combat-feats/horse-master-combat/) -
 - **Intimidating Glare**<sup>[VN](https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers/paizo-rage-powers/intimidating-glare-ex/)</sup> -
-- **Reaping Stalker**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/reaping-stalker-ex/)</sup> -
 - **Scarred Legion**<sup>[VN](https://www.d20pfsrd.com/feats/general-feats/scarred-legion-teamwork/)</sup>
+
+### Slayer Talents
+- **Armored Marauder**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/armored-marauder-ex/)</sup> -
+- **Armored Swiftness**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/armored-swiftness-ex/)</sup> -
+- **Reaping Stalker**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/reaping-stalker-ex/)</sup> -
+#
+
+
 
 ## Orders
 ### Cavalier
@@ -340,3 +349,11 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 
 ## Prestige Classes
 - **Plague Knight**<sup>H</sup> -
+
+Maybe:
+
+- Arcane Weapon
+- Blade Adept
+- Blood Arcanist
+- Arsenal Chaplain
+- Metamagic Knowledge

@@ -7,13 +7,13 @@ using Kingmaker.EntitySystem.Stats;
 
 namespace LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
 
-internal class HoodedWandererArchetype
+internal class CowledPilgrimArchetype
 {
     public static readonly string Guid = "{1d962362-6495-4f75-be4d-19d450996c2e}";
 
-    private static readonly string ArchetypeName = "HoodedWanderer";
-    private static readonly string LocalizedName = "HoodedWanderer.Name";
-    private static readonly string Description = "HoodedWanderer.Description";
+    private static readonly string ArchetypeName = "CowledPilgrimArchetype";
+    private static readonly string LocalizedName = $"{ArchetypeName}.Name";
+    private static readonly string Description = $"{ArchetypeName}.Description";
 
     public static void Configure()
     {

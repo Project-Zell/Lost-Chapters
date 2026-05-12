@@ -1,12 +1,12 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 
-namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
+namespace LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight;
 
-internal class DemonologyFeature
+internal class IncubatingPainFeature
 {
-    public static readonly string Guid = "{8fd31e84-38db-42c4-9d9d-16e93e22cbc7}";
+    public static readonly string Guid = "{a7f60bf5-9878-48be-9767-58b3bbf66f5a}";
 
-    private static readonly string FeatureName = "DemonologyFeature";
+    private static readonly string FeatureName = "IncubatingPainFeature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

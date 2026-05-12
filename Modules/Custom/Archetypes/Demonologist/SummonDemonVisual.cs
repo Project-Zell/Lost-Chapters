@@ -1,13 +1,5 @@
-﻿using BlueprintCore.Actions.Builder;
-using BlueprintCore.Actions.Builder.ContextEx;
-using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
-using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
-using BlueprintCore.Blueprints.References;
-using BlueprintCore.Conditions.Builder;
-using BlueprintCore.Conditions.Builder.ContextEx;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Utils.Assets;
-using BlueprintCore.Utils.Types;
-using Kingmaker.Enums;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.View;
 using Kingmaker.Visual.MaterialEffects.ColorTint;
@@ -15,18 +7,16 @@ using Kingmaker.Visual.MaterialEffects.Dissolve;
 using Kingmaker.Visual.MaterialEffects.RimLighting;
 using Kingmaker.Visual.Particles;
 using LostChapters._tools;
-using LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight.Discipline;
 using LostChapters.Tools;
-using Owlcat.Runtime.Visual.RenderPipeline;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI.Extensions;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 
 internal class SummonDemonVisual
 {
     internal enum FxSize { Small, Medium, Big }
+    internal enum FxType { Appear, Disappear }
 
     private static readonly string BaseName = "SummonDemonVisual";
     private static readonly string AppearFx = "dc36f0c47ccd0fc449fe71d981fc3eb4";
@@ -72,9 +62,9 @@ internal class SummonDemonVisual
         }
     }
 
-    internal static void ModifyFx(GameObject gameObject, Vector3 areaSize)
+    internal static void ModifyFx(GameObject gameObject, Vector3 areaSize, FxType fxType)
     {
-        gameObject.name = $"[{Main.ModName}] Demon Appear Fx";
+        gameObject.name = $"[{Main.ModName}] Demonologist - Summon {(fxType is FxType.Appear ? "Appear": "Disappear")} Fx";
 
         foreach (var child in gameObject.GetComponentsInChildren<Transform>())
         {
@@ -90,19 +80,25 @@ internal class SummonDemonVisual
 
         var transform = gameObject.transform;
 
+        OwlcatSpy.GetAllTranforms(gameObject);
+
         Toolbox.ChangeMaterialColor(transform.Find("Ground_DontRotate/Darkness/redBottom").gameObject, color: new(1f, 0.4f, 0.1f, 1f));
         Toolbox.ChangeMaterialColor(transform.Find("Ground_DontRotate/Darkness/BigBottomDark").gameObject, color: new(1f, 0.15f, 0.15f, 1f));
         Toolbox.ChangeMaterialColor(transform.Find("Ground_DontRotate/Darkness/BigDist").gameObject, color: new(1f, 0.412f, 0.378f, 1f));
         Toolbox.ChangeMaterialColor(transform.Find("Ground_DontRotate/Darkness/BigDist (1)").gameObject, color: new(1f, 0.412f, 0.378f, 1f));
 
         Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/Smoke_Trails").gameObject, color: Color.black);
-        Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/BigWaves").gameObject, color: new (1f, 0.414f, 0.407f, 0.643f));
-        Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/Lightning").gameObject, color: new (0.8f, 0.363f, 0.169f, 1f));
-        Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/Sparks (1)").gameObject, color: new (0.8f, 0.363f, 0.169f, 1f));
-        Toolbox.ChangeStartColor(transform.Find("Buff_Spawn/GameObject (1)/Lightning (1)").gameObject, color: new (0.8f, 0.363f, 0.169f, 1f));
-        Toolbox.ChangeStartColor(transform.Find("Buff_Spawn/SmokeBodySnap").gameObject, color: new (0.8f, 0.363f, 0.169f, 1f));
-        Toolbox.ChangeStartColor(transform.Find("Buff_Spawn/GameObject (1)/CenterFlash (1)").gameObject, color: new (0.8f, 0.363f, 0.169f, 1f));
-        Toolbox.ChangeStartColor(transform.Find("Buff_Spawn/BackElec").gameObject, color: new (0.8f, 0.363f, 0.169f, 1f));
+        Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/BigWaves").gameObject, color: new(1f, 0.414f, 0.407f, 0.643f));
+        Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/Lightning").gameObject, color: new(0.8f, 0.363f, 0.169f, 1f));
+        Toolbox.ChangeStartColor(transform.Find("Ground_DontRotate/Darkness/Sparks (1)").gameObject, color: new(0.8f, 0.363f, 0.169f, 1f));
+
+        var buffName = fxType is FxType.Appear ? "Buff_Spawn" : "Buff";
+        var backElec = fxType is FxType.Appear ? "BackElec" : "BackElec (1)";
+
+        Toolbox.ChangeStartColor(transform.Find($"{buffName}/GameObject (1)/Lightning (1)").gameObject, color: new(0.8f, 0.363f, 0.169f, 1f));
+        Toolbox.ChangeStartColor(transform.Find($"{buffName}/SmokeBodySnap").gameObject, color: new(0.8f, 0.363f, 0.169f, 1f));
+        Toolbox.ChangeStartColor(transform.Find($"{buffName}/GameObject (1)/CenterFlash (1)").gameObject, color: new(0.8f, 0.363f, 0.169f, 1f));
+        Toolbox.ChangeStartColor(transform.Find($"{buffName}/{backElec}").gameObject, color: new(0.8f, 0.363f, 0.169f, 1f));
 
         Object.DestroyImmediate(transform.Find("CameraShake (1)").gameObject);
         Object.DestroyImmediate(transform.Find("Ground_DontRotate/Darkness/Lightning/ElectroKatyshki/FireTiny").gameObject);
@@ -174,7 +170,7 @@ internal class SummonDemonVisual
         {
             AssetTool.RegisterDynamicPrefabLink(assetId: FxID, source: AppearFx, Modify);
 
-            static void Modify(GameObject gameObject) => ModifyFx(gameObject, new Vector3(0.3f, 0.3f, 0.3f));
+            static void Modify(GameObject gameObject) => ModifyFx(gameObject, new Vector3(0.3f, 0.3f, 0.3f), FxType.Appear);
 
             BuffConfigurator.New(BuffName, Guid)
                 .SetFxOnStart(FxID)
@@ -194,7 +190,7 @@ internal class SummonDemonVisual
         {
             AssetTool.RegisterDynamicPrefabLink(assetId: FxID, source: AppearFx, Modify);
 
-            static void Modify(GameObject gameObject) => ModifyFx(gameObject, new Vector3(0.5f, 0.5f, 0.5f));
+            static void Modify(GameObject gameObject) => ModifyFx(gameObject, new Vector3(0.5f, 0.5f, 0.5f), FxType.Appear);
 
             BuffConfigurator.New(BuffName, Guid)
                 .SetFxOnStart(FxID)
@@ -214,7 +210,7 @@ internal class SummonDemonVisual
         {
             AssetTool.RegisterDynamicPrefabLink(assetId: FxID, source: AppearFx, Modify);
 
-            static void Modify(GameObject gameObject) => ModifyFx(gameObject, new Vector3(0.7f, 0.7f, 0.7f));
+            static void Modify(GameObject gameObject) => ModifyFx(gameObject, new Vector3(0.7f, 0.7f, 0.7f), FxType.Appear);
 
             BuffConfigurator.New(BuffName, Guid)
                 .SetFxOnStart(FxID)
@@ -235,7 +231,7 @@ internal class SummonDemonVisual
 
             static void Modify(GameObject gameObject)
             {
-                ModifyFx(gameObject, new Vector3(0.3f, 0.3f, 0.3f));
+                ModifyFx(gameObject, new Vector3(0.3f, 0.3f, 0.3f), FxType.Disappear);
                 ModifyDismember(gameObject, UnitsToConfigure);
                 UnitsToConfigure.Clear();
             }
@@ -255,7 +251,7 @@ internal class SummonDemonVisual
 
             static void Modify(GameObject gameObject)
             {
-                ModifyFx(gameObject, new Vector3(0.5f, 0.5f, 0.5f));
+                ModifyFx(gameObject, new Vector3(0.5f, 0.5f, 0.5f), FxType.Disappear);
                 ModifyDismember(gameObject, UnitsToConfigure);
                 UnitsToConfigure.Clear();
             }
@@ -275,7 +271,7 @@ internal class SummonDemonVisual
 
             static void Modify(GameObject gameObject)
             {
-                ModifyFx(gameObject, new Vector3(0.7f, 0.7f, 0.7f));
+                ModifyFx(gameObject, new Vector3(0.7f, 0.7f, 0.7f), FxType.Disappear);
                 ModifyDismember(gameObject, UnitsToConfigure);
                 UnitsToConfigure.Clear();
             }

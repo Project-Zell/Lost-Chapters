@@ -5,6 +5,8 @@ using LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
 using LostChapters.Modules.Custom.Archetypes.MageSlayer;
 using LostChapters.Modules.Custom.Backgrounds;
 using LostChapters.Modules.Custom.Feats;
+using LostChapters.Modules.Custom.Feats.ArcanistExploits;
+using LostChapters.Modules.Custom.Feats.SlayerTalents;
 using LostChapters.Modules.Custom.Other;
 using LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight;
 
@@ -16,15 +18,17 @@ internal class CustomModule
 
     internal static void Configure()
     {
+        PlagueKnightClass.Configure();
+
         //Feats
         ArmoredMarauderFeature.Configure();
         ArmoredSwiftnessFeature.Configure();
         ReapingStalkerFeature.Configure();
 
         //Archetypes
-        BlackKnightArchetype.Configure();
+        FalseKnightArchetype.Configure();
         CircuitJudgeArchetype.Configure();
-        HoodedWandererArchetype.Configure();
+        CowledPilgrimArchetype.Configure();
         MageSlayerArchetype.Configure();
         DemonologistArchetype.Configure();
 
@@ -38,10 +42,14 @@ internal class CustomModule
         BackgroundSentryGuard.Configure();
         BackgroundTavernServer.Configure();
 
+        //Feats
+        ArcanistFamiliarFeature.Configure();
+        MetamagicKnowledgeFeature.Configure();
+        MetamagicKnowledgeGreaterFeature.Configure();
 
         return;
 
-        PlagueKnightClass.Configure();
+
 
 
 

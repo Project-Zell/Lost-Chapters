@@ -20,6 +20,7 @@ internal class PlagueKnightClass
 
     internal static void Configure()
     {
+        //False Knight
         //l2/l4/l6/l8/l10 - Blackrot - Weapon Buff, get target sickened, usable for amount on turns per day
         //l1 - Harbinger of Blight - Select a disease, you permanently diseased and apply this deasese when striking enemy with Blackrot
         //l5 - Incubating Pain - You no longer suffer penaltys from the desease
@@ -34,7 +35,7 @@ internal class PlagueKnightClass
 
         var characterClass = CharacterClassConfigurator.New(ClassName, Guid)
             //.AddPrerequisiteAlignment(alignment: AlignmentMaskType.LawfulEvil | AlignmentMaskType.LawfulNeutral | AlignmentMaskType.NeutralEvil, checkInProgression: true)
-            .AddPrerequisiteProficiency(weaponProficiencies: [], armorProficiencies: [ArmorProficiencyGroup.Heavy])
+            //.AddPrerequisiteProficiency(weaponProficiencies: [], armorProficiencies: [ArmorProficiencyGroup.Heavy])
             //.AddPrerequisiteStatValue(stat: StatType.BaseAttackBonus, value: 5)
             //.AddPrerequisiteFeature(FeatureRefs.ShieldBashFeature.ToString())
             //.AddPrerequisiteFeature(FeatureRefs.IronWill.ToString())
@@ -62,18 +63,26 @@ internal class PlagueKnightClass
 
         internal static void Configure()
         {
+            //Blasphemy
+
             BlackrotFeature.Configure();
-            RatSwarmFeature.Configure();
+            InfestationFeature.Configure();
+            IncubatingPainFeature.Configure();
             HarbingerOfBlightFeature.Configure();
+            RequiemFeature.Configure();
+            TempNoNameFeature.Configure();
 
             ProgressionConfigurator.New(Name, Guid)
                 .SetClasses(PlagueKnightClass.Guid)
                 .AddToLevelEntry(level: 01, features: HarbingerOfBlightFeature.Guid)
                 .AddToLevelEntry(level: 02, features: BlackrotFeature.Guid)
+                .AddToLevelEntry(level: 03, features: InfestationFeature.Guid)
                 .AddToLevelEntry(level: 04, features: BlackrotFeature.Guid)
+                .AddToLevelEntry(level: 05, features: IncubatingPainFeature.Guid)
                 .AddToLevelEntry(level: 06, features: BlackrotFeature.Guid)
                 .AddToLevelEntry(level: 08, features: BlackrotFeature.Guid)
                 .AddToLevelEntry(level: 10, features: BlackrotFeature.Guid)
+                .AddToLevelEntry(level: 10, features: RequiemFeature.Guid)
                 .SetIsClassFeature(true)
                 .Configure();
         }

@@ -19,9 +19,9 @@ using Kingmaker.Visual.Animation.Kingmaker.Actions;
 using System.Collections.Generic;
 using static LostChapters.Modules.Custom.Archetypes.Demonologist.SummonDemonVisual;
 
-namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
+namespace LostChapters.Modules.Custom.Archetypes.Demonologist.Tools;
 
-internal class SummonAbilityHelper
+internal class DemonologistSummonAbilityHelper
 {
     internal enum SummonCountType { single, d3, d4plus1 }
 
@@ -44,7 +44,7 @@ internal class SummonAbilityHelper
         var spawnAction = ActionsBuilder.New()
             .SpawnMonsterUsingSummonPool(
                 monster: summonUnitID,
-                summonPool: "d94c93e7240f10e41ae41db4c83d1cbe",
+                summonPool: DemonologistSummonPool.Guid,
                 afterSpawn: action,
                 countValue: count,
                 durationValue: duration);

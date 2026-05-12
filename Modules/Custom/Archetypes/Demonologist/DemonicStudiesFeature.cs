@@ -1,13 +1,17 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
+﻿using BlueprintCore.Blueprints.Configurators.Classes.Spells;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes.Spells;
 using BlueprintCore.Blueprints.References;
+using Kingmaker.Blueprints;
+using Kingmaker.Blueprints.Classes.Spells;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 
-internal class DemonologistExploitSelection
+internal class DemonicStudiesFeature
 {
-    public static readonly string Guid = "{2c868fd5-a649-454f-b910-3941bdd3eceb}";
+    public static readonly string Guid = "{8fd31e84-38db-42c4-9d9d-16e93e22cbc7}";
 
-    private static readonly string FeatureName = "DemonologistExploitSelection";
+    private static readonly string FeatureName = "DemonicStudiesFeature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
@@ -15,8 +19,7 @@ internal class DemonologistExploitSelection
 
     internal static void Configure()
     {
-        FeatureSelectionConfigurator.New(FeatureName, Guid)
-            .AddToAllFeatures([FeatureSelectionRefs.ArcanistExploitSelection.ToString(), FeatureSelectionRefs.RagePowerSelection.ToString()])
+        FeatureConfigurator.New(FeatureName, Guid)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
@@ -24,4 +27,6 @@ internal class DemonologistExploitSelection
             //.SetIcon(Icon)
             .Configure();
     }
+
+
 }

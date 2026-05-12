@@ -2,7 +2,13 @@
     {
         "key": "Mute.Name",
         "engb": "Mute",
-        "ruru": "",
+        "ruru": "Немота",
+        "processtemplates": false
+    },
+    {
+        "key": "Tooltips.PrerequisiteHasArchetype",
+        "engb": "Has Archetype",
+        "ruru": "хз",
         "processtemplates": false
     }
 ]

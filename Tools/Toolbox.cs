@@ -210,4 +210,19 @@ internal static class Toolbox
         var main = particleSystem.main;
         main.startColor = color;
     }
+
+    public static void ChangeAnimatedLightBaseColor(GameObject gameObject, Color color, bool alsoChangeLightColor = false)
+    {
+        var light = gameObject.GetComponent<AnimatedLight>(); 
+        light.m_Color = color;
+
+        if (alsoChangeLightColor)
+            ChangeLightColor(gameObject, color);
+    }
+    
+    public static void ChangeLightColor(GameObject gameObject, Color color)
+    {
+        var light = gameObject.GetComponent<Light>(); 
+        light.color = color;
+    }
 }

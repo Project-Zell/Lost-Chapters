@@ -1,5 +1,6 @@
 ﻿using BlueprintCore.Blueprints.Configurators.Items;
 using BlueprintCore.Blueprints.References;
+using Kingmaker.Visual.Fluid;
 using LostChapters.Modules.HellknightCodex.Archetypes;
 using LostChapters.Modules.HellknightCodex.Archetypes.Deacon;
 using LostChapters.Modules.HellknightsCodex.Feats;
@@ -48,7 +49,6 @@ internal class HellknightCodexModule
         OrderOfTheTorrentFeature.Configure();
         OrderOfTheVeilFeature.Configure();
         OrderOfTheWallFeature.Configure();
-
     }
 
     internal static void ConfigureItems()

@@ -4,7 +4,7 @@ using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Items.Armors;
 
-namespace LostChapters.Modules.Custom.Feats;
+namespace LostChapters.Modules.Custom.Feats.SlayerTalents;
 
 internal class ArmoredSwiftnessFeature
 {

@@ -4,7 +4,7 @@ using BlueprintCore.Utils;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
-using LostChapters.Modules.Custom.Archetypes.BlackKnight;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 using System.Collections.Generic;
 
 namespace LostChapters.Tools;

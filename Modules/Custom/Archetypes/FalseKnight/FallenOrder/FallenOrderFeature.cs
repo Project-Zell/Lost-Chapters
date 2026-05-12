@@ -1,8 +1,8 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
-using Kingmaker.EntitySystem.Stats;
+using LostChapters.Modules.Custom.Archetypes.BlackKnight;
 
-namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
+namespace LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
 internal class FallenOrderFeature
 {
@@ -15,7 +15,6 @@ internal class FallenOrderFeature
     public static void Configure()
     {
         Challenge.Configure();
-        Skills.Configure();
 
         ImpostorFeature.Configure();
         RevenantFeature.Configure();
@@ -23,9 +22,8 @@ internal class FallenOrderFeature
 
         ProgressionConfigurator.New(FeatureName, Guid)
             .AddToLevelEntry(level: 01, features: Challenge.Guid)
-            .AddToLevelEntry(level: 01, features: Skills.Guid)
             .AddToLevelEntry(level: 02, features: ImpostorFeature.Guid)
-            //.AddToLevelEntry(level: 08, features: null)
+            .AddToLevelEntry(level: 08, features: RevenantFeature.Guid)
             .AddToLevelEntry(level: 15, features: UnyieldingDevotionFeature.Guid)
             .SetUIGroups(UIGroupBuilder.New().AddGroup([Challenge.Guid]))
             .SetClasses(CharacterClassRefs.CavalierClass.ToString())
@@ -45,25 +43,6 @@ internal class FallenOrderFeature
         internal static void Configure()
         {
             FeatureConfigurator.New(FeatureName, Guid)
-                .SetIsClassFeature(true)
-                .SetDisplayName(DisplayName)
-                .SetDescription(Description)
-                .Configure();
-        }
-    }
-
-    internal class Skills
-    {
-        public static readonly string Guid = "{c59cc762-fea3-4677-8fc1-79862d13a309}";
-
-        private static readonly string FeatureName = $"{FallenOrderFeature.FeatureName}.Skills";
-        private static readonly string DisplayName = $"{FeatureName}.Name";
-        private static readonly string Description = $"{FeatureName}.Description";
-
-        internal static void Configure()
-        {
-            FeatureConfigurator.New(FeatureName, Guid)
-                .AddClassSkill(StatType.SkillStealth)
                 .SetIsClassFeature(true)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)

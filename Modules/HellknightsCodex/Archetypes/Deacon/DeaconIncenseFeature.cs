@@ -1,24 +1,17 @@
-﻿using BlueprintCore.Actions.Builder;
-using BlueprintCore.Actions.Builder.ContextEx;
-using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
+﻿using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
 using BlueprintCore.Blueprints.CustomConfigurators;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
-using BlueprintCore.Conditions.Builder;
-using BlueprintCore.Conditions.Builder.BasicEx;
-using BlueprintCore.Conditions.Builder.ContextEx;
-using BlueprintCore.Utils.Types;
-using Kingmaker.EntitySystem.Stats;
-using Kingmaker.Enums;
-using Kingmaker.RuleSystem;
+using BlueprintCore.Utils.Assets;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.Utility;
-using LostChapters.Modules.HellknightCodex.Archetypes.Deacon.Incense;
 using LostChapters.Modules.HellknightCodex.Components;
+using LostChapters.Tools;
+using UnityEngine;
 
 namespace LostChapters.Modules.HellknightsCodex.Archetypes.Deacon;
 
@@ -85,13 +78,37 @@ internal class DeaconIncenseFeature
         private static readonly string DisplayName = $"{BuffName}.Name";
         private static readonly string Description = $"{BuffName}.Description";
 
+
         internal static void Configure()
         {
             AbilityArea.Configure();
 
+            var sourceFx = "54b14a687d7af52418f23485ca51d690";
+            var newFx = "{9c6befdd-56f2-4466-95f2-1143862a74a4}";
+            
+            AssetTool.RegisterDynamicPrefabLink(assetId: newFx, source: sourceFx, ModifyFx);
+
+            static void ModifyFx(GameObject gameObject)
+            {
+                var transform = gameObject.transform;
+
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/Border").gameObject, new Color(0.85f, 0.7f, 0.85f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/BorderWaves").gameObject, new Color(0.85f, 0.7f, 0.85f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave").gameObject, new Color(0.92f, 0.71f, 0.92f, 0.73f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave/EnergyWave_Start").gameObject, new Color(0.92f, 0.71f, 0.92f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave/Waves").gameObject, new Color(0.937f, 0.678f, 0.937f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave/BigWave_mid").gameObject, new Color(0.94f, 0.678f, 0.94f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave/BigWave_trail").gameObject, new Color(0.92f, 0.71f, 0.92f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave/Bottom_dark").gameObject, new Color(0.2f, 0.024f, 0.2f, 0.549f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/StartWave/Bottom_wave").gameObject, new Color(0.92f, 0.71f, 0.92f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/Border_particleEnergy").gameObject, new Color(0.639f, 0.541f, 0.639f));
+                Toolbox.ChangeStartColor(transform.Find("Ground (1)/sparks (2)").gameObject, new Color(0.847f, 0.529f, 0.847f));
+                Toolbox.ChangeAnimatedLightBaseColor(transform.Find("Point light (3)").gameObject, new Color(0.973f, 0.706f, 0.973f, 0f), true);
+            }
+
             BuffConfigurator.New(BuffName, Guid)
                 .AddAreaEffect(areaEffect: AbilityArea.Guid)
-                .SetFxOnStart("54b14a687d7af52418f23485ca51d690")
+                .SetFxOnStart(newFx)
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi, BlueprintBuff.Flags.StayOnDeath)
                 .SetIsClassFeature(true)
                 .Configure();

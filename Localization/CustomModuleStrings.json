@@ -16,5 +16,11 @@
         "engb": "Black Knight",
         "ruru": "Черный рыцарь",
         "processtemplates": false
+    },
+    {
+        "key": "DemonologistArchetype.Name",
+        "engb": "Demonologist",
+        "ruru": "Демонолог",
+        "processtemplates": false
     }
 ]

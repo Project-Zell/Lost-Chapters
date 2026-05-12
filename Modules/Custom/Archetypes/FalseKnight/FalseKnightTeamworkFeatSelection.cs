@@ -3,7 +3,7 @@ using BlueprintCore.Blueprints.References;
 
 namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
 
-internal class BlackKnightTeamworkFeatSelection
+internal class FalseKnightTeamworkFeatSelection
 {
     public static readonly string Guid = "{71731a4d-e8d6-46fa-a815-93490a6be18f}";
 

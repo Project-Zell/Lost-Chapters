@@ -2,20 +2,21 @@
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
 using Kingmaker.EntitySystem.Stats;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
 namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
 
-internal class BlackKnightArchetype
+internal class FalseKnightArchetype
 {
     public static readonly string Guid = "{a6b94a55-60d2-42f8-ba5c-4e105bc3fa48}";
 
-    private static readonly string ArchetypeName = "BlackKnightArchetype";
+    private static readonly string ArchetypeName = "FalseKnightArchetype";
     private static readonly string LocalizedName = $"{LocalizedName}.Name";
     private static readonly string Description   = $"{LocalizedName}.Description";
 
     internal static void Configure()
     {
-        BlackKnightTeamworkFeatSelection.Configure();
+        FalseKnightTeamworkFeatSelection.Configure();
         ForgottenInsigniaFeature.Configure();
         ForbiddenRelicFeature.Configure();
         FallenOrderFeature.Configure();
@@ -35,14 +36,14 @@ internal class BlackKnightArchetype
         var addFeaturesEntryBuilder = LevelEntryBuilder.New()
             .AddEntry(level: 01, features: FallenOrderFeature.Guid)
             .AddEntry(level: 01, features: ForgottenInsigniaFeature.Guid)
-            .AddEntry(level: 01, features: BlackKnightTeamworkFeatSelection.Guid)
+            .AddEntry(level: 01, features: FalseKnightTeamworkFeatSelection.Guid)
             .AddEntry(level: 03, features: FeatureRefs.SoloTactics.ToString())
             .AddEntry(level: 05, features: FeatureRefs.CavalierCharge.ToString())
             .AddEntry(level: 05, features: FeatureSelectionRefs.CavalierMountSelection.ToString())
-            .AddEntry(level: 07, features: BlackKnightTeamworkFeatSelection.Guid)
-            .AddEntry(level: 13, features: BlackKnightTeamworkFeatSelection.Guid)
+            .AddEntry(level: 07, features: FalseKnightTeamworkFeatSelection.Guid)
+            .AddEntry(level: 13, features: FalseKnightTeamworkFeatSelection.Guid)
             .AddEntry(level: 14, features: ForbiddenRelicFeature.Guid)
-            .AddEntry(level: 19, features: BlackKnightTeamworkFeatSelection.Guid);
+            .AddEntry(level: 19, features: FalseKnightTeamworkFeatSelection.Guid);
 
         ArchetypeConfigurator.New(ArchetypeName, Guid, CharacterClassRefs.CavalierClass)
             .SetClassSkills([StatType.SkillPersuasion, StatType.SkillAthletics, StatType.SkillMobility, StatType.SkillStealth])
@@ -54,7 +55,7 @@ internal class BlackKnightArchetype
             .Configure();
 
         ProgressionConfigurator.For(ProgressionRefs.CavalierProgression)
-            .AddToUIGroups([BlackKnightTeamworkFeatSelection.Guid])
+            .AddToUIGroups([FalseKnightTeamworkFeatSelection.Guid])
             .Configure();
 
         ProgressionConfigurator.For(ProgressionRefs.CavalierProgression)
