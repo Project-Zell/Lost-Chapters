@@ -34,11 +34,10 @@ internal class PlagueKnightClass
         Progression.Configure();
 
         var characterClass = CharacterClassConfigurator.New(ClassName, Guid)
-            //.AddPrerequisiteAlignment(alignment: AlignmentMaskType.LawfulEvil | AlignmentMaskType.LawfulNeutral | AlignmentMaskType.NeutralEvil, checkInProgression: true)
             //.AddPrerequisiteProficiency(weaponProficiencies: [], armorProficiencies: [ArmorProficiencyGroup.Heavy])
             //.AddPrerequisiteStatValue(stat: StatType.BaseAttackBonus, value: 5)
-            //.AddPrerequisiteFeature(FeatureRefs.ShieldBashFeature.ToString())
             //.AddPrerequisiteFeature(FeatureRefs.IronWill.ToString())
+            //.AddPrerequisiteFeature(FeatureRefs.UrgathoaFeature.ToString())
             .SetSkillPoints(2)
             .SetHitDie(DiceType.D10)
             .SetPrestigeClass(true)
@@ -66,17 +65,17 @@ internal class PlagueKnightClass
             //Blasphemy
 
             BlackrotFeature.Configure();
-            InfestationFeature.Configure();
+            AuraOfDecayFeature.Configure();
             IncubatingPainFeature.Configure();
-            HarbingerOfBlightFeature.Configure();
+            UrgathoasGiftFeature.Configure();
             RequiemFeature.Configure();
             TempNoNameFeature.Configure();
 
             ProgressionConfigurator.New(Name, Guid)
                 .SetClasses(PlagueKnightClass.Guid)
-                .AddToLevelEntry(level: 01, features: HarbingerOfBlightFeature.Guid)
+                .AddToLevelEntry(level: 01, features: UrgathoasGiftFeature.Guid)
                 .AddToLevelEntry(level: 02, features: BlackrotFeature.Guid)
-                .AddToLevelEntry(level: 03, features: InfestationFeature.Guid)
+                .AddToLevelEntry(level: 03, features: AuraOfDecayFeature.Guid)
                 .AddToLevelEntry(level: 04, features: BlackrotFeature.Guid)
                 .AddToLevelEntry(level: 05, features: IncubatingPainFeature.Guid)
                 .AddToLevelEntry(level: 06, features: BlackrotFeature.Guid)

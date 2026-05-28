@@ -1,12 +1,11 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
-using Kingmaker.Blueprints.Facts;
+using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Items.Armors;
 using Kingmaker.Blueprints.Items.Ecnchantments;
 using Kingmaker.Blueprints.Items.Weapons;
@@ -23,9 +22,7 @@ using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Mechanics.Conditions;
 using Kingmaker.Utility;
 using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight;
-using LostChapters.Modules.HellknightCodex.PrestigeClasses.Hellknight.Discipline;
 using System;
-using System.Drawing.Text;
 using System.Linq;
 using UnityEngine;
 
@@ -33,6 +30,11 @@ namespace LostChapters.Tools;
 
 internal static class Toolbox
 {
+    public static int GetSpellDescriptorCountOnUnit(UnitEntityData unit, SpellDescriptor spellDescriptor)
+    {
+        return unit.Facts.List.Count(fact => fact.MaybeContext?.SpellDescriptor.HasFlag(spellDescriptor) == true);
+    }
+
     public static int GetItemEnhancementBonus(HandSlot handSlot)
     {
         ItemEntityWeapon maybeWeapon = handSlot.MaybeWeapon;

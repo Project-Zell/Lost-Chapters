@@ -1,19 +1,9 @@
-﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
-using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
-using LostChapters.Modules.Custom.Components;
-using Kingmaker.Enums;
-using Kingmaker.EntitySystem.Stats;
-using Kingmaker.UI.ServiceWindow;
-using BlueprintCore.Blueprints.Configurators.Root.Fx;
-using BlueprintCore.Blueprints.References;
-using Kingmaker.UI.MVVM._PCView.ServiceWindows.Inventory;
-using UnityEngine;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight.Plagues;
 
 namespace LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight;
 
-internal class HarbingerOfBlightFeature
+internal class UrgathoasGiftFeature
 {
     public static readonly string Guid = "{cf95f4f0-6aed-4fbf-ad83-79ecb1ca9959}";
 
@@ -47,9 +37,13 @@ internal class HarbingerOfBlightFeature
         //B: First time been hitet in round you deal acid damage to all enmies in 15 feet radius and try to apply Nectrotic Boils on them
 
         BleakBreathFeature.Configure();
+        BubonicPlagueFeature.Configure();
 
         FeatureSelectionConfigurator.New(FeatureName, Guid)
-            .AddToAllFeatures([BleakBreathFeature.Guid])
+            .AddToAllFeatures([
+                BleakBreathFeature.Guid,
+                BubonicPlagueFeature.Guid
+            ])
             //.AddComponent<IgnoreDesease>()
             .SetDisplayName(DisplayName)
             .SetDescription(Description)

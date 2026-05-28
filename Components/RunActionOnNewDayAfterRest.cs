@@ -16,9 +16,6 @@ internal class RunActionOnNewDayAfterRest : UnitBuffComponentDelegate, IRestFini
 
     public void HandleRestFinished(RestStatus status)
     {
-        if (Owner.HasFact(BlueprintTool.Get<BlueprintFact>(TempNoNameFeature.Guid)))
-            return;
-
         var currentHour = Game.Instance.TimeController.GameTime.Hours;
         if (currentHour - status.SleepTime.TotalHours < 0)
         {

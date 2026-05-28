@@ -8,11 +8,10 @@ using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.Mechanics;
 using LostChapters._wip;
+using LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight.Plagues;
 
 namespace LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight;
 
@@ -61,6 +60,7 @@ internal class BlackrotFeature
                 //.SetActivationType(AbilityActivationType.Immediately)
                 //.SetActivateWithUnitCommand(UnitCommand.CommandType.Free)
                 //.SetActivateOnUnitAction(AbilityActivateOnUnitActionType.Attack)
+                .AddReplaceAbilityParamsWithContext()
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetIcon(Icon)
@@ -80,8 +80,17 @@ internal class BlackrotFeature
         {
             Enchantment.Configure();
 
+            var blackrotEnch = new BlackrotEnchantment()
+            {
+                UrgathoaGiftDiseases = [
+                    (BleakBreathFeature.Guid, BleakBreathFeature.TargetBuff.Guid),
+                    (BubonicPlagueFeature.Guid, BuffRefs.DiseaseBubonicPlagueBuff.Reference.guid),
+                ]
+            };
+
             BuffConfigurator.New(BuffName, Guid)
                 .AddBuffEnchantAnyWeapon(Enchantment.Guid)
+                .AddComponent(blackrotEnch)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetIcon(Icon)
@@ -105,7 +114,7 @@ internal class BlackrotFeature
             var action = ActionsBuilder.New().ApplyBuff(buff: DiseaseBuff.Guid, durationValue: duration);
 
             WeaponEnchantmentConfigurator.New(EnchantmentName, Guid)
-                .AddInitiatorAttackWithWeaponTrigger(action: action, onlyHit: true, onlyOnFirstAttack: true, triggerBeforeAttack: true)
+                .AddInitiatorAttackWithWeaponTrigger(action: action, onlyOnFirstHit: true, triggerBeforeAttack: true)
                 .SetWeaponFxPrefab("bfafef74d59950242915a8e294e6fac0")
                 .SetEnchantName(DisplayName)
                 .SetDescription(Description)
@@ -151,7 +160,6 @@ internal class BlackrotFeature
             BuffConfigurator.New(BuffName, Guid)
                 .AddComponent(blackrot)
                 .AddSpellDescriptorComponent(descriptor: SpellDescriptor.Disease)
-                .AddSavingThrowBonusAgainstDescriptor
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetStacking(StackingType.Replace)
