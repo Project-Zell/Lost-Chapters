@@ -1,4 +1,5 @@
 ﻿using BlueprintCore.Blueprints.Configurators.Classes;
+using LostChapters.Modules.HellknightsCodex.AnimalCompanions.Hellhound;
 
 namespace LostChapters.Modules.HellknightCodex.AnimalCompanions.Hellhound;
 

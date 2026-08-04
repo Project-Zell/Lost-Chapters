@@ -14,7 +14,9 @@ internal class CallOfTheAbyssFeature
 {
     public static readonly string Guid = "{bfabd869-e103-479c-8944-16055c16c0ae}";
 
-    private static readonly string FeatureName = "CallOfTheAbyssFeature";
+    private static readonly string BaseName = "CallOfTheAbyss";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
@@ -39,7 +41,7 @@ internal class CallOfTheAbyssFeature
     {
         public static readonly string Guid = "{bd1ee7dc-8998-448b-8057-20d101a08333}";
 
-        private static readonly string AbilityName = $"{FeatureName}.Ability";
+        private static readonly string AbilityName = $"{BaseName}Ability";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -52,7 +54,7 @@ internal class CallOfTheAbyssFeature
 
             AbilityConfigurator.New(AbilityName, Guid)
                 .AddAbilityCasterHasNoFacts([Buff.Guid])
-                .AddAbilityResourceLogic(requiredResource: resource, isSpendResource: true, amount: 1)
+                .AddAbilityResourceLogic(requiredResource: resource, isSpendResource: true, amount: 2)
                 .AddAbilityEffectRunAction(action)
                 .SetType(AbilityType.Supernatural)
                 .SetCanTargetSelf(true)
@@ -68,7 +70,7 @@ internal class CallOfTheAbyssFeature
     {
         public static readonly string Guid = "{642e95ad-e185-490a-a4df-91c6a9f8eedc}";
 
-        private static readonly string BuffName = $"{FeatureName}.Buff";
+        private static readonly string BuffName = $"{BaseName}Buff";
         private static readonly string DisplayName = $"{BuffName}.Name";
         private static readonly string Description = $"{BuffName}.Description";
 

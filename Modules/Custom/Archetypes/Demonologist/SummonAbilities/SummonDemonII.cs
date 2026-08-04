@@ -9,7 +9,7 @@ internal class SummonDemonII
 
     private static readonly string BaseName = "SummonDemonII";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
+    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon2.png";
 
     internal static void Configure()
     {
@@ -21,7 +21,7 @@ internal class SummonDemonII
     {
         public static readonly string Guid = "{e5b7c8c5-acb3-4731-9c94-622371a1f1d4}";
 
-        private static readonly string AbilityName = $"{BaseName}.BaseAbility";
+        private static readonly string AbilityName = $"{BaseName}Base";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -44,7 +44,7 @@ internal class SummonDemonII
     {
         public static readonly string Guid = "{d2a944d8-1ddb-4779-bf9f-8a365d87b7f7}";
 
-        private static readonly string AbilityName = $"{BaseName}.MajorAbility";
+        private static readonly string AbilityName = $"{BaseName}Single";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -57,7 +57,7 @@ internal class SummonDemonII
                 description: Description,
                 icon: Icon,
                 summonUnitID: DretchSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
         }
     }
 
@@ -65,7 +65,7 @@ internal class SummonDemonII
     {
         public static readonly string Guid = "{4bbaddb6-9a26-40a2-a93e-6ae2cc11a34b}";
 
-        private static readonly string AbilityName = $"{BaseName}.MinorAbility";
+        private static readonly string AbilityName = $"{BaseName}OneToThree";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 

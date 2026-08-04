@@ -4,13 +4,15 @@ using BlueprintCore.Utils.Types;
 using Kingmaker.EntitySystem.Stats;
 using LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
-namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
+namespace LostChapters.Modules.Custom.Archetypes.FalseKnight;
 
 internal class FalseKnightArchetype
 {
     public static readonly string Guid = "{a6b94a55-60d2-42f8-ba5c-4e105bc3fa48}";
 
-    private static readonly string ArchetypeName = "FalseKnightArchetype";
+    private static readonly string BaseName = "FalseKnight";
+
+    private static readonly string ArchetypeName = $"{BaseName}Archetype";
     private static readonly string LocalizedName = $"{LocalizedName}.Name";
     private static readonly string Description   = $"{LocalizedName}.Description";
 

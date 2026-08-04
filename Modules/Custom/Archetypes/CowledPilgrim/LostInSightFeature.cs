@@ -1,24 +1,25 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Blueprints.References;
-using UnityEngine;
+using LostChapters.Modules.Custom.Components;
 
-namespace LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
+namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
 internal class LostInSightFeature
 {
-    public static readonly string Guid = "{08592d65-737c-4649-a543-6696345cd4b1}";
+    public static readonly string Guid = "{d7b525f7-3029-4eab-b412-596290003b24}";
+    
+    private static readonly string BaseName = "LostInSight";
 
-    private static readonly string FeatureName = "LostInSight";
-    private static readonly string DisplayName = "LostInSight.Name";
-    private static readonly string Description = "LostInSight.Description";
+    private static readonly string FeatureName = $"{BaseName}Feature";
+    private static readonly string DisplayName = $"{FeatureName}.Name";
+    private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly Sprite Icon = FeatureRefs.Camouflage.Reference.Get().Icon;
+    private static readonly string Icon = $"{CustomModule.IconPath}/{CowledPilgrimArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
         FeatureConfigurator.New(FeatureName, Guid)
-            .AddFacts([FeatureRefs.Camouflage.ToString()])
-            .SetHideInCharacterSheetAndLevelUp(true)
+            .AddFullSpeedInStealth()
+            .AddComponent<LostInSight>()
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)

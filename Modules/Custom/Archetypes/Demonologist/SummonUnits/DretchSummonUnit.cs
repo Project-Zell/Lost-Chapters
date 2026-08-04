@@ -11,7 +11,7 @@ internal class DretchSummonUnit
 {
     public static readonly string Guid = "{5ec14759-51b1-4cf7-927d-6176766f8a3c}";
     
-    internal static readonly string UnitName = "DretchSummonUnit";
+    internal static readonly string UnitName = "DretchSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

@@ -21,7 +21,7 @@ internal class SummonDemonI
     {
         public static readonly string Guid = "{f5ed109f-3b24-4718-8c1e-02e4561067d1}";
 
-        private static readonly string AbilityName = $"{BaseName}.MajorAbility";
+        private static readonly string AbilityName = $"{BaseName}Single";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -34,7 +34,7 @@ internal class SummonDemonI
                 description: Description,
                 icon: Icon,
                 summonUnitID: QuasitSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
         }
     }
 }

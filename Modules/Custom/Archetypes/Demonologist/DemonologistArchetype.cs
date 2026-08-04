@@ -17,7 +17,9 @@ internal class DemonologistArchetype
 {
     public static readonly string Guid = "{836a4435-0f42-42d7-b413-d566a9ae0f7d}";
 
-    private static readonly string ArchetypeName = "DemonologistArchetype";
+    private static readonly string BaseName = "Demonologist";
+
+    private static readonly string ArchetypeName = $"{BaseName}Archetype";
     private static readonly string LocalizedName = $"{ArchetypeName}.Name";
     private static readonly string Description   = $"{ArchetypeName}.Description";
 

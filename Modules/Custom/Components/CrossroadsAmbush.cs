@@ -7,7 +7,7 @@ using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Components.Base;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.Utility;
-using LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
+using LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 using System.Collections.Generic;
 
 namespace LostChapters.Modules.Custom.Components;

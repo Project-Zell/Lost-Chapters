@@ -9,7 +9,7 @@ internal class KalavakusSummonUnit
 {
     internal static readonly string Guid = "{8d45f9be-4a06-4878-bdf9-168c877a79c5}";
 
-    internal static readonly string UnitName = "KalavakusSummonUnit";
+    internal static readonly string UnitName = "KalavakusSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

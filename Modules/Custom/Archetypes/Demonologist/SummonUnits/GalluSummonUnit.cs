@@ -11,7 +11,7 @@ internal class GalluSummonUnit
 {
     public static readonly string Guid = "{971eeb98-f36d-4558-b483-c85a78b88788}";
 
-    internal static readonly string UnitName = "GalluSummonUnit";
+    internal static readonly string UnitName = "GalluSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

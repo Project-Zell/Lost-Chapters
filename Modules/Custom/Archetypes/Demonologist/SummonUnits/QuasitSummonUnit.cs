@@ -10,7 +10,7 @@ internal class QuasitSummonUnit
 {
     public static readonly string Guid = "{50687770-4858-4a1a-9a56-a613addcffed}";
 
-    internal static readonly string UnitName = "QuasitSummonUnit";
+    internal static readonly string UnitName = "QuasitSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

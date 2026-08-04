@@ -5,17 +5,18 @@ using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using Kingmaker.Enums;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using LostChapters.Modules.Custom.Components;
-using LostChapters.Modules.GraySisterhood;
 
-namespace LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
+namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
 internal class UnseenPathFeature
 {
     public static readonly string Guid = "{07bc21a6-214a-488f-ab46-38c2810dc086}";
 
-    private static readonly string FeatureName = "UnseenPath";
-    private static readonly string DisplayName = "UnseenPath.Name";
-    private static readonly string Description = "UnseenPath.Description";
+    private static readonly string BaseName = "UnseenPath";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
+    private static readonly string DisplayName = $"{FeatureName}.Name";
+    private static readonly string Description = $"{FeatureName}.Description";
 
     private static readonly string Icon = $"{CustomModule.IconPath}/unseenpath.png";
 
@@ -28,7 +29,7 @@ internal class UnseenPathFeature
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            .SetIcon(Icon)
+            //.SetIcon(Icon)
             .Configure();
     }
 
@@ -36,7 +37,7 @@ internal class UnseenPathFeature
     {
         public static readonly string Guid = "{eb0a9605-a1bb-4f3b-8834-442c1622d03c}";
 
-        private static readonly string BuffName = "UnseenPath.Buff";
+        private static readonly string BuffName = $"{BaseName}Buff";
 
         internal static void Configure()
         {

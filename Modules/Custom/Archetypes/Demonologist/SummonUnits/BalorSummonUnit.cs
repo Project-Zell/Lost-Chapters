@@ -11,7 +11,7 @@ internal class BalorSummonUnit
 {
     public static readonly string Guid = "{7ac86705-9dd9-4775-9be0-4a4277c9e8c8}";
 
-    internal static readonly string UnitName = "BalorSummonUnit";
+    internal static readonly string UnitName = "BalorSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

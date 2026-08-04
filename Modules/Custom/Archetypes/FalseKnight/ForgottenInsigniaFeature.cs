@@ -12,13 +12,15 @@ using Kingmaker.Utility;
 using LostChapters.Modules.Custom.Components;
 using LostChapters.Modules.HellknightsCodex;
 
-namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
+namespace LostChapters.Modules.Custom.Archetypes.FalseKnight;
 
 internal class ForgottenInsigniaFeature
 {
     public static readonly string Guid = "{4ffc69ce-b22a-4527-9269-24d3f2ac15f6}";
 
-    private static readonly string FeatureName = "ForgottenInsigniaFeature";
+    private static readonly string BaseName = "ForgottenInsignia";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

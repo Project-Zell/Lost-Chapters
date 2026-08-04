@@ -23,7 +23,7 @@ namespace LostChapters.Modules.Custom.Archetypes.Demonologist.Tools;
 
 internal class DemonologistSummonAbilityHelper
 {
-    internal enum SummonCountType { single, d3, d4plus1 }
+    internal enum SummonCountType { Single, d3, d4plus1 }
 
     internal static void CreateSummonAbility(string guid, string name, string displayName, string description, string icon, string summonUnitID, SummonCountType countType)
     {
@@ -70,7 +70,7 @@ internal class DemonologistSummonAbilityHelper
             .SetIcon(icon)
             .Configure();
 
-        if (countType is SummonCountType.single)
+        if (countType is SummonCountType.Single)
             return;
 
         ContextRankConfig summonConfig;

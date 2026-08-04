@@ -5,7 +5,6 @@ using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Enums;
 using LostChapters.Modules.HellknightCodex.Orders.Cavalier.EnneadStar;
-using LostChapters.Modules.HellknightsCodex.Components;
 using LostChapters.Modules.HellknightsCodex.PrestigeClasses.Hellknight.Discipline;
 
 namespace LostChapters.Tools

@@ -16,7 +16,7 @@ internal class VrockSummonUnit
 {
     internal static readonly string Guid = "{908010d9-a3ce-4a30-a111-63a0743992ea}";
 
-    internal static readonly string UnitName = "VrockSummonUnit";
+    internal static readonly string UnitName = "VrockSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

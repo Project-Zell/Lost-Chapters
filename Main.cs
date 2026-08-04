@@ -139,7 +139,5 @@ public static class Main
         CustomModule.Configure();
         GraySisterhoodModule.Configure();
         HellknightCodexModule.Configure();
-
-        
     }
 }

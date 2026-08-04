@@ -1,26 +1,1094 @@
 [
     {
-        "key": "CrossroadsAmbushFeature.Name",
-        "engb": "Crossroads Ambush",
-        "ruru": "Засада на перекрестке",
-        "processtemplates": false
+        "Key": "CowledPilgrimArchetype.Name",
+        "enGB": "Cowled Pilgrim",
+        "ruRU": "Безликий странник",
+        "ProcessTemplates": false
     },
     {
-        "key": "CrossroadsAmbushFeature.Description",
-        "engb": "Start at level what ever bro",
-        "ruru": "Засада на перекрестке",
-        "processtemplates": false
+        "Key": "CowledPilgrimArchetype.Description",
+        "enGB": "While most cavaliers seek glory on the battlefield, some find it in helping those in need. These knights conceal their faces and armor under hoods, roaming the land and stepping in whenever they witness injustice. Remaining nameless and faceless, they expect no gratitude and leave as quickly as they appear.",
+        "ruRU": "В то время как большинство рыцарей ищет славу на поле боя, некоторые находят ее в помощи нуждающимся. Эти рыцари скитаются по землям, пряча свои лица и доспехи под капюшонами, и вмешиваются, когда становятся свидетелями несправедливости. Оставаясь безымянными и бесличными, они не ожидают благодарности и исчезают так же быстро, как и появляются.",
+        "ProcessTemplates": false
     },
     {
-        "key": "BlackKnight.Name",
-        "engb": "Black Knight",
-        "ruru": "Черный рыцарь",
-        "processtemplates": false
+        "Key": "CrossroadsAmbushFeature.Name",
+        "enGB": "Crossroads Ambush",
+        "ruRU": "Засада на перекрестке",
+        "ProcessTemplates": false
     },
     {
-        "key": "DemonologistArchetype.Name",
-        "engb": "Demonologist",
-        "ruru": "Демонолог",
-        "processtemplates": false
+        "Key": "CrossroadsAmbushFeature.Description",
+        "enGB": "At 3rd level, while a cowled pilgrim wields a {g|Encyclopedia:Weapon_Proficiency}simple weapon{/g}, he gains the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}, allowing him to make a full {g|Encyclopedia:Attack}attack{/g} at the end of a charge. In addition, a cowled pilgrim does not suffer any {g|Encyclopedia:Penalty}penalty{/g} to his {g|Encyclopedia:Armor_Class}Armor Class{/g} after making a charge attack.",
+        "ruRU": "Начиная с 3 уровня, когда безликий странник держит в руках {g|Encyclopedia:Weapon_Proficiency}простое оружие{/g}, он получает {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g}, позволяющую ему совершить полную {g|Encyclopedia:Attack}атаку{/g} с разбега. Кроме того, безликий странник не получает никаких {g|Encyclopedia:Penalty}штрафов{/g} к {g|Encyclopedia:Armor_Class}защите{/g} после совершения атаки с разбега.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EndlessStrideFeature.Name",
+        "enGB": "Endless Stride",
+        "ruRU": "Вечные скитания",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EndlessStrideFeature.Description",
+        "enGB": "At 20th level, when a cowled pilgrim is in favored terrain, he gains immunity to ground-based effects, such as difficult terrain. Additionally, when he is in favored terrain and making a full {g|Encyclopedia:Attack}attack{/g}, he may make one extra attack with his main weapon.",
+        "ruRU": "На 20 уровне, находясь на своей излюбленной местности, безликий странник получает невосприимчивость к любым наземным эффектам, таким как труднопреодолимая местность. Кроме того, находясь на своей излюбленной местности и совершая полную {g|Encyclopedia:Attack}атаку{/g}, безликий странник может совершить дополнительную атаку своим основным оружием.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LoneWandererFeature.Name",
+        "enGB": "Lone Wanderer",
+        "ruRU": "Одинокий путник",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LoneWandererFeature.Description",
+        "enGB": "At 4th, 10th and 16th level, a cowled pilgrim gains a favored terrain as the ranger class feature of the same name, but the {g|Encyclopedia:Bonus}bonus{/g} does not increase with his level.\nA cowled pilgrim's land {g|Encyclopedia:Speed}speed{/g} is increased by 10 feet when he is in favored terrain. Each time a cowled pilgrim gains a new type of favored terrain, this movement speed {g|Encyclopedia:Bonus}bonus{/g} increases by an additional 10 feet, up to a maximum of 30 feet.",
+        "ruRU": "На 4, 10 и 16 уровне, безликий странник получает излюбленную местность, как от одноименной способности рейнджера, но {g|Encyclopedia:Bonus}бонус{/g} от нее с ростом в уровне не увеличивается.\nКогда безликий странник находится на своей излюбленной местности, его {g|Encyclopedia:Speed}скорость{/g} передвижения по земле увеличивается на 10 футов. Всякий раз, когда безликий странник получает новый тип излюбленной местности, этот бонус к скорости передвижения увеличивается на дополнительные 10 футов, до максимума в 30 футов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LoneWandererFeatureSelection.Name",
+        "enGB": "Lone Wanderer – Favored Terrain",
+        "ruRU": "Одинокий путник – Излюбленная местность",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LostInSightFeature.Name",
+        "enGB": "Lost In Sight",
+        "ruRU": "Исчезнуть из виду",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LostInSightFeature.Description",
+        "enGB": "At 7th level, a cowled pilgrim can move at full {g|Encyclopedia:Speed}speed{/g} while using the {g|Encyclopedia:Stealth}Stealth{/g} {g|Encyclopedia:Skills}skill{/g} without {g|Encyclopedia:Penalty}penalty{/g}. In addition, while he is in favored terrain, a cowled pilgrim gains a +4 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} against {g|Encyclopedia:Attack_Of_Opportunity}attacks of opportunity{/g}.",
+        "ruRU": "Начиная с 7 уровня, безликий странник двигается с обычной {g|Encyclopedia:Speed}скоростью{/g}, используя {g|Encyclopedia:Skills}навык{/g} {g|Encyclopedia:Stealth}Скрытность{/g} и не получает за это {g|Encyclopedia:Penalty}штрафов{/g}. Кроме того, находясь на своей излюбленной местности, безликий странник получает {g|Encyclopedia:Bonus}бонус{/g} +4 к {g|Encyclopedia:Armor_Class}защите{/g} от {g|Encyclopedia:Attack_Of_Opportunity}внеочередных атак{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NoRespiteFeature.Name",
+        "enGB": "No Respite",
+        "ruRU": "Без передышки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NoRespiteFeature.Description",
+        "enGB": "At 5th level, a cowled pilgrim can move at his normal {g|Encyclopedia:Speed}speed{/g} while wearing medium armor. In addition, when he is in favored terrain, a cowled pilgrim gains a +2 morale {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}Fortitude saving throws{/g} against {g|ConditionFatigued}fatigue{/g} and {g|ConditionExhausted}exhaustion{/g}.",
+        "ruRU": "Начиная с 5 уровня, безликий странник перемещается с обычной {g|Encyclopedia:Speed}скоростью{/g} в средней броне. Кроме того, находясь на своей излюбленной местности, безликий странник получает {g|Encyclopedia:Bonus}бонус{/g} боевого духа +2 к {g|Encyclopedia:Saving_Throw}спасброскам Стойкости{/g} против {g|ConditionFatigued}утомления{/g} и {g|ConditionExhausted}бессилия{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RoutekeeperFeature.Name",
+        "enGB": "Routekeeper",
+        "ruRU": "Хранитель пути",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RoutekeeperFeature.Description",
+        "enGB": "At 14th level, a cowled pilgrim gains a +1 {g|Encyclopedia:Bonus}bonus{/g} to his {g|Encyclopedia:Initiative}initiative{/g} for each unique favored terrain he possesses.",
+        "ruRU": "Начиная с 14 уровня, безликий странник получает {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Initiative}инициативе{/g} +1 за каждый уникальный тип излюбленной местности, которым он владеет.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "UnseenPathFeature.Name",
+        "enGB": "Unseen Path",
+        "ruRU": "Невиданная тропа",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "UnseenPathFeature.Description",
+        "enGB": "At 11th level, a cowled pilgrim can move at his normal {g|Encyclopedia:Speed}speed{/g} while wearing heavy armor. In addition, while he is in favored terrain, a cowled pilgrim gains {g|Encyclopedia:Concealment}concealment{/g} (20% miss chance).",
+        "ruRU": "Начиная с 11 уровня, безликий странник перемещается с обычной {g|Encyclopedia:Speed}скоростью{/g} в тяжелой броне. Кроме того, находясь на своей излюбленной местности, безликий странник получает {g|Encyclopedia:Concealment}маскировку{/g} (вероятность промаха 20%).",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonISingle.Name",
+        "enGB": "Summon Demon I",
+        "ruRU": "Призыв демона I",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonISingle.Description",
+        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons an extraplanar quasit. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIBase.Name",
+        "enGB": "Summon Demon II",
+        "ruRU": "Призыв демона II",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar dretch or {g|Encyclopedia:Dice}1d3{/g} extraplanar quasits. The summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIISingle.Name",
+        "enGB": "Summon Demon II (Dretch)",
+        "ruRU": "Призыв демона II ()",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIISingle.Description",
+        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons an extraplanar dretch. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIOneToThree.Name",
+        "enGB": "Summon Demon II (1d3 Quasits)",
+        "ruRU": "Призыв демона II (1d3)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar quasits. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIIBase.Name",
+        "enGB": "Summon Demon III",
+        "ruRU": "Призыв демона II",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIIBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar schir, {g|Encyclopedia:Dice}1d3{/g} extraplanar dretches, or 1d4+1 extraplanar quasits. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIISingle.Name",
+        "enGB": "Summon Demon III (Schir)",
+        "ruRU": "Призыв демона II (Дреч)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIISingle.Description",
+        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons an extraplanar schir. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIIOneToThree.Name",
+        "enGB": "Summon Demon III (1d3 Dretches)",
+        "ruRU": "Призыв демона II (1d3 Квазитов)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIIOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar dretches. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIIOneToFourPlusOne.Name",
+        "enGB": "Summon Demon III (1d4+1 Quasits)",
+        "ruRU": "Призыв демона III (1d4+1 )",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIIIOneToFourPlusOne.Description",
+        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4+1{/g} extraplanar quasits. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVBase.Name",
+        "enGB": "Summon Demon IV",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar babau, {g|Encyclopedia:Dice}1d3{/g} extraplanar schirs, or 1d4+1 extraplanar dretches. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVSingle.Name",
+        "enGB": "Summon Demon IV (Babau)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVSingle.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar babau. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVOneToThree.Name",
+        "enGB": "Summon Demon IV (1d3 Schirs)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar schirs. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVOneToFourPlusOne.Name",
+        "enGB": "Summon Demon IV (1d4+1 Dretches)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIVOneToFourPlusOne.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar dretches. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVBase.Name",
+        "enGB": "Summon Demon V",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar nabasu, {g|Encyclopedia:Dice}1d3{/g} extraplanar babaus, or 1d4+1 extraplanar schirs. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVSingle.Name",
+        "enGB": "Summon Demon V (Nabasu)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVSingle.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar nabasu. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVOneToThree.Name",
+        "enGB": "Summon Demon V (1d3 Babaus)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar babaus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVOneToFourPlusOne.Name",
+        "enGB": "Summon Demon V (1d4+1 Schirs)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVOneToFourPlusOne.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar schirs. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIBase.Name",
+        "enGB": "Summon Demon VI",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar vrock, {g|Encyclopedia:Dice}1d3{/g} extraplanar nabasus, or 1d4+1 extraplanar babaus. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVISingle.Name",
+        "enGB": "Summon Demon VI (Vrock)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVISingle.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar vrock. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIOneToThree.Name",
+        "enGB": "Summon Demon VI (1d3 Nabasus)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar nabasus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIOneToFourPlusOne.Name",
+        "enGB": "Summon Demon VI (1d4+1 Babaus)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIOneToFourPlusOne.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar babaus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIBase.Name",
+        "enGB": "Summon Demon VII",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar kalavakus, {g|Encyclopedia:Dice}1d3{/g} extraplanar vrocks, or 1d4+1 extraplanar nabasus. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIISingle.Name",
+        "enGB": "Summon Demon VII (Kalavakus)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIISingle.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar kalavakus. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIOneToThree.Name",
+        "enGB": "Summon Demon VII (1d3 Vrocks)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar vrocks. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIOneToFourPlusOne.Name",
+        "enGB": "Summon Demon VII (1d4+1 Nabasus)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIOneToFourPlusOne.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar nabasus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIIBase.Name",
+        "enGB": "Summon Demon VIII",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIIBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar gallu, {g|Encyclopedia:Dice}1d3{/g} extraplanar kalavakuses, or 1d4+1 extraplanar vrocks. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIISingle.Name",
+        "enGB": "Summon Demon VIII (Gallu)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIISingle.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar gallu. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIIOneToThree.Name",
+        "enGB": "Summon Demon VIII (1d3 Kalavakuses)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIIOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar kalavakus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIIOneToFourPlusOne.Name",
+        "enGB": "Summon Demon VIII (1d4+1 Vrocks)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonVIIIOneToFourPlusOne.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar vrocks. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXBase.Name",
+        "enGB": "Summon Demon IX",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXBase.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar balor, {g|Encyclopedia:Dice}1d3{/g} extraplanar gallus, or 1d4+1 extraplanar kalavakuses. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXSingle.Name",
+        "enGB": "Summon Demon IX (Balor)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXSingle.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar balor. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXOneToThree.Name",
+        "enGB": "Summon Demon IX (1d3 Gallus)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXOneToThree.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar gallus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXOneToFourPlusOne.Name",
+        "enGB": "Summon Demon IX (1d4+1 Kalavakuses)",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SummonDemonIXOneToFourPlusOne.Description",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar kalavakuses. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BabauSummon.Name",
+        "enGB": "Summoned Babau",
+        "ruRU": "Призванный бабау",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BalorSummon.Name",
+        "enGB": "Summoned Balor",
+        "ruRU": "Призванный балор",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DretchSummon.Name",
+        "enGB": "Summoned Dretch",
+        "ruRU": "Призванный дреч",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GalluSummon.Name",
+        "enGB": "Summoned Gallu",
+        "ruRU": "Призванный галлу",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "KalavakusSummon.Name",
+        "enGB": "Summoned Kalavakus",
+        "ruRU": "Призванный калавакус",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NabasuSummon.Name",
+        "enGB": "Summoned Nabasu",
+        "ruRU": "Призванный набасу",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "QuasitSummon.Name",
+        "enGB": "Summoned Quasit",
+        "ruRU": "Призванный квазит",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SchirSummon.Name",
+        "enGB": "Summoned Schir",
+        "ruRU": "Призванный щир",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VrockSummon.Name",
+        "enGB": "Summoned Vrock",
+        "ruRU": "Призванный врок",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CallOfTheAbyssFeature.Name",
+        "enGB": "Call of the Abyss",
+        "ruRU": "Зов бездны",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CallOfTheAbyssFeature.Description",
+        "enGB": "At 3th level, a demonologist can expend 2 points from her arcane reservoir to cause all creatures conjured by her next summon demon spell to enter a rage. If the demonologist has rage powers from any source, those rage powers also apply to the demons.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonicStudiesFeature.Name",
+        "enGB": "Demonic Studies",
+        "ruRU": "Демонические учения",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonicStudiesFeature.Description",
+        "enGB": "Whenever a demonologist would learn a summon monster spell by gained a level in the arcanist class, she learns the summon demon spell of the same level in its place instead. Additionally, whenever a demonologist would learn dominate person or dominate person, mass by the same means, she learns dominate demon or dominate demon, mass instead.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonologistArchetype.Name",
+        "enGB": "Demonologist",
+        "ruRU": "Демонолог",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonologistArchetype.Description",
+        "enGB": "These arcanists reject the basic rules of conjuration, seeking out the most fiendish creatures and forcing them to fight by their side. This binding results in horrendous mental torment, but any price is worth paying for this power in the eyes of the demonologist.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonologistRagePowerSelection.Name",
+        "enGB": "Rage Power",
+        "ruRU": "Дары ярости",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonologistRagePowerSelection.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonSummonRageBuff.Name",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonSummonRageBuff.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "HellsWhisperFeature.Name",
+        "enGB": "Hells Whisper",
+        "ruRU": "Адский шепот",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "HellsWhisperFeature.Description",
+        "enGB": "A demonologist takes a -1 penalty on Will saving throws for each demon under her control (either summoned or dominated by a dominate demon spell). If the demonologist is good-aligned, whenever a controlled demon's hit points are reduced to 0 or lower, she must make a Will save (DC 14) or become confused for 1 round.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FishermanBackground.Name",
+        "enGB": "Fisherman",
+        "ruRU": "Рыбак",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FishermanBackground.Description",
+        "enGB": "Fisherman adds {g|Encyclopedia:Mobility}Mobility{/g} and {g|Encyclopedia:Perception}Perception{/g} to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also gets Deft Hands as a bonus {g|Encyclopedia:Feat}feat{/g}.\nIf the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding {g|Encyclopedia:Bonus}bonuses{/g} from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a –1 {g|Encyclopedia:Armor_Check_Penalty}Armor Check Penalty{/g} reduction in case of armor proficiency.",
+        "ruRU": "Рыбак добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Mobility}Подвижность{/g} и {g|Encyclopedia:Perception}Внимание{/g}. Он также получает Легкую руку в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.\nЕсли у персонажа уже есть классовый навык, {g|Encyclopedia:Weapon_Proficiency}умение обращения с оружием{/g} или умение использования брони, даваемое биографией в рамках класса, выбранной в ходе создания персонажа, соответствующие {g|Encyclopedia:Bonus}бонусы{/g} биографии меняются на бонус мастерства +1 в случае навыков, бонус усиления +1 в случае умения обращения с оружием и снижением в виде {g|Encyclopedia:Armor_Check_Penalty}штрафа за броню{/g} –1 в случае умения использования брони.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForagerBackground.Name",
+        "enGB": "Forager",
+        "ruRU": "Фуражир",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForagerBackground.Description",
+        "enGB": "Forager adds {g|Encyclopedia:Perception}Perception{/g} to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also becomes proficient with sickles and gains +2 {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Initiative}initiative{/g} rolls.\nIf the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding {g|Encyclopedia:Bonus}bonuses{/g} from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a –1 {g|Encyclopedia:Armor_Check_Penalty}Armor Check Penalty{/g} reduction in case of armor proficiency.",
+        "ruRU": "Фуражир добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Perception}Внимание{/g}. Он также учится обращаться с серпами и получает бонус +2 к броскам на {g|Encyclopedia:Initiative}инициативу{/g}.\nЕсли у персонажа уже есть классовый навык, {g|Encyclopedia:Weapon_Proficiency}умение обращения с оружием{/g} или умение использования брони, даваемое биографией в рамках класса, выбранной в ходе создания персонажа, соответствующие {g|Encyclopedia:Bonus}бонусы{/g} биографии меняются на бонус мастерства +1 в случае навыков, бонус усиления +1 в случае умения обращения с оружием и снижением в виде {g|Encyclopedia:Armor_Check_Penalty}штрафа за броню{/g} –1 в случае умения использования брони.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "HighbornBackground.Name",
+        "enGB": "Highborn",
+        "ruRU": "Высокородный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "HighbornBackground.Description",
+        "enGB": "Highborn adds {g|Encyclopedia:Persuasion}Persuasion{/g} to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also becomes proficient with a dueling sword.\nIf the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding {g|Encyclopedia:Bonus}bonuses{/g} from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a –1 {g|Encyclopedia:Armor_Check_Penalty}Armor Check Penalty{/g} reduction in case of armor proficiency.",
+        "ruRU": "Высокородный добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Persuasion}Убеждение{/g}. Он также учится обращаться с дуэльными мечами.\nЕсли у персонажа уже есть классовый навык, {g|Encyclopedia:Weapon_Proficiency}умение обращения с оружием{/g} или умение использования брони, даваемое биографией в рамках класса, выбранной в ходе создания персонажа, соответствующие {g|Encyclopedia:Bonus}бонусы{/g} биографии меняются на бонус мастерства +1 в случае навыков, бонус усиления +1 в случае умения обращения с оружием и снижением в виде {g|Encyclopedia:Armor_Check_Penalty}штрафа за броню{/g} –1 в случае умения использования брони.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GravediggerBackground.Name",
+        "enGB": "Gravedigger",
+        "ruRU": "Могильщик",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GravediggerBackground.Description",
+        "enGB": "Gravedigger adds {g|Encyclopedia:Athletics}Athletics{/g} to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also gains a +1 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Saving_Throw}Fortitude saving throws{/g}. Additionally, a gravedigger gains Toughness as a bonus {g|Encyclopedia:Feat}feat{/g}.\nIf the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding {g|Encyclopedia:Bonus}bonuses{/g} from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a –1 {g|Encyclopedia:Armor_Check_Penalty}Armor Check Penalty{/g} reduction in case of armor proficiency.",
+        "ruRU": "Могильщик добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Athletics}Атлетику{/g}. Он также получает {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:Saving_Throw}спасброскам Стойкости{/g}. Кроме того, могильщик получает Живучесть в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.\nЕсли у персонажа уже есть классовый навык, {g|Encyclopedia:Weapon_Proficiency}умение обращения с оружием{/g} или умение использования брони, даваемое биографией в рамках класса, выбранной в ходе создания персонажа, соответствующие {g|Encyclopedia:Bonus}бонусы{/g} биографии меняются на бонус мастерства +1 в случае навыков, бонус усиления +1 в случае умения обращения с оружием и снижением в виде {g|Encyclopedia:Armor_Check_Penalty}штрафа за броню{/g} –1 в случае умения использования брони.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "TavernServerBackground.Name",
+        "enGB": "Tavern Server",
+        "ruRU": "Работник таверны",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "TavernServerBackground.Description",
+        "enGB": "Tavern Server adds {g|Encyclopedia:Mobility}Mobility{/g} to the list of her class {g|Encyclopedia:Skills}skills{/g}. She also gets Dodge as a bonus {g|Encyclopedia:Feat}feat{/g}.\nIf the character already has the class skill, {g|Encyclopedia:Weapon_Proficiency}weapon proficiency{/g} or armor proficiency granted by the selected background from her class during character creation, then the corresponding {g|Encyclopedia:Bonus}bonuses{/g} from background change to a +1 competence bonus in case of skills, a +1 enhancement bonus in case of weapon proficiency and a –1 {g|Encyclopedia:Armor_Check_Penalty}Armor Check Penalty{/g} reduction in case of armor proficiency.",
+        "ruRU": "Работник таверны добавляет к своему списку классовых {g|Encyclopedia:Skills}навыков{/g} {g|Encyclopedia:Mobility}Подвижность{/g}. Он также получает Уклонение в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.\nЕсли у персонажа уже есть классовый навык, {g|Encyclopedia:Weapon_Proficiency}умение обращения с оружием{/g} или умение использования брони, даваемое биографией в рамках класса, выбранной в ходе создания персонажа, соответствующие {g|Encyclopedia:Bonus}бонусы{/g} биографии меняются на бонус мастерства +1 в случае навыков, бонус усиления +1 в случае умения обращения с оружием и снижением в виде {g|Encyclopedia:Armor_Check_Penalty}штрафа за броню{/g} –1 в случае умения использования брони.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DistractingCharge.Name",
+        "enGB": "Distracting Charge",
+        "ruRU": "Отвлекающий рывок",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DistractingCharge.Description",
+        "enGB": "When your ally with this feat uses the charge action and hits, you gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on all your {g|Encyclopedia:Attack}attack rolls{/g} against the target of that charge. This bonus must be used before your ally’s next turn, or it is lost. Bonuses from multiple allies stack.",
+        "ruRU": "Когда ваш союзник, у которого тоже есть эта черта, использует рывок и попадает по цели, вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 ко всем {g|Encyclopedia:Attack}броскам на попадание{/g} против цели этого рывка. Этот бонус должен быть использован до следующего хода вашего союзника, иначе он будет потерян. Бонусы от нескольких союзников складываются.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScarredLegion.Name",
+        "enGB": "Scarred Legion",
+        "ruRU": "Ужасающий легион",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScarredLegion.Description",
+        "enGB": "You gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Persuasion}Persuasion{/g} {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}checks{/g} made for intimidation.\nAdditionally, you gain a +2 morale bonus on {g|Encyclopedia:Saving_Throw}Will saving throws{/g} while adjacent to an ally with this feat. Against a target affected by the fear condition, this bonus increases to +4.",
+        "ruRU": "Вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 ко всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Persuasion}Убеждения{/g}, совершаемым для устрашения.\nКроме того, вы получаете бонус боевого духа +2 ко всем {g|Encyclopedia:Saving_Throw}спасброскам Воли{/g}, когда находитесь рядом с союзником у которого тоже есть эта черта. Против целей находящихся под эффектом страха, этот бонус увеличивается до +4.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBastion.Name",
+        "enGB": "Order of the Bastion",
+        "ruRU": "Орден бастиона",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBastion.Description",
+        "enGB": "The cavaliers of the order of the bastion are experts in the fine art of urban warfare. They can effortlessly navigate the complex city streets and skillfully use their surroundings to gain an advantage. Whether it's a long siege or a raid against criminals, these warriors can control any situation and guide it according to their own plan.",
+        "ruRU": "Кавалеры ордена бастиона – эксперты в искусстве ведения городских сражений. Они с легкостью ориентируются в хитросплетениях городских улиц и мастерски используют подручные средства, чтобы получить преимущество. Будь то затяжная осада или рейд против преступников, эти воины могут контролировать любую ситуацию и направить ее по своему плану.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBastion.Challenge.Name",
+        "enGB": "Challenge",
+        "ruRU": "Вызов",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBastion.Challenge.Description",
+        "enGB": "Whenever an order of the bastion cavalier issues a challenge, he receives a +1 morale {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g} as long as he is {g|Encyclopedia:Threatened_Area}threatening {/g} the target of his challenge. This bonus increases by +1 for every four levels the cavalier possesses.",
+        "ruRU": "Всякий раз, когда всадник ордена бастиона бросает вызов, он получает {g|Encyclopedia:Bonus}бонус{/g} боевого духа +1 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}, если {g|Encyclopedia:Threatened_Area}угрожает{/g} цели своего вызова. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBastion.Skills.Name",
+        "enGB": "Skills",
+        "ruRU": "Навыки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBastion.Skills.Description",
+        "enGB": "An order of the bastion cavalier adds {g|Encyclopedia:Knowledge_World}Knowledge (world){/g} to his list of class {g|Encyclopedia:Skills}skills{/g}.",
+        "ruRU": "Всадник ордена бастиона добавляет {g|Encyclopedia:Knowledge_World}Знание (мир){/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Barricade.Name",
+        "enGB": "Barricade",
+        "ruRU": "Баррикада",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Barricade.Description",
+        "enGB": "At 2nd level, the cavalier gains Favored Terrain – (Urban) as a bonus {g|Encyclopedia:Feat}feat{/g}.",
+        "ruRU": "На 2 уровне, всадник получает Излюбленная местность — Город в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Barricade.Rank.Name",
+        "enGB": "Barricade",
+        "ruRU": "Баррикада",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Barricade.Rank.Description",
+        "enGB": "At 6th level, the сavalier gains a +1 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}, {g|Encyclopedia:Attack}attack rolls{/g}, and {g|Encyclopedia:Saving_Throw}Reflex saving throws{/g} while in favored terrain. At 10th level, and every four levels thereafter, these bonuses increase by an additional +1.",
+        "ruRU": "На 6 уровне, находясь на своей излюбленной местности, всадник получает {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:Armor_Class}защите{/g}, {g|Encyclopedia:Attack}броскам на попадание{/g} и {g|Encyclopedia:Saving_Throw}спасброскам Реакции{/g}. На 10 уровне и каждые 4 уровня в дальнейшем, этот бонус увеличивается на 1.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBlueRose.Name",
+        "enGB": "Order of the Blue Rose",
+        "ruRU": "Орден голубой розы",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBlueRose.Description",
+        "enGB": "The cavaliers of the order of the blue rose dedicate themselves to promoting peace in the lands they roam. Skilled warriors and adept diplomats, these cavaliers counsel wisdom, patience, and understanding, but are ever mindful of the need to take up arms to strike down aggressors, tyrants, or evil usurpers. Although they believe wholeheartedly in peace as an aim and a final goal, cavaliers of the blue rose are warriors first, and embrace their role as guardians of those who cannot or will not take up arms to defend themselves.",
+        "ruRU": "Всадники ордена голубой розы посвящают свою жизнь обеспечению мира в землях, по которым они странствуют. Опытные воины и искусные дипломаты, эти всадники олицетворяют мудрость, терпение и понимание, но всегда готовы взять оружие в руки, чтобы уничтожить агрессоров, тиранов и злых узурпаторов. Хотя они и искренне стремятся к миру и спокойствию, всадники голубой розы прежде всего остаются воинами и видят свою миссию в защите тех, кто не может или не желает защитить себя.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBlueRose.Challenge.Name",
+        "enGB": "Challenge",
+        "ruRU": "Вызов",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBlueRose.Challenge.Description",
+        "enGB": "Whenever an order of the blue rose cavalier issues a challenge, he receives a +1 {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} against the target of his challenge, as long as he is {g|Encyclopedia:Threatened_Area}threatening{/g} the target. The bonus increases by +1 for every four levels the cavalier possesses.",
+        "ruRU": "Всякий раз, когда всадник ордена голубой розы бросает вызов, он получает {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:CMD}защите от боевых маневров{/g}, совершенных целью вызова, пока всадник {g|Encyclopedia:Threatened_Area}угрожает{/g} ей. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBlueRose.Skills.Name",
+        "enGB": "Skills",
+        "ruRU": "Навыки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheBlueRose.Skills.Description",
+        "enGB": "An order of the blue rose cavalier adds {g|Encyclopedia:Knowledge_World}Knowledge (world){/g} to his list of class {g|Encyclopedia:Skills}skills{/g}.",
+        "ruRU": "Всадник ордена голубой розы добавляет {g|Encyclopedia:Knowledge_World}Знание (мир){/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "InnerPeace.Name",
+        "enGB": "Inner Peace",
+        "ruRU": "Внутренний покой",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "InnerPeace.Description",
+        "enGB": "At 15th level, the {g|Encyclopedia:Damage}damage{/g} of the first successful {g|Encyclopedia:Attack}attack{/g} against the cavalier in a {g|Encyclopedia:Combat_Round}round{/g} is reduced by 50%.",
+        "ruRU": "Начиная с 15 уровня, {g|Encyclopedia:Damage}урон{/g} от первой успешной {g|Encyclopedia:Attack}атаки{/g} против всадника за {g|Encyclopedia:Combat_Round}раунд{/g} сокращается на 50%.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Laceration.Name",
+        "enGB": "Laceration",
+        "ruRU": "Рассечение",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Laceration.Description",
+        "enGB": "At 8th level, when the cavalier deals {g|Encyclopedia:Damage}damage{/g} to a challenged creature, he causes the target to bleed ({g|Encyclopedia:Dice}2d6{/g}) and makes it {g|ConditionSickened}sickened{/g} for 1 minute. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "На 8 уровне, когда всадник наносит {g|Encyclopedia:Damage}урон{/g} цели своего вызова, он вызывает у нее кровотечение ({g|Encyclopedia:Dice}2d6{/g}) и {g|ConditionSickened}дезориентацию{/g} на одну минуту. Существо может быть подвержено этому эффекту не более одного раза за 24 часа.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShieldOfBlades.Name",
+        "enGB": "Shield of Blades",
+        "ruRU": "Щит клинков",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShieldOfBlades.Description",
+        "enGB": "At 2nd level, when the cavalier fights defensively, he gains an additional +2 dodge {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}.",
+        "ruRU": "На 2 уровне всадник получает дополнительный {g|Encyclopedia:Bonus}бонус{/g} уклонения +2 к {g|Encyclopedia:Armor_Class}защите{/g} во время оборонительного сражения.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheCalamity.Name",
+        "enGB": "Order of the Calamity",
+        "ruRU": "Орден бедствия",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheCalamity.Description",
+        "enGB": "The cavaliers of the order of the calamity are committed to preparing for disasters that could bring great sorrow. Though they are skilled warriors, their true focus lies in being ready for the inevitable crises – whether it's natural disasters, deadliest wars, or undead scourage. When calamity strikes, they will serve as a beacon of light, while their flaming weapons raised high, guiding others to salvation.",
+        "ruRU": "Кавалеры ордена бедствия преданы подготовке к катаклизмам, способным принести великое горе. Хоть они и искусные воины, их основное внимание сосредоточено на подготовке к неизбежным катастрофам – будь то природные бедствия, затяжные войны или нашествие нежити. Когда наступит беда, их пылающие оружие, словно маяк, укажут путь к спасению.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheCalamity.Challenge.Name",
+        "enGB": "Challenge",
+        "ruRU": "Вызов",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheCalamity.Challenge.Description",
+        "enGB": "Whenever an order of the calamity cavalier issues a challenge, he receives a +1 morale {g|Encyclopedia:Bonus}bonus{/g} on all melee {g|Encyclopedia:Damage}damage rolls{/g} made against the target of his challenge. This bonus increases by +1 for every four levels the cavalier possesses. \n\n10 fire rest and 10 more evey 5",
+        "ruRU": "Всякий раз, когда всадник ордена бедствия бросает вызов, он получает {g|Encyclopedia:Bonus}бонус{/g} +1 ко всем броскам на {g|Encyclopedia:Damage}урон{/g} в ближнем бою, совершенным против цели вызова. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheCalamity.Skills.Name",
+        "enGB": "Skills",
+        "ruRU": "Навыки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheCalamity.Skills.Description",
+        "enGB": "An order of the calamity cavalier adds {g|Encyclopedia:Lore_Religion}Lore (religion){/g} to his list of class {g|Encyclopedia:Skills}skills{/g}.",
+        "ruRU": "Всадник ордена бедствия добавляет {g|Encyclopedia:Lore_Religion}Знание (религия){/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "HeavensBurn.Name",
+        "enGB": "Heavens Burn",
+        "ruRU": "Небесное сожжение",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "HeavensBurn.Description",
+        "enGB": "At 8th level, when the cavalier reduce an enemy to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, he gains the benefit of shield of dawn {g|Encyclopedia:Spell}spell{/g}, using his cavalier level as {g|Encyclopedia:Caster_Level}caster level{/g}, but no more than once per combat.",
+        "ruRU": "Начиная с 8 уровня, всякий раз когда всадник опускает {g|Encyclopedia:HP}здоровье{/g} врага до 0 или ниже, он получает преимущество {g|Encyclopedia:Spell}заклинания{/g} щит рассвета, используя свой уровень всадника в качестве {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, но не чаще одного раза за бой.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PyroclasticStrike.Name",
+        "enGB": "Pyroclastic Strike",
+        "ruRU": "Пирокластический удар",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PyroclasticStrike.Description",
+        "enGB": "At 15th level, the cavalier can grant a weapon he wields the {g|EnhancementElderFlamingBurst}flaming burst{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}.",
+        "ruRU": "На 15 уровне, всадник получает {g|Encyclopedia:Special_Abilities}способность{/g} давать оружию, которое он держит в руках, особое свойство огненного взрыва.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingCleanse.Name",
+        "enGB": "Scorching Cleanse",
+        "ruRU": "Откровение",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingCleanse.Description",
+        "enGB": "At 2nd level, when the cavalier issues a challenge, he additionally applies {g|SpellsDispelMagicTarget}targeted dispel magic{/g} to challenged creature, affecting one of the active {g|Encyclopedia:Spell}spell{/g} effects. The {g|Encyclopedia:Caster_Level}caster level{/g} for this ability is equal to the character’s level.",
+        "ruRU": "Начиная со 2 уровня, всякий раз, когда всадник бросает вызов, он воздействует на цель {g|SpellsDispelMagicTarget}прицельным рассеиванием магии{/g}, влияющим на один из наложенных на нее активных эффектов {g|Encyclopedia:Spell}заклинаний{/g}. {g|Encyclopedia:Caster_Level}Уровень заклинателя{/g} для этой способности считается равным уровню персонажа.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheEmeraldPath.Name",
+        "enGB": "Order of the Emerald Path",
+        "ruRU": "Орден изумрудного пути",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheEmeraldPath.Description",
+        "enGB": "Cavaliers of the order of the emerald path are devoted protectors, committed to guarding ancient shrines and monuments hidden in remote and challenging landscapes. Their mission is to preserve these sacred sites and ensure that the names of great heroes are never forgotten, keeping their legacies alive for future generations.",
+        "ruRU": "Всадники ордена изумрудного пути — это верные стражи, которые защищают древние святилища и памятники, расположенные в удаленных и труднопроходимых уголках земли. Их цель — сохранить эти святые места и гарантировать, что имена великих героев, увековеченных в камне, не будут забыты.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheEmeraldPath.Challenge.Name",
+        "enGB": "Challenge",
+        "ruRU": "Вызов",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheEmeraldPath.Challenge.Description",
+        "enGB": "Whenever an order of the emerald path cavalier issues a challenge, he receives a +1 {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g} against the target of his challenge. The bonus increases by +1 for every four levels the cavalier possesses.",
+        "ruRU": "Всякий раз, когда всадник ордена изумрудного пути бросает вызов, он получает {g|Encyclopedia:Bonus}бонус{/g} +1 ко всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Combat_Maneuvers}боевых маневров{/g}, совершенным против цели вызова. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheEmeraldPath.Skills.Name",
+        "enGB": "Skills",
+        "ruRU": "Навыки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheEmeraldPath.Skills.Description",
+        "enGB": "An order of the emerald path cavalier adds {g|Encyclopedia:Lore_Nature}Lore (nature){/g} to his list of class {g|Encyclopedia:Skills}Skills{/g}.",
+        "ruRU": "Всадник ордена изумрудного пути добавляет {g|Encyclopedia:Lore_Nature}Знание (природа){/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EmeraldPathFavoredTerrain.Name",
+        "enGB": "Pilgrimage",
+        "ruRU": "Паломничество",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EmeraldPathFavoredTerrain.Description",
+        "enGB": "At 2nd level, a cavalier may select a terrain type from the ranger's favored terrains table, but the {g|Encyclopedia:Bonus}bonus{/g} does not increase with her level. At 10th and 18th levels, the cavalier may select a new terrain type.",
+        "ruRU": "На 2 уровне, всадник получает излюбленную местность, как от одноименной способности рейнджера, но {g|Encyclopedia:Bonus}бонус{/g} от нее с ростом в уровне не увеличивается. На 10 и 18 уровнях, всадник может выбрать дополнительную излюбленную местность.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForestStrike.Name",
+        "enGB": "Forest Strike",
+        "ruRU": "Лесной удар",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForestStrike.Description",
+        "enGB": "At 15th level, while standing on favored terrain, a cavalier of the order of the emerald path gains a +2 {g|Encyclopedia:Bonus}bonus{/g} to all {g|Encyclopedia:Attack}attack{/g} and {g|Encyclopedia:Damage}damage{/g} rolls. These bonuses are doubled when wielding a quarterstaff.",
+        "ruRU": "Начиная с 15 уровня, находясь на своей излюбленной местности, всадник получает {g|Encyclopedia:Bonus}бонус{/g} +2 ко всем броскам на {g|Encyclopedia:Attack}попадание{/g} и {g|Encyclopedia:Damage}урон{/g}. Этот бонус удваивается, если всадник держит в руках посох.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForeverGreen.Name",
+        "enGB": "Forever Green",
+        "ruRU": "Вечнозеленый",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForeverGreen.Description",
+        "enGB": "At 8th level, in the hands of an order of the emerald path cavalier, all quarterstaves deal {g|Encyclopedia:Damage}damage{/g} as if they were doubled in {g|Encyclopedia:Size}size{/g} ({g|Encyclopedia:Dice}2d6{/g}).",
+        "ruRU": "Начиная с 8 уровня все посохи в руках всадника наносят {g|Encyclopedia:Damage}урон{/g} так, как если бы их {g|Encyclopedia:Size}размер{/g} был в два раза больше ({g|Encyclopedia:Dice}2d6{/g}).",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheFishbone.Name",
+        "enGB": "Order of the Fishbone",
+        "ruRU": "Орден рыбьей кости",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheFishbone.Description",
+        "enGB": "The cavaliers of the order of the fishbone are experts in reconnaissance and covert operations. Stationed mainly in seaport cities, they specialize in ambushing contrabandists, tracking down pirates, and handling a variety of threats along the coastline.",
+        "ruRU": "Всадники ордена рыбьей кости — эксперты в разведывательных и тайных операциях. Располагаясь в основном в портовых городах, они специализируются на засадах на контрабандистов, выслеживании пиратов и устранении различных угроз вдоль линии побережья.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheFishbone.Challenge.Name",
+        "enGB": "Challenge",
+        "ruRU": "Вызов",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheFishbone.Challenge.Description",
+        "enGB": "Whenever an order of the fishbone cavalier issues a challenge, he receives a +1 morale {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} against the target of his challenge, as long as the target is flanked. The bonus increases by +1 for every four levels the cavalier possesses.\n\nreflex -1 */5 against challenged circumstance",
+        "ruRU": "Всякий раз, когда всадник ордена рыбьей кости бросает вызов, он получает {g|Encyclopedia:Bonus}бонус{/g} +1 ко всем броскам на попадание, совершенным против цели вызова, при условии, что он не является единственным {g|Encyclopedia:Threatened_Area}угрожающим{/g} ей существом. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheFishbone.Skills.Name",
+        "enGB": "Skills",
+        "ruRU": "Навыки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheFishbone.Skills.Description",
+        "enGB": "An order of the fishbone cavalier adds {g|Encyclopedia:Trickery}Trickery{/g} to his list of class {g|Encyclopedia:Skills}skills{/g}.",
+        "ruRU": "Всадник ордена рыбьей кости добавляет {g|Encyclopedia:Trickery}Плутовство{/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BoneChoke.Name",
+        "enGB": "Bone Choke",
+        "ruRU": "Комом в горле",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BoneChoke.Description",
+        "enGB": "At 15th level, the cavalier gains Slow Reactions, as the rogue talent of the same name as a bonus {g|Encyclopedia:Feat}feat{/g}.",
+        "ruRU": "На 15 уровне, всадник получает Замедленную Реакцию как от одноименной способности вора, в качестве дополнительной {g|Encyclopedia:Feat}черты{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PartnerInCrime.Name",
+        "enGB": "Partner in Crime",
+        "ruRU": "Сообщник",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PartnerInCrime.Description",
+        "enGB": "At 8th level, the cavalier gains a familiar as the familiar option of the wizard's arcane bond class feature.",
+        "ruRU": "На 8 уровне, всадник получает фамильяра, как от одноименного варианта классовой способности мага мистическая связь.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheTome.Name",
+        "enGB": "Order of the Tome",
+        "ruRU": "Орден фолианта",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheTome.Description",
+        "enGB": "Knowledge is the stepping stone of both truth and power. The members of this order devote themselves to the preservation of knowledge. Most would protect written knowledge at all costs, but there are members that believe there is such thing as knowledge too dangerous to be allowed to exist, and seek to destroy it.",
+        "ruRU": "Знание является ступенькой как к истине, так и к силе. Члены этого ордена посвящают себя сохранению знаний. Большинство из них решительно защищают любые формы письменной информации, будь то архивные документы или древние манускрипты. Однако среди членов ордена нередко встречается мнение, что некоторые знания слишком опасны, чтобы их сохранять, и поэтому они должны быть уничтожены.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheTome.Skills.Name",
+        "enGB": "Skills",
+        "ruRU": "Навыки",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CavalierOrderOfTheTome.Skills.Description",
+        "enGB": "An order of the tome cavalier adds {g|Encyclopedia:Use_Magic_Device}Use Magic Device{/g} to his list of class {g|Encyclopedia:Skills}skills{/g}.",
+        "ruRU": "Всадник ордена фолианта добавляет {g|Encyclopedia:Use_Magic_Device}Использование магических устройств{/g} к своему списку классовых {g|Encyclopedia:Skills}навыков{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ArcaneFortress.Name",
+        "enGB": "Arcane Fortress",
+        "ruRU": "Мистическая крепость",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ArcaneFortress.Description",
+        "enGB": "At 8th level, the cavalier and his mount receive a +2 {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g} against {g|Encyclopedia:Spell}spells{/g} or {g|Encyclopedia:Special_Abilities}spell–like abilities{/g}.",
+        "ruRU": "На 8 уровне, всадник и его ездовое животное получают {g|Encyclopedia:Bonus}бонус{/g} +2 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g} против {g|Encyclopedia:Spell}заклинаний{/g} и {g|Encyclopedia:Special_Abilities}псевдозаклинаний{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Librarian.Name",
+        "enGB": "Librarian",
+        "ruRU": "Библиотекарь",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "Librarian.Description",
+        "enGB": "At 2nd level, the cavalier receives a {g|Encyclopedia:Bonus}bonus{/g} equal to half his cavalier level on all {g|Encyclopedia:Use_Magic_Device}Use Magic Device{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "На 2 уровне, всадник получает бонус, равный половине его уровня всадника, ко всем {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Use_Magic_Device}Использования магических устройств{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScrollWeaving.Name",
+        "enGB": "Scroll Weaving",
+        "ruRU": "Ткач свитков",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScrollWeaving.Description",
+        "enGB": "At 15th level, the cavalier receives a {g|Encyclopedia:Bonus}bonus{/g} equal to half his cavalier level to the {g|Encyclopedia:Caster_Level}caster level{/g} of an item when using a scroll.",
+        "ruRU": "",
+        "ProcessTemplates": false
     }
 ]

@@ -6,19 +6,20 @@ using Kingmaker.EntitySystem.Stats;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.FactLogic;
 using LostChapters.Modules.Custom.Components;
-using LostChapters.Modules.GraySisterhood;
 
-namespace LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
+namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
 internal class CrossroadsAmbushFeature
 {
     public static readonly string Guid = "{42bf49a3-71b6-4fac-8096-8493b6ec8b8c}";
 
-    private static readonly string FeatureName = "CrossroadsAmbushFeature";
+    private static readonly string BaseName = "CrossroadsAmbush";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/crossroadambush.png";
+    private static readonly string Icon = $"{CustomModule.IconPath}/{CowledPilgrimArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -42,7 +43,7 @@ internal class CrossroadsAmbushFeature
     {
         public static readonly string Guid = "{225233f1-4fb5-4d40-9a1b-54781ea6a0bf}";
 
-        private static readonly string BuffName = "CrossroadsAmbush.PounceBuff";
+        private static readonly string BuffName = $"{BaseName}BuffPounce";
 
         internal static void Configure()
         {
@@ -59,7 +60,7 @@ internal class CrossroadsAmbushFeature
     {
         public static readonly string Guid = "{cfa99526-f0e4-4c92-a6d2-b12ce820d9ae}";
 
-        private static readonly string BuffName = "CrossroadsAmbush.ArmorClassBuff";
+        private static readonly string BuffName = $"{BaseName}BuffArmorClass";
 
         internal static void Configure()
         {

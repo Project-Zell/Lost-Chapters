@@ -11,5 +11,6 @@ internal class OtherModule
         CharacterClassesConsistencyPatch.Configure();
 
         MuteBuff.Configure();
+        TargetWillProperty.Configure();
     }
 }

@@ -9,7 +9,7 @@ internal class NabasuSummonUnit
 {
     internal static readonly string Guid = "{c011be55-0771-4dc9-9ded-d63222e7390e}";
 
-    internal static readonly string UnitName = "NabasuSummonUnit";
+    internal static readonly string UnitName = "NabasuSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

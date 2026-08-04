@@ -7,7 +7,7 @@ using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem.Rules;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Components;
-using LostChapters.Modules.Custom.Archetypes.BlackKnight;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight;
 
 namespace LostChapters.Modules.Custom.Components;
 

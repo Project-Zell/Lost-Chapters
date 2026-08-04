@@ -10,7 +10,7 @@ internal class BabauSummonUnit
 {
     internal static readonly string Guid = "{351ca3a1-69bd-435b-a045-00e79feaeea5}";
 
-    internal static readonly string UnitName = "BabauSummonUnit";
+    internal static readonly string UnitName = "BabauSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()

@@ -1,8 +1,9 @@
 ﻿using BlueprintCore.Blueprints.Configurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
+using LostChapters.Modules.HellknightCodex.AnimalCompanions.Hellhound;
 
-namespace LostChapters.Modules.HellknightCodex.AnimalCompanions.Hellhound;
+namespace LostChapters.Modules.HellknightsCodex.AnimalCompanions.Hellhound;
 
 internal class HellhoundProgression
 {

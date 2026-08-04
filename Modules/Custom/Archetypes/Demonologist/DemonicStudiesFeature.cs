@@ -1,9 +1,4 @@
-﻿using BlueprintCore.Blueprints.Configurators.Classes.Spells;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes.Spells;
-using BlueprintCore.Blueprints.References;
-using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.Classes.Spells;
+﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 
@@ -11,7 +6,9 @@ internal class DemonicStudiesFeature
 {
     public static readonly string Guid = "{8fd31e84-38db-42c4-9d9d-16e93e22cbc7}";
 
-    private static readonly string FeatureName = "DemonicStudiesFeature";
+    private static readonly string BaseName = "DemonicStudies";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
@@ -27,6 +24,4 @@ internal class DemonicStudiesFeature
             //.SetIcon(Icon)
             .Configure();
     }
-
-
 }

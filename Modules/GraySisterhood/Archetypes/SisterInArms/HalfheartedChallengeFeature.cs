@@ -17,8 +17,8 @@ internal class HalfheartedChallengeFeature
     public static readonly string Guid = "{1187991c-a0c3-49ff-b939-5486bb7402aa}";
 
     private static readonly string FeatureName = "HalfheartedChallenge";
-    private static readonly string DisplayName = "HalfheartedChallenge.Name";
-    private static readonly string Description = "HalfheartedChallenge.Description";
+    private static readonly string DisplayName = $"{FeatureName}.Name";
+    private static readonly string Description = $"{FeatureName}.Description";
 
     internal static void Configure()
     {

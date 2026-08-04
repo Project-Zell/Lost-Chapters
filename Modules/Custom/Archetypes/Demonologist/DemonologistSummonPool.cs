@@ -1,10 +1,4 @@
 ﻿using BlueprintCore.Blueprints.Configurators;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 

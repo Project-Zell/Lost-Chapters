@@ -9,14 +9,9 @@ using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.EntitySystem.Stats;
-using Kingmaker.Enums;
-using Kingmaker.RuleSystem;
-using Kingmaker.RuleSystem.Rules.Damage;
-using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Mechanics.Properties;
-using LostChapters._wip;
 using LostChapters.Components;
 using System.Collections.Generic;
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
@@ -25,7 +20,9 @@ internal class HellsWhisperFeature
 {
     public static readonly string Guid = "{b0a65f1d-4765-4068-a3f2-3424194b8802}";
 
-    private static readonly string FeatureName = "HellsWhisperFeature";
+    private static readonly string BaseName = "HellsWhisper";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
@@ -67,7 +64,7 @@ internal class HellsWhisperFeature
     {
         public static readonly string Guid = "{0e688168-73d0-4ffa-884e-9b177d561c3d}";
 
-        private static readonly string BuffName = $"{FeatureName}.Buff";
+        private static readonly string BuffName = $"{BaseName}Buff";
 
         internal static void Configure()
         {

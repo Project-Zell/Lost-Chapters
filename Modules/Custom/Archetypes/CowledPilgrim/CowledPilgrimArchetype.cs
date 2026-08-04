@@ -1,17 +1,17 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
-using BlueprintCore.Utils;
 using BlueprintCore.Utils.Types;
-using Kingmaker.Blueprints;
 using Kingmaker.EntitySystem.Stats;
 
-namespace LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
+namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
 internal class CowledPilgrimArchetype
 {
     public static readonly string Guid = "{1d962362-6495-4f75-be4d-19d450996c2e}";
 
-    private static readonly string ArchetypeName = "CowledPilgrimArchetype";
+    public static readonly string BaseName = "CowledPilgrim";
+
+    private static readonly string ArchetypeName = $"{BaseName}Archetype";
     private static readonly string LocalizedName = $"{ArchetypeName}.Name";
     private static readonly string Description = $"{ArchetypeName}.Description";
 
@@ -20,9 +20,8 @@ internal class CowledPilgrimArchetype
         CrossroadsAmbushFeature.Configure();
         EndlessStrideFeature.Configure();
         NoRespiteFeature.Configure();
-        OneWithTheRoadFeature.Configure();
         LostInSightFeature.Configure();
-        LoneWayfarerFeature.Configure();
+        LoneWandererFeature.Configure();
         RoutekeeperFeature.Configure();
         UnseenPathFeature.Configure();
 
@@ -35,21 +34,29 @@ internal class CowledPilgrimArchetype
                 .AddEntry(level: 20, features: FeatureRefs.CavalierSupremeCharge.ToString());
 
         var addFeaturesEntryBuilder = LevelEntryBuilder.New()
-                .AddEntry(level: 01, features: LoneWayfarerFeature.Guid)
+                .AddEntry(level: 01, features: LoneWandererFeature.Guid)
                 .AddEntry(level: 03, features: CrossroadsAmbushFeature.Guid)
-                .AddEntry(level: 04, features: LoneWayfarerFeature.FeatureSelection.Guid)
+                .AddEntry(level: 04, features: LoneWandererFeature.FeatureSelection.Guid)
                 .AddEntry(level: 05, features: NoRespiteFeature.Guid)
-                .AddEntry(level: 07, features: OneWithTheRoadFeature.Guid)
-                .AddEntry(level: 10, features: LoneWayfarerFeature.FeatureSelection.Guid)
+                .AddEntry(level: 07, features: LostInSightFeature.Guid)
+                .AddEntry(level: 10, features: LoneWandererFeature.FeatureSelection.Guid)
                 .AddEntry(level: 11, features: UnseenPathFeature.Guid)
-                .AddEntry(level: 13, features: LostInSightFeature.Guid)
+                .AddEntry(level: 13, features: FeatureRefs.Camouflage.ToString())
                 .AddEntry(level: 14, features: RoutekeeperFeature.Guid)
-                .AddEntry(level: 16, features: LoneWayfarerFeature.FeatureSelection.Guid)
+                .AddEntry(level: 16, features: LoneWandererFeature.FeatureSelection.Guid)
                 .AddEntry(level: 20, features: EndlessStrideFeature.Guid);
 
+        var classSkills = new StatType[]
+{
+            StatType.SkillPersuasion,
+            StatType.SkillAthletics,
+            StatType.SkillMobility,
+            StatType.SkillStealth,
+        };
+
         ArchetypeConfigurator.New(ArchetypeName, Guid, CharacterClassRefs.CavalierClass)
-            .SetClassSkills([StatType.SkillPersuasion, StatType.SkillAthletics, StatType.SkillMobility, StatType.SkillStealth])
             .SetReplaceClassSkills(true)
+            .SetClassSkills(classSkills)
             .SetAddFeatures(addFeaturesEntryBuilder)
             .SetRemoveFeatures(removeFeaturesEntryBuilder)
             .SetLocalizedName(LocalizedName)
@@ -58,10 +65,9 @@ internal class CowledPilgrimArchetype
 
         ProgressionConfigurator.For(ProgressionRefs.CavalierProgression)
             .AddToUIGroups([
-                LoneWayfarerFeature.Guid,
-                LoneWayfarerFeature.FeatureSelection.Guid,
-                OneWithTheRoadFeature.Guid,
-                LostInSightFeature.Guid])
+                LoneWandererFeature.Guid,
+                LoneWandererFeature.FeatureSelection.Guid,
+                FeatureRefs.Camouflage.ToString()])
             .Configure();
     }
 }

@@ -1,8 +1,8 @@
-﻿using LostChapters.Modules.Custom.Archetypes.BlackKnight;
-using LostChapters.Modules.Custom.Archetypes.CircuitJudge;
+﻿using LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 using LostChapters.Modules.Custom.Archetypes.Demonologist;
-using LostChapters.Modules.Custom.Archetypes.HoodedWanderer;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight;
 using LostChapters.Modules.Custom.Archetypes.MageSlayer;
+using LostChapters.Modules.Custom.Archetypes.Magistrate;
 using LostChapters.Modules.Custom.Backgrounds;
 using LostChapters.Modules.Custom.Feats;
 using LostChapters.Modules.Custom.Feats.ArcanistExploits;
@@ -14,38 +14,36 @@ namespace LostChapters.Modules.Custom;
 
 internal class CustomModule
 {
-    internal static readonly string IconPath = "assets/custom/icons";
+    internal static readonly string IconPath = "Assets/Custom/Icons";
 
     internal static void Configure()
     {
-        PlagueKnightClass.Configure();
-
-        //Feats
-        ArmoredMarauderFeature.Configure();
-        ArmoredSwiftnessFeature.Configure();
-        ReapingStalkerFeature.Configure();
-
         //Archetypes
-        FalseKnightArchetype.Configure();
-        CircuitJudgeArchetype.Configure();
         CowledPilgrimArchetype.Configure();
-        MageSlayerArchetype.Configure();
-        DemonologistArchetype.Configure();
+        //MagistrateArchetype.Configure();
+        //DemonologistArchetype.Configure();
+        //FalseKnightArchetype.Configure();
+        //MageSlayerArchetype.Configure();
 
-        //Backgrounds
-        BackgroundFisherman.Configure();
-        BackgroundForager.Configure();
-        BackgroundGravedigger.Configure();
-        BackgroundGrayEminence.Configure();
-        BackgroundHighborn.Configure();
-        BackgroundPrisoner.Configure();
-        BackgroundSentryGuard.Configure();
-        BackgroundTavernServer.Configure();
+        ////Feats
+        //ArmoredMarauderFeature.Configure();
+        //ArmoredSwiftnessFeature.Configure();
+        //ReapingStalkerFeature.Configure();
 
-        //Feats
-        ArcanistFamiliarFeature.Configure();
-        MetamagicKnowledgeFeature.Configure();
-        MetamagicKnowledgeGreaterFeature.Configure();
+        ////Backgrounds
+        //BackgroundFisherman.Configure();
+        //BackgroundForager.Configure();
+        //BackgroundGravedigger.Configure();
+        //BackgroundGrayEminence.Configure();
+        //BackgroundHighborn.Configure();
+        //BackgroundPrisoner.Configure();
+        //BackgroundSentryGuard.Configure();
+        //BackgroundTavernServer.Configure();
+
+        ////Feats
+        //ArcanistFamiliarFeature.Configure();
+        //MetamagicKnowledgeFeature.Configure();
+        //MetamagicKnowledgeGreaterFeature.Configure();
 
         return;
 
@@ -53,7 +51,7 @@ internal class CustomModule
 
 
 
-
+        PlagueKnightClass.Configure();
         BackgroundFisherman.Configure();
         BackgroundForager.Configure();
         BackgroundHighborn.Configure();

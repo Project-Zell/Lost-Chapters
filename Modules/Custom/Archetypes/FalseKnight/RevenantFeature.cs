@@ -16,7 +16,9 @@ internal class RevenantFeature
 
     public static readonly string Guid = "{3bb6991c-9f2c-436d-a39d-5fd20ae44083}";
 
-    private static readonly string FeatureName = "RevenantFeature";
+    private static readonly string BaseName = "Revenant";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

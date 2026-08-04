@@ -1,4 +1,4 @@
-# Lost Chapters
+﻿# Lost Chapters
 
 # Gray Sisterhood Module
 Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* action and various perks that increase its effectiveness.
@@ -87,7 +87,7 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 ### Fighter
 - **Armiger**<sup>[VN](https://www.d20pfsrd.com/classes/3rd-party-classes/rogue-genius-games/armiger/)</sup> - Can now select Hellknight Disciplines as bonus feats.
 ### Warpriest
-- **Deacon**<sup>H</sup>
+- **Deacon**<span style="color:red"><sup>H</sup></span>
     - **Censing** -
     - **Blessed Incense** -
     - **Fortified Incense** -
@@ -134,8 +134,8 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 - **Wrecking Cloud, Fortified** - An affected ally receives a +4 bonus to damage rolls. In addition, the ally receives a +2 bonus on attack rolls made to confirm critical hits.
 #
 #### Earth Domain
-- **�Raustic Fume** - An affected ally deals an additional 1d6 points of acid damage with each weapon strike.
-- **�Raustic Fume, Fortified** - An affected ally deals an additional 2d6 points of acid damage with every weapon strike. In addition, the ally gains acid resistance equal to 10 + the deacon's level.
+- **Сaustic Fume** - An affected ally deals an additional 1d6 points of acid damage with each weapon strike.
+- **Сaustic Fume, Fortified** - An affected ally deals an additional 2d6 points of acid damage with every weapon strike. In addition, the ally gains acid resistance equal to 10 + the deacon's level.
 #
 #### Evil Domain
 - **Sinister Grasp** - Any good enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
@@ -270,39 +270,38 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 ### Arcanist:
 - **Demonologist**<sup>H</sup>
     - **Demonic Studies** - Replaces Acranist Exploit selection at level 1. All Summon Monster spells in arcanist spellbook changed to Summon Demon spells respectevly. Additionally, Dominate Person and Dominate Person, Mass changed to Dominate Demon and Dominate Demon, Mass.
-    - **Speak of the Demon** - For each controlled demon, the arcanist takes a -1 penalty to Will saves. When a controlled demon's hit points are reduced to 0 or lower, the arcanist must make a Will save or become confused for 1 round.
-    - **Call of the Abyss** - Replaces Arcanist Exploit selection at level 3. The arcanist can expend 1 point from the arcanist reservoir to cause the next summoned demons to enter a rage. This rage functions as standard barbarian rage. If the arcanist has rage powers, those powers also apply to the raging demons.
-    - **Demonologist Exploit** - Alternate Arcanist Exploit selection. Demonogist might select a rage power, instead of the acranist exploit.
-    - ??? - Replaces Magical Supremacy. The arcanist gains a Glabrezu as an animal companion. When the arcanist summons raging demons, the Glabrezu gains all benefits of the rage for 1 minute.
-
+    - **Hell's Whisper** - For each summoned demon, the arcanist takes a -1 penalty to Will saves. When a controlled demon's hit points are reduced to 0 or lower, the arcanist must make a Will save or become confused for 1 round. If the arcanist are good aligned, she additionally shakened for 1 minute.
+    - **Call of the Abyss** - Replaces Arcanist Exploit selection at level 3. The arcanist can expend 2 points from the arcanist reservoir to cause the next summoned demons to enter a rage. This rage functions as standard barbarian rage. If the arcanist has rage powers, those powers also apply to the raging demons.
+    - **Demonologist Exploit** - Demonogist might select a rage power instead of the acranist exploit.
+    - **Sacrificial Lamb?** - Replaces Magical Supremacy. As a swift action, an arcanist can expend 3 points from their arcanist reservoir to instantly kill one of their summoned demons. If they do so, the arcanist gains the demon subtype (immunity to electricity and poison, resistance 10 to acid, cold, and fire), as well as an additional gore attack for 1 minute. If the sacrificed demon was under the effect of Call of the Abyss, the arcanist also gains all effects of the rage for 3 rounds. Demons slain in this way do not trigger Hell’s Whisper.
 ### Cavalier:
-- **Black Knight**<sup>H</sup>
+- **False Knight**<span style="color:blue"><sup>H</sup></span>
     - **Last of a Kind** - Alters Order. Instead of selecting an order, the cavalier is treated as a member of the Fallen Order.
-        - **Skills** -
-        - **Chalendge** -
+    - **Fallen Order**
+        - **Challenge** - A cavalier gain bonus to attack against challenged creature that is under a fear effect.
         - **Impostor** - The cavalier can select a 2nd-level ability from any other cavalier order.
-        - **Revenant** -
+        - **Revenant** - First time in round, when a cavalier hit his challenged creature, the creature should succeseed on Will saving throw, or be affected by Overwhelming Grief spell effect.
         - **Undying Devotion** - One time per day, the cavalier can summon the ghosts of three fallen members of his order to fight alongside him for 1 minute.
     - **Forgotten Insignia** - Replaces Banner. All enemies within 30 feet of the cavalier take a morale penalty on saving throws against fear effects and to CMD.
     - **Forbidden Insignia** - Replaces Greater Banner. Enemies affected by Forgotten Insignia also take a morale penalty to AC.
-    - **Solo Tactics** - Replaces Tactician and Greater Tactician. The cavalier gains Solo Tactics, as the inquisitor ability of the same name. Additionally, the cavalier can select a teamwork feats as a bonus feat.
     - **Mount** - The cavalier gains Mount and Cavalier's Charge at 5th level, instead of at the normal levels dictated by cavalier progression.
 #
-- **Circuit Judge**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/archetypes/paizo-cavalier-archetypes/circuit-judge/)</sup>
-    - **Conviction** - Alters Challenge. Functions as a standard challenge, but only works against chaotic enemies.
-    - **Circuit** - The cavalier adds half of class level as a morale bonus on all Persuasion skill checks made for Intimidate and on Knowledge (World) checks.
-    - **Judgment** - Replaces Tactician and Greater Tactician. Gain Judgment, as the inquisitor ability of the same name.
+- **Magistrate**<span style="color:blue"><sup>H</sup></span>
+    - **Court Trial** – Replaces Challenge. As a swift action, the cavalier chooses one target within sight to put on court trial. When a lawful creature successfully attacks that creature, the magistrate gains one point of conviction. The magistrate can't gain more than 1 point of conviction from the same attacking creature. At the end of the battle, the magistrate loses all conviction points.
+    - **Verdict** – As a swift action, the magistrate can spend 3 points of conviction to deliver a verdict to a creature under the effect of court trial. The magistrate chooses one of the following: a 10-ft penalty to movement speed, a penalty to Stealth checks equal to half the magistrate's cavalier level, or a -3 penalty on saves against emotion spells. The affected creature must succeed on a Will saving throw or suffer the chosen effect.
+    - **Code of Laws** – The cavalier adds half their class level as a competence bonus on Persuasion checks made to Intimidate, and on Knowledge (World) checks.
+    - **Judgment** – Replaces Tactician and Greater Tactician. The magistrate gains Judgment, as the inquisitor ability of the same name.
+    - **Reprimand** – The magistrate regains one point of conviction at the start of each turn, provided a creature affected by conviction.
+    - **Collective Guilt** – If a creature under the effect of court trial fails its saving throw against a verdict effect, all enemy creatures within a 20-ft radius of the affected creature suffer the same verdict penalty. Additionally, the first creature to fail a verdict save in the battle is staggered for 1d4 turns.
 #
-- **Hooded Wanderer**<sup>H</sup>
-    - **Lone Wayfarer** - Replaces Mount. While standing in favored terrain, gain a 10-foot bonus to movement speed for each unique favored terrain selected.
-    - **Crossroads Ambush** - Replaces Cavalier's Charge. Gains the pounce special ability when wielding a simple weapon and does not suffer a penalty to AC after making a charge attack.
-    - **Terrain Mastery** - Replaces Tactician and Greater Tactician. The cavalier gain Terrain Mastery, as the rogue feature of the same name.
-    - **No Respite** - Replaces Banner. The cavalier can move at normal speed in any armor. While standing in favored terrain, the cavalier gains a bonus to sawing throws against fatigue and exhaustion.
-    - **Lost in Sight** - Gains Fast Stealth as a bonus feature.
-    - **Unseen Path** - Replaces Mighty Charge. While standing in favored terrain, the cavalier gains concealment and a bonus to AC against attacks of opportunity.
-    - **One with the Road** - Gains Camouflage as a bonus feature.
-    - **Routekeeper** - Gains bonus to initiative for each unique favored terrain selected.
-    - **Endless Stride** - Replaces Supreme Charge. While standing in favored terrain, the cavalier can make one additional attack.
+- **Cowled Pilgrim**<sup>H</sup>
+    - **Lone Wanderer** - Replaces Mount. A cowled pilgrim gains a favored terrain as the ranger ability of the same name, but the favored terrain ability does not increase with level. While he is in favored terrain, a cowled pilgrim gains a 10-feet bonus to movement speed for each unique favored terrain selected (up to 30-feet).
+    - **Crossroads Ambush** - Replaces Cavalier's Charge. A cowled pilgrim gains the pounce special ability when wielding a simple weapon and does not suffer a penalty to AC after making a charge attack.
+    - **No Respite** - Replaces Banner. A cowled pilgrim can move at normal speed in medium armor. While he is in favored terrain, a cowled pilgrim gains a bonus to saving throws against fatigue and exhaustion.
+    - **Lost in Sight** - A cowled pilgrim gains the ability to move at full speed while using the Stealth skill. While he is in favored terrain, a cowled pilgrim gains a bonus to AC against attacks of opportunity.
+    - **Unseen Path** - Replaces Mighty Charge. A cowled pilgrim can move at normal speed in heavy armor. While he is in favored terrain, the cowled pilgrim gains concealment.
+    - **Routekeeper** - A cowled pilgrim gains a bonus to initiative for each unique favored terrain selected.
+    - **Endless Stride** - Replaces Supreme Charge. While he is in favored terrain, a cowled pilgrim gains immunity to ground-based effects and can make one additional attack.
 #
 ### Slayer:
 - **Mage Slayer**<sup>H</sup>
@@ -321,8 +320,9 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 
 ## Feats
 ### Arcanist Exploits
-- **Arcanist Familiar**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/familiar-su)</sup>- 
-
+- **Arcanist Familiar**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/familiar-su)</sup> - 
+- **Metamagic Knowledge** -
+- **Greater Metamagic Knowledge** -
 ### Basic Feats
 - **Distracting Charge**<sup>[VN](https://www.d20pfsrd.com/feats/combat-feats/distracting-charge-combat-teamwork/)</sup>
 - **Double Edge**<sup>H</sup> -
@@ -334,26 +334,92 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 - **Armored Marauder**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/armored-marauder-ex/)</sup> -
 - **Armored Swiftness**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/armored-swiftness-ex/)</sup> -
 - **Reaping Stalker**<sup>[VN](https://www.d20pfsrd.com/classes/hybrid-classes/slayer/slayer-talents/paizo-slayer-talents-advanced/reaping-stalker-ex/)</sup> -
-#
-
-
 
 ## Orders
 ### Cavalier
-- **Order of the Bastion**<sup>H</sup> -
-- **Order of the Blue Rose**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-blue-rose/)</sup> -
-- **Order of the Calamity**<sup>H</sup> -
-- **Order of the Emerald Path**<sup>H</sup> -
-- **Order of the Fishbone**<sup>H</sup> -
-- **Order of the Tome**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-tome/)</sup> -
+- **Order of the Bastion**<sup>H</sup>
+    - **Skills** -
+    - **Challenge** -
+    - **Barricade** -
+    - **Uncanny Dodge** -
+    - **Improved Uncanny Dodge** -
+#
+- **Order of the Blue Rose**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-blue-rose/)</sup>
+    - **Skills** -
+    - **Challenge** -
+    - **Shield of Blades** -
+    - **Laceration** - 
+    - **Inner Peace** -
+#
+- **Order of the Calamity**<sup>H</sup>
+    - **Skills** -
+    - **Challenge** -
+    - **Revelation** -
+    - **Heavens Burn** -
+    - **Pyroclastic Strike** -
+#
+- **Order of the Emerald Path**<sup>H</sup>
+    - **Skills** -
+    - **Challenge** -
+    - **Favored Terrain** -
+    - **Forever Green** - 
+    - **Forest Strike** -
+#
+- **Order of the Fishbone**<sup>H</sup>
+    - **Skills** -
+    - **Challenge** -
+    - **Sneak Attack** -
+    - **Partner in Crime** -
+    - **Bone Choke** -
+#
+- **Order of the Tome**<sup>[VN](https://www.d20pfsrd.com/classes/base-classes/cavalier/orders/paizo-cavalier-orders/order-of-the-tome/)</sup>
+    - **Skills** -
+    - **Challenge** -
+    - **Librarian** -
+    - **Arcane Bastion** -
+    - **Scroll Weaving** -
 
 ## Prestige Classes
-- **Plague Knight**<sup>H</sup> -
+- **Plague Knight**<sup>H</sup>
+    - **Blackrot** - For a number of rounds per day, a palgue knight can unfise his weapon with Blackrot. Hitted creature should make a fortitude save or been struct by blackrot disease. 
+    - **Urgathoa's Gift** - Select a deadly disease. You are permanently affect by it.
+    - **Aura of Decay** - An aura that give -4 penalty to saves against disesases to all creatures around it, including ally.
+    - **Incubating Pain** - While using blackrot you gain +1 to damage and attack for each disease on the target.
+    - **Requiem** - You gain bonuses instead of penalties from your deadly disease
+    - **???** - while enemy struct by BLackrot and fail fortitude save, you apply all of diseases on you to the target.
+
+<details>
+
+<summary>Urgathoa's Gift Selection</summary>
+
+#### Bleak Breath
+- **Disease** - One time per day, target should succesed on foritude save, or get 1 negative level for 24 hours. Additionaly target suffer -1 penalty to reflex saves.
+- **Requiem** - Plague Knight is ummune to negative levels. All enemy who spets to Infestations should sucessed on fortitude save of become staggered for 1d4 rounds. Creatue immune to this effect for 24 hours.
+#### Blood Veil
+- **Disease** - One time per day, target should succesed on fortitude save, or get 1d6 points of strengt damage. Additonaly target suffer -2 penalty to diplomacy checks.
+- **Requiem** - Plague Knight recieve +4 inherit bonus to strenght. When Plague Knight confirm critical hit, all disease that target posses trigers as if 24 hourse passed.
+#### Bubonic Plague
+- **Disease** - One time per day, target should succed on fortitude save, or get 1d4 points of constitution damage and become exausted for 24 hours.
+- **Requiem** - Plague Knight recieve +4 inherit bonus to constitution. Three times per day, the plague knight can summon 1d3 swarm rats. Rats attacks also apply bubonic plague.
+#### Glacier Plague
+- **Disease** - One time per round, when target take cold damage, it should succed on fortitude save of get slowed for 1d3 round. Additonaly target suffer -2 penalty to athletic checks.
+- **Requiem** - The Plague Knight are immune to cold damage. While Blackrot is active, the plague knights weapon attacks are deal additional 2d6 points of cold damage.
+#### Green Haze
+- **Disease** - One time per day, target should succed on fortitude save, or become blind for 24 hours. Additionaly target suffer -2 penalty to perseption checks.
+- **Requiem** - The Plague Knight became permanently blind, but dose not suffer any penalty from blindness. Additionaly the plague knight recive 20ft blind vision.
+#### Melting Madness
+- **Disease** - One time per day, target should succesed on fortitude save, or get 1d6 points of inteligense damage. Additonaly target suffer -2 penalty against mind affected spells effects.
+- **Requiem** - The Plague Knight recieve a +2 inherit bonus to fear effects. Additionaly, Plague Knight recieves two additional bite attacks, and all bite attacks is applying Melting Madness.
+#### Necrotic Boils
+- **Disease** - One time per day, target should succesed on fortitude save, or get 1d6 points of charisma damage. Additionaly target suffer -2 penalty to  
+- **Requiem** - First time in the round, when Plague Knight recieve damage, he deal 3d8 acid damage to all enemies in 15ft radius. That damage is apply Necrotic Boils.
+</details>
 
 Maybe:
 
+- Gallant
 - Arcane Weapon
 - Blade Adept
 - Blood Arcanist
+- School Savant
 - Arsenal Chaplain
-- Metamagic Knowledge

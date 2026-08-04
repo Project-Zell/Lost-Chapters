@@ -9,7 +9,7 @@ internal class SummonDemonIV
 
     private static readonly string BaseName = "SummonDemonIV";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
+    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon4.png";
 
     internal static void Configure()
     {
@@ -21,7 +21,7 @@ internal class SummonDemonIV
     {
         public static readonly string Guid = "{688378a2-5a9a-43c5-9410-44222b2cedef}";
 
-        private static readonly string AbilityName = $"{BaseName}.BaseAbility";
+        private static readonly string AbilityName = $"{BaseName}.Base";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -58,7 +58,7 @@ internal class SummonDemonIV
                 description: Description,
                 icon: Icon,
                 summonUnitID: BabauSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
         }
     }
 
@@ -66,7 +66,7 @@ internal class SummonDemonIV
     {
         public static readonly string Guid = "{61307930-587c-42ff-8402-b6fc9b6a5c29}";
 
-        private static readonly string AbilityName = $"{BaseName}.d3";
+        private static readonly string AbilityName = $"{BaseName}OneToThree";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -89,7 +89,7 @@ internal class SummonDemonIV
     {
         public static readonly string Guid = "{3cb6c5e8-2443-4d20-80be-cc35c33ba8c1}";
 
-        private static readonly string AbilityName = $"{BaseName}.d4plus1";
+        private static readonly string AbilityName = $"{BaseName}OneToFourPlusOne";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 

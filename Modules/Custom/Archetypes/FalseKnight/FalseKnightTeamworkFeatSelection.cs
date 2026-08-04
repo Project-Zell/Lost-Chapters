@@ -1,13 +1,15 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.References;
 
-namespace LostChapters.Modules.Custom.Archetypes.BlackKnight;
+namespace LostChapters.Modules.Custom.Archetypes.FalseKnight;
 
 internal class FalseKnightTeamworkFeatSelection
 {
     public static readonly string Guid = "{71731a4d-e8d6-46fa-a815-93490a6be18f}";
 
-    private static readonly string FeatureName = "BlackKnightTeamworkFeatSelection";
+    private static readonly string BaseName = "FalseKnightTeamworkFeat";
+
+    private static readonly string FeatureName = $"{BaseName}Selection";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

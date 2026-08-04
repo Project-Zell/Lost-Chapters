@@ -9,7 +9,7 @@ internal class SummonDemonV
 
     private static readonly string BaseName = "SummonDemonV";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
+    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon5.png";
 
     internal static void Configure()
     {
@@ -21,7 +21,7 @@ internal class SummonDemonV
     {
         public static readonly string Guid = "{b36fe33f-29af-481f-9da2-6fe15002c528}";
 
-        private static readonly string AbilityName = $"{BaseName}.BaseAbility";
+        private static readonly string AbilityName = $"{BaseName}Base";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -45,7 +45,7 @@ internal class SummonDemonV
     {
         public static readonly string Guid = "{0d32ec2c-dc39-4271-a8f7-0b0e1daecbdd}";
 
-        private static readonly string AbilityName = $"{BaseName}.Single";
+        private static readonly string AbilityName = $"{BaseName}Single";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -58,7 +58,7 @@ internal class SummonDemonV
                 description: Description,
                 icon: Icon,
                 summonUnitID: NabasuSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
         }
     }
 
@@ -66,7 +66,7 @@ internal class SummonDemonV
     {
         public static readonly string Guid = "{7804ca2a-ec00-45a0-bacf-c9cb61f7cf5d}";
 
-        private static readonly string AbilityName = $"{BaseName}.d3";
+        private static readonly string AbilityName = $"{BaseName}OneToThree";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -89,7 +89,7 @@ internal class SummonDemonV
     {
         public static readonly string Guid = "{f5374338-fdf4-4816-a1ce-00c2e8a531bc}";
 
-        private static readonly string AbilityName = $"{BaseName}.d4plus1";
+        private static readonly string AbilityName = $"{BaseName}OneToFourPlusOne";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 

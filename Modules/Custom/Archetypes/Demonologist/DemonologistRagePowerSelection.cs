@@ -10,7 +10,9 @@ internal class DemonologistRagePowerSelection
 {
     public static readonly string Guid = "{2c868fd5-a649-454f-b910-3941bdd3eceb}";
 
-    private static readonly string FeatureName = "DemonologistRagePowerSelection";
+    private static readonly string BaseName = "DemonologistRagePower";
+
+    private static readonly string FeatureName = $"{BaseName}Selection";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

@@ -1,12 +1,12 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 
-namespace LostChapters.Modules.Custom.PrestigeClasses;
+namespace LostChapters.Modules.Custom.Archetypes.Magistrate;
 
-internal class RequiemFeature
+internal class ReprimandFeature
 {
-    public static readonly string Guid = "{e4276544-600a-429e-be77-26457563840e}";
+    public static readonly string Guid = "{78d68d3b-aded-4d18-a18f-c65a68ac8c8a}";
 
-    private static readonly string FeatureName = "RequiemFeature";
+    private static readonly string FeatureName = "ReprimandFeature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

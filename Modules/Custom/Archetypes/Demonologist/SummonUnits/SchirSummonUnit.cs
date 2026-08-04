@@ -11,7 +11,7 @@ internal class SchirSummonUnit
 {
     internal static readonly string Guid = "{dabf0315-e669-461b-b9a6-e1fcd3ea13c6}";
 
-    internal static readonly string UnitName = "SchirSummonUnit";
+    internal static readonly string UnitName = "SchirSummon";
     internal static readonly string DisplayName = $"{UnitName}.Name";
 
     internal static void Configure()
