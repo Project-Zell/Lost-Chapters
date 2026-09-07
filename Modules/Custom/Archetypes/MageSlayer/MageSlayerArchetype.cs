@@ -9,7 +9,9 @@ internal class MageSlayerArchetype
 {
     public static readonly string Guid = "{5c7fbe29-a872-49a4-9841-1f46a82e9517}";
 
-    private static readonly string ArchetypeName = "MageSlayerArchetype";
+    private static readonly string BaseName = "MageSlayer";
+
+    private static readonly string ArchetypeName = $"{BaseName}Archetype";
     private static readonly string LocalizedName = $"{ArchetypeName}.Name";
     private static readonly string Description   = $"{ArchetypeName}.Description";
 

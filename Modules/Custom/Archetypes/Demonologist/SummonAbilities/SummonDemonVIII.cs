@@ -9,7 +9,7 @@ internal class SummonDemonVIII
 
     private static readonly string BaseName = "SummonDemonVIII";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon8.png";
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -58,7 +58,8 @@ internal class SummonDemonVIII
                 description: Description,
                 icon: Icon,
                 summonUnitID: GalluSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single, 
+                fxSize: GalluSummonUnit.FxSize);
         }
     }
 
@@ -70,8 +71,6 @@ internal class SummonDemonVIII
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -79,9 +78,10 @@ internal class SummonDemonVIII
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonVII.Icon,
                 summonUnitID: KalavakusSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d3);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d3, 
+                fxSize: KalavakusSummonUnit.FxSize);
         }
     }
 
@@ -93,8 +93,6 @@ internal class SummonDemonVIII
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -102,9 +100,10 @@ internal class SummonDemonVIII
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonVI.Icon,
                 summonUnitID: VrockSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1, 
+                fxSize: VrockSummonUnit.FxSize);
         }
     }
 }

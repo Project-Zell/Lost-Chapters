@@ -1,7 +1,5 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Blueprints.References;
-using LostChapters.Modules.Custom.Components;
-using UnityEngine;
+using LostChapters.Modules.Custom.Archetypes.CowledPilgrim.Components;
 
 namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
@@ -15,8 +13,6 @@ internal class RoutekeeperFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly Sprite Icon = BuffRefs.LongstriderBuff.Reference.Get().Icon;
-
     internal static void Configure()
     {
         FeatureConfigurator.New(FeatureName, Guid)
@@ -25,7 +21,6 @@ internal class RoutekeeperFeature
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            .SetIcon(Icon)
             .Configure();
     }
 }

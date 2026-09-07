@@ -6,10 +6,10 @@ namespace LostChapters.Modules.Custom.Archetypes.Demonologist.SummonAbilities;
 internal class SummonDemonI
 {
     public static readonly string Guid = "{e2e431bf-3f2a-493e-96cd-524cc6e60d68}";
-
+    
     private static readonly string BaseName = "SummonDemonI";
-
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
+    
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -34,7 +34,8 @@ internal class SummonDemonI
                 description: Description,
                 icon: Icon,
                 summonUnitID: QuasitSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single,
+                fxSize: QuasitSummonUnit.FxSize);
         }
     }
 }

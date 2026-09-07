@@ -15,7 +15,9 @@ internal class JawStrikeAbility
 {
     public static readonly string Guid = "{2324832b-e472-4a87-82c0-13246e44d1eb}";
 
-    private static readonly string AbilityName = "JawStrikeAbility";
+    private static readonly string BaseName = "JawStrike";
+
+    private static readonly string AbilityName = $"{BaseName}Ability";
     private static readonly string DisplayName = $"{AbilityName}.Name";
     private static readonly string Description = $"{AbilityName}.Description";
 

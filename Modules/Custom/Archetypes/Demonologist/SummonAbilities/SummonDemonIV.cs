@@ -9,7 +9,7 @@ internal class SummonDemonIV
 
     private static readonly string BaseName = "SummonDemonIV";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon4.png";
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -21,7 +21,7 @@ internal class SummonDemonIV
     {
         public static readonly string Guid = "{688378a2-5a9a-43c5-9410-44222b2cedef}";
 
-        private static readonly string AbilityName = $"{BaseName}.Base";
+        private static readonly string AbilityName = $"{BaseName}Base";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -45,7 +45,7 @@ internal class SummonDemonIV
     {
         public static readonly string Guid = "{d157b9a1-0967-4cf0-ad36-b13c19992d47}";
 
-        private static readonly string AbilityName = $"{BaseName}.Single";
+        private static readonly string AbilityName = $"{BaseName}Single";
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
@@ -58,7 +58,8 @@ internal class SummonDemonIV
                 description: Description,
                 icon: Icon,
                 summonUnitID: BabauSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single, 
+                fxSize: BabauSummonUnit.FxSize);
         }
     }
 
@@ -70,8 +71,6 @@ internal class SummonDemonIV
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -79,9 +78,10 @@ internal class SummonDemonIV
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonIII.Icon,
                 summonUnitID: SchirSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d3);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d3, 
+                fxSize: SchirSummonUnit.FxSize);
         }
     }
 
@@ -93,8 +93,6 @@ internal class SummonDemonIV
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -102,9 +100,10 @@ internal class SummonDemonIV
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonII.Icon,
                 summonUnitID: DretchSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1, 
+                fxSize: DretchSummonUnit.FxSize);
         }
     }
 }

@@ -2,10 +2,9 @@
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
-using Kingmaker.EntitySystem.Stats;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.FactLogic;
-using LostChapters.Modules.Custom.Components;
+using LostChapters.Modules.Custom.Archetypes.CowledPilgrim.Components;
 
 namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
@@ -27,7 +26,9 @@ internal class CrossroadsAmbushFeature
         ArmorClassBuff.Configure();
 
         FeatureConfigurator.New(FeatureName, Guid)
-            .AddBuffExtraEffects(checkedBuff: BuffRefs.ChargeBuff.ToString(), extraEffectBuff: ArmorClassBuff.Guid)
+            .AddBuffSubstitutionOnApply(
+                gainedFact: BuffRefs.ChargeBuff.ToString(),
+                substituteBuff: ArmorClassBuff.Guid)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
@@ -64,11 +65,13 @@ internal class CrossroadsAmbushFeature
 
         internal static void Configure()
         {
+            var chargeDisplayName = "972f3036-b125-4565-baf1-4ca544cdbcab";
+
             BuffConfigurator.New(BuffName, Guid)
-                .AddContextStatBonus(stat: StatType.AC, value: 2, multiplier: 1)
+                .AddCondition(Kingmaker.UnitLogic.UnitCondition.StealthForbidden)
+                .AddAttackBonusConditional(bonus: 2)
                 .AddToFlags(BlueprintBuff.Flags.HiddenInUi)
-                .SetDisplayName(DisplayName)
-                .SetDescription(Description)
+                .SetDisplayName(chargeDisplayName)
                 .Configure();
         }
     }

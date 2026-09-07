@@ -3,7 +3,7 @@ using BlueprintCore.Blueprints.Configurators.Items.Equipment;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.Blueprints.Items.Armors;
 using LostChapters.Modules.GraySisterhood.Feats;
-using LostChapters.Tools;
+using LostChapters.Tools.Glossaries;
 using UnityEngine;
 
 namespace LostChapters.Modules.GraySisterhood.Items.Accessories.Neck;

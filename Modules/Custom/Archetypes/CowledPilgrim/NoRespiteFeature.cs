@@ -1,5 +1,5 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using LostChapters.Modules.Custom.Components;
+using LostChapters.Modules.Custom.Archetypes.CowledPilgrim.Components;
 
 namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 

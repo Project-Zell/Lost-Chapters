@@ -2,7 +2,7 @@
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
-using LostChapters.Tools;
+using LostChapters.Modules.Custom.Archetypes.Magistrate.Components;
 
 namespace LostChapters.Modules.Custom.Archetypes.Magistrate;
 

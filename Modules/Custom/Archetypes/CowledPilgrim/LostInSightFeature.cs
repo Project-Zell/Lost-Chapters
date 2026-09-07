@@ -1,5 +1,7 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using LostChapters.Modules.Custom.Components;
+using BlueprintCore.Blueprints.References;
+using LostChapters.Modules.Custom.Archetypes.CowledPilgrim.Components;
+using UnityEngine;
 
 namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
@@ -13,7 +15,7 @@ internal class LostInSightFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/{CowledPilgrimArchetype.BaseName}/{BaseName}.png".ToLower();
+    private static readonly Sprite Icon = BuffRefs.LongstriderBuff.Reference.Get().Icon;
 
     internal static void Configure()
     {

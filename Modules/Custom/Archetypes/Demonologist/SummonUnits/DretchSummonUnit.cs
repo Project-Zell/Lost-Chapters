@@ -11,19 +11,21 @@ internal class DretchSummonUnit
 {
     public static readonly string Guid = "{5ec14759-51b1-4cf7-927d-6176766f8a3c}";
     
-    internal static readonly string UnitName = "DretchSummon";
-    internal static readonly string DisplayName = $"{UnitName}.Name";
+    private static readonly string UnitName = "DretchSummon";
+    private static readonly string DisplayName = $"{UnitName}.Name";
+
+    private static readonly string SourcePrefabID = "08d7013c13b587541bead70c4a254977";
+
+    internal static readonly SummonDemonVisual.FxSize FxSize = SummonDemonVisual.FxSize.Small;
 
     internal static void Configure()
     {
-        Prefab.Configure();
-
         var unit = DemonologistSummonUnitHelper.CreateSummonUnit(
             unitName: UnitName,
             displayName: DisplayName,
             guid: Guid,
             baseUnit: UnitRefs.CR2_DretchStandard.Reference.Get(),
-            prefabID: Prefab.PrefabID,
+            prefabID: SourcePrefabID,
             level: 2,
             baseAttackBonus: 2,
             stats: (Str: 12, Dex: 10, Con: 14, Int: 5, Wis: 11, Cha: 11),
@@ -35,25 +37,10 @@ internal class DretchSummonUnit
                 BlueprintTool.GetRef<BlueprintUnitFactReference>(FeatureRefs.SubtypeDemon.ToString()),
                 BlueprintTool.GetRef<BlueprintUnitFactReference>(FeatureRefs.SubtypeExtraplanar.ToString()),
                 BlueprintTool.GetRef<BlueprintUnitFactReference>(FeatureRefs.DemonOfMagicFeature.ToString()),
-                BlueprintTool.GetRef<BlueprintUnitFactReference>(FeatureRefs.DRColdIronOrGood5.ToString())]);
+                BlueprintTool.GetRef<BlueprintUnitFactReference>(FeatureRefs.DRColdIronOrGood5.ToString())],
+            fxSize: FxSize);
 
         var dumbMonsterBrain = "5abc8884c6f15204c8604cb01a2efbab";
         UnitConfigurator.For(unit).SetBrain(dumbMonsterBrain).SetAlternativeBrains([]).Configure();
-    }
-
-    internal class Prefab
-    {
-        public static readonly string PrefabID = "{33daed16-905d-42b7-be4f-76029e609900}";
-
-        private static readonly string SourcePrefabID = "08d7013c13b587541bead70c4a254977";
-
-        internal static void Configure()
-        {
-            SummonDemonVisual.ConfigureUnit(
-                unitName: UnitName, 
-                newPrefabID: PrefabID, 
-                sourcePrefabID: SourcePrefabID, 
-                fxSize: SummonDemonVisual.FxSize.Small);
-        }
     }
 }

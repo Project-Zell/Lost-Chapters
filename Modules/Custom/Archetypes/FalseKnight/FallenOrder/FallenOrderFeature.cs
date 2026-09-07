@@ -1,6 +1,5 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
-using LostChapters.Modules.Custom.Archetypes.BlackKnight;
 
 namespace LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
@@ -8,7 +7,9 @@ internal class FallenOrderFeature
 {
     public static readonly string Guid = "{82aca15c-357a-4d92-88d6-3a2e62a82190}";
 
-    private static readonly string FeatureName = "FallenOrderFeature";
+    private static readonly string BaseName = "FallenOrder";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

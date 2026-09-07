@@ -3,7 +3,6 @@ using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.EntitySystem.Stats;
-using LostChapters._wip;
 
 namespace LostChapters.Modules.Custom.Archetypes.Magistrate;
 
@@ -11,9 +10,11 @@ internal class MagistrateArchetype
 {
     public static readonly string Guid = "{4052bfa3-3f1b-4aa5-8f96-6784704ae3ac}";
 
-    private static readonly string ArchetypeName = "Magistrate";
+    private static readonly string BaseName = "Magistrate";
+
+    private static readonly string ArchetypeName = $"{BaseName}Archetype";
     private static readonly string LocalizedName = $"{ArchetypeName}.Name";
-    private static readonly string Description = $"{ArchetypeName}.Description";
+    private static readonly string Description   = $"{ArchetypeName}.Description";
 
     private static readonly BlueprintCharacterClass Class = CharacterClassRefs.CavalierClass.Reference;
 

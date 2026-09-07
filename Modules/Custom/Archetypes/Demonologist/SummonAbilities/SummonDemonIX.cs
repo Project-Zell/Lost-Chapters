@@ -9,7 +9,7 @@ internal class SummonDemonIX
 
     private static readonly string BaseName = "SummonDemonIX";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon9.png";
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -58,7 +58,8 @@ internal class SummonDemonIX
                 description: Description,
                 icon: Icon,
                 summonUnitID: BalorSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single,
+                fxSize: BalorSummonUnit.FxSize);
         }
     }
 
@@ -70,8 +71,6 @@ internal class SummonDemonIX
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -79,9 +78,10 @@ internal class SummonDemonIX
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonVIII.Icon,
                 summonUnitID: GalluSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d3);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d3, 
+                fxSize: GalluSummonUnit.FxSize);
         }
     }
 
@@ -93,8 +93,6 @@ internal class SummonDemonIX
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -102,9 +100,10 @@ internal class SummonDemonIX
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonVII.Icon,
                 summonUnitID: KalavakusSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1, 
+                fxSize: KalavakusSummonUnit.FxSize);
         }
     }
 }

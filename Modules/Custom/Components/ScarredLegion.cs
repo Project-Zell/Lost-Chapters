@@ -7,7 +7,7 @@ using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem.Rules;
 using Kingmaker.UnitLogic;
 using Kingmaker.Utility;
-using LostChapters.Modules.Custom.Feats;
+using LostChapters.Modules.Custom.Feats.General;
 
 namespace LostChapters.Modules.Custom.Components;
 

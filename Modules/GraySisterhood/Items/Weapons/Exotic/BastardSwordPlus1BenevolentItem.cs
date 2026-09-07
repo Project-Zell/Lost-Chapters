@@ -4,7 +4,7 @@ using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.Enums;
 using Kingmaker.ResourceLinks;
 using LostChapters.Modules.GraySisterhood.Enchantments;
-using LostChapters.Tools;
+using LostChapters.Tools.Glossaries;
 using UnityEngine;
 
 namespace LostChapters.Modules.GraySisterhood.Items.Weapons.Exotic;

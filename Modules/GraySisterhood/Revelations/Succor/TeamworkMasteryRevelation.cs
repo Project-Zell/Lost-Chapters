@@ -6,7 +6,7 @@ using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.UnitLogic.Abilities.Components;
-using LostChapters.Modules.Custom.Feats;
+using LostChapters.Modules.Custom.Feats.General;
 using LostChapters.Modules.GraySisterhood.Feats;
 using static LostChapters.Modules.GraySisterhood.Revelations.OracleSuccorMysteryFeature;
 

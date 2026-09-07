@@ -7,6 +7,7 @@ using BlueprintCore.Blueprints.References;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.Visual.Animation.Kingmaker.Actions;
+using LostChapters.Tools;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist;
 
@@ -29,10 +30,10 @@ internal class CallOfTheAbyssFeature
 
         FeatureConfigurator.New(FeatureName, Guid)
             .AddFacts([Ability.Guid])
+            .SetHideInCharacterSheetAndLevelUp(true)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            //.AddFeatureTagsComponent()
             //.SetIcon(Icon)
             .Configure();
     }
@@ -42,8 +43,6 @@ internal class CallOfTheAbyssFeature
         public static readonly string Guid = "{bd1ee7dc-8998-448b-8057-20d101a08333}";
 
         private static readonly string AbilityName = $"{BaseName}Ability";
-        private static readonly string DisplayName = $"{AbilityName}.Name";
-        private static readonly string Description = $"{AbilityName}.Description";
 
         internal static void Configure()
         {
@@ -52,17 +51,23 @@ internal class CallOfTheAbyssFeature
             var action = ActionsBuilder.New().ApplyBuffPermanent(Buff.Guid);
             var resource = AbilityResourceRefs.ArcanistArcaneReservoirResource.ToString();
 
-            AbilityConfigurator.New(AbilityName, Guid)
+            var ability = AbilityConfigurator.New(AbilityName, Guid)
                 .AddAbilityCasterHasNoFacts([Buff.Guid])
-                .AddAbilityResourceLogic(requiredResource: resource, isSpendResource: true, amount: 2)
+                .AddAbilityResourceLogic(requiredResource: resource, isSpendResource: true, amount: 1)
                 .AddAbilityEffectRunAction(action)
                 .SetType(AbilityType.Supernatural)
                 .SetCanTargetSelf(true)
+                .SetRange(AbilityRange.Personal)
                 .SetAnimation(UnitAnimationActionCastSpell.CastAnimationStyle.Omni)
                 .SetActionType(UnitCommand.CommandType.Free)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .Configure();
+
+            TooltipConfigurator.CreateAbilityTooltip(
+                key: "LC_CallOfTheAbyss",
+                ability: ability,
+                abilityType: TooltipConfigurator.AbilityType.Ability);
         }
     }
 
@@ -71,8 +76,6 @@ internal class CallOfTheAbyssFeature
         public static readonly string Guid = "{642e95ad-e185-490a-a4df-91c6a9f8eedc}";
 
         private static readonly string BuffName = $"{BaseName}Buff";
-        private static readonly string DisplayName = $"{BuffName}.Name";
-        private static readonly string Description = $"{BuffName}.Description";
 
         internal static void Configure()
         {

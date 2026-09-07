@@ -11,13 +11,15 @@ internal class BalorSummonUnit
 {
     public static readonly string Guid = "{7ac86705-9dd9-4775-9be0-4a4277c9e8c8}";
 
-    internal static readonly string UnitName = "BalorSummon";
-    internal static readonly string DisplayName = $"{UnitName}.Name";
+    private static readonly string UnitName = "BalorSummon";
+    private static readonly string DisplayName = $"{UnitName}.Name";
+
+    private static readonly string SourcePrefabID = "ede35c527b9a0e5428188d1258d05786";
+
+    internal static readonly SummonDemonVisual.FxSize FxSize = SummonDemonVisual.FxSize.Giant;
 
     internal static void Configure()
     {
-        Prefab.Configure();
-
         var weaponFocus = new SelectionEntry()
         {
             IsParametrizedFeature = true,
@@ -30,7 +32,7 @@ internal class BalorSummonUnit
             displayName: DisplayName,
             guid: Guid,
             baseUnit: UnitRefs.CR20_BalorStandard.Reference.Get(),
-            prefabID: Prefab.PrefabID,
+            prefabID: SourcePrefabID,
             level: 20,
             baseAttackBonus: 20,
             stats: (Str: 35, Dex: 25, Con: 36, Int: 24, Wis: 24, Cha: 27),
@@ -45,22 +47,7 @@ internal class BalorSummonUnit
                 BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.TwoWeaponFightingImproved.ToString()),
                 BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.TwoWeaponFightingGreater.ToString()),
                 BlueprintTool.GetRef<BlueprintFeatureReference>(ParametrizedFeatureRefs.WeaponFocus.ToString())],
-            skillFocus: weaponFocus);
-    }
-
-    internal class Prefab
-    {
-        public static readonly string PrefabID = "{567649e5-c372-4065-b113-f737c6258139}";
-
-        private static readonly string SourcePrefabID = "ede35c527b9a0e5428188d1258d05786";
-
-        internal static void Configure()
-        {
-            SummonDemonVisual.ConfigureUnit(
-                unitName: UnitName,
-                newPrefabID: PrefabID,
-                sourcePrefabID: SourcePrefabID,
-                fxSize: SummonDemonVisual.FxSize.Small);
-        }
+            skillFocus: weaponFocus,
+            fxSize: FxSize);
     }
 }

@@ -7,7 +7,9 @@ internal class JawStrikeFeature
 {
     public static readonly string Guid = "{ba276bd1-a28b-406a-94b9-6fd483624f77}";
 
-    private static readonly string FeatureName = "JawStrikeFeature";
+    private static readonly string BaseName = "JawStrike";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

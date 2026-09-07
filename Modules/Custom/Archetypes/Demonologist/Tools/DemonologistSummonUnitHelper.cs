@@ -6,10 +6,13 @@ using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
+using Kingmaker.Localization;
 using Kingmaker.ResourceLinks;
 using Kingmaker.Utility;
 using LostChapters.Tools;
 using System.Linq;
+using UnityEngine;
+using static LostChapters.Modules.Custom.Archetypes.Demonologist.Tools.SummonDemonVisual;
 
 namespace LostChapters.Modules.Custom.Archetypes.Demonologist.Tools;
 
@@ -17,13 +20,20 @@ internal class DemonologistSummonUnitHelper
 {
     internal static BlueprintUnit CreateSummonUnit(
         string unitName, string displayName, string guid, BlueprintUnit baseUnit, int level, string prefabID, 
-        (int Str, int Dex, int Con, int Int, int Wis, int Cha) stats, int baseAttackBonus, 
+        (int Str, int Dex, int Con, int Int, int Wis, int Cha) stats, int baseAttackBonus, FxSize fxSize,
         Size size = Size.Medium, int speed = 30, BlueprintArchetypeReference archetype = null, bool isCaster = false,
         BlueprintFeatureReference[] feats = null, BlueprintUnitFactReference[] facts = null, SelectionEntry skillFocus = null)
     {
         var unitVisual = BlueprintUnitHelper.GetUnitVisual(baseUnit);
+
+        AssetLink<PrefabLink> assetLink = fxSize switch
+        {
+            FxSize.Medium => MediumDismemberFx.Guid,
+            FxSize.Big => BigDismemberFx.Guid,
+            FxSize.Giant => GiantDismemberFx.Guid,
+            _ => SmallDismemberFx.Guid,
+        };
         
-        AssetLink<PrefabLink> assetLink = SummonDemonVisual.SmallDismemberFx.Guid;
         var prefabLink = assetLink.Get();
         
         unitVisual.BloodPuddleFx = prefabLink;
@@ -42,6 +52,12 @@ internal class DemonologistSummonUnitHelper
         alternativeBrains = alternativeBrains?.Length > 0 ? alternativeBrains : [];
 
         SelectionEntry[] selections = skillFocus is null ? [baseFeatureSelection] : [baseFeatureSelection, skillFocus];
+
+        var localizedName = ScriptableObject.CreateInstance<SharedStringAsset>();
+        localizedName.String = new LocalizedString()
+        {
+            m_Key = displayName
+        };
 
         var summonUnit = UnitConfigurator.New(unitName, guid)
             .AddClassLevels(levels: level, characterClass: CharacterClassRefs.OutsiderClass.ToString(), archetypes: [archetype], raceStat: StatType.Constitution, skills: [StatType.SkillPerception, StatType.SkillStealth], selections: selections)
@@ -71,7 +87,7 @@ internal class DemonologistSummonUnitHelper
             .SetFactionOverrides(new FactionOverrides())
             .AddUnitUpgraderComponent(upgraders: [UnitUpgraderRefs.PF_359232_RemoveBrokenSummonOnLoad.ToString()])
             .SetPortrait(baseUnit.m_Portrait)
-            .SetDisplayName(displayName)
+            .SetLocalizedName(localizedName)
             .Configure();
 
         if (isCaster) UnitConfigurator.For(guid).AddMobCaster().Configure();

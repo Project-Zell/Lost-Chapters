@@ -2,9 +2,11 @@
 using BlueprintCore.Actions.Builder.ContextEx;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
+using BlueprintCore.Blueprints.References;
 using Kingmaker.Enums;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using LostChapters.Modules.Custom.Components;
+using UnityEngine;
 
 namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
@@ -18,7 +20,7 @@ internal class UnseenPathFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/unseenpath.png";
+    private static readonly Sprite Icon = FeatureSelectionRefs.TerrainMastery.Reference.Get().Icon;
 
     internal static void Configure()
     {
@@ -29,7 +31,7 @@ internal class UnseenPathFeature
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            //.SetIcon(Icon)
+            .SetIcon(Icon)
             .Configure();
     }
 
@@ -44,10 +46,10 @@ internal class UnseenPathFeature
             BuffConfigurator.New(BuffName, Guid)
                 .AddConcealment(
                     descriptor: ConcealmentDescriptor.Blur,
-                    concealment: Concealment.Partial,
-                    rangeType: WeaponRangeType.Melee)
+                    concealment: Concealment.Partial)
                 .AddCombatStateTrigger(combatEndActions: ActionsBuilder.New().RemoveSelf())
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi | BlueprintBuff.Flags.StayOnDeath | BlueprintBuff.Flags.RemoveOnRest)
+                .SetDisplayName(DisplayName)
                 .Configure();
         }
     }

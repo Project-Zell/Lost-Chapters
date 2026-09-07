@@ -8,9 +8,9 @@ internal class SummonDemonII
     public static readonly string Guid = "{075bf4c0-4e2e-40f6-a142-706afd61c3de}";
 
     private static readonly string BaseName = "SummonDemonII";
-
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon2.png";
-
+    
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
+    
     internal static void Configure()
     {
         DretchSummonUnit.Configure();
@@ -57,7 +57,8 @@ internal class SummonDemonII
                 description: Description,
                 icon: Icon,
                 summonUnitID: DretchSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single,
+                fxSize: DretchSummonUnit.FxSize);
         }
     }
 
@@ -69,8 +70,6 @@ internal class SummonDemonII
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -78,9 +77,10 @@ internal class SummonDemonII
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonI.Icon,
                 summonUnitID: QuasitSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d3);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d3,
+                fxSize: QuasitSummonUnit.FxSize);
         }
     }
 }

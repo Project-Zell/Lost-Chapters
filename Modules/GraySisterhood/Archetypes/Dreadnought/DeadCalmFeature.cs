@@ -23,6 +23,7 @@ using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.Mechanics;
+using LostChapters.Tools;
 
 namespace LostChapters.Modules.GraySisterhood.Archetypes.Dreadnought;
 
@@ -160,19 +161,24 @@ internal class DeadCalmFeature
 
             var contextSharedValue = ContextValues.Constant(2);
 
-            var onDeactivate = ActionsBuilder.New()
-                .RemoveBuff(buff: BuffRefs.RecklessStanceEffectBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.InspireFerocityRageBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.LethalStanceEffectBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.GuardedStanceEffectBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.ScentRageBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.FiendTotemLesserRageBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.FiendTotemLesserRageBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.FiendTotemGreaterRageBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.ClearMindBuff.ToString())
-                .RemoveBuff(buff: BuffRefs.ComeAndGetMeEffectBuff.ToString())
-                .Conditional(ConditionsBuilder.New().HasFact(InstantDispassionFeature.Guid, negate: true),
-                    ifTrue: ActionsBuilder.New().ApplyBuff(Cooldown.Guid, ContextDuration.Fixed(1, rate: DurationRate.Minutes)));
+            //var onDeactivate = ActionsBuilder.New()
+            //    .RemoveBuff(buff: BuffRefs.RecklessStanceEffectBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.InspireFerocityRageBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.LethalStanceEffectBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.GuardedStanceEffectBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.ScentRageBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.FiendTotemLesserRageBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.FiendTotemLesserRageBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.FiendTotemGreaterRageBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.ClearMindBuff.ToString())
+            //    .RemoveBuff(buff: BuffRefs.ComeAndGetMeEffectBuff.ToString())
+            //    .Conditional(ConditionsBuilder.New().HasFact(InstantDispassionFeature.Guid, negate: true),
+            //        ifTrue: ActionsBuilder.New().ApplyBuff(Cooldown.Guid, ContextDuration.Fixed(1, rate: DurationRate.Minutes)));
+
+            var onDeactivate = RageHelper.NewDeactivateRagePowersActionBuilder();
+            
+            onDeactivate.Conditional(ConditionsBuilder.New().HasFact(InstantDispassionFeature.Guid, negate: true),
+                ifTrue: ActionsBuilder.New().ApplyBuff(Cooldown.Guid, ContextDuration.Fixed(1, rate: DurationRate.Minutes)));
 
             var onActivate = ActionsBuilder.New()
                 .OnContextCaster(ActionsBuilder.New().SpawnFx("a536a9fb639035140b8771b2e3a21ffd"))

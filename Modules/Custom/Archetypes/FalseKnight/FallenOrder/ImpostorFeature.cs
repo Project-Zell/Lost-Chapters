@@ -1,6 +1,6 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.References;
-using LostChapters.Tools;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight.Components;
 
 namespace LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
@@ -8,9 +8,11 @@ internal class ImpostorFeature
 {
     public static readonly string Guid = "{d0c9b52f-faf9-4dd1-82b2-e813fb2a4036}";
 
-    private static readonly string FeatureName = "Impostor";
-    private static readonly string DisplayName = "Impostor.Name";
-    private static readonly string Description = "Impostor.Description";
+    private static readonly string BaseName = "Impostor";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
+    private static readonly string DisplayName = $"{FeatureName}.Name";
+    private static readonly string Description = $"{FeatureName}.Description";
 
     //private static readonly string Icon = $"{CustomModule.IconPath}/ .png";
 

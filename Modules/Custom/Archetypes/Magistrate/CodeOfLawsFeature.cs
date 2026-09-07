@@ -10,7 +10,9 @@ internal class CodeOfLawsFeature
 {
     public static readonly string Guid = "{56121d37-24d8-4cbf-a175-431464290c75}";
 
-    private static readonly string FeatureName = "CodeOfLaws";
+    private static readonly string BaseName = "CodeOfLaws";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

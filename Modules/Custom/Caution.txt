@@ -1,0 +1,4 @@
+///Custom Module Caution.
+///Changes of the native components or classes:
+
+- RageLevelProperty component "SummClassLevelGetter" removed. "SummClassLevelGatedGetter" added instead. Called from "DemonologistExploitsSelection.cs" on line 22. Basic functional should behave as expected from original component.

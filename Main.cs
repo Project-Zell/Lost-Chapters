@@ -133,11 +133,9 @@ public static class Main
             $"{ModName}.Localization.HellknightsCodexStrings.json",
             $"{ModName}.Localization.OtherLocalizedStrings.json");
 
-        BrawlerClass.Configure();
-
         OtherModule.Configure();
         CustomModule.Configure();
-        GraySisterhoodModule.Configure();
-        HellknightCodexModule.Configure();
+        //GraySisterhoodModule.Configure();
+        //HellknightCodexModule.Configure();
     }
 }

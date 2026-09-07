@@ -4,11 +4,14 @@ using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Conditions.Builder;
+using BlueprintCore.Conditions.Builder.ContextEx;
 using BlueprintCore.Utils;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.EntitySystem.Stats;
+using Kingmaker.Enums;
+using Kingmaker.PubSubSystem;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Mechanics.Properties;
@@ -26,7 +29,7 @@ internal class HellsWhisperFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    //private static readonly Sprite Icon = $"{_Module.IconPath}/ .png";
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -55,8 +58,7 @@ internal class HellsWhisperFeature
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            //.AddFeatureTagsComponent()
-            //.SetIcon(Icon)
+            .SetIcon(Icon)
             .Configure();
     }
 
@@ -68,25 +70,30 @@ internal class HellsWhisperFeature
 
         internal static void Configure()
         {
-            var level = ContextValues.Property(UnitProperty.Level, toCaster: true);
-            var contextBonus = ContextValues.Constant(10);
+            var baseDC = ContextValues.Constant(10);
+            var hitDiceDC = ContextValues.Property(UnitProperty.Level, toCaster: true);
             
             var duration = ContextDuration.Fixed(value: 1);
 
             List<(ConditionsBuilder conditions, ContextValue modifier)> bonus =
             [
-                (ConditionsBuilder.New(), contextBonus),
+                (ConditionsBuilder.New(), hitDiceDC),
             ];
 
+            var condition = ConditionsBuilder.New().Alignment(AlignmentComponent.Good);
+
             var action = ActionsBuilder.New().OnContextCaster(targetAsCaster: true, actions: ActionsBuilder.New()
-                    .SavingThrow(type: SavingThrowType.Will, customDC: level, conditionalDCModifiers: bonus,
+                    .SavingThrow(type: SavingThrowType.Will, customDC: baseDC, conditionalDCModifiers: bonus,
                         onResult: ActionsBuilder.New().ConditionalSaved(
-                            failed: ActionsBuilder.New().ApplyBuff(buff: BuffRefs.Confusion.ToString(), durationValue: duration))));
+                            failed: ActionsBuilder.New().Conditional(condition,
+                                ifTrue: ActionsBuilder.New().ApplyBuff(buff: BuffRefs.Confusion.ToString(), durationValue: duration),
+                                ifFalse: ActionsBuilder.New().ApplyBuff(buff: BuffRefs.Staggered.ToString(), durationValue: duration)))));
 
             BuffConfigurator.New(BuffName, Guid)
                 .AddDeathActions(deathTrigger: DeathActions.DeathTrigger.OnUnitDeath, actions: action)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
+                .SetIcon(Icon)
                 .Configure();
         }
     }

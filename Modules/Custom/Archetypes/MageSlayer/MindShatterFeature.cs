@@ -8,7 +8,9 @@ internal class MindShatterFeature
 {
     public static readonly string Guid = "{2c93f6fa-b45b-4123-8ee8-4782f1d17be1}";
 
-    private static readonly string FeatureName = $"MindShatterFeature";
+    private static readonly string BaseName = "MindShatter";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

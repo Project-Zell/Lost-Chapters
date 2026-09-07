@@ -9,7 +9,7 @@ internal class SummonDemonV
 
     private static readonly string BaseName = "SummonDemonV";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/summondemon5.png";
+    internal static readonly string Icon = $"{CustomModule.IconPath}/{DemonologistArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
@@ -58,7 +58,8 @@ internal class SummonDemonV
                 description: Description,
                 icon: Icon,
                 summonUnitID: NabasuSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.Single);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.Single, 
+                fxSize: NabasuSummonUnit.FxSize);
         }
     }
 
@@ -70,8 +71,6 @@ internal class SummonDemonV
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -79,9 +78,10 @@ internal class SummonDemonV
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonIV.Icon,
                 summonUnitID: BabauSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d3);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d3, 
+                fxSize: BabauSummonUnit.FxSize);
         }
     }
 
@@ -93,8 +93,6 @@ internal class SummonDemonV
         private static readonly string DisplayName = $"{AbilityName}.Name";
         private static readonly string Description = $"{AbilityName}.Description";
 
-        private static readonly string Icon = $"{CustomModule.IconPath}/summondemon1.png";
-
         internal static void Configure()
         {
             DemonologistSummonAbilityHelper.CreateSummonAbility(
@@ -102,9 +100,10 @@ internal class SummonDemonV
                 name: AbilityName,
                 displayName: DisplayName,
                 description: Description,
-                icon: Icon,
+                icon: SummonDemonIII.Icon,
                 summonUnitID: SchirSummonUnit.Guid,
-                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1);
+                countType: DemonologistSummonAbilityHelper.SummonCountType.d4plus1,
+                fxSize: SchirSummonUnit.FxSize);
         }
     }
 }

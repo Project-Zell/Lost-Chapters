@@ -2,7 +2,8 @@
 using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.Blueprints.Classes.Selection;
-using LostChapters.Modules.Custom.Components;
+using LostChapters.Modules.Custom.Archetypes.CowledPilgrim.Components;
+using UnityEngine;
 
 namespace LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 
@@ -23,7 +24,7 @@ internal class LoneWandererFeature
         FeatureSelection.Configure();
 
         FeatureConfigurator.New(FeatureName, Guid)
-            .AddComponent<LoneWayfarer>()
+            .AddComponent<LoneWanderer>()
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
@@ -38,10 +39,10 @@ internal class LoneWandererFeature
         private static readonly string SelectionName = $"{BaseName}FeatureSelection";
         private static readonly string DisplayName = $"{SelectionName}.Name";
 
+        private static readonly Sprite Icon = FeatureSelectionRefs.FavoriteTerrainSelection.Reference.Get().Icon;
+
         internal static void Configure()
         {
-            var icon = FeatureSelectionRefs.TerrainMastery.Reference.Get().Icon;
-
             FeatureSelectionConfigurator.New(SelectionName, Guid)
                 .SetAllFeatures([
                     FeatureRefs.FavoriteTerrainAbyss.ToString(),
@@ -54,7 +55,7 @@ internal class LoneWandererFeature
                 .SetReapplyOnLevelUp(true)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
-                .SetIcon(icon)
+                .SetIcon(Icon)
                 .Configure();
         }
     }

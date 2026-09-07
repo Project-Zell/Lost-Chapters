@@ -7,21 +7,23 @@ namespace LostChapters.Modules.Custom.Archetypes.Demonologist.SummonUnits;
 
 internal class NabasuSummonUnit
 {
-    internal static readonly string Guid = "{c011be55-0771-4dc9-9ded-d63222e7390e}";
+    public static readonly string Guid = "{c011be55-0771-4dc9-9ded-d63222e7390e}";
 
-    internal static readonly string UnitName = "NabasuSummon";
-    internal static readonly string DisplayName = $"{UnitName}.Name";
+    private static readonly string UnitName = "NabasuSummon";
+    private static readonly string DisplayName = $"{UnitName}.Name";
+
+    private static readonly string SourcePrefabID = "a7534f92d250de24eb8e50f8ccd887e1";
+
+    internal static readonly SummonDemonVisual.FxSize FxSize = SummonDemonVisual.FxSize.Medium;
 
     internal static void Configure()
     {
-        Prefab.Configure();
-
         DemonologistSummonUnitHelper.CreateSummonUnit(
             unitName: UnitName,
             displayName: DisplayName,
             guid: Guid,
             baseUnit: UnitRefs.CR8_NabasuStandard.Reference.Get(),
-            prefabID: Prefab.PrefabID,
+            prefabID: SourcePrefabID,
             level: 11,
             baseAttackBonus: 11,
             isCaster: true,
@@ -32,22 +34,7 @@ internal class NabasuSummonUnit
                 BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.Improved_Initiative.ToString()),
                 BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.PowerAttackFeature.ToString()),
                 BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.Dodge.ToString()),
-                BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.CombatCasting.ToString())]);
-    }
-
-    internal class Prefab
-    {
-        internal static readonly string PrefabID = "{a51486d1-52ce-4ff4-920f-9d84a3363a4a}";
-
-        private static readonly string SourcePrefabID = "a7534f92d250de24eb8e50f8ccd887e1";
-
-        internal static void Configure()
-        {
-            SummonDemonVisual.ConfigureUnit(
-                unitName: UnitName,
-                newPrefabID: PrefabID,
-                sourcePrefabID: SourcePrefabID,
-                fxSize: SummonDemonVisual.FxSize.Medium);
-        }
+                BlueprintTool.GetRef<BlueprintFeatureReference>(FeatureRefs.CombatCasting.ToString())],
+            fxSize: FxSize);
     }
 }

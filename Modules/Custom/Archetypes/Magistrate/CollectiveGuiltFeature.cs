@@ -6,7 +6,9 @@ internal class CollectiveGuiltFeature
 {
     public static readonly string Guid = "{f656d511-2ee9-4770-955f-fc92e7fbf9ac}";
 
-    private static readonly string FeatureName = "CollectiveGuiltFeature";
+    private static readonly string BaseName = "CollectiveGuilt";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

@@ -18,7 +18,9 @@ internal class CourtTrialFeature
 {
     public static readonly string Guid = "{26a637b5-c37b-4ac8-84d0-b4ea683b1f54}";
 
-    private static readonly string FeatureName = "CourtTrial";
+    private static readonly string BaseName = "CourtTrial";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

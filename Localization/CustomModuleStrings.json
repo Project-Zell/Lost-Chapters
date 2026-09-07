@@ -1,5 +1,17 @@
 [
     {
+        "Key": "AbilityTargetIsSummonedUnit.UIText",
+        "enGB": "Can only be used on summoned creatures",
+        "ruRU": "Может применяться только к призванным существам",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AbilityTargetIsSummonedUnit.ByCaster.UIText",
+        "enGB": "Can only be used on creatures summoned by the caster",
+        "ruRU": "Может применяться только к существам призванным этим заклинателем",
+        "ProcessTemplates": false
+    },
+    {
         "Key": "CowledPilgrimArchetype.Name",
         "enGB": "Cowled Pilgrim",
         "ruRU": "Безликий странник",
@@ -19,8 +31,8 @@
     },
     {
         "Key": "CrossroadsAmbushFeature.Description",
-        "enGB": "At 3rd level, while a cowled pilgrim wields a {g|Encyclopedia:Weapon_Proficiency}simple weapon{/g}, he gains the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}, allowing him to make a full {g|Encyclopedia:Attack}attack{/g} at the end of a charge. In addition, a cowled pilgrim does not suffer any {g|Encyclopedia:Penalty}penalty{/g} to his {g|Encyclopedia:Armor_Class}Armor Class{/g} after making a charge attack.",
-        "ruRU": "Начиная с 3 уровня, когда безликий странник держит в руках {g|Encyclopedia:Weapon_Proficiency}простое оружие{/g}, он получает {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g}, позволяющую ему совершить полную {g|Encyclopedia:Attack}атаку{/g} с разбега. Кроме того, безликий странник не получает никаких {g|Encyclopedia:Penalty}штрафов{/g} к {g|Encyclopedia:Armor_Class}защите{/g} после совершения атаки с разбега.",
+        "enGB": "At 3rd level, while a cowled pilgrim wields a {g|Encyclopedia:Weapon_Proficiency}simple weapon{/g} in the main hand, he gains the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}, allowing him to make a full {g|Encyclopedia:Attack}attack{/g} at the end of a charge. In addition, he does not suffer any {g|Encyclopedia:Penalty}penalty{/g} to his {g|Encyclopedia:Armor_Class}Armor Class{/g} after making a charge attack.",
+        "ruRU": "Начиная с 3 уровня, когда безликий странник держит {g|Encyclopedia:Weapon_Proficiency}простое оружие{/g} в основной руке, он получает {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g}, позволяющую ему совершить полную {g|Encyclopedia:Attack}атаку{/g} с разбега. Кроме того, безликий странник не получает никаких {g|Encyclopedia:Penalty}штрафов{/g} к {g|Encyclopedia:Armor_Class}защите{/g} после совершения атаки с разбега.",
         "ProcessTemplates": false
     },
     {
@@ -43,13 +55,13 @@
     },
     {
         "Key": "LoneWandererFeature.Description",
-        "enGB": "At 4th, 10th and 16th level, a cowled pilgrim gains a favored terrain as the ranger class feature of the same name, but the {g|Encyclopedia:Bonus}bonus{/g} does not increase with his level.\nA cowled pilgrim's land {g|Encyclopedia:Speed}speed{/g} is increased by 10 feet when he is in favored terrain. Each time a cowled pilgrim gains a new type of favored terrain, this movement speed {g|Encyclopedia:Bonus}bonus{/g} increases by an additional 10 feet, up to a maximum of 30 feet.",
-        "ruRU": "На 4, 10 и 16 уровне, безликий странник получает излюбленную местность, как от одноименной способности рейнджера, но {g|Encyclopedia:Bonus}бонус{/g} от нее с ростом в уровне не увеличивается.\nКогда безликий странник находится на своей излюбленной местности, его {g|Encyclopedia:Speed}скорость{/g} передвижения по земле увеличивается на 10 футов. Всякий раз, когда безликий странник получает новый тип излюбленной местности, этот бонус к скорости передвижения увеличивается на дополнительные 10 футов, до максимума в 30 футов.",
+        "enGB": "At 4th, 10th, and 16th level, a cowled pilgrim gains a favored terrain as the ranger class feature of the same name, but the {g|Encyclopedia:Bonus}bonus{/g} does not increase with his level.\nA cowled pilgrim's land {g|Encyclopedia:Speed}speed{/g} is increased by 10 feet when he is in favored terrain. Each time he gains a new type of favored terrain, this movement speed bonus increases by an additional 10 feet, up to a maximum of 30 feet.",
+        "ruRU": "На 4, 10 и 16 уровне, безликий странник получает излюбленную местность, как от одноименной способности рейнджера, но {g|Encyclopedia:Bonus}бонус{/g} от нее с ростом в уровне не увеличивается.\nКогда безликий странник находится на своей излюбленной местности, его {g|Encyclopedia:Speed}скорость{/g} передвижения по земле увеличивается на 10 футов. Всякий раз, когда он получает новый тип излюбленной местности, этот бонус к скорости передвижения увеличивается на дополнительные 10 футов, до максимума в 30 футов.",
         "ProcessTemplates": false
     },
     {
         "Key": "LoneWandererFeatureSelection.Name",
-        "enGB": "Lone Wanderer – Favored Terrain",
+        "enGB": "Lone Wanderer — Favored Terrain",
         "ruRU": "Одинокий путник – Излюбленная местность",
         "ProcessTemplates": false
     },
@@ -61,8 +73,8 @@
     },
     {
         "Key": "LostInSightFeature.Description",
-        "enGB": "At 7th level, a cowled pilgrim can move at full {g|Encyclopedia:Speed}speed{/g} while using the {g|Encyclopedia:Stealth}Stealth{/g} {g|Encyclopedia:Skills}skill{/g} without {g|Encyclopedia:Penalty}penalty{/g}. In addition, while he is in favored terrain, a cowled pilgrim gains a +4 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} against {g|Encyclopedia:Attack_Of_Opportunity}attacks of opportunity{/g}.",
-        "ruRU": "Начиная с 7 уровня, безликий странник двигается с обычной {g|Encyclopedia:Speed}скоростью{/g}, используя {g|Encyclopedia:Skills}навык{/g} {g|Encyclopedia:Stealth}Скрытность{/g} и не получает за это {g|Encyclopedia:Penalty}штрафов{/g}. Кроме того, находясь на своей излюбленной местности, безликий странник получает {g|Encyclopedia:Bonus}бонус{/g} +4 к {g|Encyclopedia:Armor_Class}защите{/g} от {g|Encyclopedia:Attack_Of_Opportunity}внеочередных атак{/g}.",
+        "enGB": "At 7th level, a cowled pilgrim can move at full {g|Encyclopedia:Speed}speed{/g} while using the {g|Encyclopedia:Stealth}Stealth{/g} {g|Encyclopedia:Skills}skill{/g} without {g|Encyclopedia:Penalty}penalty{/g}. In addition, while in his favored terrain, he gains a +4 {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g} against {g|Encyclopedia:Attack_Of_Opportunity}attacks of opportunity{/g}.",
+        "ruRU": "Начиная с 7 уровня, безликий странник двигается с обычной {g|Encyclopedia:Speed}скоростью{/g}, используя {g|Encyclopedia:Skills}навык{/g} {g|Encyclopedia:Stealth}Скрытность{/g} и не получает за это {g|Encyclopedia:Penalty}штрафов{/g}. Кроме того, находясь на своей излюбленной местности он получает {g|Encyclopedia:Bonus}бонус{/g} +4 к {g|Encyclopedia:Armor_Class}защите{/g} от {g|Encyclopedia:Attack_Of_Opportunity}внеочередных атак{/g}.",
         "ProcessTemplates": false
     },
     {
@@ -73,8 +85,8 @@
     },
     {
         "Key": "NoRespiteFeature.Description",
-        "enGB": "At 5th level, a cowled pilgrim can move at his normal {g|Encyclopedia:Speed}speed{/g} while wearing medium armor. In addition, when he is in favored terrain, a cowled pilgrim gains a +2 morale {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}Fortitude saving throws{/g} against {g|ConditionFatigued}fatigue{/g} and {g|ConditionExhausted}exhaustion{/g}.",
-        "ruRU": "Начиная с 5 уровня, безликий странник перемещается с обычной {g|Encyclopedia:Speed}скоростью{/g} в средней броне. Кроме того, находясь на своей излюбленной местности, безликий странник получает {g|Encyclopedia:Bonus}бонус{/g} боевого духа +2 к {g|Encyclopedia:Saving_Throw}спасброскам Стойкости{/g} против {g|ConditionFatigued}утомления{/g} и {g|ConditionExhausted}бессилия{/g}.",
+        "enGB": "At 5th level, a cowled pilgrim can move at his normal {g|Encyclopedia:Speed}speed{/g} while wearing medium armor. In addition, while in his favored terrain, he gains a +2 morale {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}Fortitude saving throws{/g} against {g|ConditionFatigued}fatigue{/g} and {g|ConditionExhausted}exhaustion{/g}.",
+        "ruRU": "Начиная с 5 уровня, безликий странник перемещается с обычной {g|Encyclopedia:Speed}скоростью{/g} в средней броне. Кроме того, находясь на своей излюбленной местности он получает {g|Encyclopedia:Bonus}бонус{/g} боевого духа +2 к {g|Encyclopedia:Saving_Throw}спасброскам Стойкости{/g} против {g|ConditionFatigued}утомления{/g} и {g|ConditionExhausted}бессилия{/g}.",
         "ProcessTemplates": false
     },
     {
@@ -97,8 +109,1148 @@
     },
     {
         "Key": "UnseenPathFeature.Description",
-        "enGB": "At 11th level, a cowled pilgrim can move at his normal {g|Encyclopedia:Speed}speed{/g} while wearing heavy armor. In addition, while he is in favored terrain, a cowled pilgrim gains {g|Encyclopedia:Concealment}concealment{/g} (20% miss chance).",
-        "ruRU": "Начиная с 11 уровня, безликий странник перемещается с обычной {g|Encyclopedia:Speed}скоростью{/g} в тяжелой броне. Кроме того, находясь на своей излюбленной местности, безликий странник получает {g|Encyclopedia:Concealment}маскировку{/g} (вероятность промаха 20%).",
+        "enGB": "At 11th level, a cowled pilgrim can move at his normal {g|Encyclopedia:Speed}speed{/g} while wearing heavy armor. In addition, while in his favored terrain, he gains {g|Encyclopedia:Concealment}concealment{/g} (20% miss chance).",
+        "ruRU": "Начиная с 11 уровня, безликий странник перемещается с обычной {g|Encyclopedia:Speed}скоростью{/g} в тяжелой броне. Кроме того, находясь на своей излюбленной местности он получает {g|Encyclopedia:Concealment}маскировку{/g} (вероятность промаха 20%).",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeaconArchetype.Name",
+        "enGB": "Deacon",
+        "ruRU": "Диакон",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeaconArchetype.Description",
+        "enGB": "Some warpriests, known as deacons, become living conduits of their deity's faith. Using censer burners filled with blessed smoke, they allow those around them to touch a fraction of their patron's true power.",
+        "ruRU": "Некоторые капелланы, известные как диаконы, становятся живыми проводниками веры своего божества. Используя кадильницы с освященным дымом, они позволяют окружающим прикоснуться к мощи их покровителя.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerFeature.Name",
+        "enGB": "Censer Burner",
+        "ruRU": "Кадильница",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerFeature.Description",
+        "enGB": "A 1st-level deacon can use his censer burner to create an incense smoke in a 30-foot area around him to aid his allies (including himself), making them feel soothed and focused. An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Saving_Throw}saving throws{/g} against compulsion and emotions. The incense smoke's area automatically suppresses (but does not dispel) any morale bonuses granted by the {g|SpellsRage}rage{/g} {g|Encyclopedia:Spell}spell{/g}, and also suppresses an already active barbarian's rage and negates his ability to enter a rage. The censer burner can be ignited for 2 + the warpriest's level + his {g|Encyclopedia:Wisdom}Wisdom{/g} modifier {g|Encyclopedia:Combat_Round}rounds{/g} per day.",
+        "ruRU": "На первом уровне диакон с помощью своей кадильницы может сотворить благовонный дым в радиусе 30 футов, чтобы помочь своим союзникам (включая себя) успокоиться и сосредоточиться. Под влиянием благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов эмоций и принуждения. Благовонный дым автоматически подавляет (но не рассеивает) любые бонусы морали от {g|Encyclopedia:Spell}заклинания{/g} {g|SpellsRage}ярость{/g}, а также прерывает уже начавшуюся ярость варвара и лишает его возможности впадать в ярость. Диакон может разжечь свою кадильницу на количество {g|Encyclopedia:Combat_Round}раундов{/g} в день, равное 2 + уровень капеллана + его модификатор {g|Encyclopedia:Wisdom}Мудрости{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlessedIncenseSelector.Name",
+        "enGB": "Blessed Incense",
+        "ruRU": "Освященное благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlessedIncenseSelector.Description",
+        "enGB": "The deacon can bless the censer burner's incense with the power of his domain, which grants ally powers or weakens foes. At 4th level and every three levels thereafter, the deacon can select a blessing allowed by his deity.",
+        "ruRU": "Диакон может освятить сотворенный кадильницей дым силой своего домейна, чтобы усилить союзников и ослабить врагов. На 4 уровне и каждые три уровня после этого диакон может выбрать освящение, дозволенное его божеством.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "IncenseInsufionFeature.Name",
+        "enGB": "Incense Insufion",
+        "ruRU": "Насыщение благовония",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "IncenseInsufionFeature.Description",
+        "enGB": "At 10th level, instead of selecting a new blessing incense, the deacon can infuse one of his already selected blessings again to increase its power.",
+        "ruRU": "Начиная с 10 уровня, вместо выбора нового освященного благовония, диакон может насытить одно из уже имеющихся, чтобы увеличить его силу.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerMoveFeature.Name",
+        "enGB": "Censer Burner (Move Action)",
+        "ruRU": "Кадильница (сопутствующее действие)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerMoveFeature.Description",
+        "enGB": "At 7th level, a deacon use censer burner as a {g|Encyclopedia:Move_Action}move action{/g} instead of a {g|Encyclopedia:Standard_Actions}standard action{/g}.",
+        "ruRU": "Начиная с 7 уровня диакон может использовать свою кадильницу, совершив сопутствующее действие.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerSwiftFeature.Name",
+        "enGB": "Censer Burner (Swift Action)",
+        "ruRU": "Кадильница (быстрое действие)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerSwiftFeature.Description",
+        "enGB": "At 13th level, a deacon use censer burner as a {g|Encyclopedia:Swift_Action}swift action{/g}.",
+        "ruRU": "Начиная с 13 уровня диакон может использовать свою кадильницу, совершив быстрое действие.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FogOfWarFeature.Name",
+        "enGB": "Fog of War",
+        "ruRU": "Туман войны",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FogOfWarFeature.Description",
+        "enGB": "At 20th level, an affected ally can treat his level as his {g|Encyclopedia:BAB}base attack bonus{/g}, and the weapon in his hand deals {g|Encyclopedia:Damage}damage{/g} as if it were one {g|Encyclopedia:Size}size{/g} category larger.",
+        "ruRU": "Начиная с 20 уровня, союзник, находящийся под влиянием кадильницы, может использовать свой уровень как свой {g|Encyclopedia:BAB}базовый модификатор атаки{/g}. Кроме того, оружие в руках союзника наносит {g|Encyclopedia:Damage}урон{/g} так, как если бы оно было на однин {g|Encyclopedia:Size}размер{/g} больше.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ObsequialKindleDeaconFeature.Name",
+        "enGB": "Obsequial Kindle (Deacon)",
+        "ruRU": "Погребальное пламя (Диакон)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ObsequialKindleDeaconFeature.Description",
+        "enGB": "Whenever the deacon reduces at least one enemy creature to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, he restores 3 {g|Encyclopedia:Combat_Round}rounds{/g} of his censer burner's daily uses at the end of the combat.",
+        "ruRU": "Всякий раз, когда диакон опускает {g|Encyclopedia:HP}здоровье{/g} хотя бы одного врага до 0 или ниже, он восстанавливает 3 {g|Encyclopedia:Combat_Round}раунда{/g} использования кадильницы после окончания сражения.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ObsequialKindleIncenseSynthesizerFeature.Name",
+        "enGB": "Obsequial Kindle (Incense Synthesizer)",
+        "ruRU": "Погребальное пламя (Создатель благовоний)",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ObsequialKindleIncenseSynthesizerFeature.Description",
+        "enGB": "Whenever the incense synthesizer reduces at least one enemy creature to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, he restores 3 {g|Encyclopedia:Combat_Round}rounds{/g} of his incense fog's daily uses at the end of the combat.",
+        "ruRU": "Всякий раз, когда создатель благовоний опускает {g|Encyclopedia:HP}здоровье{/g} хотя бы одного врага до 0 или ниже, он восстанавливает 3 {g|Encyclopedia:Combat_Round}раунда{/g} использования благовонного тумана после окончания сражения.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpossibleIncenseSelector.Name",
+        "enGB": "Impossible Incense",
+        "ruRU": "Невозможное благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpossibleIncenseSelector.Description",
+        "enGB": "The deacon blesses his incense with the power of a domain not granted by his deity. At 10th level, this incense's power increases as if the deacon had selected an infusion for it.",
+        "ruRU": "Диакон освящает свое благовоние силой домейна, не дарованного его божеством, игнорируя все требования этого домейна. Начиная с 10 уровня, сила этого благовония увеличивается, как если бы диакон насытил его.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SparklingFumeMinorFeature.Name",
+        "enGB": "Sparkling Fume",
+        "ruRU": "Искрящийся дым",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SparklingFumeMinorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}electricity damage{/g} with each strike.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона электричеством{/g} при успешном попадании.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SparklingFumeMajorFeature.Name",
+        "enGB": "Sparkling Fume, Infused",
+        "ruRU": "Искрящийся дым, насыщенный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SparklingFumeMajorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}electricity damage{/g} with each strike. In addition, the ally gains electricity {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона электричеством{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к электричеству, равную 10 + уровень каппелана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SavageBreathMinorFeature.Name",
+        "enGB": "Savage Breath",
+        "ruRU": "Дикое дыхание",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SavageBreathMinorFeature.Description",
+        "enGB": "An affected ally's first weapon {g|Encyclopedia:Attack}attack{/g} in every {g|Encyclopedia:Combat_Round}round{/g}, if it hits, makes the enemy bleed for {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage}damage{/g} each round.",
+        "ruRU": "Под влиянием этого благовония первая {g|Encyclopedia:Attack}атака{/g} оружием союзника в каждом {g|Encyclopedia:Combat_Round}раунде{/g} при попадании заставляет врага истекать кровью, получая {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage}урона{/g} в раунд.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SavageBreathMajorFeature.Name",
+        "enGB": "Savage Breath, Infused",
+        "ruRU": "Дикое дыхание, насыщенное",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SavageBreathMajorFeature.Description",
+        "enGB": "An affected ally's first weapon {g|Encyclopedia:Attack}attack{/g} in every {g|Encyclopedia:Combat_Round}round{/g}, if it hits, makes the enemy bleed for {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Damage}damage{/g} each round. In addition, the ally gains the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}, allowing them to make a full attack at the end of a charge.",
+        "ruRU": "Под влиянием этого благовония первая {g|Encyclopedia:Attack}атака{/g} оружием союзника в каждом {g|Encyclopedia:Combat_Round}раунде{/g} при попадании заставляет врага истекать кровью, получая {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Damage}урона{/g} в раунд. Кроме того, союзник получает {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g}, позволяющую ему совершить полную атаку с разбега.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PulverizedSteelMinorFeature.Name",
+        "enGB": "Pulverized Steel",
+        "ruRU": "Измельченная сталь",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PulverizedSteelMinorFeature.Description",
+        "enGB": "An affected ally's {g|Encyclopedia:Damage_Reduction}damage reduction{/g} increases by 2/—.",
+        "ruRU": "Под влиянием этого благовония {g|Encyclopedia:Damage_Reduction}снижение урона{/g} союзника увеличивается на 2/—.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PulverizedSteelMajorFeature.Name",
+        "enGB": "Pulverized Steel, Infused",
+        "ruRU": "Измельченная сталь, насыщенная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PulverizedSteelMajorFeature.Description",
+        "enGB": "An affected ally's {g|Encyclopedia:Damage_Reduction}damage reduction{/g} increases by 5/—.",
+        "ruRU": "Под влиянием этого благовония {g|Encyclopedia:Damage_Reduction}снижение урона{/g} союзника увеличивается на 5/—.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChaosEmbraceMinorFeature.Name",
+        "enGB": "Chaos Embrace",
+        "ruRU": "Обьятия хаоса",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChaosEmbraceMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}lawful{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}законопослушные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChaosEmbraceMajorFeature.Name",
+        "enGB": "Chaos Embrace, Infused",
+        "ruRU": "Обьятия хаоса, насыщенные",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChaosEmbraceMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}lawful{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}законопослушные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AlluringMistMinorFeature.Name",
+        "enGB": "Alluring Mist",
+        "ruRU": "Влекущие марево",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AlluringMistMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Charisma}Charisma{/g}. An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against mind-affecting effects.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Charisma}Харизме{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против воздействующих на разум эффектов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AlluringMistMajorFeature.Name",
+        "enGB": "Alluring Mist, Infused",
+        "ruRU": "Влекущие марево, настоянное",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AlluringMistMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Charisma}Charisma{/g}. An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against mind-affecting effects.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Charisma}Харизме{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против воздействующих на разум эффектов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FocusingFogMinorFeature.Name",
+        "enGB": "Focusing Fog",
+        "ruRU": "Концентрирующий туман",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FocusingFogMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with ranged weapons.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} дистанционным оружием.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FocusingFogMajorFeature.Name",
+        "enGB": "Focusing Fog, Infused",
+        "ruRU": "Концентрирующий туман, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FocusingFogMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with ranged weapons.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} дистанционным оружием.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GloomveilMinorFeature.Name",
+        "enGB": "Gloomveil",
+        "ruRU": "Мрачная завеса",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GloomveilMinorFeature.Description",
+        "enGB": "Enemy {g|Encyclopedia:Attack}attacks{/g} against an affected ally have a 15% chance to miss.",
+        "ruRU": "Вражеские {g|Encyclopedia:Attack}атаки{/g} по союзнику, находящемуся под эффектом этого благовония, имеют 15% вероятность промаха.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GloomveilMajorFeature.Name",
+        "enGB": "Gloomveil, Infused",
+        "ruRU": "Мрачная завеса, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GloomveilMajorFeature.Description",
+        "enGB": "Enemy {g|Encyclopedia:Attack}attacks{/g} against an affected ally have a 30% chance to miss.",
+        "ruRU": "Вражеские {g|Encyclopedia:Attack}атаки{/g} по союзнику, находящемуся под эффектом этого благовония, имеют 30% вероятность промаха.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PerditionHazeMinorFeature.Name",
+        "enGB": "Perdition Haze",
+        "ruRU": "Губительная дымка",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PerditionHazeMinorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PerditionHazeMajorFeature.Name",
+        "enGB": "Perdition Haze, Infused",
+        "ruRU": "Губительная дымка, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PerditionHazeMajorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WreckingCloudMinorFeature.Name",
+        "enGB": "Wrecking Cloud",
+        "ruRU": "Разрушительное облако",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WreckingCloudMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Damage}damage rolls{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Damage}броскам на урон{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WreckingCloudMajorFeature.Name",
+        "enGB": "Wrecking Cloud, Infused",
+        "ruRU": "Разрушительное облако, настоянное",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WreckingCloudMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Damage}damage rolls{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Damage}броскам на урон{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "СausticFumeMinorFeature.Name",
+        "enGB": "Caustic Fume",
+        "ruRU": "Едкий пар",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "СausticFumeMinorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}acid damage{/g} with each strike.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона кислотой{/g} при успешном попадании.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "СausticFumeMajorFeature.Name",
+        "enGB": "Caustic Fume, Infused",
+        "ruRU": "Едкий пар, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "СausticFumeMajorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}acid damage{/g} with each strike. In addition, the ally gains acid {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона кислотой{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к кислоте, равную 10 + уровень каппелана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SinisterGraspMinorFeature.Name",
+        "enGB": "Sinister Grasp",
+        "ruRU": "Зловещая хватка",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SinisterGraspMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}good{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}добрые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SinisterGraspMajorFeature.Name",
+        "enGB": "Sinister Grasp, Infused",
+        "ruRU": "Зловещая хватка, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SinisterGraspMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}good{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}добрые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlazingShroudMinorFeature.Name",
+        "enGB": "Blazing Shroud",
+        "ruRU": "Пылающий саван",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlazingShroudMinorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}fire damage{/g} with each strike.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона огнем{/g} при успешном попадании.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlazingShroudMajorFeature.Name",
+        "enGB": "Blazing Shroud, Infused",
+        "ruRU": "Пылающий саван, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlazingShroudMajorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}fire damage{/g} with each strike. In addition, the ally gains fire {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона огнем{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к огню, равную 10 + уровень каппелана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WhiteSmokeMinorFeature.Name",
+        "enGB": "White Smoke",
+        "ruRU": "Белая пелена",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WhiteSmokeMinorFeature.Description",
+        "enGB": "An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Attack}attack rolls{/g}.",
+        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к {g|Encyclopedia:Attack}броскам на попадание{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WhiteSmokeMajorFeature.Name",
+        "enGB": "White Smoke, Infused",
+        "ruRU": "Белая пелена, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WhiteSmokeMajorFeature.Description",
+        "enGB": "An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Attack}attack rolls{/g}.",
+        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к {g|Encyclopedia:Attack}броскам на попадание{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VirtuousGraspMinorFeature.Name",
+        "enGB": "Virtuous Grasp",
+        "ruRU": "Объятия добродетели",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VirtuousGraspMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}evil{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}злые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VirtuousGraspMajorFeature.Name",
+        "enGB": "Virtuous Grasp, Infused",
+        "ruRU": "Объятия добродетели, настоянные",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VirtuousGraspMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}evil{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}злые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LifeDewMinorFeature.Name",
+        "enGB": "Life Dew",
+        "ruRU": "Живительная роса",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LifeDewMinorFeature.Description",
+        "enGB": "An affected ally gains {g|Encyclopedia:Fast_Healing}fast healing{/g} 2.",
+        "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Fast_Healing}быстрое исцеление{/g} 2.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LifeDewMajorFeature.Name",
+        "enGB": "Life Dew, Infused",
+        "ruRU": "Живительная роса, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LifeDewMajorFeature.Description",
+        "enGB": "An affected ally gains {g|Encyclopedia:Fast_Healing}fast healing{/g} equal to 2 + half the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Fast_Healing}быстрое исцеление{/g} равное 2 + половина уровня капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VisionaryMistMinorFeature.Name",
+        "enGB": "Visionary Mist",
+        "ruRU": "Туман прозрения",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VisionaryMistMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Intelligence}Intelligence{/g} and a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against disease.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Intelligence}Интеллекту{/g} и +2 алхимический бонус к спасброскам против болезней.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VisionaryMistMajorFeature.Name",
+        "enGB": "Visionary Mist, Infused",
+        "ruRU": "Туман прозрения, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VisionaryMistMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Intelligence}Intelligence{/g} and a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against disease.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Intelligence}Интеллекту{/g} и +4 алхимический бонус к спасброскам против болезней.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JusticesEmbraceMinorFeature.Name",
+        "enGB": "Justice's Embrace",
+        "ruRU": "Объятия справедливости",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JusticesEmbraceMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}chaotic{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}хаотичные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JusticesEmbraceMajorFeature.Name",
+        "enGB": "Justice's Embrace, Infused",
+        "ruRU": "Объятия справедливости, настоянные",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JusticesEmbraceMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}chaotic{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}хаотичные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CleansingShroudMinorFeature.Name",
+        "enGB": "Cleansing Shroud",
+        "ruRU": "Очищающий дым",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CleansingShroudMinorFeature.Description",
+        "enGB": "Whenever an affected ally attempts a dispel {g|Encyclopedia:Check}check{/g} based on his {g|Encyclopedia:Caster_Level}caster level{/g}, he gains a +1 {g|Encyclopedia:Bonus}bonus{/g} on the check. In addition, the ally receives a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against movement-impairing effects.",
+        "ruRU": "Всякий раз когда союзник под влиянием этого благовония совершает {g|Encyclopedia:Check}проверку{/g} рассеивания, зависящую от его {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, он получает к этой проверке {g|Encyclopedia:Bonus}бонус{/g} +1. Кроме того, союзник получает +2 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов ограничивающих движение.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CleansingShroudMajorFeature.Name",
+        "enGB": "Cleansing Shroud, Infused",
+        "ruRU": "Очищающий дым, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CleansingShroudMajorFeature.Description",
+        "enGB": "Whenever an affected ally attempts a dispel {g|Encyclopedia:Check}check{/g} based on his {g|Encyclopedia:Caster_Level}caster level{/g}, he gains a +2 {g|Encyclopedia:Bonus}bonus{/g} on the check. In addition, the ally receives a +4 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against movement-impairing effects.",
+        "ruRU": "Всякий раз когда союзник под влиянием этого благовония совершает {g|Encyclopedia:Check}проверку{/g} рассеивания, зависящую от его {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, он получает к этой проверке {g|Encyclopedia:Bonus}бонус{/g} +2. Кроме того, союзник получает +4 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов ограничивающих движение.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FatefulWhispersMinorFeature.Name",
+        "enGB": "Fateful Whispers",
+        "ruRU": "Предвестный шепот",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FatefulWhispersMinorFeature.Description",
+        "enGB": "Once per {g|Encyclopedia:Combat_Round}round{/g}, an affected ally can {g|Encyclopedia:Dice}reroll{/g} any {g|Encyclopedia:Saving_Throw}saving throw{/g} or {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g} and take the better result.",
+        "ruRU": "Под влиянием этого благовония союзник может один раз за {g|Encyclopedia:Combat_Round}раунд{/g} {g|Encyclopedia:Dice}перебросить{/g} любую {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Skills}навыка{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g} и выбрать из двух результатов лучший.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FatefulWhispersMajorFeature.Name",
+        "enGB": "Fateful Whispers, Infused",
+        "ruRU": "Предвестный шепот, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FatefulWhispersMajorFeature.Description",
+        "enGB": "An affected ally can {g|Encyclopedia:Dice}reroll{/g} any {g|Encyclopedia:Saving_Throw}saving throw{/g} or {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g} and take the better result.",
+        "ruRU": "Под влиянием этого благовония союзник может {g|Encyclopedia:Dice}перебросить{/g} любую {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Skills}навыка{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g} и выбрать из двух результатов лучший.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CrimsonShroudMinorFeature.Name",
+        "enGB": "Crimson Shroud",
+        "ruRU": "Багровая завеса",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CrimsonShroudMinorFeature.Description",
+        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionConfusion}confused{/g} for one {g|Encyclopedia:Combat_Round}round{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся в {g|ConditionConfusion}замешательстве{/g} на один раунд. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CrimsonShroudMajorFeature.Name",
+        "enGB": "Crimson Shroud, Infused",
+        "ruRU": "Багровая завеса, насыщенная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CrimsonShroudMajorFeature.Description",
+        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionConfusion}confused{/g} for {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся в {g|ConditionConfusion}замешательстве{/g} на {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EtherealMistMinorFeature.Name",
+        "enGB": "Ethereal Mist",
+        "ruRU": "Эфирный туман",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EtherealMistMinorFeature.Description",
+        "enGB": "An affected ally receives a +1 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Caster_Level}caster level{/g} {g|Encyclopedia:Check}checks{/g} made to overcome a creature's {g|Encyclopedia:Spell_Resistance}spell resistance{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +1 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, чтобы преодолеть {g|Encyclopedia:Spell_Resistance}устойчивость к магии{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EtherealMistMajorFeature.Name",
+        "enGB": "Ethereal Mist, Infused",
+        "ruRU": "Эфирный туман, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EtherealMistMajorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Caster_Level}caster level{/g} {g|Encyclopedia:Check}checks{/g} made to overcome a creature's {g|Encyclopedia:Spell_Resistance}spell resistance{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, чтобы преодолеть {g|Encyclopedia:Spell_Resistance}устойчивость к магии{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShiningCloudMinorFeature.Name",
+        "enGB": "Shining Cloud",
+        "ruRU": "Сияющее облако",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShiningCloudMinorFeature.Description",
+        "enGB": "An affected ally receives a +1 alchemical {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g}. In addition, the ally receives a +2 alchemical bonus on {g|Encyclopedia:Check}checks{/g} to disarm.",
+        "ruRU": "Под влиянием этого благовония союзник получает +1 алхимический {g|Encyclopedia:Bonus}бонус{/g} ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Кроме того, союзник получает +2 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g}, совершаемым для разоружения противника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShiningCloudMajorFeature.Name",
+        "enGB": "Shining Cloud, Infused",
+        "ruRU": "Сияющее облако, настоянное",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShiningCloudMajorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g}. In addition, the ally receives a +4 alchemical bonus on {g|Encyclopedia:Check}checks{/g} to disarm.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Кроме того, союзник получает +4 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g}, совершаемым для разоружения противника.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BrambleMistMinorFeature.Name",
+        "enGB": "Bramble Mist",
+        "ruRU": "Колючий дым",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BrambleMistMinorFeature.Description",
+        "enGB": "Any creature striking an affected ally with a melee weapon, an {g|Encyclopedia:UnarmedAttack}unarmed strike{/g}, or a {g|Encyclopedia:NaturalAttack}natural weapon{/g} takes {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Damage_Type}piercing damage{/g}.",
+        "ruRU": "Любое существо, попадающее по союзнику, находящемуся под влиянием этого благовония, оружием ближнего боя, {g|Encyclopedia:UnarmedAttack}атакой без оружия{/g} или {g|Encyclopedia:NaturalAttack}естественным оружием{/g}, получает {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage_Type}колющего урона{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BrambleMistMajorFeature.Name",
+        "enGB": "Bramble Mist, Infused",
+        "ruRU": "Колючий дым, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BrambleMistMajorFeature.Description",
+        "enGB": "Any creature striking an affected ally with a melee weapon, an {g|Encyclopedia:UnarmedAttack}unarmed strike{/g}, or a {g|Encyclopedia:NaturalAttack}natural weapon{/g} takes {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Damage_Type}piercing damage{/g} +1 for every two warpriest levels.",
+        "ruRU": "Любое существо, попадающее по союзнику, находящемуся под влиянием этого благовония, оружием ближнего боя, {g|Encyclopedia:UnarmedAttack}атакой без оружия{/g} или {g|Encyclopedia:NaturalAttack}естественным оружием{/g}, получает {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage_Type}колющего урона{/g} +1 за каждые два уровня каппелана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpenetrableFogMinorFeature.Name",
+        "enGB": "Impenetrable Fog",
+        "ruRU": "Непроницаемая мгла",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpenetrableFogMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Armor_Class}защите{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpenetrableFogMajorFeature.Name",
+        "enGB": "Impenetrable Fog, Infused",
+        "ruRU": "Непроницаемая мгла, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpenetrableFogMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Armor_Class}защите{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerenityVeilMinorFeature.Name",
+        "enGB": "Serenity Veil",
+        "ruRU": "Окутывающее спокойствие",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerenityVeilMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Wisdom}Wisdom{/g} and a +2 bonus on {g|Encyclopedia:Concentration}concentration{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Wisdom}Мудрости{/g} и +2 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Concentration}концентрации{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerenityVeilMajorFeature.Name",
+        "enGB": "Serenity Veil, Infused",
+        "ruRU": "Окутывающее спокойствие, настоянное",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerenityVeilMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Wisdom}Wisdom{/g} and a +4 bonus on {g|Encyclopedia:Concentration}concentration{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Wisdom}Мудрости{/g} и +4 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Concentration}концентрации{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RunicDustMinorFeature.Name",
+        "enGB": "Runic Dust",
+        "ruRU": "Руническая пыль",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RunicDustMinorFeature.Description",
+        "enGB": "An affected enemy suffers a –1 alchemical {g|Encyclopedia:Penalty}penalty{/g} to all {g|Encyclopedia:Saving_Throw}saving throws{/g}. An affected ally receives a +2 alchemical bonus to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} against trip.",
+        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –1 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:CMD}защите против боевых маневров{/g} при попытке сбить его с ног.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RunicDustMajorFeature.Name",
+        "enGB": "Runic Dust, Infused",
+        "ruRU": "Руническая пыль, настоянная",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RunicDustMajorFeature.Description",
+        "enGB": "An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} to all {g|Encyclopedia:Saving_Throw}saving throws{/g}. An affected ally receives a +2 alchemical bonus to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} against trip.",
+        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:CMD}защите против боевых маневров{/g} при попытке сбить его с ног.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerpentsBreathMinorFeature.Name",
+        "enGB": "Serpent's Breath",
+        "ruRU": "Язвенное веяние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerpentsBreathMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Dexterity}Dexterity{/g}. An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against poison.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:Dexterity}Ловкости{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –1 к спасброскам против ядов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerpentsBreathMajorFeature.Name",
+        "enGB": "Serpent's Breath, Infused",
+        "ruRU": "Язвенное веяние, настоянное",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerpentsBreathMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Dexterity}Dexterity{/g}. An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against poison.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:Dexterity}Ловкости{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к спасброскам против ядов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SurgeOfMightMinorFeature.Name",
+        "enGB": "Surge of Might",
+        "ruRU": "Прилив сил",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SurgeOfMightMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Strength}Strength{/g} and a +2 alchemical bonus on bull rush {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Strength}Силе{/g} и +2 алхимический бонус к {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Combat_Maneuvers}боевого маневра{/g} таран.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SurgeOfMightMajorFeature.Name",
+        "enGB": "Surge of Might, Infused",
+        "ruRU": "Прилив сил, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SurgeOfMightMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Strength}Strength{/g} and a +4 alchemical bonus on bull rush {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Strength}Силе{/g} и +4 алхимический бонус к {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Combat_Maneuvers}боевого маневра{/g} таран.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingFumeMinorFeature.Name",
+        "enGB": "Scorching Fume",
+        "ruRU": "Обжигающий дым",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingFumeMinorFeature.Description",
+        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionBlind}blind{/g} for one {g|Encyclopedia:Combat_Round}round{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся {g|ConditionBlind}ослеплены{/g} на один раунд. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingFumeMajorFeature.Name",
+        "enGB": "Scorching Fume, Infused",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingFumeMajorFeature.Description",
+        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionBlind}blind{/g} for {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся {g|ConditionBlind}ослеплены{/g} на {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GaleBreezeMinorFeature.Name",
+        "enGB": "Gale Breeze",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GaleBreezeMinorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GaleBreezeMajorFeature.Name",
+        "enGB": "Gale Breeze, Infused",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GaleBreezeMajorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeceptiveFogMinorFeature.Name",
+        "enGB": "Deceptive Fog",
+        "ruRU": "Лживый дым",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeceptiveFogMinorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeceptiveFogMajorFeature.Name",
+        "enGB": "Deceptive Fog, Infused",
+        "ruRU": "Лживый дым, настоянный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeceptiveFogMajorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WarboundMistMinorFeature.Name",
+        "enGB": "Warbound Mist",
+        "ruRU": "Облако дерзости",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WarboundMistMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with melee weapons.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} оружием ближнего боя.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WarboundMistMajorFeature.Name",
+        "enGB": "Warbound Mist, Infused",
+        "ruRU": "Облако дерзости, укрепленный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WarboundMistMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with melee weapons.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} оружием ближнего боя.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChillingFumeMinorFeature.Name",
+        "enGB": "Chilling Fume",
+        "ruRU": "Леденящие испарения",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChillingFumeMinorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}cold damage{/g} with each strike.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона холодом{/g} при успешном попадании.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChillingFumeMajorFeature.Name",
+        "enGB": "Chilling Fume, Infused",
+        "ruRU": "Леденящие испарения, усилинные",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChillingFumeMajorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}cold damage{/g} with each strike. In addition, the ally gains cold {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона холодом{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к холоду, равную 10 + уровень каппелана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ThunderVeilMinorFeature.Name",
+        "enGB": "Thunder Veil",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ThunderVeilMinorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}sonic damage{/g} with each strike.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона звуком{/g} при успешном попадании.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ThunderVeilMajorFeature.Name",
+        "enGB": "Thunder Veil, Infused",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ThunderVeilMajorFeature.Description",
+        "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}sonic damage{/g} with each strike. In addition, the ally gains sonic {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона звуком{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к звуку, равную 10 + уровень каппелана.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SparklingFumeProgression.Name",
+        "enGB": "Air Domain — Incense",
+        "ruRU": "Домейн Воздуха — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SavageBreathProgression.Name",
+        "enGB": "Animal Domain — Incense",
+        "ruRU": "Домейн Животных — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PulverizedSteelProgression.Name",
+        "enGB": "Artifice Domain — Incense",
+        "ruRU": "Домейн Созидания — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChaosEmbraceProgression.Name",
+        "enGB": "Chaos Domain — Incense",
+        "ruRU": "Домейн Хаоса — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AlluringMistProgression.Name",
+        "enGB": "Charm Domain — Incense",
+        "ruRU": "Домейн Обольщения — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FocusingFogProgression.Name",
+        "enGB": "Community Domain — Incense",
+        "ruRU": "Домейн Товарищества — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GloomveilProgression.Name",
+        "enGB": "Darkness Domain — Incense",
+        "ruRU": "Домейн Тьмы — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PerditionHazeProgression.Name",
+        "enGB": "Death Domain — Incense",
+        "ruRU": "Домейн Смерти — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WreckingCloudProgression.Name",
+        "enGB": "Destruction Domain — Incense",
+        "ruRU": "Домейн Разрушения — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CausticFumeProgression.Name",
+        "enGB": "Earth Domain — Incense",
+        "ruRU": "Домейн Земли — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SinisterGraspProgression.Name",
+        "enGB": "Evil Domain — Incense",
+        "ruRU": "Домейн Зла — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlazingShroudProgression.Name",
+        "enGB": "Fire Domain — Incense",
+        "ruRU": "Домейн Огня — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WhiteSmokeProgression.Name",
+        "enGB": "Glory Domain — Incense",
+        "ruRU": "Домейн Славы — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VirtuousGraspProgression.Name",
+        "enGB": "Good Domain — Incense",
+        "ruRU": "Домейн Добра — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LifeDewProgression.Name",
+        "enGB": "Healing Domain — Incense",
+        "ruRU": "Домейн Лечения — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VisionaryMistProgression.Name",
+        "enGB": "Knowledge Domain — Incense",
+        "ruRU": "Домейн Знания — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JusticesEmbraceProgression.Name",
+        "enGB": "Law Domain — Incense",
+        "ruRU": "Домейн Закона — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CleansingShroudProgression.Name",
+        "enGB": "Liberation Domain — Incense",
+        "ruRU": "Домейн Освобождения — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FatefulWhispersProgression.Name",
+        "enGB": "Luck Domain — Incense",
+        "ruRU": "Домейн Удачи — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CrimsonShroudProgression.Name",
+        "enGB": "Madness Domain — Incense",
+        "ruRU": "Домейн Безумия — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "EtherealMistProgression.Name",
+        "enGB": "Magic Domain — Incense",
+        "ruRU": "Домейн Магии — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ShiningCloudProgression.Name",
+        "enGB": "Nobility Domain — Incense",
+        "ruRU": "Домейн Благородства — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BrambleMistProgression.Name",
+        "enGB": "Plant Domain — Incense",
+        "ruRU": "Домейн Растений — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpenetrableFogProgression.Name",
+        "enGB": "Protection Domain — Incense",
+        "ruRU": "Домейн Защиты — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerenityVeilProgression.Name",
+        "enGB": "Repose Domain — Incense",
+        "ruRU": "Домейн Упокоения — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RunicDustProgression.Name",
+        "enGB": "Rune Domain — Incense",
+        "ruRU": "Домейн Рун — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SerpentsBreathProgression.Name",
+        "enGB": "Scalykind Domain — Incense",
+        "ruRU": "Домейн Чешуи — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "SurgeOfMightProgression.Name",
+        "enGB": "Strenght Domain — Incense",
+        "ruRU": "Домейн Силы — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ScorchingFumeProgression.Name",
+        "enGB": "Sun Domain — Incense",
+        "ruRU": "Домейн Солнца — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "GaleBreezeProgression.Name",
+        "enGB": "Travel Domain — Incense",
+        "ruRU": "Домейн Путешествий — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DeceptiveFogProgression.Name",
+        "enGB": "Trickery Domain — Incense",
+        "ruRU": "Домейн Обмана — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "WarboundMistProgression.Name",
+        "enGB": "War Domain — Incense",
+        "ruRU": "Домейн Войны — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ChillingFumeProgression.Name",
+        "enGB": "Water Domain — Incense",
+        "ruRU": "Домейн Воды — Благовоние",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ThunderVeilProgression.Name",
+        "enGB": "Weather Domain — Incense",
+        "ruRU": "Домейн Погоды — Благовоние",
         "ProcessTemplates": false
     },
     {
@@ -109,8 +1261,8 @@
     },
     {
         "Key": "SummonDemonISingle.Description",
-        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons an extraplanar quasit. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar quasit. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного квазита. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
@@ -122,367 +1274,367 @@
     {
         "Key": "SummonDemonIIBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar dretch or {g|Encyclopedia:Dice}1d3{/g} extraplanar quasits. The summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного дреча или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных квазитов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIISingle.Name",
         "enGB": "Summon Demon II (Dretch)",
-        "ruRU": "Призыв демона II ()",
+        "ruRU": "Призыв демона II (Дреч)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIISingle.Description",
-        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons an extraplanar dretch. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar dretch. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного дреча. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIOneToThree.Name",
         "enGB": "Summon Demon II (1d3 Quasits)",
-        "ruRU": "Призыв демона II (1d3)",
+        "ruRU": "Призыв демона II (1d3 квазитов)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar quasits. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных квазитов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIIBase.Name",
         "enGB": "Summon Demon III",
-        "ruRU": "Призыв демона II",
+        "ruRU": "Призыв демона III",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIIBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar schir, {g|Encyclopedia:Dice}1d3{/g} extraplanar dretches, or 1d4+1 extraplanar quasits. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного щира, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных дречей, или 1d4+1 экстрапланарных квазитов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIISingle.Name",
         "enGB": "Summon Demon III (Schir)",
-        "ruRU": "Призыв демона II (Дреч)",
+        "ruRU": "Призыв демона III (Щир)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIISingle.Description",
-        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons an extraplanar schir. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar schir. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного щира. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIIOneToThree.Name",
         "enGB": "Summon Demon III (1d3 Dretches)",
-        "ruRU": "Призыв демона II (1d3 Квазитов)",
+        "ruRU": "Призыв демона III (1d3 дречей)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIIOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar dretches. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных дречей. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIIOneToFourPlusOne.Name",
         "enGB": "Summon Demon III (1d4+1 Quasits)",
-        "ruRU": "Призыв демона III (1d4+1 )",
+        "ruRU": "Призыв демона III (1d4+1 квазитов)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIIIOneToFourPlusOne.Description",
-        "enGB": "\nThis {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4+1{/g} extraplanar quasits. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar quasits. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных квазитов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVBase.Name",
         "enGB": "Summon Demon IV",
-        "ruRU": "",
+        "ruRU": "Призыв демона IV",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar babau, {g|Encyclopedia:Dice}1d3{/g} extraplanar schirs, or 1d4+1 extraplanar dretches. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного бабау, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных щиров, или 1d4+1 экстрапланарных дречей. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVSingle.Name",
         "enGB": "Summon Demon IV (Babau)",
-        "ruRU": "",
+        "ruRU": "Призыв демона IV (Бабау)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVSingle.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar babau. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного бабау. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVOneToThree.Name",
         "enGB": "Summon Demon IV (1d3 Schirs)",
-        "ruRU": "",
+        "ruRU": "Призыв демона IV (1d3 щиров)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar schirs. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных щиров. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVOneToFourPlusOne.Name",
         "enGB": "Summon Demon IV (1d4+1 Dretches)",
-        "ruRU": "",
+        "ruRU": "Призыв демона IV (1d4+1 дречей)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIVOneToFourPlusOne.Description",
-        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar dretches. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar dretches. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных дречей. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVBase.Name",
         "enGB": "Summon Demon V",
-        "ruRU": "",
+        "ruRU": "Призыв демона V",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar nabasu, {g|Encyclopedia:Dice}1d3{/g} extraplanar babaus, or 1d4+1 extraplanar schirs. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного набасу, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных бабау, или 1d4+1 экстрапланарных щиров. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVSingle.Name",
         "enGB": "Summon Demon V (Nabasu)",
-        "ruRU": "",
+        "ruRU": "Призыв демона V (Набасу)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVSingle.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar nabasu. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного набасу. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVOneToThree.Name",
         "enGB": "Summon Demon V (1d3 Babaus)",
-        "ruRU": "",
+        "ruRU": "Призыв демона V (1d3 бабау)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar babaus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных бабау. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVOneToFourPlusOne.Name",
         "enGB": "Summon Demon V (1d4+1 Schirs)",
-        "ruRU": "",
+        "ruRU": "Призыв демона V (1d4+1 щиров)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVOneToFourPlusOne.Description",
-        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar schirs. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar schirs. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных щиров. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIBase.Name",
         "enGB": "Summon Demon VI",
-        "ruRU": "",
+        "ruRU": "Призыв демона VI",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar vrock, {g|Encyclopedia:Dice}1d3{/g} extraplanar nabasus, or 1d4+1 extraplanar babaus. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного врока, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных набасу, или 1d4+1 экстрапланарных бабау. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVISingle.Name",
         "enGB": "Summon Demon VI (Vrock)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VI (Врок)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVISingle.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar vrock. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного врока. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIOneToThree.Name",
         "enGB": "Summon Demon VI (1d3 Nabasus)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VI (1d3 набасу)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar nabasus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных набасу. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIOneToFourPlusOne.Name",
         "enGB": "Summon Demon VI (1d4+1 Babaus)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VI (1d4+1 бабау)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIOneToFourPlusOne.Description",
-        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar babaus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar babaus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных бабау. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIBase.Name",
         "enGB": "Summon Demon VII",
-        "ruRU": "",
+        "ruRU": "Призыв демона VII",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar kalavakus, {g|Encyclopedia:Dice}1d3{/g} extraplanar vrocks, or 1d4+1 extraplanar nabasus. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного калавакуса, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных вроков, или 1d4+1 экстрапланарных набасу. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIISingle.Name",
         "enGB": "Summon Demon VII (Kalavakus)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VII (Калавакус)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIISingle.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar kalavakus. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного калавакуса. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIOneToThree.Name",
         "enGB": "Summon Demon VII (1d3 Vrocks)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VII (1d3 вроков)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar vrocks. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных вроков. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIOneToFourPlusOne.Name",
         "enGB": "Summon Demon VII (1d4+1 Nabasus)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VII (1d4+1 набасу)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIOneToFourPlusOne.Description",
-        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar nabasus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar nabasus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных набасу. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIIBase.Name",
         "enGB": "Summon Demon VIII",
-        "ruRU": "",
+        "ruRU": "Призыв демона VIII",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIIBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar gallu, {g|Encyclopedia:Dice}1d3{/g} extraplanar kalavakuses, or 1d4+1 extraplanar vrocks. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного галлу, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных калавакусов, или 1d4+1 экстрапланарных вроков. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIISingle.Name",
         "enGB": "Summon Demon VIII (Gallu)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VIII (Галлу)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIISingle.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar gallu. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного галлу. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIIOneToThree.Name",
         "enGB": "Summon Demon VIII (1d3 Kalavakuses)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VIII (1d3 калавакусов)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIIOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar kalavakus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных калавакусов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIIOneToFourPlusOne.Name",
         "enGB": "Summon Demon VIII (1d4+1 Vrocks)",
-        "ruRU": "",
+        "ruRU": "Призыв демона VIII (1d4+1 вроков)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonVIIIOneToFourPlusOne.Description",
-        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar vrocks. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar vrocks. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных вроков. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXBase.Name",
         "enGB": "Summon Demon IX",
-        "ruRU": "",
+        "ruRU": "Призыв демона IX",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXBase.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar balor, {g|Encyclopedia:Dice}1d3{/g} extraplanar gallus, or 1d4+1 extraplanar kalavakuses. Summoned monsters appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного балора, или {g|Encyclopedia:Dice}1d3{/g} экстрапланарных галлу, или 1d4+1 экстрапланарных калавакусов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXSingle.Name",
         "enGB": "Summon Demon IX (Balor)",
-        "ruRU": "",
+        "ruRU": "Призыв демона IX (Балор)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXSingle.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons an extraplanar balor. It appears where you designate and acts according to its {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. It {g|Encyclopedia:Attack}attacks{/g} your opponents to the best of its ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает экстрапланарного балора. Он появляется там, где вы укажете, совершает {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действует в соответствии с ее результатом. Он {g|Encyclopedia:Attack}атакует{/g} ваших врагов так хорошо, как может.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXOneToThree.Name",
         "enGB": "Summon Demon IX (1d3 Gallus)",
-        "ruRU": "",
+        "ruRU": "Призыв демона IX (1d3 галлу)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXOneToThree.Description",
         "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d3{/g} extraplanar gallus. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d3{/g} экстрапланарных галлу. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXOneToFourPlusOne.Name",
         "enGB": "Summon Demon IX (1d4+1 Kalavakuses)",
-        "ruRU": "",
+        "ruRU": "Призыв демона IX (1d4+1 калавакусов)",
         "ProcessTemplates": false
     },
     {
         "Key": "SummonDemonIXOneToFourPlusOne.Description",
-        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons 1d4+1 extraplanar kalavakuses. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
-        "ruRU": "",
+        "enGB": "This {g|Encyclopedia:Spell}spell{/g} summons {g|Encyclopedia:Dice}1d4{/g}+1 extraplanar kalavakuses. They appear where you designate and act according to their {g|Encyclopedia:Initiative}initiative{/g} {g|Encyclopedia:Check}check{/g} results. They {g|Encyclopedia:Attack}attack{/g} your opponents to the best of their ability.",
+        "ruRU": "Это {g|Encyclopedia:Spell}заклинание{/g} призывает {g|Encyclopedia:Dice}1d4{/g}+1 экстрапланарных калавакусов. Призванные демоны появляются там, где вы укажете, совершают {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Initiative}инициативы{/g} и действуют в соответствии с ее результатом. Они {g|Encyclopedia:Attack}атакуют{/g} ваших врагов так хорошо, как могут.",
         "ProcessTemplates": false
     },
     {
@@ -540,6 +1692,18 @@
         "ProcessTemplates": false
     },
     {
+        "Key": "DemonologistArchetype.Name",
+        "enGB": "Demonologist",
+        "ruRU": "Демонолог",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonologistArchetype.Description",
+        "enGB": "These arcanists abandon the traditional practices of conjuration, devoting their lives to the creation of demonic circles capable of binding powerful fiends. In doing so, they slowly descend into an abyss of hatred, becoming ever more like the demons they seek to control.",
+        "ruRU": "Эти арканисты отказываются от традиционных техник призыва, посвящая жизнь начертанию демонических кругов, способных подчинять себе могущественных демонов. Однако чем дальше они идут по этому пути, тем глубже погружаются в бездну ненависти, все сильнее уподобляясь тем самым существам, которых пытаются подчинить.",
+        "ProcessTemplates": false
+    },
+    {
         "Key": "CallOfTheAbyssFeature.Name",
         "enGB": "Call of the Abyss",
         "ruRU": "Зов бездны",
@@ -547,8 +1711,8 @@
     },
     {
         "Key": "CallOfTheAbyssFeature.Description",
-        "enGB": "At 3th level, a demonologist can expend 2 points from her arcane reservoir to cause all creatures conjured by her next summon demon spell to enter a rage. If the demonologist has rage powers from any source, those rage powers also apply to the demons.",
-        "ruRU": "",
+        "enGB": "At 3rd level, a demonologist can expend 1 point from her arcane reservoir to cause all creatures conjured by her next summon demon {g|Encyclopedia:Spell}spell{/g} to enter a rage. If the demonologist has any rage powers, those rage powers also apply to the demons.",
+        "ruRU": "Начиная с 3 уровня, демонолог может потратить 1 очко из своего мистического резерва, чтобы демоны, призванные ее следующим {g|Encyclopedia:Spell}заклинанием{/g}, впали в ярость. Если у демонолога есть дары ярости, они также будут применены к этим демонам.",
         "ProcessTemplates": false
     },
     {
@@ -559,55 +1723,313 @@
     },
     {
         "Key": "DemonicStudiesFeature.Description",
-        "enGB": "Whenever a demonologist would learn a summon monster spell by gained a level in the arcanist class, she learns the summon demon spell of the same level in its place instead. Additionally, whenever a demonologist would learn dominate person or dominate person, mass by the same means, she learns dominate demon or dominate demon, mass instead.",
-        "ruRU": "",
+        "enGB": "All summon monster {g|Encyclopedia:Spell}spells{/g} on the demonologist's spell list are replaced with summon demon spells of the same level.",
+        "ruRU": "В списке {g|Encyclopedia:Spell}заклинаний{/g} демонолога все заклинания призыва монстров заменены на заклинания призыва демонов аналогичного уровня.",
         "ProcessTemplates": false
     },
     {
-        "Key": "DemonologistArchetype.Name",
-        "enGB": "Demonologist",
-        "ruRU": "Демонолог",
+        "Key": "DemonologistExploitsSelection.Name",
+        "enGB": "Demonologist Exploit",
+        "ruRU": "Техника демонолога",
         "ProcessTemplates": false
     },
     {
-        "Key": "DemonologistArchetype.Description",
-        "enGB": "These arcanists reject the basic rules of conjuration, seeking out the most fiendish creatures and forcing them to fight by their side. This binding results in horrendous mental torment, but any price is worth paying for this power in the eyes of the demonologist.",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "DemonologistRagePowerSelection.Name",
-        "enGB": "Rage Power",
-        "ruRU": "Дары ярости",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "DemonologistRagePowerSelection.Description",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "DemonSummonRageBuff.Name",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "DemonSummonRageBuff.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "DemonologistExploitsSelection.Description",
+        "enGB": "A demonologist can select a rage power in place of an arcane exploit. This does not grant her the ability to enter a rage, but any rage powers apply to summoned demons affected by the {g|LC_CallOfTheAbyss}call of the abyss{/g}.\nIf the demonologist has the ability to enter a rage from another source, she can use these rage powers while raging.\nThe demonologist uses her arcanist level level for the purpose of determining the effects of her rage powers, both for herself and for her summoned demons.",
+        "ruRU": "Демонолог может выбрать дар ярости вместо техники арканиста. Это не дает ей способности впадать в ярость, но все дары ярости применяются к любому призванному демону, находящемуся под действием способности {g|LC_CallOfTheAbyss}зов бездны{/g}.\nЕсли у демонолога есть способность впадать в ярость из другого источника, она может использовать эти дары во время ярости.\nДемонолог использует свой уровень арканиста для расчета параметров даров ярости как для себя, так и для призванных демонов.",
         "ProcessTemplates": false
     },
     {
         "Key": "HellsWhisperFeature.Name",
-        "enGB": "Hells Whisper",
+        "enGB": "Hell's Whisper",
         "ruRU": "Адский шепот",
         "ProcessTemplates": false
     },
     {
         "Key": "HellsWhisperFeature.Description",
-        "enGB": "A demonologist takes a -1 penalty on Will saving throws for each demon under her control (either summoned or dominated by a dominate demon spell). If the demonologist is good-aligned, whenever a controlled demon's hit points are reduced to 0 or lower, she must make a Will save (DC 14) or become confused for 1 round.",
+        "enGB": "A demonologist takes a –1 {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}Will saving throws{/g} for each demon currently under her control.\nWhenever a summoned demon under the demonologist's control is reduced to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, the demonologist must succeed at a Will saving throw ({g|Encyclopedia:DC}DC{/g} 10 + the demon's {g|Encyclopedia:Hit_Dice}Hit Dice{/g}) or become {g|ConditionStaggered}staggered{/g} for 1 {g|Encyclopedia:Combat_Round}round{/g}. If the demonologist is {g|Encyclopedia:Alignment}good{/g}, she instead becomes {g|ConditionConfusion}confused{/g} for 1 round.",
+        "ruRU": "Демонолог получает {g|Encyclopedia:Penalty}штраф{/g} –1 к {g|Encyclopedia:Saving_Throw}спасброскам воли{/g} за каждого подконтрольного демона.\nВсякий раз, когда {g|Encyclopedia:HP}здоровье{/g} призванного демона опускается до 0 или ниже, демонолог должна сделать успешный спасбросок воли ({g|Encyclopedia:DC}сложность{/g} 10 + количество {g|Encyclopedia:Hit_Dice}костей здоровья{/g} падшего демона), иначе она окажется {g|ConditionStaggered}ошеломленной{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}. {g|Encyclopedia:Alignment}Добрый{/g} демонолог вместо этого оказывается в {g|ConditionConfusion}замешательстве{/g} на 1 раунд.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonizationFeature.Name",
+        "enGB": "Demonization",
+        "ruRU": "Демонизация",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonizationFeature.Description",
+        "enGB": "At 20th level, a demonologist can expend 1 point from her arcane reservoir as a {g|Encyclopedia:Swift_Action}swift action{/g} to consume one of her summoned demons. When she does so, she gains the demon subtype (immunity to electricity and poison, {g|Encyclopedia:Energy_Resistance}resistance{/g} 10 to acid, cold, and fire) and a {g|Encyclopedia:Dice}2d6{/g} gore attack for a number of {g|Encyclopedia:Combat_Round}rounds{/g} equal to the consumed demon's {g|Encyclopedia:Hit_Dice}Hit Dice{/g}. While under the effects of demonization, the demonologist can benefit from all of her rage powers.",
+        "ruRU": "Начиная с 20 уровня, демонолог может потратить 1 очко из своего мистического резерва, чтобы в качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g} поглотить одного из своих призванных демонов. Сделав это, демонолог получает подтип демона (невосприимчивость к яду и электричеству, 10 {g|Encyclopedia:Energy_Resistance}устойчивости{/g} к кислоте, холоду и огню) и {g|Encyclopedia:Dice}2d6{/g} вспарывающий удар на количество раундов, равное количеству {g|Encyclopedia:Hit_Dice}костей здоровья{/g} поглощенного демона. Находясь под эффектом демонизации, демонолог может использовать все свои дары ярости.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonizationBuff.Description",
+        "enGB": "The demonologist gains the demon subtype (including immunity to electricity and poison, and {g|Encyclopedia:Energy_Resistance}resistance{/g} 10 to acid, cold, and fire) and a {g|Encyclopedia:Dice}2d6{/g} gore attack. While under the effects of demonization, the demonologist can benefit from all of her rage powers.",
+        "ruRU": "Демонолог получает подтип демона (невосприимчивость к яду и электричеству, 10 {g|Encyclopedia:Energy_Resistance}устойчивости{/g} к кислоте, холоду и огню) и {g|Encyclopedia:Dice}2d6{/g} вспарывающий удар на количество раундов, равное количеству {g|Encyclopedia:Hit_Dice}костей здоровья{/g} поглощенного демона. Находясь под эффектом демонизации, демонолог может использовать все свои дары ярости.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FrenzyingCircleFeature.Name",
+        "enGB": "Frenzying Circle",
+        "ruRU": "Круг неистовства",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FrenzyingCircleFeature.Description",
+        "enGB": "The demonologist can use her character level for the purpose of determining the effects of her rage powers both for herself and for her summoned demons.",
+        "ruRU": "Демонолог может использовать свой уровень персонажа для расчета параметров даров ярости как для себя, так и для призванных демонов.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "DemonizationAbility.UIText",
+        "enGB": "Can only be used on demons summoned by the caster",
+        "ruRU": "Может применяться только к демонам призванным этим заклинателем",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FalseKnightArchetype.Name",
+        "enGB": "False Knight",
+        "ruRU": "Лжерыцарь",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FalseKnightArchetype.Description",
+        "enGB": "Not every order is destined for prosperity — some are dissolved, disbanded, or destroyed outright, stripping every knight of their title. Yet for certain cavaliers, purpose survives where formality does not. As the last living vessel of the order's oath and the memory of fallen companions, they make it their life's mission to restore the fallen order to its former glory.",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FalseKnightTeamworkFeatSelection.Name",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FalseKnightTeamworkFeatSelection.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForbiddenRelicFeature.Name",
+        "enGB": "Forbidden Relic",
+        "ruRU": "Запретная реликвия",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForbiddenRelicFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForgottenInsigniaFeature.Name",
+        "enGB": "Forgotten Insignia",
+        "ruRU": "Забытая инсигния",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ForgottenInsigniaFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LastOfAKindFeature.Name",
+        "enGB": "Last of a Kind",
+        "ruRU": "Последний из рода",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "LastOfAKindFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FallenOrderFeature.Name",
+        "enGB": "Fallen Order",
+        "ruRU": "Падший орден",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FallenOrderFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpostorFeature.Name",
+        "enGB": "Impostor",
+        "ruRU": "Самозванец",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpostorFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RevenantFeature.Name",
+        "enGB": "Revenant",
+        "ruRU": "Ревенант",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RevenantFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "UnyieldingDevotionAbility.Name",
+        "enGB": "Unyielding Devotion",
+        "ruRU": "Неугасаемая преданность",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "UnyieldingDevotionAbility.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FallenKnightUnitBannerBearer.Name",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FallenKnightUnitShortSword.Name",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FallenKnightUnitSpear.Name",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "MageSlayerArchetype.Name",
+        "enGB": "Mage Slayer",
+        "ruRU": "Убийца магов",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "MageSlayerArchetype.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeFeature.Name",
+        "enGB": "Jaw Strike",
+        "ruRU": "Удар в челюсть",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeAbility.Name",
+        "enGB": "Jaw Strike",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeAbility.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeUpgradeFeature.Name",
+        "enGB": "Jaw Strike – Upgrade",
+        "ruRU": "Удар в челюсть, Улучшенный",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeUpgradeFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "MindShatterFeature.Name",
+        "enGB": "Mind Shatter",
+        "ruRU": "Мозголом",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "MindShatterFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NeutralizerFeature.Name",
+        "enGB": "Neutralizer",
+        "ruRU": "Нейтрализатор",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NeutralizerFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "MagistrateArchetype.Name",
+        "enGB": "Magistrate",
+        "ruRU": "Магистрат",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "MagistrateArchetype.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CodeOfLawsFeature.Name",
+        "enGB": "Code of Laws",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CodeOfLawsFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CollectiveGuiltFeature.Name",
+        "enGB": "Collective Guilt",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CollectiveGuiltFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CourtTrialFeature.Name",
+        "enGB": "Court Trial",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CourtTrialFeature.Description",
+        "enGB": "",
         "ruRU": "",
         "ProcessTemplates": false
     },
@@ -679,7 +2101,7 @@
     },
     {
         "Key": "DistractingCharge.Description",
-        "enGB": "When your ally with this feat uses the charge action and hits, you gain a +2 {g|Encyclopedia:Bonus}bonus{/g} on all your {g|Encyclopedia:Attack}attack rolls{/g} against the target of that charge. This bonus must be used before your ally’s next turn, or it is lost. Bonuses from multiple allies stack.",
+        "enGB": "At 20th level, a demonologist can expend 1 point from her arcane reservoir as a {g|Encyclopedia:Swift_Action}swift action{/g} to consume one of her summoned demons. When she does so, she gains the demon subtype (immunity to electricity and poison, resistance 10 to acid, cold, and fire) and a 2d6 gore attack for a number of {g|Encyclopedia:Combat_Round}rounds{/g} equal to the consumed demon's Hit Dice. While under the effects of demonization, the demonologist can benefit from all rage powers she possesses as if she were raging.",
         "ruRU": "Когда ваш союзник, у которого тоже есть эта черта, использует рывок и попадает по цели, вы получаете {g|Encyclopedia:Bonus}бонус{/g} +2 ко всем {g|Encyclopedia:Attack}броскам на попадание{/g} против цели этого рывка. Этот бонус должен быть использован до следующего хода вашего союзника, иначе он будет потерян. Бонусы от нескольких союзников складываются.",
         "ProcessTemplates": false
     },

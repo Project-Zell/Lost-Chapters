@@ -1,8 +1,8 @@
 ﻿using BlueprintCore.Blueprints.Configurators.Items;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.Visual.Fluid;
+using LostChapters.Modules.Custom.Archetypes.Deacon;
 using LostChapters.Modules.HellknightCodex.Archetypes;
-using LostChapters.Modules.HellknightCodex.Archetypes.Deacon;
 using LostChapters.Modules.HellknightsCodex.Feats;
 using LostChapters.Modules.HellknightsCodex.Orders.Hellknight.Base;
 using LostChapters.Modules.HellknightsCodex.Orders.Hellknight.New;

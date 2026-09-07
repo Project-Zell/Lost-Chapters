@@ -8,7 +8,9 @@ internal class NeutralizerFeature
 {
     public static readonly string Guid = "{39992856-cfb3-4443-b6d8-e9cc046fdcf0}";
 
-    private static readonly string FeatureName = "NeutralizerFeature";
+    private static readonly string BaseName = "Neutralizer";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

@@ -13,7 +13,7 @@ using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.Utility;
 using LostChapters.Modules.GraySisterhood.Enchantments;
-using LostChapters.Tools;
+using LostChapters.Tools.Glossaries;
 using UnityEngine;
 
 namespace LostChapters.Modules.GraySisterhood.Items.Weapons.Unique;

@@ -1,14 +1,10 @@
 ﻿using LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
+using LostChapters.Modules.Custom.Archetypes.Deacon;
 using LostChapters.Modules.Custom.Archetypes.Demonologist;
-using LostChapters.Modules.Custom.Archetypes.FalseKnight;
-using LostChapters.Modules.Custom.Archetypes.MageSlayer;
-using LostChapters.Modules.Custom.Archetypes.Magistrate;
 using LostChapters.Modules.Custom.Backgrounds;
-using LostChapters.Modules.Custom.Feats;
-using LostChapters.Modules.Custom.Feats.ArcanistExploits;
-using LostChapters.Modules.Custom.Feats.SlayerTalents;
-using LostChapters.Modules.Custom.Other;
+using LostChapters.Modules.Custom.Feats.General;
 using LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight;
+using LostChapters.Tools;
 
 namespace LostChapters.Modules.Custom;
 
@@ -20,8 +16,9 @@ internal class CustomModule
     {
         //Archetypes
         CowledPilgrimArchetype.Configure();
+        DeaconArchetype.Configure();
+        DemonologistArchetype.Configure();
         //MagistrateArchetype.Configure();
-        //DemonologistArchetype.Configure();
         //FalseKnightArchetype.Configure();
         //MageSlayerArchetype.Configure();
 

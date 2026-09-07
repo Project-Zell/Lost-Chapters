@@ -6,7 +6,7 @@ using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Items.Armors;
 using Kingmaker.UnitLogic.Mechanics;
-using LostChapters.Tools;
+using LostChapters.Tools.Glossaries;
 using UnityEngine;
 
 namespace LostChapters.Modules.GraySisterhood.Items.Accessories.Shoulders;

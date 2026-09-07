@@ -5,7 +5,6 @@ using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem.Rules.Abilities;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
-using LostChapters.Modules.GraySisterhood.PrestigeClasses.SanguineAngel;
 
 namespace LostChapters.Components;
 

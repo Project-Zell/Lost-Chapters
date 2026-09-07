@@ -7,7 +7,8 @@ using Kingmaker.Blueprints.Classes;
 namespace LostChapters.Modules.Custom.Other;
 
 /// <summary>
-/// Move all class proficiencies, cantrips and animal companion selection from level 1 to UI determination groups. For easier navigation and consisntency.
+/// Move all class proficiencies, cantrips and animal companion selection from level 1 to UI determination groups. For easier navigation and consistency.
+/// Set universal icons for proficiencies and cantrips.
 /// </summary>
 internal class CharacterClassesConsistencyPatch
 {

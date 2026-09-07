@@ -1,5 +1,6 @@
 ﻿using BlueprintCore.Blueprints.Configurators.Encyclopedia;
 using BlueprintCore.Blueprints.References;
+using BlueprintCore.Utils;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Encyclopedia;
 using Kingmaker.Blueprints.Encyclopedia.Blocks;
@@ -13,11 +14,13 @@ namespace LostChapters.Tools
 {
     internal static class TooltipConfigurator
     {
+        private static readonly LogWrapper Logger = LogWrapper.Get("LostChapters");
         public enum AbilityType { Spell, Ability }
 
         /// <summary>
-        /// Use assigned key value in {g|key}<b>tooltip</b>{/g} to call an ability tooltip.
-        /// <para>Ex: CreateAbilityTooltip("MyMod:AcidFog", AbilityRefs.AcidFog) => {g|MyMod:AcidFog}<b>Acid Fog</b>{/g}.</para>
+        /// Use assigned key value in {g|key}<b>tooltip</b>{/g} to call an ability or spell tooltip.
+        /// <para><i>Ex</i>: CreateAbilityTooltip("MyMod:Blur", AbilityRefs.Blur.Reference, AbilityType.Spell); =>
+        /// <i>To use</i>: {g|MyMod:Blur}<b>blur</b>{/g}. </para>
         /// </summary>
         public static void CreateAbilityTooltip(string key, BlueprintAbility ability, AbilityType abilityType = AbilityType.Spell)
         {
@@ -27,11 +30,13 @@ namespace LostChapters.Tools
                 Key = key,
                 Blueprint = reference,
             };
-
             var root = RootRefs.BlueprintRoot.Reference.Get();
             var categoryIndex = abilityType is AbilityType.Ability ? 0 : 1;
             var categoryEntries = root.LocalizedTexts.GlossaryAbilities[categoryIndex].Entries.ToList();
             categoryEntries.Add(entry);
+
+            foreach (var categoryEntry in categoryEntries)
+                Logger.Info($"Key - {categoryEntry.Key}, Name - {categoryEntry.Name}, Description - {categoryEntry.Description}");
 
             root.LocalizedTexts.GlossaryAbilities[categoryIndex].Entries = [.. categoryEntries];
         }
@@ -39,7 +44,7 @@ namespace LostChapters.Tools
         /// <summary>
         /// Use assigned key value in {g|key}<b>tooltip</b>{/g} to call an encyclopedia page tooltip.
         /// <para>The localization file should include "#.Title" and "#.TextBlock"</para>
-        /// <para>Ex: CreateEncyclopediaTooltip("MyMod:Credits", guid) => {g|MyMod:Credits}<b>Credits</b>{/g} with MyMod:Credits.Title and MyMod:Credits.TextBlock.</para>
+        /// <para><i>Ex</i>: CreateEncyclopediaTooltip("MyMod:Credits", guid); => <i>To use</i>: {g|MyMod:Credits}<b>Credits</b>{/g} with MyMod:Credits.Title and MyMod:Credits.TextBlock.</para>
         /// <para>Optional: Assign a <i>parentChapter</i> to the page so it appears under that chapter in the Encyclopedia menu.</para>
         /// </summary>
         public static void CreateEncyclopediaTooltip(string key, string guid, BlueprintEncyclopediaChapter parentChapter = null)
