@@ -16,7 +16,7 @@ internal class CodeOfLawsFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly string Icon = $"{CustomModule.IconPath}/circle.png";
+    //private static readonly string Icon = $"{CustomModule.IconPath}/circle.png";
 
     internal static void Configure()
     {
@@ -30,7 +30,7 @@ internal class CodeOfLawsFeature
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            .SetIcon(Icon)
+            //.SetIcon(Icon)
             .Configure();
     }
 }

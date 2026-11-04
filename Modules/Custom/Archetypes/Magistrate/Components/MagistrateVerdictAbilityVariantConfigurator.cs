@@ -10,9 +10,7 @@ using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.Utility;
 using Kingmaker.Visual.Animation.Kingmaker.Actions;
-using LostChapters.Modules.Custom.Archetypes.Magistrate;
 using LostChapters.Modules.Other;
-using System;
 
 namespace LostChapters.Modules.Custom.Archetypes.Magistrate.Components;
 

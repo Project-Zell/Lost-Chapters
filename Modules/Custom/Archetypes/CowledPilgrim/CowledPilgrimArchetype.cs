@@ -17,11 +17,12 @@ internal class CowledPilgrimArchetype
 
     public static void Configure()
     {
+        //Progression Feats
         CrossroadsAmbushFeature.Configure();
         EndlessStrideFeature.Configure();
-        NoRespiteFeature.Configure();
-        LostInSightFeature.Configure();
         LoneWandererFeature.Configure();
+        LostInSightFeature.Configure();
+        NoRespiteFeature.Configure();
         RoutekeeperFeature.Configure();
         UnseenPathFeature.Configure();
 

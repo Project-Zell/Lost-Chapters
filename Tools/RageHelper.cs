@@ -1,5 +1,6 @@
 ﻿using BlueprintCore.Actions.Builder;
 using BlueprintCore.Actions.Builder.ContextEx;
+using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
 using BlueprintCore.Blueprints.Configurators.UnitLogic.Properties;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
@@ -19,6 +20,26 @@ namespace LostChapters.Tools;
 
 internal class RageHelper
 {
+    internal static void AddRestrictionFactToRageAbilities(Blueprint<BlueprintUnitFactReference> fact)
+    {
+        string[] rageAbilitieGuids = [
+            ActivatableAbilityRefs.StandartRageActivateableAbility.ToString(),
+            ActivatableAbilityRefs.InspiredRageAbility.ToString(),
+            ActivatableAbilityRefs.BloodragerStandartRageActivateableAbility.ToString(),
+            ActivatableAbilityRefs.StandartFocusedRageActivateableAbility.ToString(),
+            ActivatableAbilityRefs.ShifterAspectManticoreAbility.ToString(),
+
+            ActivatableAbilityRefs.ResourcelessFocusedRageActivateableAbility.ToString(),
+            ActivatableAbilityRefs.ResourcelessRageActivateableAbility.ToString()];
+
+        foreach(var guid in rageAbilitieGuids)
+        {
+            ActivatableAbilityConfigurator.For(guid)
+                .AddRestrictionHasFact(fact, not: true)
+                .Configure();
+        }
+    }
+
     internal static void ConfigureRageProperty()
     {
         UnitPropertyConfigurator.For(UnitPropertyRefs.RageLevelProperty.ToString())

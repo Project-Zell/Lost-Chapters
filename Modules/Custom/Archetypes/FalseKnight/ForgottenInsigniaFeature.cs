@@ -5,12 +5,10 @@ using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Conditions.Builder;
 using BlueprintCore.Conditions.Builder.ContextEx;
-using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.Utility;
-using LostChapters.Modules.Custom.Components;
-using LostChapters.Modules.HellknightsCodex;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight.Components;
 
 namespace LostChapters.Modules.Custom.Archetypes.FalseKnight;
 
@@ -24,72 +22,82 @@ internal class ForgottenInsigniaFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    private static readonly string Icon = $"{HellknightCodexModule.IconsPath}/forgottenrelic.png";
+    //private static readonly string Icon = $"{CustomModule.IconPath}/{FalseKnightArchetype.BaseName}/{BaseName}.png".ToLower();
 
     internal static void Configure()
     {
-        ForgottenInsigniaBuff.Configure();
-        ForgottenInsigniaArea.Configure();
-        ForgottenInsigniaAreaBuff.Configure();
+        AreaBuff.Configure();
 
         FeatureConfigurator.New(FeatureName, Guid)
-            .AddAuraFeatureComponent(ForgottenInsigniaAreaBuff.Guid)
+            .AddAuraFeatureComponent(AreaBuff.Guid)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            .SetIcon(Icon)
+            //.SetIcon(Icon)
             .Configure();
     }
 
-    internal class ForgottenInsigniaAreaBuff
+    internal class AreaBuff
     {
         public static readonly string Guid = "{951daaf7-218b-411f-9614-d3b34bb56745}";
 
-        private static readonly string BuffName = $"{FeatureName}.AreaBuff";
+        private static readonly string BuffName = $"{FeatureName}AreaBuff";
 
         internal static void Configure()
         {
+            AreaEffect.Configure();
+
             BuffConfigurator.New(BuffName, Guid)
-                .AddAreaEffect(ForgottenInsigniaArea.Guid)
+                .AddAreaEffect(AreaEffect.Guid)
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi | BlueprintBuff.Flags.StayOnDeath)
                 .Configure();
         }
     }
 
-    internal class ForgottenInsigniaBuff
+    internal class AreaEffect
     {
-        public static readonly string Guid = "{f608a310-5474-44d7-acd0-dd67a2daeacc}";
+        public static readonly string Guid = "{32797c23-52bc-46a4-b498-8ecfd492f5e7}";
 
-        private static readonly string BuffName = $"{FeatureName}.Buff";
+        private static readonly string AreaName = $"{FeatureName}Area";
 
         internal static void Configure()
         {
-            BuffConfigurator.New(BuffName, Guid)
-                .AddComponent<ForgottenInsignia>()
-                .SetDisplayName(DisplayName)
-                .SetDescription(Description)
-                .SetIcon(Icon)
+            EffectBuff.Configure();
+
+            var enterConditional = ActionsBuilder.New()
+                .Conditional(conditions: ConditionsBuilder.New().IsEnemy(),
+                        ifTrue: ActionsBuilder.New().ApplyBuffPermanent(buff: EffectBuff.Guid, asChild: true)
+                .Conditional(conditions: ConditionsBuilder.New().IsEnemy().CasterHasFact(ForbiddenInsigniaFeature.Guid),
+                        ifTrue: ActionsBuilder.New().ApplyBuffPermanent(buff: ForbiddenInsigniaFeature.Buff.Guid, asChild: true)));
+
+            var exitConditionas = ActionsBuilder.New()
+                .Conditional(conditions: ConditionsBuilder.New().IsEnemy(),
+                        ifTrue: ActionsBuilder.New().RemoveBuff(buff: EffectBuff.Guid)
+                .Conditional(conditions: ConditionsBuilder.New().IsEnemy().CasterHasFact(ForbiddenInsigniaFeature.Guid),
+                        ifTrue: ActionsBuilder.New().RemoveBuff(buff: ForbiddenInsigniaFeature.Buff.Guid)));
+
+            AbilityAreaEffectConfigurator.New(AreaName, Guid)
+                .AddAbilityAreaEffectRunAction(unitEnter: enterConditional, unitExit: exitConditionas)
+                .SetTargetType(BlueprintAbilityAreaEffect.TargetType.Any)
+                .SetShape(AreaEffectShape.Cylinder)
+                .SetSize(30.Feet())
                 .Configure();
         }
     }
 
-    internal class ForgottenInsigniaArea
+    internal class EffectBuff
     {
-        public static readonly string Guid = "{32797c23-52bc-46a4-b498-8ecfd492f5e7}";
+        public static readonly string Guid = "{f608a310-5474-44d7-acd0-dd67a2daeacc}";
 
-        private static readonly string AreaName = $"{FeatureName}.Area";
+        private static readonly string BuffName = $"{FeatureName}EffectBuff";
 
         internal static void Configure()
         {
-            AbilityAreaEffectConfigurator.New(AreaName, Guid)
-                .AddAbilityAreaEffectRunAction(
-                    unitEnter: ActionsBuilder.New().Conditional(conditions: ConditionsBuilder.New().IsAlly(),
-                        ifFalse: ActionsBuilder.New().ApplyBuffPermanent(buff: ForgottenInsigniaBuff.Guid, asChild: true)),
-                    unitExit: ActionsBuilder.New().Conditional(conditions: ConditionsBuilder.New().IsAlly(),
-                        ifFalse: ActionsBuilder.New().RemoveBuff(buff: ForgottenInsigniaBuff.Guid)))
-                .SetTargetType(BlueprintAbilityAreaEffect.TargetType.Any)
-                .SetShape(AreaEffectShape.Cylinder)
-                .SetSize(30.Feet())
+            BuffConfigurator.New(BuffName, Guid)
+                .AddComponent<FalseKnightInsignia>()
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
+                //.SetIcon(Icon)
                 .Configure();
         }
     }

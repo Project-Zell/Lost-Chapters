@@ -2,8 +2,10 @@
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils;
 using Kingmaker.Blueprints;
+using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Encyclopedia;
 using Kingmaker.Blueprints.Encyclopedia.Blocks;
+using Kingmaker.Blueprints.Facts;
 using Kingmaker.Blueprints.Root.Strings;
 using Kingmaker.Localization;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
@@ -17,12 +19,7 @@ namespace LostChapters.Tools
         private static readonly LogWrapper Logger = LogWrapper.Get("LostChapters");
         public enum AbilityType { Spell, Ability }
 
-        /// <summary>
-        /// Use assigned key value in {g|key}<b>tooltip</b>{/g} to call an ability or spell tooltip.
-        /// <para><i>Ex</i>: CreateAbilityTooltip("MyMod:Blur", AbilityRefs.Blur.Reference, AbilityType.Spell); =>
-        /// <i>To use</i>: {g|MyMod:Blur}<b>blur</b>{/g}. </para>
-        /// </summary>
-        public static void CreateAbilityTooltip(string key, BlueprintAbility ability, AbilityType abilityType = AbilityType.Spell)
+        private static void CreateAbilityTooltip(string key, BlueprintFact ability, AbilityType abilityType = AbilityType.Spell)
         {
             var reference = ability.ToReference<BlueprintScriptableObjectReference>();
             var entry = new GlossaryEntry
@@ -35,10 +32,38 @@ namespace LostChapters.Tools
             var categoryEntries = root.LocalizedTexts.GlossaryAbilities[categoryIndex].Entries.ToList();
             categoryEntries.Add(entry);
 
-            foreach (var categoryEntry in categoryEntries)
-                Logger.Info($"Key - {categoryEntry.Key}, Name - {categoryEntry.Name}, Description - {categoryEntry.Description}");
+
+            foreach (var categoryEntry in root.LocalizedTexts.GlossaryAbilities[0].Entries.ToList())
+            {
+                Logger.Info($"Key - {categoryEntry.Key}, Name - {categoryEntry.Name}, Description - {categoryEntry.Description}. Blueprint - {categoryEntry.Blueprint.NameSafe()}");
+            }
+
+            foreach(var categoryEntry in root.LocalizedTexts.GlossaryAbilities[1].Entries.ToList())
+            {
+                Logger.Info($"Key - {categoryEntry.Key}, Name - {categoryEntry.Name}, Description - {categoryEntry.Description}. Blueprint - {categoryEntry.Blueprint.NameSafe()}");
+            }
 
             root.LocalizedTexts.GlossaryAbilities[categoryIndex].Entries = [.. categoryEntries];
+        }
+
+        /// <summary>
+        /// Use assigned key value in {g|key}<b>tooltip</b>{/g} to call an ability or spell tooltip.
+        /// <para><i>Ex</i>: CreateAbilityTooltip("MyMod_Blur", AbilityRefs.Blur.Reference); =>
+        /// <i>To use</i>: {g|MyMod_Blur}<b>blur</b>{/g}. </para>
+        /// </summary>
+        public static void CreateAbilityTooltip(string key, BlueprintAbility ability)
+        {
+            CreateAbilityTooltip(key, ability, AbilityType.Ability);
+        }
+
+        /// <summary>
+        /// Use assigned key value in {g|key}<b>tooltip</b>{/g} to call a feature tooltip.
+        /// <para><i>Ex</i>: CreateAbilityTooltip("MyMod_WarBlessing", FeatureRefs.WarBlessingFeature.Reference); =>
+        /// <i>To use</i>: {g|MyMod_WarBlessing}<b>war blessing</b>{/g}. </para>
+        /// </summary>
+        public static void CreateFeatureTooltip(string key, BlueprintFeature feature)
+        {
+            CreateAbilityTooltip(key, feature, AbilityType.Ability);
         }
 
         /// <summary>

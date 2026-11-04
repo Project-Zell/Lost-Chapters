@@ -1,10 +1,9 @@
 ﻿using LostChapters.Modules.Custom.Archetypes.CowledPilgrim;
 using LostChapters.Modules.Custom.Archetypes.Deacon;
 using LostChapters.Modules.Custom.Archetypes.Demonologist;
-using LostChapters.Modules.Custom.Backgrounds;
-using LostChapters.Modules.Custom.Feats.General;
-using LostChapters.Modules.Custom.PrestigeClasses.PlagueKnight;
-using LostChapters.Tools;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight;
+using LostChapters.Modules.Custom.Archetypes.Magistrate;
+using LostChapters.Modules.Custom.Archetypes.Neutralizer;
 
 namespace LostChapters.Modules.Custom;
 
@@ -18,9 +17,9 @@ internal class CustomModule
         CowledPilgrimArchetype.Configure();
         DeaconArchetype.Configure();
         DemonologistArchetype.Configure();
-        //MagistrateArchetype.Configure();
-        //FalseKnightArchetype.Configure();
-        //MageSlayerArchetype.Configure();
+        FalseKnightArchetype.Configure();
+        NeutralizerArchetype.Configure();
+        MagistrateArchetype.Configure();
 
         ////Feats
         //ArmoredMarauderFeature.Configure();
@@ -42,22 +41,10 @@ internal class CustomModule
         //MetamagicKnowledgeFeature.Configure();
         //MetamagicKnowledgeGreaterFeature.Configure();
 
+
+
         return;
 
-
-
-
-
-        PlagueKnightClass.Configure();
-        BackgroundFisherman.Configure();
-        BackgroundForager.Configure();
-        BackgroundHighborn.Configure();
-        BackgroundGravedigger.Configure();
-        BackgroundTavernServer.Configure();
-
-
-        ScarredLegionFeature.Configure();  
-        DistractingChargeFeature.Configure();
 
     }
 }

@@ -66,7 +66,7 @@ internal class AidAnotherFeature
                 .SetIcon(Icon)
                 .Configure();
 
-            TooltipConfigurator.CreateAbilityTooltip(FeatureName, ability, TooltipConfigurator.AbilityType.Ability);
+            TooltipConfigurator.CreateAbilityTooltip(key: "LC_AidAnother", ability: ability);
         }
     }
 

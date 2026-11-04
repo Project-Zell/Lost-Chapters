@@ -6,7 +6,9 @@ internal class ReprimandFeature
 {
     public static readonly string Guid = "{78d68d3b-aded-4d18-a18f-c65a68ac8c8a}";
 
-    private static readonly string FeatureName = "ReprimandFeature";
+    private static readonly string BaseName = "Reprimand";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 

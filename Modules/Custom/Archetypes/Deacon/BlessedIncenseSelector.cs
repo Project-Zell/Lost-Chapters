@@ -49,84 +49,65 @@ internal class BlessedIncenseSelector
         var action = ActionsBuilder.New()
             //Chaos Domain
             .Conditional(
-                ConditionsBuilder.New().CasterHasFact(ChaosDomainIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Lawful),
+                ConditionsBuilder.New().CasterHasFact(ChaosBlessedIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Lawful),
                     ifTrue: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude,
                         onResult: ActionsBuilder.New().ConditionalSaved(
-                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(ChaosDomainIncense.MajorFeature.Guid),
+                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(ChaosBlessedIncense.MajorFeature.Guid),
                                 ifTrue: majorBuffAction,
                                 ifFalse: minorBuffAction),
-                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(ChaosDomainIncense.MajorFeature.Guid),
+                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(ChaosBlessedIncense.MajorFeature.Guid),
                                 ifTrue: minorBuffAction))))
             //Evil Domain
             .Conditional(
-                ConditionsBuilder.New().CasterHasFact(EvilDomainIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Good),
+                ConditionsBuilder.New().CasterHasFact(EvilBlessedIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Good),
                     ifTrue: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude,
                         onResult: ActionsBuilder.New().ConditionalSaved(
-                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(EvilDomainIncense.MajorFeature.Guid),
+                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(EvilBlessedIncense.MajorFeature.Guid),
                                 ifTrue: majorBuffAction,
                                 ifFalse: minorBuffAction),
-                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(EvilDomainIncense.MajorFeature.Guid),
+                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(EvilBlessedIncense.MajorFeature.Guid),
                                 ifTrue: minorBuffAction))))
 
             //Good Domain
             .Conditional(
-                ConditionsBuilder.New().CasterHasFact(GoodDomainIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Evil),
+                ConditionsBuilder.New().CasterHasFact(GoodBlessedIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Evil),
                     ifTrue: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude,
                         onResult: ActionsBuilder.New().ConditionalSaved(
-                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(GoodDomainIncense.MajorFeature.Guid),
+                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(GoodBlessedIncense.MajorFeature.Guid),
                                 ifTrue: majorBuffAction,
                                 ifFalse: minorBuffAction),
-                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(GoodDomainIncense.MajorFeature.Guid),
+                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(GoodBlessedIncense.MajorFeature.Guid),
                                 ifTrue: minorBuffAction))))
 
             //Law Domain
             .Conditional(
-                ConditionsBuilder.New().CasterHasFact(LawDomainIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Chaotic),
+                ConditionsBuilder.New().CasterHasFact(LawBlessedIncense.MinorFeature.Guid).Alignment(AlignmentComponent.Chaotic),
                     ifTrue: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude,
                         onResult: ActionsBuilder.New().ConditionalSaved(
-                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(LawDomainIncense.MajorFeature.Guid),
+                            failed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(LawBlessedIncense.MajorFeature.Guid),
                                 ifTrue: majorBuffAction,
                                 ifFalse: minorBuffAction),
-                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(LawDomainIncense.MajorFeature.Guid),
+                            succeed: ActionsBuilder.New().Conditional(ConditionsBuilder.New().CasterHasFact(LawBlessedIncense.MajorFeature.Guid),
                                 ifTrue: minorBuffAction))))
 
-            //Madness Domain
+            //Sun Domain
             .Conditional(
-                ConditionsBuilder.New().CasterHasFact(MadnessDomainIncense.MinorFeature.Guid).HasFact(MadnessDomainIncense.CooldownBuff.Guid, negate: true),
+                ConditionsBuilder.New().CasterHasFact(SunBlessedIncense.MinorFeature.Guid).HasFact(SunBlessedIncense.CooldownBuff.Guid, negate: true),
                     ifTrue: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude,
                         onResult: ActionsBuilder.New().ConditionalSaved(
                             failed: ActionsBuilder.New()
-                                .Conditional(ConditionsBuilder.New().CasterHasFact(MadnessDomainIncense.MajorFeature.Guid),
+                                .Conditional(ConditionsBuilder.New().CasterHasFact(SunBlessedIncense.MajorFeature.Guid, negate: true),
                                     ifTrue: ActionsBuilder.New().ApplyBuff(
-                                        buff: BuffRefs.Confusion.ToString(),
+                                        buff: BuffRefs.BlindnessBuff.ToString(),
                                         durationValue: ContextDuration.Fixed(value: 1)),
                                     ifFalse: ActionsBuilder.New().ApplyBuff(
-                                        buff: BuffRefs.Confusion.ToString(),
+                                        buff: BuffRefs.BlindnessBuff.ToString(),
                                         durationValue: ContextDuration.FixedDice(diceType: DiceType.D3)))
                                 .ApplyBuff(
-                                    buff: MadnessDomainIncense.CooldownBuff.Guid, 
+                                    buff: SunBlessedIncense.CooldownBuff.Guid,
                                     durationValue: ContextDuration.Fixed(value: 1, rate: DurationRate.Days),
                                     asChild: true,
-                                    isNotDispelable: true))))
-
-            //Trickery Domain
-            .Conditional(
-                ConditionsBuilder.New().CasterHasFact(TrickeryDomainIncense.MinorFeature.Guid).HasFact(TrickeryDomainIncense.CooldownBuff.Guid, negate: true),
-                    ifTrue: ActionsBuilder.New().SavingThrow(SavingThrowType.Fortitude,
-                        onResult: ActionsBuilder.New().ConditionalSaved(
-                            failed: ActionsBuilder.New()
-                                .Conditional(ConditionsBuilder.New().CasterHasFact(TrickeryDomainIncense.MajorFeature.Guid),
-                                    ifTrue: ActionsBuilder.New().ApplyBuff(
-                                        buff: BuffRefs.Blind.ToString(),
-                                        durationValue: ContextDuration.Fixed(value: 1)),
-                                    ifFalse: ActionsBuilder.New().ApplyBuff(
-                                        buff: BuffRefs.Blind.ToString(),
-                                        durationValue: ContextDuration.FixedDice(diceType: DiceType.D4)))
-                                .ApplyBuff(
-                                    buff: TrickeryDomainIncense.CooldownBuff.Guid,
-                                    durationValue: ContextDuration.Fixed(value: 1, rate: DurationRate.Days),
-                                    asChild: true,
-                                    isNotDispelable: true))))
+                                    isNotDispelable: true))));
             ;
 
         var enemyCondition = ActionsBuilder.New().Conditional(ConditionsBuilder.New().IsEnemy(), ifTrue: action);

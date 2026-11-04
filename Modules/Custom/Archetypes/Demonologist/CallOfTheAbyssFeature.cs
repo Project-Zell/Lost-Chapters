@@ -64,10 +64,7 @@ internal class CallOfTheAbyssFeature
                 .SetDescription(Description)
                 .Configure();
 
-            TooltipConfigurator.CreateAbilityTooltip(
-                key: "LC_CallOfTheAbyss",
-                ability: ability,
-                abilityType: TooltipConfigurator.AbilityType.Ability);
+            TooltipConfigurator.CreateAbilityTooltip(key: $"LC_{BaseName}", ability: ability);
         }
     }
 

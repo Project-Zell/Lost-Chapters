@@ -17,15 +17,19 @@ internal class DemonologistArchetype
 
     internal static void Configure()
     {
+        //Configurators
         DemonologistSpellbook.Configure();
         DemonologistSummonPool.Configure();
-
-        DemonicStudiesFeature.Configure();
         DemonologistSummons.Configure();
+
+        //Progression Feats
         CallOfTheAbyssFeature.Configure();
+        DemonicStudiesFeature.Configure();
         DemonologistExploitsSelection.Configure();
         HellsWhisperFeature.Configure();
         DemonizationFeature.Configure();
+        
+        //Class Specific Feats
         FrenzyingCircleFeature.Configure();
 
         var parentClass = CharacterClassRefs.ArcanistClass;

@@ -10,5 +10,11 @@
         "engb": "Archetype",
         "ruru": "хз",
         "processtemplates": false
+    },
+    {
+        "key": "Challenge.Name",
+        "engb": "Challenge",
+        "ruru": "Вызов",
+        "processtemplates": false
     }
 ]

@@ -7,7 +7,7 @@ using Kingmaker.RuleSystem.Rules;
 using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
-using LostChapters.Modules.Custom.Archetypes.MageSlayer;
+using LostChapters.Modules.Custom.Archetypes.Neutralizer;
 using UnityEngine;
 
 namespace LostChapters.Modules.Custom.Components;
@@ -16,10 +16,10 @@ internal class MindShatterOwner : UnitFactComponentDelegate<AttackBonusCondition
 {
     public void OnEventAboutToTrigger(RuleAttackWithWeapon evt)
     {
-        if (evt.Target.HasFact(BlueprintTool.Get<BlueprintBuff>(MindShatterFeature.Buff.Guid)) is false)
+        if (evt.Target.HasFact(BlueprintTool.Get<BlueprintBuff>(CautiosStudyFeature.Buff.Guid)) is false)
             return;
 
-        var rankFeature = BlueprintTool.Get<BlueprintFeature>(MindShatterFeature.Guid);
+        var rankFeature = BlueprintTool.Get<BlueprintFeature>(CautiosStudyFeature.Guid);
         var maybeCaster = Context.MaybeOwner;
 
         var rankBonus = 0;

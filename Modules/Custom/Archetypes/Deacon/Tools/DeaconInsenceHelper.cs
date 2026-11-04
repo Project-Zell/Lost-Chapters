@@ -76,7 +76,7 @@ public static class DeaconInsenceHelper
 
         if (prerequisite != null)
         {
-            configurator.AddPrerequisiteFeature(prerequisite).AddPrerequisiteFeature(IncenseInsufionFeature.Guid).SetIcon(InfusedIcon);
+            configurator.AddPrerequisiteFeature(prerequisite).AddPrerequisiteFeature(IncenseInfusionFeature.Guid).SetIcon(InfusedIcon);
         }
         else
         {
@@ -107,10 +107,12 @@ public static class DeaconInsenceHelper
 
             area.AddAbilityAreaEffectBuff(buff: buffGuid, condition: condition);
 
+            var icon = isMinor ? NormalIcon : InfusedIcon;
+
             BuffConfigurator.For(buffGuid)
                 .SetDisplayName(displayName)
                 .SetDescription(description)
-                .SetIcon(NormalIcon)
+                .SetIcon(icon)
                 .Configure();
         }
     }
@@ -119,7 +121,7 @@ public static class DeaconInsenceHelper
     {
         var progressionName = $"{baseName}{ProgressionKey}";
         var progressionDisplayName = $"{progressionName}{DisplayNameKey}";
-        var progressionDescription = $"{progressionName}{DescriptionKey}";
+        var progressionDescription = ImpossibleIncenseSelector.Description;
 
         var removeFeaturesEntryBuilder = LevelEntryBuilder.New()
             .AddEntry(level: 01, features: minorFeatureGuid)
@@ -137,7 +139,7 @@ public static class DeaconInsenceHelper
             .SetDescription(progressionDescription)
             .Configure();
 
-        FeatureSelectionConfigurator.For(ImposibleIncenseSelector.Guid)
+        FeatureSelectionConfigurator.For(ImpossibleIncenseSelector.Guid)
             .AddToAllFeatures([progressionName])
             .Configure();
     }

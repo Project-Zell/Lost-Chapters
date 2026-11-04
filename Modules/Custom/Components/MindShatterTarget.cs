@@ -6,7 +6,7 @@ using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem.Rules.Abilities;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Components;
-using LostChapters.Modules.Custom.Archetypes.MageSlayer;
+using LostChapters.Modules.Custom.Archetypes.Neutralizer;
 using UnityEngine;
 
 namespace LostChapters.Modules.Custom.Components;
@@ -17,7 +17,7 @@ internal class MindShatterTarget : UnitBuffComponentDelegate, IInitiatorRulebook
 
     public void OnEventAboutToTrigger(RuleCalculateAbilityParams evt)
     {
-        var rankFeature = BlueprintTool.Get<BlueprintFeature>(MindShatterFeature.Guid);
+        var rankFeature = BlueprintTool.Get<BlueprintFeature>(CautiosStudyFeature.Guid);
         var caster = evt.Reason.Caster;
 
         var rankBonus = 0;

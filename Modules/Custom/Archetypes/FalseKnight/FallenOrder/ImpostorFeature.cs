@@ -1,6 +1,7 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.References;
-using LostChapters.Modules.Custom.Archetypes.FalseKnight.Components;
+using Kingmaker.Blueprints.Classes;
+using LostChapters.Modules.Custom.Archetypes.FalseKnight.Tools;
 
 namespace LostChapters.Modules.Custom.Archetypes.FalseKnight.FallenOrder;
 
@@ -14,46 +15,78 @@ internal class ImpostorFeature
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
-    //private static readonly string Icon = $"{CustomModule.IconPath}/ .png";
-
-    public static readonly string OrderOfTheLionGuid = "{dc7249d9-1b33-4ce9-a20f-ccd235a5a9ae}";
-    public static readonly string OrderOfTheStarGuid = "{d21ebb03-a312-45b8-8158-5eae7baeea00}";
-    public static readonly string OrderOfTheSwordGuid = "{4336a964-d8d9-4c18-98f1-1e5e61178002}";
-    public static readonly string OrderOfTheShroudGuid = "{852da633-d2f9-47b7-a058-44280aeaba53}";
-    public static readonly string OrderOfTheCockatriceGuid = "{64b1e2b5-c716-4841-af57-48eaddef505a}";
-
     internal static void Configure()
     {
         FeatureSelectionConfigurator.New(FeatureName, Guid)
             .SetIsClassFeature(true)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
-            //.SetIcon(Icon)
             .Configure();
 
-        BlackKnightImpostorConfigurator.AddFeatureToImpostorSelection(
-            order: ProgressionRefs.CavalierOrderOfTheLionProgression.Reference,
-            features: [FeatureRefs.CavalierLionsCall.Reference.Get()],
-            guid: OrderOfTheLionGuid);
+        Lion.Configure();
+        Star.Configure();
+        Sword.Configure();
+        Shroud.Configure();
+        Cockatrice.Configure();
+    }
 
-        BlackKnightImpostorConfigurator.AddFeatureToImpostorSelection(
-            order: ProgressionRefs.CavalierOrderOfTheStarProgression.Reference,
-            features: [FeatureRefs.CavalierCalling.Reference.Get(), FeatureRefs.CavalierCallingChannelFeature.Reference.Get()],
-            guid: OrderOfTheStarGuid);
+    internal class Lion
+    {
+        public static readonly string Guid = "{dc7249d9-1b33-4ce9-a20f-ccd235a5a9ae}";
 
-        BlackKnightImpostorConfigurator.AddFeatureToImpostorSelection(
-            order: ProgressionRefs.CavalierOrderOfTheSwordProgression.Reference,
-            selection: FeatureSelectionRefs.CavalierByMyHonorSelection.Reference,
-            guid: OrderOfTheSwordGuid);
+        private static readonly BlueprintProgression Progression = ProgressionRefs.CavalierOrderOfTheLionProgression.Reference;
 
-        BlackKnightImpostorConfigurator.AddFeatureToImpostorSelection(
-            order: ProgressionRefs.CavalierOrderOfTheShroudProgression.Reference,
-            features: [FeatureRefs.CavalierSpiritualShield.Reference.Get()],
-            guid: OrderOfTheShroudGuid);
+        internal static void Configure()
+        {
+            FalseKnightImpostorTool.CreateAndAddToImpostorSelection(guid: Guid, orderProgression: Progression);
+        }
+    }
 
-        BlackKnightImpostorConfigurator.AddFeatureToImpostorSelection(
-            order: ProgressionRefs.CavalierOrderOfTheCockatriceProgression.Reference,
-            features: [FeatureRefs.DazzlingDisplayIgnoreWeaponNeed.Reference.Get(), FeatureRefs.CavalierBraggart.Reference.Get()],
-            guid: OrderOfTheCockatriceGuid);
+    internal class Star
+    {
+        public static readonly string Guid = "{d21ebb03-a312-45b8-8158-5eae7baeea00}";
+
+        private static readonly BlueprintProgression Progression = ProgressionRefs.CavalierOrderOfTheStarProgression.Reference;
+
+        internal static void Configure()
+        {
+            FalseKnightImpostorTool.CreateAndAddToImpostorSelection(guid: Guid, orderProgression: Progression);
+        }
+    }
+
+    internal class Sword
+    {
+        public static readonly string Guid = "{4336a964-d8d9-4c18-98f1-1e5e61178002}";
+
+        private static readonly BlueprintProgression Progression = ProgressionRefs.CavalierOrderOfTheSwordProgression.Reference;
+
+        internal static void Configure()
+        {
+            FalseKnightImpostorTool.CreateAndAddToImpostorSelection(guid: Guid, orderProgression: Progression);
+        }
+    }
+
+    internal class Shroud
+    {
+        public static readonly string Guid = "{852da633-d2f9-47b7-a058-44280aeaba53}";
+
+        private static readonly BlueprintProgression Progression = ProgressionRefs.CavalierOrderOfTheShroudProgression.Reference;
+
+        internal static void Configure()
+        {
+            FalseKnightImpostorTool.CreateAndAddToImpostorSelection(guid: Guid, orderProgression: Progression);
+        }
+    }
+
+    internal class Cockatrice
+    {
+        public static readonly string Guid = "{64b1e2b5-c716-4841-af57-48eaddef505a}";
+
+        private static readonly BlueprintProgression Progression = ProgressionRefs.CavalierOrderOfTheCockatriceProgression.Reference;
+
+        internal static void Configure()
+        {
+            FalseKnightImpostorTool.CreateAndAddToImpostorSelection(guid: Guid, orderProgression: Progression);
+        }
     }
 }

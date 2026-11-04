@@ -13,5 +13,6 @@ internal class OtherModule
         MuteBuff.Configure();
         TargetWillProperty.Configure();
         TargetLevelProperty.Configure();
+        CavalierChallengePatch.Configure();
     }
 }

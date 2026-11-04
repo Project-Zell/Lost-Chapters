@@ -118,8 +118,8 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 - **Alluring Mist, Fortified** - An affected ally receives a +4 alchemical bonus to Charisma. An affected enemy suffers a -4 alchemical penalty to mind-affecting effects.
 #
 #### Community Domain
-- **Focusing Fog** - An affected ally receives a +2 alchemical bonus to attacks performed with ranged weapons. The deacon receives an additional +1 bonus.
-- **Focusing Fog, Fortified** - An affected ally receives a +4 alchemical bonus to attacks performed with ranged weapons. The deacon receives an additional +2 bonus.
+- **Focusing Fog** - An affected ally receives a +2 alchemical bonus to attacks performed with ranged weapons.
+- **Focusing Fog, Fortified** - An affected ally receives a +4 alchemical bonus to attacks performed with ranged weapons.
 #
 #### Darkness Domain
 - **Gloomveil** - An affected ally receives concealment (15% miss chance).
@@ -146,8 +146,8 @@ Theme pack of content revolving around the Gray Maidens. Adds an *Aid Another* a
 - **Blazing Shroud, Fortified** - An affected ally deals an additional 2d6 points of fire damage with every weapon strike. In addition, the ally gains fire resistance equal to 10 + the deacon's level.
 #
 #### Glory Domain
-- **White Smoke** - An affected enemy suffers a -2 alchemical penalty to attack rolls. In addition, the ally receives a +2 alchemical bonus against fear effects.
-- **White Smoke, Fortified** - An affected enemy suffers a -4 alchemical penalty to attack rolls. In addition, the ally receives a +4 alchemical bonus against fear effects.
+- **White Smoke** - An affected enemy suffers a -1 alchemical penalty to attack rolls. In addition, the ally receives a +2 alchemical bonus against fear effects.
+- **White Smoke, Fortified** - An affected enemy suffers a -2 alchemical penalty to attack rolls. In addition, the ally receives a +4 alchemical bonus against fear effects.
 #
 #### Good Domain
 - **Virtuous Grasp** - Any evil enemy creature who enters the area of the blessed incense must succeed on a Fortitude save or become alchemically sickened for 1d4 rounds. The DC of this save is equal to 10 + half the warpriest's level + the warpriest's Wisdom modifier.
@@ -269,12 +269,23 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 ## Archetypes
 ### Arcanist:
 - **Demonologist**<sup>H</sup>
-    - **Demonic Studies** - Replaces Acranist Exploit selection at level 1. All Summon Monster spells in arcanist spellbook changed to Summon Demon spells respectevly. Additionally, Dominate Person and Dominate Person, Mass changed to Dominate Demon and Dominate Demon, Mass.
-    - **Hell's Whisper** - For each summoned demon, the arcanist takes a -1 penalty to Will saves. When a controlled demon's hit points are reduced to 0 or lower, the arcanist must make a Will save or become confused for 1 round. If the arcanist are good aligned, she additionally shakened for 1 minute.
-    - **Call of the Abyss** - Replaces Arcanist Exploit selection at level 3. The arcanist can expend 2 points from the arcanist reservoir to cause the next summoned demons to enter a rage. This rage functions as standard barbarian rage. If the arcanist has rage powers, those powers also apply to the raging demons.
+    - **Demonic Studies** - Replaces Acranist Exploit selection at level 1. All Summon Monster spells in arcanist spellbook changed to Summon Demon spells respectevly.
+    - **Hell's Whisper** - For each summoned demon, the arcanist takes a -1 penalty to Will saves. When a controlled demon's hit points are reduced to 0 or lower, the arcanist must make a Will save or become stagered for 1 round. If the arcanist are good aligned, she additionally confused for 1 minute.
+    - **Call of the Abyss** - Replaces Arcanist Exploit selection at level 3. The arcanist can expend 1 point from the arcanist reservoir to cause the next summoned demons to enter a rage. This rage functions as standard barbarian rage. If the arcanist has rage powers, those powers also apply to the raging demons.
     - **Demonologist Exploit** - Demonogist might select a rage power instead of the acranist exploit.
-    - **Sacrificial Lamb?** - Replaces Magical Supremacy. As a swift action, an arcanist can expend 3 points from their arcanist reservoir to instantly kill one of their summoned demons. If they do so, the arcanist gains the demon subtype (immunity to electricity and poison, resistance 10 to acid, cold, and fire), as well as an additional gore attack for 1 minute. If the sacrificed demon was under the effect of Call of the Abyss, the arcanist also gains all effects of the rage for 3 rounds. Demons slain in this way do not trigger Hell’s Whisper.
+    - **Summoning Circles** - Arcanist Exploit. Demonologist will use her character level, instead of the arcanist level, to determine strenght of the rage powers. Can be selected in place of rage power.
+    - **Demonization** - Replaces Magical Supremacy. As a swift action, an arcanist can expend 1 point from their arcanist reservoir to consume one of their summoned demons. If they do so, the arcanist gains the demon subtype (immunity to electricity and poison, resistance 10 to acid, cold, and fire), as well as an additional gore attack for the number of rounds equal to consumed demons hit dice. While under the effects of demonization, the demonologist can benefit from all of her rage powers.
 ### Cavalier:
+#
+- **Cowled Pilgrim**<sup>H</sup>
+    - **Lone Wanderer** - Replaces Mount. A cowled pilgrim gains a favored terrain as the ranger ability of the same name, but the favored terrain ability does not increase with his level. While he is in favored terrain, a cowled pilgrim gains a 10-feet bonus to movement speed for each unique favored terrain selected (up to 30-feet).
+    - **Crossroads Ambush** - Replaces Cavalier's Charge. A cowled pilgrim gains the pounce special ability when wielding a simple weapon in main hand and does not suffer a penalty to AC after making a charge attack.
+    - **No Respite** - Replaces Banner. A cowled pilgrim can move at normal speed in medium armor. While he is in favored terrain, a cowled pilgrim gains a bonus to saving throws against fatigue and exhaustion.
+    - **Lost in Sight** - A cowled pilgrim gains the ability to move at full speed while using the Stealth skill. While he is in favored terrain, a cowled pilgrim gains a bonus to AC against attacks of opportunity.
+    - **Unseen Path** - Replaces Mighty Charge. A cowled pilgrim can move at normal speed in heavy armor. While he is in favored terrain, the cowled pilgrim gains concealment.
+    - **Routekeeper** - A cowled pilgrim gains a bonus to initiative for each unique favored terrain he possess.
+    - **Endless Stride** - Replaces Supreme Charge. While he is in favored terrain, a cowled pilgrim gains immunity to ground-based effects and can make one additional attack.
+#
 - **False Knight**<span style="color:blue"><sup>H</sup></span>
     - **Last of a Kind** - Alters Order. Instead of selecting an order, the cavalier is treated as a member of the Fallen Order.
     - **Fallen Order**
@@ -294,15 +305,6 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
     - **Reprimand** – The magistrate regains one point of conviction at the start of each turn, provided a creature affected by conviction.
     - **Collective Guilt** – If a creature under the effect of court trial fails its saving throw against a verdict effect, all enemy creatures within a 20-ft radius of the affected creature suffer the same verdict penalty. Additionally, the first creature to fail a verdict save in the battle is staggered for 1d4 turns.
 #
-- **Cowled Pilgrim**<sup>H</sup>
-    - **Lone Wanderer** - Replaces Mount. A cowled pilgrim gains a favored terrain as the ranger ability of the same name, but the favored terrain ability does not increase with level. While he is in favored terrain, a cowled pilgrim gains a 10-feet bonus to movement speed for each unique favored terrain selected (up to 30-feet).
-    - **Crossroads Ambush** - Replaces Cavalier's Charge. A cowled pilgrim gains the pounce special ability when wielding a simple weapon and does not suffer a penalty to AC after making a charge attack.
-    - **No Respite** - Replaces Banner. A cowled pilgrim can move at normal speed in medium armor. While he is in favored terrain, a cowled pilgrim gains a bonus to saving throws against fatigue and exhaustion.
-    - **Lost in Sight** - A cowled pilgrim gains the ability to move at full speed while using the Stealth skill. While he is in favored terrain, a cowled pilgrim gains a bonus to AC against attacks of opportunity.
-    - **Unseen Path** - Replaces Mighty Charge. A cowled pilgrim can move at normal speed in heavy armor. While he is in favored terrain, the cowled pilgrim gains concealment.
-    - **Routekeeper** - A cowled pilgrim gains a bonus to initiative for each unique favored terrain selected.
-    - **Endless Stride** - Replaces Supreme Charge. While he is in favored terrain, a cowled pilgrim gains immunity to ground-based effects and can make one additional attack.
-#
 ### Slayer:
 - **Mage Slayer**<sup>H</sup>
     - **Mind Shatter** -
@@ -317,6 +319,7 @@ Unthemed pack of official and homebrew content. Individual elements can be disab
 - **Highborn**<sup>H</sup> - *Skills*: Persuasion. *Proficiencies*: Dueling Sword.
 - **Prisoner**<sup>H</sup> -
 - **Tavern Server**<sup>H</sup> - *Skills*: Mobility. Gain Dodge as a bonus feat.
+- **War Orphan?**<sup>H</sup> - can select favored enemy orcs, elfs, human, goblins. skill: surv.
 
 ## Feats
 ### Arcanist Exploits
@@ -423,3 +426,6 @@ Maybe:
 - Blood Arcanist
 - School Savant
 - Arsenal Chaplain
+- Gray Mod: Tactician
+- Hexcrafter
+- Hamatulasu Master

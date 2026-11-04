@@ -110,19 +110,35 @@ internal static class Toolbox
         return false;
     }
 
-    public static int GetFavoriteTerrainCount(UnitEntityData owner)
+    public static int GetOwnedFromFeatureSelection(UnitEntityData owner, BlueprintFeatureSelection selection)
     {
         int count = 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainAbyss.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainDesert.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainFirstWorld.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainForest.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainHighlands.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainPlains.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainUnderground.Reference) ? 1 : 0;
-        count += owner.HasFact(FeatureRefs.FavoriteTerrainUrban.Reference) ? 1 : 0;
-
+        foreach (var item in selection.m_AllFeatures)
+        {
+            if (owner.HasFact(item))
+            {
+                count++;
+            }
+        }
         return count;
+    }
+
+    public static int GetFavoriteTerrainCount(UnitEntityData owner)
+    {
+        var terrains = BlueprintTool.Get<BlueprintFeatureSelection>(FeatureSelectionRefs.FavoriteTerrainSelection.ToString());
+        return GetOwnedFromFeatureSelection(owner, terrains);
+    }
+
+    public static int GetHellknightDisciplineCount(UnitEntityData owner)
+    {
+        var disciplines = BlueprintTool.Get<BlueprintFeatureSelection>(HellknightDisciplineSelection.Guid);
+        return GetOwnedFromFeatureSelection(owner, disciplines);
+    }
+
+    public static int GetTeamworkFeatsCount(UnitEntityData owner)
+    {
+        var teamworkFeats = BlueprintTool.Get<BlueprintFeatureSelection>(FeatureSelectionRefs.TeamworkFeat.ToString());
+        return GetOwnedFromFeatureSelection(owner, teamworkFeats);
     }
 
     public static Condition GenderCondition(Gender gender, bool negate = false)
@@ -151,20 +167,7 @@ internal static class Toolbox
         return new BlueprintItemReference();
     }
 
-    public static int GetHellknightDisciplineCount(UnitEntityData owner)
-    {
-        int count = 0;
-        var disciplines = BlueprintTool.Get<BlueprintFeatureSelection>(HellknightDisciplineSelection.Guid).m_AllFeatures;
 
-        foreach(var discipline in disciplines)
-        {
-            if (owner.HasFact(discipline))
-            {
-                count++;
-            }
-        }
-        return count;
-    }
 
     public static void AddPrerequisiteToList(string featureListGuid, string featureToAddGuid)
     {

@@ -10,25 +10,24 @@ internal class FalseKnightArchetype
 {
     public static readonly string Guid = "{a6b94a55-60d2-42f8-ba5c-4e105bc3fa48}";
 
-    private static readonly string BaseName = "FalseKnight";
+    public static readonly string BaseName = "FalseKnight";
 
     private static readonly string ArchetypeName = $"{BaseName}Archetype";
-    private static readonly string LocalizedName = $"{LocalizedName}.Name";
-    private static readonly string Description   = $"{LocalizedName}.Description";
-
+    private static readonly string LocalizedName = $"{ArchetypeName}.Name";
+    private static readonly string Description   = $"{ArchetypeName}.Description";
+        
     internal static void Configure()
     {
-        FalseKnightTeamworkFeatSelection.Configure();
+        VersatileTacticsFeature.Configure();
         ForgottenInsigniaFeature.Configure();
-        ForbiddenRelicFeature.Configure();
-        FallenOrderFeature.Configure();
+        ForbiddenInsigniaFeature.Configure();
+        FallenOrderProgression.Configure();
 
         var removeFeaturesEntryBuilder = LevelEntryBuilder.New()
             .AddEntry(level: 01, features: FeatureSelectionRefs.CavalierMountSelection.ToString())
             .AddEntry(level: 01, features: FeatureSelectionRefs.CavalierOrderSelection.ToString())
             .AddEntry(level: 01, features: FeatureSelectionRefs.CavalierTacticianFeatSelection.ToString())
             .AddEntry(level: 01, features: FeatureRefs.CavalierTacticianFeature.ToString())
-            .AddEntry(level: 03, features: FeatureRefs.CavalierCharge.ToString())
             .AddEntry(level: 05, features: FeatureRefs.CavalierBanner.ToString())
             .AddEntry(level: 09, features: FeatureRefs.CavalierTacticianGreater.ToString())
             .AddEntry(level: 09, features: FeatureSelectionRefs.CavalierTacticianFeatSelection.ToString())
@@ -36,16 +35,16 @@ internal class FalseKnightArchetype
             .AddEntry(level: 17, features: FeatureSelectionRefs.CavalierTacticianFeatSelection.ToString());
 
         var addFeaturesEntryBuilder = LevelEntryBuilder.New()
-            .AddEntry(level: 01, features: FallenOrderFeature.Guid)
+            .AddEntry(level: 01, features: FallenOrderProgression.Guid)
             .AddEntry(level: 01, features: ForgottenInsigniaFeature.Guid)
-            .AddEntry(level: 01, features: FalseKnightTeamworkFeatSelection.Guid)
-            .AddEntry(level: 03, features: FeatureRefs.SoloTactics.ToString())
-            .AddEntry(level: 05, features: FeatureRefs.CavalierCharge.ToString())
+            .AddEntry(level: 01, features: VersatileTacticsFeature.Guid)
+            .AddEntry(level: 01, features: VersatileTacticsFeature.FeatureSelection.Guid)
             .AddEntry(level: 05, features: FeatureSelectionRefs.CavalierMountSelection.ToString())
-            .AddEntry(level: 07, features: FalseKnightTeamworkFeatSelection.Guid)
-            .AddEntry(level: 13, features: FalseKnightTeamworkFeatSelection.Guid)
-            .AddEntry(level: 14, features: ForbiddenRelicFeature.Guid)
-            .AddEntry(level: 19, features: FalseKnightTeamworkFeatSelection.Guid);
+            .AddEntry(level: 05, features: VersatileTacticsFeature.FeatureSelection.Guid)
+            .AddEntry(level: 10, features: VersatileTacticsFeature.FeatureSelection.Guid)
+            .AddEntry(level: 14, features: ForbiddenInsigniaFeature.Guid)
+            .AddEntry(level: 15, features: VersatileTacticsFeature.FeatureSelection.Guid)
+            .AddEntry(level: 20, features: VersatileTacticsFeature.FeatureSelection.Guid);
 
         ArchetypeConfigurator.New(ArchetypeName, Guid, CharacterClassRefs.CavalierClass)
             .SetClassSkills([StatType.SkillPersuasion, StatType.SkillAthletics, StatType.SkillMobility, StatType.SkillStealth])
@@ -57,11 +56,7 @@ internal class FalseKnightArchetype
             .Configure();
 
         ProgressionConfigurator.For(ProgressionRefs.CavalierProgression)
-            .AddToUIGroups([FalseKnightTeamworkFeatSelection.Guid])
-            .Configure();
-
-        ProgressionConfigurator.For(ProgressionRefs.CavalierProgression)
-            .AddToUIDeterminatorsGroup([FallenOrderFeature.Guid])
+            .AddToUIDeterminatorsGroup([FallenOrderProgression.Guid])
             .Configure();
     }
 }

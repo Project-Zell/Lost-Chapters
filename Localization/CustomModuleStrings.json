@@ -62,7 +62,7 @@
     {
         "Key": "LoneWandererFeatureSelection.Name",
         "enGB": "Lone Wanderer — Favored Terrain",
-        "ruRU": "Одинокий путник – Излюбленная местность",
+        "ruRU": "Одинокий путник — Излюбленная местность",
         "ProcessTemplates": false
     },
     {
@@ -133,8 +133,20 @@
     },
     {
         "Key": "CenserBurnerFeature.Description",
-        "enGB": "A 1st-level deacon can use his censer burner to create an incense smoke in a 30-foot area around him to aid his allies (including himself), making them feel soothed and focused. An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Saving_Throw}saving throws{/g} against compulsion and emotions. The incense smoke's area automatically suppresses (but does not dispel) any morale bonuses granted by the {g|SpellsRage}rage{/g} {g|Encyclopedia:Spell}spell{/g}, and also suppresses an already active barbarian's rage and negates his ability to enter a rage. The censer burner can be ignited for 2 + the warpriest's level + his {g|Encyclopedia:Wisdom}Wisdom{/g} modifier {g|Encyclopedia:Combat_Round}rounds{/g} per day.",
-        "ruRU": "На первом уровне диакон с помощью своей кадильницы может сотворить благовонный дым в радиусе 30 футов, чтобы помочь своим союзникам (включая себя) успокоиться и сосредоточиться. Под влиянием благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов эмоций и принуждения. Благовонный дым автоматически подавляет (но не рассеивает) любые бонусы морали от {g|Encyclopedia:Spell}заклинания{/g} {g|SpellsRage}ярость{/g}, а также прерывает уже начавшуюся ярость варвара и лишает его возможности впадать в ярость. Диакон может разжечь свою кадильницу на количество {g|Encyclopedia:Combat_Round}раундов{/g} в день, равное 2 + уровень капеллана + его модификатор {g|Encyclopedia:Wisdom}Мудрости{/g}.",
+        "enGB": "A 1st-level deacon can use his censer burner to create a cloud of incense smoke in a 30-foot area around him to aid his allies (including himself), making them feel soothed and focused. An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Saving_Throw}saving throws{/g} against charm and emotions. The incense smoke's area automatically suppresses (but does not dispel) any morale bonuses granted by the {g|SpellsRage}rage{/g} {g|Encyclopedia:Spell}spell{/g}, and also interrupts an already active nonmagical rage effect, like barbarian rage, and negates the creature's ability to enter a rage. The censer burner can be ignited as a {g|Encyclopedia:Standard_Action}standard action{/g} for 3 + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier {g|Encyclopedia:Combat_Round}rounds{/g} per day. At each level after 1st a deacon can use his censer burner for 2 additional rounds per day.",
+        "ruRU": "На первом уровне диакон с помощью своей кадильницы может сотворить благовонный дым в радиусе 30 футов, чтобы помочь своим союзникам (включая себя) успокоиться и сосредоточиться. Под влиянием благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов эмоций и очарования. Благовонный дым автоматически подавляет (но не рассеивает) любые бонусы морали от {g|Encyclopedia:Spell}заклинания{/g} {g|SpellsRage}ярость{/g}, а также прерывает любую уже начавшуюся ярость (например, ярость варвара) и лишает существо возможности впадать в ярость. Диакон может разжечь свою кадильницу в качестве {g|Encyclopedia:Standard_Action}основного действия{/g} на количество {g|Encyclopedia:Combat_Round}раундов{/g} в день, равное 3 + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. За каждый новый уровень после первого, диакон может использовать кадильницу на два раунда в день больше.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerAllBuff.Name",
+        "enGB": "Incense smoke",
+        "ruRU": "Благовонный дым",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CenserBurnerAllBuff.Description",
+        "enGB": "An ally affected by deacon's {g|LC_CenserBurner}censer burner{/g} receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Saving_Throw}saving throws{/g} against charm and emotions.\nThe incense smoke's area automatically suppresses (but does not dispel) any morale bonuses granted by the {g|SpellsRage}rage{/g} {g|Encyclopedia:Spell}spell{/g}, and also interrupts an already active nonmagical rage effect, like barbarian rage, and negates the creature's ability to enter a rage.",
+        "ruRU": "Союзник, находящийся под влиянием {g|LC_CenserBurner}кадильницы{/g} диакона, получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов эмоций и очарования.\nБлаговонный дым автоматически подавляет (но не рассеивает) любые бонусы морали от {g|Encyclopedia:Spell}заклинания{/g} {g|SpellsRage}ярость{/g}, а также прерывает любую уже начавшуюся ярость (например, ярость варвара) и лишает существо возможности впадать в ярость.",
         "ProcessTemplates": false
     },
     {
@@ -145,44 +157,20 @@
     },
     {
         "Key": "BlessedIncenseSelector.Description",
-        "enGB": "The deacon can bless the censer burner's incense with the power of his domain, which grants ally powers or weakens foes. At 4th level and every three levels thereafter, the deacon can select a blessing allowed by his deity.",
-        "ruRU": "Диакон может освятить сотворенный кадильницей дым силой своего домейна, чтобы усилить союзников и ослабить врагов. На 4 уровне и каждые три уровня после этого диакон может выбрать освящение, дозволенное его божеством.",
+        "enGB": "The deacon can bless the {g|LC_CenserBurner}censer burner's{/g} incense smoke with the power of his deity, which grants ally powers or weakens foes. At 4th level and every three levels thereafter, the deacon can select a blessing allowed by his deity.",
+        "ruRU": "Диакон может освятить сотворенный {g|LC_CenserBurner}кадильницей{/g} благовонный дым силой своего божества, чтобы усилить союзников и ослабить врагов. На 4 уровне и каждые три уровня после этого диакон может выбрать освящение, дозволенное его божеством.",
         "ProcessTemplates": false
     },
     {
-        "Key": "IncenseInsufionFeature.Name",
-        "enGB": "Incense Insufion",
+        "Key": "IncenseInfusionFeature.Name",
+        "enGB": "Incense Infusion",
         "ruRU": "Насыщение благовония",
         "ProcessTemplates": false
     },
     {
-        "Key": "IncenseInsufionFeature.Description",
-        "enGB": "At 10th level, instead of selecting a new blessing incense, the deacon can infuse one of his already selected blessings again to increase its power.",
+        "Key": "IncenseInfusionFeature.Description",
+        "enGB": "At 10th level, instead of selecting a new blessed incense, the deacon can infuse one of his already selected blessings to increase its power.",
         "ruRU": "Начиная с 10 уровня, вместо выбора нового освященного благовония, диакон может насытить одно из уже имеющихся, чтобы увеличить его силу.",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "CenserBurnerMoveFeature.Name",
-        "enGB": "Censer Burner (Move Action)",
-        "ruRU": "Кадильница (сопутствующее действие)",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "CenserBurnerMoveFeature.Description",
-        "enGB": "At 7th level, a deacon use censer burner as a {g|Encyclopedia:Move_Action}move action{/g} instead of a {g|Encyclopedia:Standard_Actions}standard action{/g}.",
-        "ruRU": "Начиная с 7 уровня диакон может использовать свою кадильницу, совершив сопутствующее действие.",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "CenserBurnerSwiftFeature.Name",
-        "enGB": "Censer Burner (Swift Action)",
-        "ruRU": "Кадильница (быстрое действие)",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "CenserBurnerSwiftFeature.Description",
-        "enGB": "At 13th level, a deacon use censer burner as a {g|Encyclopedia:Swift_Action}swift action{/g}.",
-        "ruRU": "Начиная с 13 уровня диакон может использовать свою кадильницу, совершив быстрое действие.",
         "ProcessTemplates": false
     },
     {
@@ -193,1064 +181,1082 @@
     },
     {
         "Key": "FogOfWarFeature.Description",
-        "enGB": "At 20th level, an affected ally can treat his level as his {g|Encyclopedia:BAB}base attack bonus{/g}, and the weapon in his hand deals {g|Encyclopedia:Damage}damage{/g} as if it were one {g|Encyclopedia:Size}size{/g} category larger.",
-        "ruRU": "Начиная с 20 уровня, союзник, находящийся под влиянием кадильницы, может использовать свой уровень как свой {g|Encyclopedia:BAB}базовый модификатор атаки{/g}. Кроме того, оружие в руках союзника наносит {g|Encyclopedia:Damage}урон{/g} так, как если бы оно было на однин {g|Encyclopedia:Size}размер{/g} больше.",
+        "enGB": "At 20th level, an ally affected by {g|LC_CenserBurner}censer burner{/g} incense can treat his level as his {g|Encyclopedia:BAB}base attack bonus{/g}, and the weapon in his hand deals {g|Encyclopedia:Damage}damage{/g} as if it were one {g|Encyclopedia:Size}size{/g} category larger.",
+        "ruRU": "Начиная с 20 уровня, союзник, находящийся под влиянием {g|LC_CenserBurner}кадильницы{/g}, может использовать свой уровень как свой {g|Encyclopedia:BAB}базовый модификатор атаки{/g}. Кроме того, оружие в руках союзника наносит {g|Encyclopedia:Damage}урон{/g} так, как если бы оно было на один {g|Encyclopedia:Size}размер{/g} больше.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ObsequialKindleDeaconFeature.Name",
-        "enGB": "Obsequial Kindle (Deacon)",
-        "ruRU": "Погребальное пламя (Диакон)",
+        "Key": "ObsequialKindleFeature.Name",
+        "enGB": "Obsequial Kindle",
+        "ruRU": "Погребальное пламя",
         "ProcessTemplates": false
     },
     {
-        "Key": "ObsequialKindleDeaconFeature.Description",
-        "enGB": "Whenever the deacon reduces at least one enemy creature to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, he restores 3 {g|Encyclopedia:Combat_Round}rounds{/g} of his censer burner's daily uses at the end of the combat.",
-        "ruRU": "Всякий раз, когда диакон опускает {g|Encyclopedia:HP}здоровье{/g} хотя бы одного врага до 0 или ниже, он восстанавливает 3 {g|Encyclopedia:Combat_Round}раунда{/g} использования кадильницы после окончания сражения.",
+        "Key": "ObsequialKindleFeature.Description",
+        "enGB": "When the deacon reduces at least one enemy to 0 or fewer hit points in combat, he restores 3 {g|Encyclopedia:Combat_Round}rounds{/g} of his {g|LC_CenserBurner}censer burner's{/g} daily uses at the end of the combat. His censer burner's daily uses cannot go higher than their normal maximum.",
+        "ruRU": "Всякий раз, когда диакон опускает {g|Encyclopedia:HP}здоровье{/g} хотя бы одного врага до 0 или ниже, он восстанавливает 3 {g|Encyclopedia:Combat_Round}раунда{/g} использования {g|LC_CenserBurner}кадильницы{/g} после окончания сражения. Восстановленные таким образом использования кадильницы не могут превысить обычный дневной максимум.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ObsequialKindleIncenseSynthesizerFeature.Name",
-        "enGB": "Obsequial Kindle (Incense Synthesizer)",
-        "ruRU": "Погребальное пламя (Создатель благовоний)",
+        "Key": "ObsequialKindleBuff.Description",
+        "enGB": "The deacon will restore 3 {g|Encyclopedia:Combat_Round}rounds{/g} of his censer burner's daily uses at the end of the combat.",
+        "ruRU": "Диакон восстановит 3 {g|Encyclopedia:Combat_Round}раунда{/g} использования кадильницы после окончания сражения.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ObsequialKindleIncenseSynthesizerFeature.Description",
-        "enGB": "Whenever the incense synthesizer reduces at least one enemy creature to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, he restores 3 {g|Encyclopedia:Combat_Round}rounds{/g} of his incense fog's daily uses at the end of the combat.",
-        "ruRU": "Всякий раз, когда создатель благовоний опускает {g|Encyclopedia:HP}здоровье{/g} хотя бы одного врага до 0 или ниже, он восстанавливает 3 {g|Encyclopedia:Combat_Round}раунда{/g} использования благовонного тумана после окончания сражения.",
+        "Key": "SwiftIgnitionFeature.Name",
+        "enGB": "Swift Ignition",
+        "ruRU": "Быстрое зажигание",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpossibleIncenseSelector.Name",
+        "Key": "SwiftIgnitionFeature.Description",
+        "enGB": "You can ignite {g|LC_CenserBurner}censer burner{/g} as a {g|Encyclopedia:Swift_Action}swift action{/g}.",
+        "ruRU": "Вы можете разжечь свою {g|LC_CenserBurner}кадильницу{/g} совершив {g|Encyclopedia:Swift_Action}быстрое действие{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ExtraIncenseFeature.Name",
+        "enGB": "Extra Incense",
+        "ruRU": "Дополнительные благовония",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ExtraIncenseFeature.Description",
+        "enGB": "You can ignite {g|LC_CenserBurner}censer burner{/g} for 6 additional {g|Encyclopedia:Combat_Round}rounds{/g} per day.",
+        "ruRU": "Вы можете разжечь свою {g|LC_CenserBurner}кадильницу{/g} на дополнительные 6 {g|Encyclopedia:Combat_Round}раундов{/g} в день.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ImpossibleIncenseSelection.Name",
         "enGB": "Impossible Incense",
         "ruRU": "Невозможное благовоние",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpossibleIncenseSelector.Description",
-        "enGB": "The deacon blesses his incense with the power of a domain not granted by his deity. At 10th level, this incense's power increases as if the deacon had selected an infusion for it.",
-        "ruRU": "Диакон освящает свое благовоние силой домейна, не дарованного его божеством, игнорируя все требования этого домейна. Начиная с 10 уровня, сила этого благовония увеличивается, как если бы диакон насытил его.",
+        "Key": "ImpossibleIncenseSelection.Description",
+        "enGB": "The deacon can bless the {g|LC_CenserBurner}censer burner's{/g} incense smoke with a power not usually granted by his deity. At 10th level, this incense's power increases as if the deacon had selected an {g|LC_IncenseInfusion}infusion{/g} for it.",
+        "ruRU": "Диакон может освятить сотворенный {g|LC_CenserBurner}кадильницей{/g} благовонный дым силой, обычно недоступной его божеству. Начиная с 10 уровня, сила этого благовония увеличивается, как если бы диакон {g|LC_IncenseInfusion}насытил{/g} его.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SparklingFumeMinorFeature.Name",
+        "Key": "AirBlessedIncenseMinorFeature.Name",
         "enGB": "Sparkling Fume",
         "ruRU": "Искрящийся дым",
         "ProcessTemplates": false
     },
     {
-        "Key": "SparklingFumeMinorFeature.Description",
+        "Key": "AirBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}electricity damage{/g} with each strike.",
         "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона электричеством{/g} при успешном попадании.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SparklingFumeMajorFeature.Name",
+        "Key": "AirBlessedIncenseMajorFeature.Name",
         "enGB": "Sparkling Fume, Infused",
         "ruRU": "Искрящийся дым, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "SparklingFumeMajorFeature.Description",
+        "Key": "AirBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}electricity damage{/g} with each strike. In addition, the ally gains electricity {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
-        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона электричеством{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к электричеству, равную 10 + уровень каппелана.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона электричеством{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к электричеству, равную 10 + уровень капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SavageBreathMinorFeature.Name",
+        "Key": "AnimalBlessedIncenseMinorFeature.Name",
         "enGB": "Savage Breath",
         "ruRU": "Дикое дыхание",
         "ProcessTemplates": false
     },
     {
-        "Key": "SavageBreathMinorFeature.Description",
+        "Key": "AnimalBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's first weapon {g|Encyclopedia:Attack}attack{/g} in every {g|Encyclopedia:Combat_Round}round{/g}, if it hits, makes the enemy bleed for {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage}damage{/g} each round.",
         "ruRU": "Под влиянием этого благовония первая {g|Encyclopedia:Attack}атака{/g} оружием союзника в каждом {g|Encyclopedia:Combat_Round}раунде{/g} при попадании заставляет врага истекать кровью, получая {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage}урона{/g} в раунд.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SavageBreathMajorFeature.Name",
+        "Key": "AnimalBlessedIncenseMajorFeature.Name",
         "enGB": "Savage Breath, Infused",
         "ruRU": "Дикое дыхание, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "SavageBreathMajorFeature.Description",
+        "Key": "AnimalBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's first weapon {g|Encyclopedia:Attack}attack{/g} in every {g|Encyclopedia:Combat_Round}round{/g}, if it hits, makes the enemy bleed for {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Damage}damage{/g} each round. In addition, the ally gains the {g|FeaturePounce}pounce{/g} {g|Encyclopedia:Special_Abilities}special ability{/g}, allowing them to make a full attack at the end of a charge.",
         "ruRU": "Под влиянием этого благовония первая {g|Encyclopedia:Attack}атака{/g} оружием союзника в каждом {g|Encyclopedia:Combat_Round}раунде{/g} при попадании заставляет врага истекать кровью, получая {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Damage}урона{/g} в раунд. Кроме того, союзник получает {g|Encyclopedia:Special_Abilities}особую способность{/g} {g|FeaturePounce}наскок{/g}, позволяющую ему совершить полную атаку с разбега.",
         "ProcessTemplates": false
     },
     {
-        "Key": "PulverizedSteelMinorFeature.Name",
+        "Key": "ArtificeBlessedIncenseMinorFeature.Name",
         "enGB": "Pulverized Steel",
         "ruRU": "Измельченная сталь",
         "ProcessTemplates": false
     },
     {
-        "Key": "PulverizedSteelMinorFeature.Description",
+        "Key": "ArtificeBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's {g|Encyclopedia:Damage_Reduction}damage reduction{/g} increases by 2/—.",
         "ruRU": "Под влиянием этого благовония {g|Encyclopedia:Damage_Reduction}снижение урона{/g} союзника увеличивается на 2/—.",
         "ProcessTemplates": false
     },
     {
-        "Key": "PulverizedSteelMajorFeature.Name",
+        "Key": "ArtificeBlessedIncenseMajorFeature.Name",
         "enGB": "Pulverized Steel, Infused",
         "ruRU": "Измельченная сталь, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "PulverizedSteelMajorFeature.Description",
+        "Key": "ArtificeBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's {g|Encyclopedia:Damage_Reduction}damage reduction{/g} increases by 5/—.",
         "ruRU": "Под влиянием этого благовония {g|Encyclopedia:Damage_Reduction}снижение урона{/g} союзника увеличивается на 5/—.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChaosEmbraceMinorFeature.Name",
+        "Key": "ChaosBlessedIncenseMinorFeature.Name",
         "enGB": "Chaos Embrace",
-        "ruRU": "Обьятия хаоса",
+        "ruRU": "Объятия хаоса",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChaosEmbraceMinorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}lawful{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}законопослушные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "ChaosBlessedIncenseMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}lawful{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}законопослушные{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChaosEmbraceMajorFeature.Name",
+        "Key": "ChaosBlessedIncenseMajorFeature.Name",
         "enGB": "Chaos Embrace, Infused",
-        "ruRU": "Обьятия хаоса, насыщенные",
+        "ruRU": "Объятия хаоса, насыщенные",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChaosEmbraceMajorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}lawful{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}законопослушные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "ChaosBlessedIncenseMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}lawful{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}законопослушные{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "AlluringMistMinorFeature.Name",
+        "Key": "CharmBlessedIncenseMinorFeature.Name",
         "enGB": "Alluring Mist",
-        "ruRU": "Влекущие марево",
+        "ruRU": "Влекущее марево",
         "ProcessTemplates": false
     },
     {
-        "Key": "AlluringMistMinorFeature.Description",
-        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Charisma}Charisma{/g}. An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against mind-affecting effects.",
-        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Charisma}Харизме{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против воздействующих на разум эффектов.",
+        "Key": "CharmBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Charisma}Charisma{/g}. An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against charm effects.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Charisma}Харизме{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов очарования.",
         "ProcessTemplates": false
     },
     {
-        "Key": "AlluringMistMajorFeature.Name",
+        "Key": "CharmBlessedIncenseMajorFeature.Name",
         "enGB": "Alluring Mist, Infused",
-        "ruRU": "Влекущие марево, настоянное",
+        "ruRU": "Влекущее марево, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "AlluringMistMajorFeature.Description",
-        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Charisma}Charisma{/g}. An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against mind-affecting effects.",
-        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Charisma}Харизме{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против воздействующих на разум эффектов.",
+        "Key": "CharmBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Charisma}Charisma{/g}. An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against charm effects.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Charisma}Харизме{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов очарования.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FocusingFogMinorFeature.Name",
-        "enGB": "Focusing Fog",
-        "ruRU": "Концентрирующий туман",
+        "Key": "CommunityBlessedIncenseMinorFeature.Name",
+        "enGB": "Gale Wind",
+        "ruRU": "Попутный ветер",
         "ProcessTemplates": false
     },
     {
-        "Key": "FocusingFogMinorFeature.Description",
+        "Key": "CommunityBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with ranged weapons.",
         "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} дистанционным оружием.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FocusingFogMajorFeature.Name",
-        "enGB": "Focusing Fog, Infused",
-        "ruRU": "Концентрирующий туман, настоянный",
+        "Key": "CommunityBlessedIncenseMajorFeature.Name",
+        "enGB": "Gale Wind, Infused",
+        "ruRU": "Попутный ветер, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "FocusingFogMajorFeature.Description",
+        "Key": "CommunityBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with ranged weapons.",
         "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} дистанционным оружием.",
         "ProcessTemplates": false
     },
     {
-        "Key": "GloomveilMinorFeature.Name",
+        "Key": "DarknessBlessedIncenseMinorFeature.Name",
         "enGB": "Gloomveil",
         "ruRU": "Мрачная завеса",
         "ProcessTemplates": false
     },
     {
-        "Key": "GloomveilMinorFeature.Description",
+        "Key": "DarknessBlessedIncenseMinorFeature.Description",
         "enGB": "Enemy {g|Encyclopedia:Attack}attacks{/g} against an affected ally have a 15% chance to miss.",
         "ruRU": "Вражеские {g|Encyclopedia:Attack}атаки{/g} по союзнику, находящемуся под эффектом этого благовония, имеют 15% вероятность промаха.",
         "ProcessTemplates": false
     },
     {
-        "Key": "GloomveilMajorFeature.Name",
+        "Key": "DarknessBlessedIncenseMajorFeature.Name",
         "enGB": "Gloomveil, Infused",
-        "ruRU": "Мрачная завеса, настоянная",
+        "ruRU": "Мрачная завеса, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "GloomveilMajorFeature.Description",
+        "Key": "DarknessBlessedIncenseMajorFeature.Description",
         "enGB": "Enemy {g|Encyclopedia:Attack}attacks{/g} against an affected ally have a 30% chance to miss.",
         "ruRU": "Вражеские {g|Encyclopedia:Attack}атаки{/g} по союзнику, находящемуся под эффектом этого благовония, имеют 30% вероятность промаха.",
         "ProcessTemplates": false
     },
     {
-        "Key": "PerditionHazeMinorFeature.Name",
+        "Key": "DeathBlessedIncenseMinorFeature.Name",
         "enGB": "Perdition Haze",
         "ruRU": "Губительная дымка",
         "ProcessTemplates": false
     },
     {
-        "Key": "PerditionHazeMinorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "DeathBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against death spells and magical death effects. An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on saving throws against fear effects.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против заклинаний и магических эффектов смерти. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к спасброскам против страха.",
         "ProcessTemplates": false
     },
     {
-        "Key": "PerditionHazeMajorFeature.Name",
+        "Key": "DeathBlessedIncenseMajorFeature.Name",
         "enGB": "Perdition Haze, Infused",
-        "ruRU": "Губительная дымка, настоянная",
+        "ruRU": "Губительная дымка, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "PerditionHazeMajorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "DeathBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against death spells and magical death effects. An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on saving throws against fear effects.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против заклинаний и магических эффектов смерти. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к спасброскам против страха.",
         "ProcessTemplates": false
     },
     {
-        "Key": "WreckingCloudMinorFeature.Name",
+        "Key": "DestructionBlessedIncenseMinorFeature.Name",
         "enGB": "Wrecking Cloud",
         "ruRU": "Разрушительное облако",
         "ProcessTemplates": false
     },
     {
-        "Key": "WreckingCloudMinorFeature.Description",
+        "Key": "DestructionBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Damage}damage rolls{/g}.",
         "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Damage}броскам на урон{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "WreckingCloudMajorFeature.Name",
+        "Key": "DestructionBlessedIncenseMajorFeature.Name",
         "enGB": "Wrecking Cloud, Infused",
-        "ruRU": "Разрушительное облако, настоянное",
+        "ruRU": "Разрушительное облако, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "WreckingCloudMajorFeature.Description",
+        "Key": "DestructionBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Damage}damage rolls{/g}.",
         "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Damage}броскам на урон{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "СausticFumeMinorFeature.Name",
+        "Key": "EarthBlessedIncenseMinorFeature.Name",
         "enGB": "Caustic Fume",
         "ruRU": "Едкий пар",
         "ProcessTemplates": false
     },
     {
-        "Key": "СausticFumeMinorFeature.Description",
+        "Key": "EarthBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}acid damage{/g} with each strike.",
         "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона кислотой{/g} при успешном попадании.",
         "ProcessTemplates": false
     },
     {
-        "Key": "СausticFumeMajorFeature.Name",
+        "Key": "EarthBlessedIncenseMajorFeature.Name",
         "enGB": "Caustic Fume, Infused",
-        "ruRU": "Едкий пар, настоянный",
+        "ruRU": "Едкий пар, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "СausticFumeMajorFeature.Description",
+        "Key": "EarthBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}acid damage{/g} with each strike. In addition, the ally gains acid {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
-        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона кислотой{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к кислоте, равную 10 + уровень каппелана.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона кислотой{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к кислоте, равную 10 + уровень капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SinisterGraspMinorFeature.Name",
+        "Key": "EvilBlessedIncenseMinorFeature.Name",
         "enGB": "Sinister Grasp",
         "ruRU": "Зловещая хватка",
         "ProcessTemplates": false
     },
     {
-        "Key": "SinisterGraspMinorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}good{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}добрые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "EvilBlessedIncenseMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}good{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}добрые{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SinisterGraspMajorFeature.Name",
+        "Key": "EvilBlessedIncenseMajorFeature.Name",
         "enGB": "Sinister Grasp, Infused",
-        "ruRU": "Зловещая хватка, настоянная",
+        "ruRU": "Зловещая хватка, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "SinisterGraspMajorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}good{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}добрые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "EvilBlessedIncenseMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}good{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}добрые{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "BlazingShroudMinorFeature.Name",
+        "Key": "FireBlessedIncenseMinorFeature.Name",
         "enGB": "Blazing Shroud",
         "ruRU": "Пылающий саван",
         "ProcessTemplates": false
     },
     {
-        "Key": "BlazingShroudMinorFeature.Description",
+        "Key": "FireBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}fire damage{/g} with each strike.",
         "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона огнем{/g} при успешном попадании.",
         "ProcessTemplates": false
     },
     {
-        "Key": "BlazingShroudMajorFeature.Name",
+        "Key": "FireBlessedIncenseMajorFeature.Name",
         "enGB": "Blazing Shroud, Infused",
-        "ruRU": "Пылающий саван, настоянный",
+        "ruRU": "Пылающий саван, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "BlazingShroudMajorFeature.Description",
+        "Key": "FireBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}fire damage{/g} with each strike. In addition, the ally gains fire {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
-        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона огнем{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к огню, равную 10 + уровень каппелана.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона огнем{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к огню, равную 10 + уровень капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "WhiteSmokeMinorFeature.Name",
+        "Key": "GloryBlessedIncenseMinorFeature.Name",
         "enGB": "White Smoke",
         "ruRU": "Белая пелена",
         "ProcessTemplates": false
     },
     {
-        "Key": "WhiteSmokeMinorFeature.Description",
+        "Key": "GloryBlessedIncenseMinorFeature.Description",
         "enGB": "An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Attack}attack rolls{/g}.",
         "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к {g|Encyclopedia:Attack}броскам на попадание{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "WhiteSmokeMajorFeature.Name",
+        "Key": "GloryBlessedIncenseMajorFeature.Name",
         "enGB": "White Smoke, Infused",
-        "ruRU": "Белая пелена, настоянная",
+        "ruRU": "Белая пелена, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "WhiteSmokeMajorFeature.Description",
+        "Key": "GloryBlessedIncenseMajorFeature.Description",
         "enGB": "An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Attack}attack rolls{/g}.",
         "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к {g|Encyclopedia:Attack}броскам на попадание{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "VirtuousGraspMinorFeature.Name",
+        "Key": "GoodBlessedIncenseMinorFeature.Name",
         "enGB": "Virtuous Grasp",
         "ruRU": "Объятия добродетели",
         "ProcessTemplates": false
     },
     {
-        "Key": "VirtuousGraspMinorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}evil{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}злые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "GoodBlessedIncenseMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}evil{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}злые{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "VirtuousGraspMajorFeature.Name",
+        "Key": "GoodBlessedIncenseMajorFeature.Name",
         "enGB": "Virtuous Grasp, Infused",
-        "ruRU": "Объятия добродетели, настоянные",
+        "ruRU": "Объятия добродетели, насыщенные",
         "ProcessTemplates": false
     },
     {
-        "Key": "VirtuousGraspMajorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}evil{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}злые{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "GoodBlessedIncenseMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}evil{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}злые{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "LifeDewMinorFeature.Name",
+        "Key": "HealingBlessedIncenseMinorFeature.Name",
         "enGB": "Life Dew",
         "ruRU": "Живительная роса",
         "ProcessTemplates": false
     },
     {
-        "Key": "LifeDewMinorFeature.Description",
+        "Key": "HealingBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally gains {g|Encyclopedia:Fast_Healing}fast healing{/g} 2.",
         "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Fast_Healing}быстрое исцеление{/g} 2.",
         "ProcessTemplates": false
     },
     {
-        "Key": "LifeDewMajorFeature.Name",
+        "Key": "HealingBlessedIncenseMajorFeature.Name",
         "enGB": "Life Dew, Infused",
-        "ruRU": "Живительная роса, настоянная",
+        "ruRU": "Живительная роса, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "LifeDewMajorFeature.Description",
-        "enGB": "An affected ally gains {g|Encyclopedia:Fast_Healing}fast healing{/g} equal to 2 + half the warpriest's level.",
-        "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Fast_Healing}быстрое исцеление{/g} равное 2 + половина уровня капеллана.",
+        "Key": "HealingBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally gains {g|Encyclopedia:Fast_Healing}fast healing{/g} equal to 1/2 the warpriest's level.",
+        "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Fast_Healing}быстрое исцеление{/g} равное половине уровня капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "VisionaryMistMinorFeature.Name",
-        "enGB": "Visionary Mist",
-        "ruRU": "Туман прозрения",
+        "Key": "KnowledgeBlessedIncenseMinorFeature.Name",
+        "enGB": "Focusing Fog",
+        "ruRU": "Концентрирующий туман",
         "ProcessTemplates": false
     },
     {
-        "Key": "VisionaryMistMinorFeature.Description",
+        "Key": "KnowledgeBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Intelligence}Intelligence{/g} and a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against disease.",
-        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Intelligence}Интеллекту{/g} и +2 алхимический бонус к спасброскам против болезней.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Intelligence}Интеллекту{/g} и +2 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против болезней.",
         "ProcessTemplates": false
     },
     {
-        "Key": "VisionaryMistMajorFeature.Name",
-        "enGB": "Visionary Mist, Infused",
-        "ruRU": "Туман прозрения, настоянный",
+        "Key": "KnowledgeBlessedIncenseMajorFeature.Name",
+        "enGB": "Focusing Fog, Infused",
+        "ruRU": "Концентрирующий туман, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "VisionaryMistMajorFeature.Description",
-        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Intelligence}Intelligence{/g} and a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against disease.",
-        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Intelligence}Интеллекту{/g} и +4 алхимический бонус к спасброскам против болезней.",
+        "Key": "KnowledgeBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Intelligence}Intelligence{/g} and a +4 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against disease.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Intelligence}Интеллекту{/g} и +4 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против болезней.",
         "ProcessTemplates": false
     },
     {
-        "Key": "JusticesEmbraceMinorFeature.Name",
-        "enGB": "Justice's Embrace",
+        "Key": "LawBlessedIncenseMinorFeature.Name",
+        "enGB": "Justice Embrace",
         "ruRU": "Объятия справедливости",
         "ProcessTemplates": false
     },
     {
-        "Key": "JusticesEmbraceMinorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}chaotic{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}хаотичные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "LawBlessedIncenseMinorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}chaotic{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}хаотичные{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "JusticesEmbraceMajorFeature.Name",
-        "enGB": "Justice's Embrace, Infused",
-        "ruRU": "Объятия справедливости, настоянные",
+        "Key": "LawBlessedIncenseMajorFeature.Name",
+        "enGB": "Justice Embrace, Infused",
+        "ruRU": "Объятия справедливости, насыщенные",
         "ProcessTemplates": false
     },
     {
-        "Key": "JusticesEmbraceMajorFeature.Description",
-        "enGB": "Any {g|Encyclopedia:Alignment}chaotic{/g} enemy creatures who enter the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom }Wisdom{/g} modifier.",
-        "ruRU": "Любые {g|Encyclopedia:Alignment}хаотичные{/g} существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
+        "Key": "LawBlessedIncenseMajorFeature.Description",
+        "enGB": "Any {g|Encyclopedia:Alignment}chaotic{/g} enemy creatures who enter the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become alchemically {g|ConditionNauseated}nauseated{/g} and alchemically {g|ConditionSickened}sickened{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. If the save succeeds, the creature is only alchemically sickened for 1d4 rounds. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier.",
+        "ruRU": "Любые {g|Encyclopedia:Alignment}хаотичные{/g} существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или окажутся алхимически {g|ConditionSickened}дезориентированы{/g} и мучимы {g|ConditionNauseated}тошнотой{/g} в течение {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раундов{/g}. При успехе спасброска существо лишь оказывается алхимически дезориентировано на 1d4 раунда. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "CleansingShroudMinorFeature.Name",
+        "Key": "LiberationBlessedIncenseMinorFeature.Name",
         "enGB": "Cleansing Shroud",
         "ruRU": "Очищающий дым",
         "ProcessTemplates": false
     },
     {
-        "Key": "CleansingShroudMinorFeature.Description",
+        "Key": "LiberationBlessedIncenseMinorFeature.Description",
         "enGB": "Whenever an affected ally attempts a dispel {g|Encyclopedia:Check}check{/g} based on his {g|Encyclopedia:Caster_Level}caster level{/g}, he gains a +1 {g|Encyclopedia:Bonus}bonus{/g} on the check. In addition, the ally receives a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against movement-impairing effects.",
-        "ruRU": "Всякий раз когда союзник под влиянием этого благовония совершает {g|Encyclopedia:Check}проверку{/g} рассеивания, зависящую от его {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, он получает к этой проверке {g|Encyclopedia:Bonus}бонус{/g} +1. Кроме того, союзник получает +2 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов ограничивающих движение.",
+        "ruRU": "Всякий раз, когда союзник под влиянием этого благовония совершает {g|Encyclopedia:Check}проверку{/g} рассеивания, зависящую от его {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, он получает к этой проверке {g|Encyclopedia:Bonus}бонус{/g} +1. Кроме того, союзник получает +2 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов, ограничивающих движение.",
         "ProcessTemplates": false
     },
     {
-        "Key": "CleansingShroudMajorFeature.Name",
+        "Key": "LiberationBlessedIncenseMajorFeature.Name",
         "enGB": "Cleansing Shroud, Infused",
-        "ruRU": "Очищающий дым, настоянный",
+        "ruRU": "Очищающий дым, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "CleansingShroudMajorFeature.Description",
+        "Key": "LiberationBlessedIncenseMajorFeature.Description",
         "enGB": "Whenever an affected ally attempts a dispel {g|Encyclopedia:Check}check{/g} based on his {g|Encyclopedia:Caster_Level}caster level{/g}, he gains a +2 {g|Encyclopedia:Bonus}bonus{/g} on the check. In addition, the ally receives a +4 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against movement-impairing effects.",
-        "ruRU": "Всякий раз когда союзник под влиянием этого благовония совершает {g|Encyclopedia:Check}проверку{/g} рассеивания, зависящую от его {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, он получает к этой проверке {g|Encyclopedia:Bonus}бонус{/g} +2. Кроме того, союзник получает +4 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов ограничивающих движение.",
+        "ruRU": "Всякий раз, когда союзник под влиянием этого благовония совершает {g|Encyclopedia:Check}проверку{/g} рассеивания, зависящую от его {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, он получает к этой проверке {g|Encyclopedia:Bonus}бонус{/g} +2. Кроме того, союзник получает +4 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против эффектов, ограничивающих движение.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FatefulWhispersMinorFeature.Name",
+        "Key": "LuckBlessedIncenseMinorFeature.Name",
         "enGB": "Fateful Whispers",
         "ruRU": "Предвестный шепот",
         "ProcessTemplates": false
     },
     {
-        "Key": "FatefulWhispersMinorFeature.Description",
-        "enGB": "Once per {g|Encyclopedia:Combat_Round}round{/g}, an affected ally can {g|Encyclopedia:Dice}reroll{/g} any {g|Encyclopedia:Saving_Throw}saving throw{/g} or {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g} and take the better result.",
-        "ruRU": "Под влиянием этого благовония союзник может один раз за {g|Encyclopedia:Combat_Round}раунд{/g} {g|Encyclopedia:Dice}перебросить{/g} любую {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Skills}навыка{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g} и выбрать из двух результатов лучший.",
+        "Key": "LuckBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally has a 1 in 3 chance to {g|Encyclopedia:Dice}reroll{/g} any {g|Encyclopedia:Saving_Throw}saving throw{/g} or {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g} and take the better result.",
+        "ruRU": "Под влиянием этого благовония у союзника есть шанс 1 к 3 {g|Encyclopedia:Dice}перебросить{/g} любую {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Skills}навыка{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g} и выбрать из двух результатов лучший.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FatefulWhispersMajorFeature.Name",
+        "Key": "LuckBlessedIncenseMajorFeature.Name",
         "enGB": "Fateful Whispers, Infused",
-        "ruRU": "Предвестный шепот, настоянный",
+        "ruRU": "Предвестный шепот, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "FatefulWhispersMajorFeature.Description",
-        "enGB": "An affected ally can {g|Encyclopedia:Dice}reroll{/g} any {g|Encyclopedia:Saving_Throw}saving throw{/g} or {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g} and take the better result.",
-        "ruRU": "Под влиянием этого благовония союзник может {g|Encyclopedia:Dice}перебросить{/g} любую {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Skills}навыка{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g} и выбрать из двух результатов лучший.",
+        "Key": "LuckBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally has a 1 in 3 chance to {g|Encyclopedia:Dice}reroll{/g} any {g|Encyclopedia:Saving_Throw}saving throw{/g}, {g|Encyclopedia:Attack}attack roll{/g}, or {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}check{/g} and take the better result.",
+        "ruRU": "Под влиянием этого благовония у союзника есть шанс 1 к 3 {g|Encyclopedia:Dice}перебросить{/g} любую {g|Encyclopedia:Check}проверку{/g} {g|Encyclopedia:Skills}навыка{/g}, {g|Encyclopedia:Attack}бросок на попадание{/g} или {g|Encyclopedia:Saving_Throw}спасбросок{/g} и выбрать из двух результатов лучший.",
         "ProcessTemplates": false
     },
     {
-        "Key": "CrimsonShroudMinorFeature.Name",
+        "Key": "MadnessBlessedIncenseMinorFeature.Name",
         "enGB": "Crimson Shroud",
         "ruRU": "Багровая завеса",
         "ProcessTemplates": false
     },
     {
-        "Key": "CrimsonShroudMinorFeature.Description",
-        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionConfusion}confused{/g} for one {g|Encyclopedia:Combat_Round}round{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
-        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся в {g|ConditionConfusion}замешательстве{/g} на один раунд. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "Key": "MadnessBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally gains a bite attack. If used as part of a full attack, the bite attack is made at full {g|Encyclopedia:BAB}base attack bonus{/g} –5. If the bite hits, it deals {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Damage}damage{/g} (1d4 if {g|Encyclopedia:Size}Small{/g}) plus the {g|Encyclopedia:Strength}Strength{/g} modifier.",
+        "ruRU": "Под влиянием этого благовония союзник получает атаку укусом. Если укус наносится как часть полной атаки, то проверка попадания делается с {g|Encyclopedia:BAB}базовым модификатором атаки{/g} –5. При попадании укус наносит {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage}урона{/g} (1d4, если союзник небольшого {g|Encyclopedia:Size}размера{/g}) плюс модификатор {g|Encyclopedia:Strength}Силы{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "CrimsonShroudMajorFeature.Name",
+        "Key": "MadnessBlessedIncenseMajorFeature.Name",
         "enGB": "Crimson Shroud, Infused",
         "ruRU": "Багровая завеса, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "CrimsonShroudMajorFeature.Description",
-        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionConfusion}confused{/g} for {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
-        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся в {g|ConditionConfusion}замешательстве{/g} на {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "Key": "MadnessBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally gains a bite attack. If used as part of a full attack, the bite attack is made at full {g|Encyclopedia:BAB}base attack bonus{/g} –5. If the bite hits, it deals {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Damage}damage{/g} (2d4 if {g|Encyclopedia:Size}Small{/g}) plus the {g|Encyclopedia:Strength}Strength{/g} modifier.",
+        "ruRU": "Под влиянием этого благовония союзник получает атаку укусом. Если укус наносится как часть полной атаки, то проверка попадания делается с {g|Encyclopedia:BAB}базовым модификатором атаки{/g} –5. При попадании укус наносит {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Damage}урона{/g} (2d4, если союзник небольшого {g|Encyclopedia:Size}размера{/g}) плюс модификатор {g|Encyclopedia:Strength}Силы{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "EtherealMistMinorFeature.Name",
+        "Key": "MagicBlessedIncenseMinorFeature.Name",
         "enGB": "Ethereal Mist",
         "ruRU": "Эфирный туман",
         "ProcessTemplates": false
     },
     {
-        "Key": "EtherealMistMinorFeature.Description",
-        "enGB": "An affected ally receives a +1 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Caster_Level}caster level{/g} {g|Encyclopedia:Check}checks{/g} made to overcome a creature's {g|Encyclopedia:Spell_Resistance}spell resistance{/g}.",
-        "ruRU": "Под влиянием этого благовония союзник получает +1 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, чтобы преодолеть {g|Encyclopedia:Spell_Resistance}устойчивость к магии{/g}.",
+        "Key": "MagicBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally gains {g|Encyclopedia:Spell_Resistance}spell resistance{/g} 10, and a +1 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Caster_Level}caster level{/g} {g|Encyclopedia:Check}checks{/g} made to overcome a creature's spell resistance.",
+        "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Spell_Resistance}устойчивость к магии{/g} 10 и +1 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, чтобы преодолеть устойчивость к магии.",
         "ProcessTemplates": false
     },
     {
-        "Key": "EtherealMistMajorFeature.Name",
+        "Key": "MagicBlessedIncenseMajorFeature.Name",
         "enGB": "Ethereal Mist, Infused",
-        "ruRU": "Эфирный туман, настоянный",
+        "ruRU": "Эфирный туман, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "EtherealMistMajorFeature.Description",
-        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Caster_Level}caster level{/g} {g|Encyclopedia:Check}checks{/g} made to overcome a creature's {g|Encyclopedia:Spell_Resistance}spell resistance{/g}.",
-        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, чтобы преодолеть {g|Encyclopedia:Spell_Resistance}устойчивость к магии{/g}.",
+        "Key": "MagicBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally gains {g|Encyclopedia:Spell_Resistance}spell resistance{/g} equal to 10 + the warpriest's level, and a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Caster_Level}caster level{/g} {g|Encyclopedia:Check}checks{/g} made to overcome a creature's spell resistance.",
+        "ruRU": "Под влиянием этого благовония союзник получает {g|Encyclopedia:Spell_Resistance}устойчивость к магии{/g} 10 + уровень капеллана и +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Caster_Level}уровня заклинателя{/g}, чтобы преодолеть устойчивость к магии.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ShiningCloudMinorFeature.Name",
+        "Key": "NobilityBlessedIncenseMinorFeature.Name",
         "enGB": "Shining Cloud",
         "ruRU": "Сияющее облако",
         "ProcessTemplates": false
     },
     {
-        "Key": "ShiningCloudMinorFeature.Description",
-        "enGB": "An affected ally receives a +1 alchemical {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g}. In addition, the ally receives a +2 alchemical bonus on {g|Encyclopedia:Check}checks{/g} to disarm.",
-        "ruRU": "Под влиянием этого благовония союзник получает +1 алхимический {g|Encyclopedia:Bonus}бонус{/g} ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Кроме того, союзник получает +2 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g}, совершаемым для разоружения противника.",
+        "Key": "NobilityBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally receives a +1 alchemical {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g} and a +2 alchemical bonus on {g|Encyclopedia:Check}checks{/g} to disarm.",
+        "ruRU": "Под влиянием этого благовония союзник получает +1 алхимический {g|Encyclopedia:Bonus}бонус{/g} ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g} и +2 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g}, совершаемым для разоружения противника.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ShiningCloudMajorFeature.Name",
+        "Key": "NobilityBlessedIncenseMajorFeature.Name",
         "enGB": "Shining Cloud, Infused",
-        "ruRU": "Сияющее облако, настоянное",
+        "ruRU": "Сияющее облако, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "ShiningCloudMajorFeature.Description",
-        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g}. In addition, the ally receives a +4 alchemical bonus on {g|Encyclopedia:Check}checks{/g} to disarm.",
-        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Кроме того, союзник получает +4 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g}, совершаемым для разоружения противника.",
+        "Key": "NobilityBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Saving_Throw}saving throws{/g} and a +4 alchemical bonus on {g|Encyclopedia:Check}checks{/g} to disarm.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g} и +4 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g}, совершаемым для разоружения противника.",
         "ProcessTemplates": false
     },
     {
-        "Key": "BrambleMistMinorFeature.Name",
+        "Key": "PlantBlessedIncenseMinorFeature.Name",
         "enGB": "Bramble Mist",
         "ruRU": "Колючий дым",
         "ProcessTemplates": false
     },
     {
-        "Key": "BrambleMistMinorFeature.Description",
+        "Key": "PlantBlessedIncenseMinorFeature.Description",
         "enGB": "Any creature striking an affected ally with a melee weapon, an {g|Encyclopedia:UnarmedAttack}unarmed strike{/g}, or a {g|Encyclopedia:NaturalAttack}natural weapon{/g} takes {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Damage_Type}piercing damage{/g}.",
         "ruRU": "Любое существо, попадающее по союзнику, находящемуся под влиянием этого благовония, оружием ближнего боя, {g|Encyclopedia:UnarmedAttack}атакой без оружия{/g} или {g|Encyclopedia:NaturalAttack}естественным оружием{/g}, получает {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage_Type}колющего урона{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "BrambleMistMajorFeature.Name",
+        "Key": "PlantBlessedIncenseMajorFeature.Name",
         "enGB": "Bramble Mist, Infused",
-        "ruRU": "Колючий дым, настоянный",
+        "ruRU": "Колючий дым, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "BrambleMistMajorFeature.Description",
+        "Key": "PlantBlessedIncenseMajorFeature.Description",
         "enGB": "Any creature striking an affected ally with a melee weapon, an {g|Encyclopedia:UnarmedAttack}unarmed strike{/g}, or a {g|Encyclopedia:NaturalAttack}natural weapon{/g} takes {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Damage_Type}piercing damage{/g} +1 for every two warpriest levels.",
-        "ruRU": "Любое существо, попадающее по союзнику, находящемуся под влиянием этого благовония, оружием ближнего боя, {g|Encyclopedia:UnarmedAttack}атакой без оружия{/g} или {g|Encyclopedia:NaturalAttack}естественным оружием{/g}, получает {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage_Type}колющего урона{/g} +1 за каждые два уровня каппелана.",
+        "ruRU": "Любое существо, попадающее по союзнику, находящемуся под влиянием этого благовония, оружием ближнего боя, {g|Encyclopedia:UnarmedAttack}атакой без оружия{/g} или {g|Encyclopedia:NaturalAttack}естественным оружием{/g}, получает {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Damage_Type}колющего урона{/g} +1 за каждые два уровня капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpenetrableFogMinorFeature.Name",
+        "Key": "ProtectionBlessedIncenseMinorFeature.Name",
         "enGB": "Impenetrable Fog",
         "ruRU": "Непроницаемая мгла",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpenetrableFogMinorFeature.Description",
+        "Key": "ProtectionBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}.",
         "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Armor_Class}защите{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpenetrableFogMajorFeature.Name",
+        "Key": "ProtectionBlessedIncenseMajorFeature.Name",
         "enGB": "Impenetrable Fog, Infused",
-        "ruRU": "Непроницаемая мгла, настоянная",
+        "ruRU": "Непроницаемая мгла, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpenetrableFogMajorFeature.Description",
+        "Key": "ProtectionBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Armor_Class}Armor Class{/g}.",
         "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Armor_Class}защите{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerenityVeilMinorFeature.Name",
+        "Key": "ReposeBlessedIncenseMinorFeature.Name",
         "enGB": "Serenity Veil",
         "ruRU": "Окутывающее спокойствие",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerenityVeilMinorFeature.Description",
-        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Wisdom}Wisdom{/g} and a +2 bonus on {g|Encyclopedia:Concentration}concentration{/g} {g|Encyclopedia:Check}checks{/g}.",
-        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Wisdom}Мудрости{/g} и +2 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Concentration}концентрации{/g}.",
+        "Key": "ReposeBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Wisdom}Wisdom{/g} and a +1 bonus on {g|Encyclopedia:Concentration}concentration{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Wisdom}Мудрости{/g} и +1 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Concentration}концентрации{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerenityVeilMajorFeature.Name",
+        "Key": "ReposeBlessedIncenseMajorFeature.Name",
         "enGB": "Serenity Veil, Infused",
-        "ruRU": "Окутывающее спокойствие, настоянное",
+        "ruRU": "Окутывающее спокойствие, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerenityVeilMajorFeature.Description",
-        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Wisdom}Wisdom{/g} and a +4 bonus on {g|Encyclopedia:Concentration}concentration{/g} {g|Encyclopedia:Check}checks{/g}.",
-        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Wisdom}Мудрости{/g} и +4 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Concentration}концентрации{/g}.",
+        "Key": "ReposeBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Wisdom}Wisdom{/g} and a +2 bonus on {g|Encyclopedia:Concentration}concentration{/g} {g|Encyclopedia:Check}checks{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Wisdom}Мудрости{/g} и +2 алхимический бонус к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Concentration}концентрации{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "RunicDustMinorFeature.Name",
+        "Key": "RuneBlessedIncenseMinorFeature.Name",
         "enGB": "Runic Dust",
         "ruRU": "Руническая пыль",
         "ProcessTemplates": false
     },
     {
-        "Key": "RunicDustMinorFeature.Description",
+        "Key": "RuneBlessedIncenseMinorFeature.Description",
         "enGB": "An affected enemy suffers a –1 alchemical {g|Encyclopedia:Penalty}penalty{/g} to all {g|Encyclopedia:Saving_Throw}saving throws{/g}. An affected ally receives a +2 alchemical bonus to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} against trip.",
-        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –1 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:CMD}защите против боевых маневров{/g} при попытке сбить его с ног.",
+        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –1 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:CMD}защите против боевых маневров{/g} при попытке сбить его с ног.",
         "ProcessTemplates": false
     },
     {
-        "Key": "RunicDustMajorFeature.Name",
+        "Key": "RuneBlessedIncenseMajorFeature.Name",
         "enGB": "Runic Dust, Infused",
-        "ruRU": "Руническая пыль, настоянная",
+        "ruRU": "Руническая пыль, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "RunicDustMajorFeature.Description",
-        "enGB": "An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} to all {g|Encyclopedia:Saving_Throw}saving throws{/g}. An affected ally receives a +2 alchemical bonus to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} against trip.",
-        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:CMD}защите против боевых маневров{/g} при попытке сбить его с ног.",
+        "Key": "RuneBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} to all {g|Encyclopedia:Saving_Throw}saving throws{/g}. An affected ally receives a +4 alchemical bonus to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} against trip.",
+        "ruRU": "Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g}. Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:CMD}защите против боевых маневров{/g} при попытке сбить его с ног.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerpentsBreathMinorFeature.Name",
+        "Key": "ScalykindBlessedIncenseMinorFeature.Name",
         "enGB": "Serpent's Breath",
         "ruRU": "Язвенное веяние",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerpentsBreathMinorFeature.Description",
+        "Key": "ScalykindBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Dexterity}Dexterity{/g}. An affected enemy suffers a –2 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against poison.",
-        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:Dexterity}Ловкости{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –1 к спасброскам против ядов.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Dexterity}Ловкости{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против ядов.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerpentsBreathMajorFeature.Name",
+        "Key": "ScalykindBlessedIncenseMajorFeature.Name",
         "enGB": "Serpent's Breath, Infused",
-        "ruRU": "Язвенное веяние, настоянное",
+        "ruRU": "Язвенное веяние, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerpentsBreathMajorFeature.Description",
+        "Key": "ScalykindBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Dexterity}Dexterity{/g}. An affected enemy suffers a –4 alchemical {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against poison.",
-        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}bonus{/g} к {g|Encyclopedia:Dexterity}Ловкости{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –2 к спасброскам против ядов.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Dexterity}Ловкости{/g}. Под влиянием этого благовония враг получает алхимический {g|Encyclopedia:Penalty}штраф{/g} –4 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против ядов.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SurgeOfMightMinorFeature.Name",
+        "Key": "StrengthBlessedIncenseMinorFeature.Name",
         "enGB": "Surge of Might",
         "ruRU": "Прилив сил",
         "ProcessTemplates": false
     },
     {
-        "Key": "SurgeOfMightMinorFeature.Description",
+        "Key": "StrengthBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Strength}Strength{/g} and a +2 alchemical bonus on bull rush {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g}.",
         "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Strength}Силе{/g} и +2 алхимический бонус к {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Combat_Maneuvers}боевого маневра{/g} таран.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SurgeOfMightMajorFeature.Name",
+        "Key": "StrengthBlessedIncenseMajorFeature.Name",
         "enGB": "Surge of Might, Infused",
-        "ruRU": "Прилив сил, настоянный",
+        "ruRU": "Прилив сил, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "SurgeOfMightMajorFeature.Description",
+        "Key": "StrengthBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Strength}Strength{/g} and a +4 alchemical bonus on bull rush {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g}.",
         "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Strength}Силе{/g} и +4 алхимический бонус к {g|Encyclopedia:Check}проверке{/g} {g|Encyclopedia:Combat_Maneuvers}боевого маневра{/g} таран.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ScorchingFumeMinorFeature.Name",
+        "Key": "SunBlessedIncenseMinorFeature.Name",
         "enGB": "Scorching Fume",
         "ruRU": "Обжигающий дым",
         "ProcessTemplates": false
     },
     {
-        "Key": "ScorchingFumeMinorFeature.Description",
-        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionBlind}blind{/g} for one {g|Encyclopedia:Combat_Round}round{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
-        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся {g|ConditionBlind}ослеплены{/g} на один раунд. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "Key": "SunBlessedIncenseMinorFeature.Description",
+        "enGB": "Any enemy creature that enters the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionBlind}blind{/g} for one {g|Encyclopedia:Combat_Round}round{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "Любые вражеские существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся {g|ConditionBlind}ослеплены{/g} на один раунд. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ScorchingFumeMajorFeature.Name",
+        "Key": "SunBlessedIncenseMajorFeature.Name",
         "enGB": "Scorching Fume, Infused",
-        "ruRU": "",
+        "ruRU": "Обжигающий дым, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "ScorchingFumeMajorFeature.Description",
-        "enGB": "Any enemy creature that enters the area of the censer burner must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionBlind}blind{/g} for {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + half the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
-        "ruRU": "Любые вражеские существа, оказавшиеся в области действия кадильницы, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся {g|ConditionBlind}ослеплены{/g} на {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
+        "Key": "SunBlessedIncenseMajorFeature.Description",
+        "enGB": "Any enemy creature that enters the area of the {g|LC_CenserBurner}censer burner{/g} must succeed on a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or become {g|ConditionBlind}blind{/g} for {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the warpriest's level + the warpriest's {g|Encyclopedia:Wisdom}Wisdom{/g} modifier. A creature can be affected by this effect only once per 24 hours.",
+        "ruRU": "Любые вражеские существа, оказавшиеся в области действия {g|LC_CenserBurner}кадильницы{/g}, должны совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, иначе окажутся {g|ConditionBlind}ослеплены{/g} на {g|Encyclopedia:Dice}1d3{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня капеллана + модификатор {g|Encyclopedia:Wisdom}Мудрости{/g} капеллана. Существо может подвергнуться воздействию этого эффекта только один раз в течение 24 часов.",
         "ProcessTemplates": false
     },
     {
-        "Key": "GaleBreezeMinorFeature.Name",
-        "enGB": "Gale Breeze",
-        "ruRU": "",
+        "Key": "TravelBlessedIncenseMinorFeature.Name",
+        "enGB": "Second Wind",
+        "ruRU": "Второе дыхание",
         "ProcessTemplates": false
     },
     {
-        "Key": "GaleBreezeMinorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "TravelBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Constitution}Constitution{/g} and a +2 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against {g|ConditionFatigued}fatigue{/g} and {g|ConditionExhausted}exhaustion{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Constitution}Выносливости{/g} и +2 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против {g|ConditionFatigued}утомления{/g} и {g|ConditionExhausted}бессилия{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "GaleBreezeMajorFeature.Name",
-        "enGB": "Gale Breeze, Infused",
-        "ruRU": "",
+        "Key": "TravelBlessedIncenseMajorFeature.Name",
+        "enGB": "Second Wind, Infused",
+        "ruRU": "Второе дыхание, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "GaleBreezeMajorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "TravelBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} to {g|Encyclopedia:Constitution}Constitution{/g} and a +4 alchemical bonus on {g|Encyclopedia:Saving_Throw}saving throws{/g} against {g|ConditionFatigued}fatigue{/g} and {g|ConditionExhausted}exhaustion{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Constitution}Выносливости{/g} и +4 алхимический бонус к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против {g|ConditionFatigued}утомления{/g} и {g|ConditionExhausted}бессилия{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "DeceptiveFogMinorFeature.Name",
-        "enGB": "Deceptive Fog",
-        "ruRU": "Лживый дым",
+        "Key": "TrickeryBlessedIncenseMinorFeature.Name",
+        "enGB": "Visionary Fog",
+        "ruRU": "Туман предвидения",
         "ProcessTemplates": false
     },
     {
-        "Key": "DeceptiveFogMinorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "TrickeryBlessedIncenseMinorFeature.Description",
+        "enGB": "An affected ally can make one additional {g|Encyclopedia:Attack_Of_Opportunity}attack of opportunity{/g} each {g|Encyclopedia:Combat_Round}round{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник может совершать на одну дополнительную {g|Encyclopedia:Attack_Of_Opportunity}внеочередную атаку{/g} больше каждый {g|Encyclopedia:Combat_Round}раунд{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "DeceptiveFogMajorFeature.Name",
-        "enGB": "Deceptive Fog, Infused",
-        "ruRU": "Лживый дым, настоянный",
+        "Key": "TrickeryBlessedIncenseMajorFeature.Name",
+        "enGB": "Visionary Fog, Infused",
+        "ruRU": "Туман предвидения, насыщенный",
         "ProcessTemplates": false
     },
     {
-        "Key": "DeceptiveFogMajorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "TrickeryBlessedIncenseMajorFeature.Description",
+        "enGB": "An affected ally can make two additional {g|Encyclopedia:Attack_Of_Opportunity}attacks of opportunity{/g} each {g|Encyclopedia:Combat_Round}round{/g}.",
+        "ruRU": "Под влиянием этого благовония союзник может совершать на две дополнительные {g|Encyclopedia:Attack_Of_Opportunity}внеочередные атаки{/g} больше каждый {g|Encyclopedia:Combat_Round}раунд{/g}.",
         "ProcessTemplates": false
     },
     {
-        "Key": "WarboundMistMinorFeature.Name",
+        "Key": "WarBlessedIncenseMinorFeature.Name",
         "enGB": "Warbound Mist",
         "ruRU": "Облако дерзости",
         "ProcessTemplates": false
     },
     {
-        "Key": "WarboundMistMinorFeature.Description",
+        "Key": "WarBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally receives a +2 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with melee weapons.",
         "ruRU": "Под влиянием этого благовония союзник получает +2 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} оружием ближнего боя.",
         "ProcessTemplates": false
     },
     {
-        "Key": "WarboundMistMajorFeature.Name",
+        "Key": "WarBlessedIncenseMajorFeature.Name",
         "enGB": "Warbound Mist, Infused",
-        "ruRU": "Облако дерзости, укрепленный",
+        "ruRU": "Облако дерзости, насыщенное",
         "ProcessTemplates": false
     },
     {
-        "Key": "WarboundMistMajorFeature.Description",
+        "Key": "WarBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally receives a +4 alchemical {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with melee weapons.",
         "ruRU": "Под влиянием этого благовония союзник получает +4 алхимический {g|Encyclopedia:Bonus}бонус{/g} к {g|Encyclopedia:Attack}броскам на попадание{/g} оружием ближнего боя.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChillingFumeMinorFeature.Name",
+        "Key": "WaterBlessedIncenseMinorFeature.Name",
         "enGB": "Chilling Fume",
         "ruRU": "Леденящие испарения",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChillingFumeMinorFeature.Description",
+        "Key": "WaterBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}cold damage{/g} with each strike.",
         "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона холодом{/g} при успешном попадании.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChillingFumeMajorFeature.Name",
+        "Key": "WaterBlessedIncenseMajorFeature.Name",
         "enGB": "Chilling Fume, Infused",
-        "ruRU": "Леденящие испарения, усилинные",
+        "ruRU": "Леденящие испарения, насыщенные",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChillingFumeMajorFeature.Description",
+        "Key": "WaterBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}cold damage{/g} with each strike. In addition, the ally gains cold {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
-        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона холодом{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к холоду, равную 10 + уровень каппелана.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона холодом{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к холоду, равную 10 + уровень капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ThunderVeilMinorFeature.Name",
+        "Key": "WeatherBlessedIncenseMinorFeature.Name",
         "enGB": "Thunder Veil",
-        "ruRU": "",
+        "ruRU": "Громовая завеса",
         "ProcessTemplates": false
     },
     {
-        "Key": "ThunderVeilMinorFeature.Description",
+        "Key": "WeatherBlessedIncenseMinorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}1d6{/g} points of {g|Encyclopedia:Energy_Damage}sonic damage{/g} with each strike.",
         "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}1d6{/g} {g|Encyclopedia:Energy_Damage}урона звуком{/g} при успешном попадании.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ThunderVeilMajorFeature.Name",
+        "Key": "WeatherBlessedIncenseMajorFeature.Name",
         "enGB": "Thunder Veil, Infused",
-        "ruRU": "",
+        "ruRU": "Громовая завеса, насыщенная",
         "ProcessTemplates": false
     },
     {
-        "Key": "ThunderVeilMajorFeature.Description",
+        "Key": "WeatherBlessedIncenseMajorFeature.Description",
         "enGB": "An affected ally's weapon attack deals an additional {g|Encyclopedia:Dice}2d6{/g} points of {g|Encyclopedia:Energy_Damage}sonic damage{/g} with each strike. In addition, the ally gains sonic {g|Encyclopedia:Energy_Resistance}resistance{/g} equal to 10 + the warpriest's level.",
-        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона звуком{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к звуку, равную 10 + уровень каппелана.",
+        "ruRU": "Под влиянием этого благовония атаки оружием союзника наносят дополнительно {g|Encyclopedia:Dice}2d6{/g} {g|Encyclopedia:Energy_Damage}урона звуком{/g} при успешном попадании. Кроме того, союзник получает {g|Encyclopedia:Energy_Resistance}устойчивость{/g} к звуку, равную 10 + уровень капеллана.",
         "ProcessTemplates": false
     },
     {
-        "Key": "SparklingFumeProgression.Name",
-        "enGB": "Air Domain — Incense",
-        "ruRU": "Домейн Воздуха — Благовоние",
+        "Key": "AirBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Air",
+        "ruRU": "Освященное благовоние — Воздух",
         "ProcessTemplates": false
     },
     {
-        "Key": "SavageBreathProgression.Name",
-        "enGB": "Animal Domain — Incense",
-        "ruRU": "Домейн Животных — Благовоние",
+        "Key": "AnimalBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Animal",
+        "ruRU": "Освященное благовоние — Животное",
         "ProcessTemplates": false
     },
     {
-        "Key": "PulverizedSteelProgression.Name",
-        "enGB": "Artifice Domain — Incense",
-        "ruRU": "Домейн Созидания — Благовоние",
+        "Key": "ArtificeBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Artifice",
+        "ruRU": "Освященное благовоние — Созидание",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChaosEmbraceProgression.Name",
-        "enGB": "Chaos Domain — Incense",
-        "ruRU": "Домейн Хаоса — Благовоние",
+        "Key": "ChaosBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Chaos",
+        "ruRU": "Освященное благовоние — Хаос",
         "ProcessTemplates": false
     },
     {
-        "Key": "AlluringMistProgression.Name",
-        "enGB": "Charm Domain — Incense",
-        "ruRU": "Домейн Обольщения — Благовоние",
+        "Key": "CharmBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Charm",
+        "ruRU": "Освященное благовоние — Обольщение",
         "ProcessTemplates": false
     },
     {
-        "Key": "FocusingFogProgression.Name",
-        "enGB": "Community Domain — Incense",
-        "ruRU": "Домейн Товарищества — Благовоние",
+        "Key": "CommunityBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Community",
+        "ruRU": "Освященное благовоние — Товарищество",
         "ProcessTemplates": false
     },
     {
-        "Key": "GloomveilProgression.Name",
-        "enGB": "Darkness Domain — Incense",
-        "ruRU": "Домейн Тьмы — Благовоние",
+        "Key": "DarknessBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Darkness",
+        "ruRU": "Освященное благовоние — Тьма",
         "ProcessTemplates": false
     },
     {
-        "Key": "PerditionHazeProgression.Name",
-        "enGB": "Death Domain — Incense",
-        "ruRU": "Домейн Смерти — Благовоние",
+        "Key": "DeathBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Death",
+        "ruRU": "Освященное благовоние — Смерть",
         "ProcessTemplates": false
     },
     {
-        "Key": "WreckingCloudProgression.Name",
-        "enGB": "Destruction Domain — Incense",
-        "ruRU": "Домейн Разрушения — Благовоние",
+        "Key": "DestructionBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Destruction",
+        "ruRU": "Освященное благовоние — Уничтожение",
         "ProcessTemplates": false
     },
     {
-        "Key": "CausticFumeProgression.Name",
-        "enGB": "Earth Domain — Incense",
-        "ruRU": "Домейн Земли — Благовоние",
+        "Key": "EarthBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Earth",
+        "ruRU": "Освященное благовоние — Земля",
         "ProcessTemplates": false
     },
     {
-        "Key": "SinisterGraspProgression.Name",
-        "enGB": "Evil Domain — Incense",
-        "ruRU": "Домейн Зла — Благовоние",
+        "Key": "EvilBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Evil",
+        "ruRU": "Освященное благовоние — Зло",
         "ProcessTemplates": false
     },
     {
-        "Key": "BlazingShroudProgression.Name",
-        "enGB": "Fire Domain — Incense",
-        "ruRU": "Домейн Огня — Благовоние",
+        "Key": "FireBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Fire",
+        "ruRU": "Освященное благовоние — Огонь",
         "ProcessTemplates": false
     },
     {
-        "Key": "WhiteSmokeProgression.Name",
-        "enGB": "Glory Domain — Incense",
-        "ruRU": "Домейн Славы — Благовоние",
+        "Key": "GloryBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Glory",
+        "ruRU": "Освященное благовоние — Слава",
         "ProcessTemplates": false
     },
     {
-        "Key": "VirtuousGraspProgression.Name",
-        "enGB": "Good Domain — Incense",
-        "ruRU": "Домейн Добра — Благовоние",
+        "Key": "GoodBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Good",
+        "ruRU": "Освященное благовоние — Добро",
         "ProcessTemplates": false
     },
     {
-        "Key": "LifeDewProgression.Name",
-        "enGB": "Healing Domain — Incense",
-        "ruRU": "Домейн Лечения — Благовоние",
+        "Key": "HealingBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Healing",
+        "ruRU": "Освященное благовоние — Лечение",
         "ProcessTemplates": false
     },
     {
-        "Key": "VisionaryMistProgression.Name",
-        "enGB": "Knowledge Domain — Incense",
-        "ruRU": "Домейн Знания — Благовоние",
+        "Key": "KnowledgeBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Knowledge",
+        "ruRU": "Освященное благовоние — Знание",
         "ProcessTemplates": false
     },
     {
-        "Key": "JusticesEmbraceProgression.Name",
-        "enGB": "Law Domain — Incense",
-        "ruRU": "Домейн Закона — Благовоние",
+        "Key": "LawBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Law",
+        "ruRU": "Освященное благовоние — Закон",
         "ProcessTemplates": false
     },
     {
-        "Key": "CleansingShroudProgression.Name",
-        "enGB": "Liberation Domain — Incense",
-        "ruRU": "Домейн Освобождения — Благовоние",
+        "Key": "LiberationBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Liberation",
+        "ruRU": "Освященное благовоние — Освобождение",
         "ProcessTemplates": false
     },
     {
-        "Key": "FatefulWhispersProgression.Name",
-        "enGB": "Luck Domain — Incense",
-        "ruRU": "Домейн Удачи — Благовоние",
+        "Key": "LuckBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Luck",
+        "ruRU": "Освященное благовоние — Удача",
         "ProcessTemplates": false
     },
     {
-        "Key": "CrimsonShroudProgression.Name",
-        "enGB": "Madness Domain — Incense",
-        "ruRU": "Домейн Безумия — Благовоние",
+        "Key": "MadnessBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Madness",
+        "ruRU": "Освященное благовоние — Безумие",
         "ProcessTemplates": false
     },
     {
-        "Key": "EtherealMistProgression.Name",
-        "enGB": "Magic Domain — Incense",
-        "ruRU": "Домейн Магии — Благовоние",
+        "Key": "MagicBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Magic",
+        "ruRU": "Освященное благовоние — Магия",
         "ProcessTemplates": false
     },
     {
-        "Key": "ShiningCloudProgression.Name",
-        "enGB": "Nobility Domain — Incense",
-        "ruRU": "Домейн Благородства — Благовоние",
+        "Key": "NobilityBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Nobility",
+        "ruRU": "Освященное благовоние — Благородство",
         "ProcessTemplates": false
     },
     {
-        "Key": "BrambleMistProgression.Name",
-        "enGB": "Plant Domain — Incense",
-        "ruRU": "Домейн Растений — Благовоние",
+        "Key": "PlantBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Plant",
+        "ruRU": "Освященное благовоние — Растения",
         "ProcessTemplates": false
     },
     {
-        "Key": "ImpenetrableFogProgression.Name",
-        "enGB": "Protection Domain — Incense",
-        "ruRU": "Домейн Защиты — Благовоние",
+        "Key": "ProtectionBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Protection",
+        "ruRU": "Освященное благовоние — Защита",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerenityVeilProgression.Name",
-        "enGB": "Repose Domain — Incense",
-        "ruRU": "Домейн Упокоения — Благовоние",
+        "Key": "ReposeBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Repose",
+        "ruRU": "Освященное благовоние — Успокоение",
         "ProcessTemplates": false
     },
     {
-        "Key": "RunicDustProgression.Name",
-        "enGB": "Rune Domain — Incense",
-        "ruRU": "Домейн Рун — Благовоние",
+        "Key": "RuneBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Rune",
+        "ruRU": "Освященное благовоние — Руны",
         "ProcessTemplates": false
     },
     {
-        "Key": "SerpentsBreathProgression.Name",
-        "enGB": "Scalykind Domain — Incense",
-        "ruRU": "Домейн Чешуи — Благовоние",
+        "Key": "ScalykindBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Scalykind",
+        "ruRU": "Освященное благовоние — Чешуя",
         "ProcessTemplates": false
     },
     {
-        "Key": "SurgeOfMightProgression.Name",
-        "enGB": "Strenght Domain — Incense",
-        "ruRU": "Домейн Силы — Благовоние",
+        "Key": "StrengthBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Strength",
+        "ruRU": "Освященное благовоние — Мощь",
         "ProcessTemplates": false
     },
     {
-        "Key": "ScorchingFumeProgression.Name",
-        "enGB": "Sun Domain — Incense",
-        "ruRU": "Домейн Солнца — Благовоние",
+        "Key": "SunBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Sun",
+        "ruRU": "Освященное благовоние — Солнце",
         "ProcessTemplates": false
     },
     {
-        "Key": "GaleBreezeProgression.Name",
-        "enGB": "Travel Domain — Incense",
-        "ruRU": "Домейн Путешествий — Благовоние",
+        "Key": "TravelBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Travel",
+        "ruRU": "Освященное благовоние — Путешествия",
         "ProcessTemplates": false
     },
     {
-        "Key": "DeceptiveFogProgression.Name",
-        "enGB": "Trickery Domain — Incense",
-        "ruRU": "Домейн Обмана — Благовоние",
+        "Key": "TrickeryBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Trickery",
+        "ruRU": "Освященное благовоние — Плутовство",
         "ProcessTemplates": false
     },
     {
-        "Key": "WarboundMistProgression.Name",
-        "enGB": "War Domain — Incense",
-        "ruRU": "Домейн Войны — Благовоние",
+        "Key": "WarBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — War",
+        "ruRU": "Освященное благовоние — Война",
         "ProcessTemplates": false
     },
     {
-        "Key": "ChillingFumeProgression.Name",
-        "enGB": "Water Domain — Incense",
-        "ruRU": "Домейн Воды — Благовоние",
+        "Key": "WaterBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Water",
+        "ruRU": "Освященное благовоние — Вода",
         "ProcessTemplates": false
     },
     {
-        "Key": "ThunderVeilProgression.Name",
-        "enGB": "Weather Domain — Incense",
-        "ruRU": "Домейн Погоды — Благовоние",
+        "Key": "WeatherBlessedIncenseProgression.Name",
+        "enGB": "Blessed Incense — Weather",
+        "ruRU": "Освященное благовоние — Погода",
         "ProcessTemplates": false
     },
     {
@@ -1712,7 +1718,7 @@
     {
         "Key": "CallOfTheAbyssFeature.Description",
         "enGB": "At 3rd level, a demonologist can expend 1 point from her arcane reservoir to cause all creatures conjured by her next summon demon {g|Encyclopedia:Spell}spell{/g} to enter a rage. If the demonologist has any rage powers, those rage powers also apply to the demons.",
-        "ruRU": "Начиная с 3 уровня, демонолог может потратить 1 очко из своего мистического резерва, чтобы демоны, призванные ее следующим {g|Encyclopedia:Spell}заклинанием{/g}, впали в ярость. Если у демонолога есть дары ярости, они также будут применены к этим демонам.",
+        "ruRU": "Начиная с 3 уровня, демонолог может потратить 1 очко из своего мистического резерва, чтобы демоны, призванные его следующим {g|Encyclopedia:Spell}заклинанием{/g}, впали в ярость. Если у демонолога есть дары ярости, они также будут применены к этим демонам.",
         "ProcessTemplates": false
     },
     {
@@ -1736,7 +1742,7 @@
     {
         "Key": "DemonologistExploitsSelection.Description",
         "enGB": "A demonologist can select a rage power in place of an arcane exploit. This does not grant her the ability to enter a rage, but any rage powers apply to summoned demons affected by the {g|LC_CallOfTheAbyss}call of the abyss{/g}.\nIf the demonologist has the ability to enter a rage from another source, she can use these rage powers while raging.\nThe demonologist uses her arcanist level level for the purpose of determining the effects of her rage powers, both for herself and for her summoned demons.",
-        "ruRU": "Демонолог может выбрать дар ярости вместо техники арканиста. Это не дает ей способности впадать в ярость, но все дары ярости применяются к любому призванному демону, находящемуся под действием способности {g|LC_CallOfTheAbyss}зов бездны{/g}.\nЕсли у демонолога есть способность впадать в ярость из другого источника, она может использовать эти дары во время ярости.\nДемонолог использует свой уровень арканиста для расчета параметров даров ярости как для себя, так и для призванных демонов.",
+        "ruRU": "Демонолог может выбрать дар ярости вместо техники арканиста. Это не дает ему способности впадать в ярость, но все дары ярости применяются к любому призванному демону, находящемуся под действием способности {g|LC_CallOfTheAbyss}зов бездны{/g}.\nЕсли у демонолога есть способность впадать в ярость из другого источника, он может использовать эти дары во время ярости.\nДемонолог использует свой уровень арканиста для расчета параметров даров ярости как для себя, так и для призванных демонов.",
         "ProcessTemplates": false
     },
     {
@@ -1748,7 +1754,7 @@
     {
         "Key": "HellsWhisperFeature.Description",
         "enGB": "A demonologist takes a –1 {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}Will saving throws{/g} for each demon currently under her control.\nWhenever a summoned demon under the demonologist's control is reduced to 0 or fewer {g|Encyclopedia:HP}hit points{/g}, the demonologist must succeed at a Will saving throw ({g|Encyclopedia:DC}DC{/g} 10 + the demon's {g|Encyclopedia:Hit_Dice}Hit Dice{/g}) or become {g|ConditionStaggered}staggered{/g} for 1 {g|Encyclopedia:Combat_Round}round{/g}. If the demonologist is {g|Encyclopedia:Alignment}good{/g}, she instead becomes {g|ConditionConfusion}confused{/g} for 1 round.",
-        "ruRU": "Демонолог получает {g|Encyclopedia:Penalty}штраф{/g} –1 к {g|Encyclopedia:Saving_Throw}спасброскам воли{/g} за каждого подконтрольного демона.\nВсякий раз, когда {g|Encyclopedia:HP}здоровье{/g} призванного демона опускается до 0 или ниже, демонолог должна сделать успешный спасбросок воли ({g|Encyclopedia:DC}сложность{/g} 10 + количество {g|Encyclopedia:Hit_Dice}костей здоровья{/g} падшего демона), иначе она окажется {g|ConditionStaggered}ошеломленной{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}. {g|Encyclopedia:Alignment}Добрый{/g} демонолог вместо этого оказывается в {g|ConditionConfusion}замешательстве{/g} на 1 раунд.",
+        "ruRU": "Демонолог получает {g|Encyclopedia:Penalty}штраф{/g} –1 к {g|Encyclopedia:Saving_Throw}спасброскам воли{/g} за каждого подконтрольного демона.\nВсякий раз, когда {g|Encyclopedia:HP}здоровье{/g} призванного демона опускается до 0 или ниже, демонолог должен совершить успешный спасбросок воли ({g|Encyclopedia:DC}сложность{/g} 10 + количество {g|Encyclopedia:Hit_Dice}костей здоровья{/g} падшего демона), иначе он окажется {g|ConditionStaggered}ошеломленным{/g} на 1 {g|Encyclopedia:Combat_Round}раунд{/g}. {g|Encyclopedia:Alignment}Добрый{/g} демонолог вместо этого оказывается в {g|ConditionConfusion}замешательстве{/g} на 1 раунд.",
         "ProcessTemplates": false
     },
     {
@@ -1795,68 +1801,80 @@
     },
     {
         "Key": "FalseKnightArchetype.Description",
-        "enGB": "Not every order is destined for prosperity — some are dissolved, disbanded, or destroyed outright, stripping every knight of their title. Yet for certain cavaliers, purpose survives where formality does not. As the last living vessel of the order's oath and the memory of fallen companions, they make it their life's mission to restore the fallen order to its former glory.",
-        "ruRU": "",
+        "enGB": "Not every order is destined for prosperity — some are dissolved, disbanded, or destroyed outright, stripping every knight of their title. Yet for certain cavaliers, purpose survives where formality does not. As the last living vessel of the order's oath and the memory of fallen companions, they make it their life's mission to restore the fallen order to its former glory, even if in the eyes of others they are merely a false knight.",
+        "ruRU": "Не каждому ордену суждено процветать — некоторые оказываются распущены, упразднены или полностью уничтожены вместе со всеми рыцарями и их титулами. Но для некоторых кавалеров цель продолжает жить там, где формальность уже умерла. Будучи последним живым хранителем клятвы ордена и памяти о былых соратниках, они делают своей жизненной миссией возрождение павшего ордена в его былой славе, даже если в глазах других они — всего лишь лжерыцари.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FalseKnightTeamworkFeatSelection.Name",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "VersatileTacticsTeamworkFeatureSelection.Name",
+        "enGB": "Versatile Tactics — Teamwork Feat",
+        "ruRU": "Универсальная тактика — Командная черта",
         "ProcessTemplates": false
     },
     {
-        "Key": "FalseKnightTeamworkFeatSelection.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "VersatileTacticsTeamworkFeatureSelection.Description",
+        "enGB": "At 1nd level, and every four five thereafter, a false knight gains a bonus {g|Encyclopedia:Feat}feat{/g} in addition to those gained from normal advancement. This bonus feat must be selected from those listed as teamwork feats. The false knight must meet the prerequisites of the selected bonus feat.",
+        "ruRU": "Начиная с 1 уровня и за каждые 5 следующих уровней лжерыцарь получает дополнительную {g|Encyclopedia:Feat}черту{/g} вдобавок к тем, которые даются при обычном развитии. Эти дополнительные черты выбираются из списка командных черт. Лжерыцарь должен соответствовать требованиям выбираемых черт.",
         "ProcessTemplates": false
     },
     {
-        "Key": "ForbiddenRelicFeature.Name",
-        "enGB": "Forbidden Relic",
-        "ruRU": "Запретная реликвия",
+        "Key": "VersatileTacticsFeature.Name",
+        "enGB": "Versatile Tactics",
+        "ruRU": "Универсальная тактика",
         "ProcessTemplates": false
     },
     {
-        "Key": "ForbiddenRelicFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "VersatileTacticsFeature.Description",
+        "enGB": "A false knight can enter a cautious, abstracted state as a {g|Encyclopedia:Swift_Action}swift action{/g}. This state lasts for 1 minute. The false knight can use this ability once per day at 1st level, plus one additional time per day at 4th level and for every 4 levels thereafter.\nAll of the false knight's allies are treated as if they possessed the same teamwork {g|Encyclopedia:Feat}feats{/g} as the false knight for the purpose of determining whether the false knight receives a {g|Encyclopedia:Bonus}bonus{/g} from his teamwork feats. His allies do not receive any bonuses from these feats unless they actually possess the feats themselves. The allies' positioning and {g|Encyclopedia:CA_Types}actions{/g} must still meet the prerequisites listed in the teamwork feat for the false knight to receive the listed bonus.\nThe false knight gains a +1 competence bonus on {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g} and to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} for each teamwork feat he possesses.",
+        "ruRU": "Лжерыцарь может войти в состояние настороженной отрешенности в качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g}. Это состояние длится 1 минуту. Лжерыцарь может использовать эту способность один раз в день на 1 уровне, плюс один дополнительный раз в день на 4 уровне и за каждые 4 уровня после этого.\nДля определения преимуществ от командных {g|Encyclopedia:Feat}черт{/g} считается, что все союзники лжерыцаря имеют те же командные черты, что и он. Союзники не получают {g|Encyclopedia:Bonus}бонусов{/g}, если у них нет этих черт. Расположение и {g|Encyclopedia:CA_Types}действия{/g} союзников по-прежнему должны соответствовать требованиям, указанным в описании черты, чтобы лжерыцарь получил от них преимущества.\nЛжерыцарь получает бонус мастерства +1 к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Combat_Maneuvers}модификатора боевых маневров{/g} и к {g|Encyclopedia:CMD}защите от боевых маневров{/g} за каждую командную черту, которой он обладает.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VersatileTacticsAbility.Description",
+        "enGB": "All of the false knight's allies are treated as if they possessed the same teamwork {g|Encyclopedia:Feat}feats{/g} as the false knight for the purpose of determining whether the false knight receives a {g|Encyclopedia:Bonus}bonus{/g} from his teamwork feats.\nThe false knight gains a +1 competence bonus on {g|Encyclopedia:Combat_Maneuvers}combat maneuver{/g} {g|Encyclopedia:Check}checks{/g} and to {g|Encyclopedia:CMD}Combat Maneuver Defense{/g} for each teamwork feat he possesses.",
+        "ruRU": "Для определения преимуществ от командных {g|Encyclopedia:Feat}черт{/g} считается, что все союзники лжерыцаря имеют те же командные черты, что и он. Союзники не получают {g|Encyclopedia:Bonus}бонусов{/g}, если у них нет этих черт.\nЛжерыцарь получает бонус мастерства +1 к {g|Encyclopedia:Check}проверкам{/g} {g|Encyclopedia:Combat_Maneuvers}модификатора боевых маневров{/g} и к {g|Encyclopedia:CMD}защите от боевых маневров{/g} за каждую командную черту, которой он обладает.",
         "ProcessTemplates": false
     },
     {
         "Key": "ForgottenInsigniaFeature.Name",
         "enGB": "Forgotten Insignia",
-        "ruRU": "Забытая инсигния",
+        "ruRU": "Забытая эмблема",
         "ProcessTemplates": false
     },
     {
         "Key": "ForgottenInsigniaFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "enGB": "At 1st level, the display of the fallen order's insignia makes the opposition cautious. All enemies within 30 feet suffer a –2 morale {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Saving_Throw}saving throws{/g} against fear and a –1 morale penalty to {g|Encyclopedia:Armor_Class}Armor Class{/g}. At 8th level and again at 18th level, these penalties increase by –1.",
+        "ruRU": "Начиная с 1 уровня, демонстрация эмблемы падшего ордена заставляет противника проявлять осторожность. Все враги в радиусе 30 футов получают {g|Encyclopedia:Penalty}штраф{/g} боевого духа –2 к {g|Encyclopedia:Saving_Throw}спасброскам{/g} против страха и штраф боевого духа –1 к {g|Encyclopedia:Armor_Class}защите{/g}. На 8 и 18 уровнях эти штрафы увеличиваются на –1.",
         "ProcessTemplates": false
     },
     {
-        "Key": "LastOfAKindFeature.Name",
-        "enGB": "Last of a Kind",
-        "ruRU": "Последний из рода",
+        "Key": "ForbiddenInsigniaFeature.Name",
+        "enGB": "Forbidden Insignia",
+        "ruRU": "Запретная эмблема",
         "ProcessTemplates": false
     },
     {
-        "Key": "LastOfAKindFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "ForbiddenInsigniaFeature.Description",
+        "enGB": "At 14th level, a bearer of the fallen order's insignia is seen as an unstoppable force. All enemies within 30 feet suffer a –2 morale {g|Encyclopedia:Penalty}penalty{/g} on {g|Encyclopedia:Attack}attack rolls{/g} with melee weapon.",
+        "ruRU": "Начиная с 14 уровня, владелец эмблемы падшего ордена олицетворяет неудержимую силу. Все враги в радиусе 30 футов получают {g|Encyclopedia:Penalty}штраф{/g} боевого духа –2 к {g|Encyclopedia:Attack}броскам на попадание{/g} оружием ближнего боя.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FallenOrderFeature.Name",
+        "Key": "FallenOrderProgression.Name",
         "enGB": "Fallen Order",
         "ruRU": "Падший орден",
         "ProcessTemplates": false
     },
     {
-        "Key": "FallenOrderFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "FallenOrderProgression.Description",
+        "enGB": "A false knight does not select an order — instead, he counts as the last member of his fallen order.\nLast of his kind, the cavalier must be stoic and adaptive, clinging to the hope of restoring his fallen brotherhood.",
+        "ruRU": "Лжерыцарь не выбирает орден. Вместо этого он считается последним представителем своего падшего ордена.\nПоследний из своего рода, всадник должен сохранять стойкость и умение приспосабливаться, цепляясь за надежду возродить свое павшее братство.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "FallenOrderChallenge.Description",
+        "enGB": "Whenever a false knight issues a challenge, he receives a +1 competence {g|Encyclopedia:Bonus}bonus{/g} on {g|Encyclopedia:Attack}attack rolls{/g} against targets under fear effects. This bonus increases by 1 for every four levels the cavalier possesses.",
+        "ruRU": "Всякий раз, когда лжерыцарь бросает вызов, он получает {g|Encyclopedia:Bonus}бонус{/g} мастерства +1 к {g|Encyclopedia:Attack}броскам на попадание{/g} по цели своего вызова, если цель находится под действием эффектов страха. Этот бонус увеличивается на +1 за каждые четыре уровня всадника.",
         "ProcessTemplates": false
     },
     {
@@ -1867,8 +1885,8 @@
     },
     {
         "Key": "ImpostorFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "enGB": "At 2nd level, a false knight can select an ability that any other cavalier order grants at 2nd level.",
+        "ruRU": "На 2 уровне лжерыцарь может выбрать любую способность, предоставляемую другим орденом на 2 уровне.",
         "ProcessTemplates": false
     },
     {
@@ -1879,110 +1897,38 @@
     },
     {
         "Key": "RevenantFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "enGB": "At 8th level, whenever a false knight hits the target of his challenge for the first time, that creature must succeed at a {g|Encyclopedia:Saving_Throw}Will save{/g} or be affected by the {g|SpellsCrushingDespair}crushing despair{/g} spell effect for 1 minute. The save {g|Encyclopedia:DC}DC{/g} is equal to 10 + 1/2 the cavalier's level + his {g|Encyclopedia:Charisma}Charisma{/g} modifier.",
+        "ruRU": "Начиная с 8 уровня, первая атака лжерыцаря по цели своего вызова заставляет врага усомниться в своих намерениях. Существо должно совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок Воли{/g}, или оказаться под действием заклинания {g|SpellsCrushingDespair}сокрушительное отчаяние{/g} в течение 1 минуты.\n{g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня всадника + модификатор {g|Encyclopedia:Charisma}Харизмы{/g} всадника.",
         "ProcessTemplates": false
     },
     {
-        "Key": "UnyieldingDevotionAbility.Name",
+        "Key": "UnyieldingDevotionFeature.Name",
         "enGB": "Unyielding Devotion",
         "ruRU": "Неугасаемая преданность",
         "ProcessTemplates": false
     },
     {
-        "Key": "UnyieldingDevotionAbility.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "UnyieldingDevotionFeature.Description",
+        "enGB": "At 15th level, a false knight can summon the ghosts of three fallen members of his order to fight alongside him for 1 minute. The false knight can use this ability once per day, and one additional time at 20th level.",
+        "ruRU": "Начиная с 15 уровня, лжерыцарь может призвать трех призраков своих павших собратьев, которые будут сражаться на его стороне в течение 1 минуты. Лжерыцарь может использовать эту способность один раз в день и еще один дополнительный раз на 20 уровне.",
         "ProcessTemplates": false
     },
     {
-        "Key": "FallenKnightUnitBannerBearer.Name",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "FalseKnightUnitBannerBearer.Name",
+        "enGB": "Fallen Banner Bearer",
+        "ruRU": "Падший знамяносец",
         "ProcessTemplates": false
     },
     {
-        "Key": "FallenKnightUnitShortSword.Name",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "FalseKnightUnitShortSword.Name",
+        "enGB": "Fallen Duelist",
+        "ruRU": "Падший дуэлянт",
         "ProcessTemplates": false
     },
     {
-        "Key": "FallenKnightUnitSpear.Name",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "MageSlayerArchetype.Name",
-        "enGB": "Mage Slayer",
-        "ruRU": "Убийца магов",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "MageSlayerArchetype.Description",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "JawStrikeFeature.Name",
-        "enGB": "Jaw Strike",
-        "ruRU": "Удар в челюсть",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "JawStrikeFeature.Description",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "JawStrikeAbility.Name",
-        "enGB": "Jaw Strike",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "JawStrikeAbility.Description",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "JawStrikeUpgradeFeature.Name",
-        "enGB": "Jaw Strike – Upgrade",
-        "ruRU": "Удар в челюсть, Улучшенный",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "JawStrikeUpgradeFeature.Description",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "MindShatterFeature.Name",
-        "enGB": "Mind Shatter",
-        "ruRU": "Мозголом",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "MindShatterFeature.Description",
-        "enGB": "",
-        "ruRU": "",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "NeutralizerFeature.Name",
-        "enGB": "Neutralizer",
-        "ruRU": "Нейтрализатор",
-        "ProcessTemplates": false
-    },
-    {
-        "Key": "NeutralizerFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "Key": "FalseKnightUnitGreatsword.Name",
+        "enGB": "Fallen Highlander",
+        "ruRU": "Падший горец",
         "ProcessTemplates": false
     },
     {
@@ -2000,13 +1946,13 @@
     {
         "Key": "CodeOfLawsFeature.Name",
         "enGB": "Code of Laws",
-        "ruRU": "",
+        "ruRU": "Свод законов",
         "ProcessTemplates": false
     },
     {
         "Key": "CodeOfLawsFeature.Description",
-        "enGB": "",
-        "ruRU": "",
+        "enGB": "A magistrate receives a competence {g|Encyclopedia:Bonus}bonus{/g} on all {g|Encyclopedia:Persuasion}Persuasion{/g} {g|Encyclopedia:Skills}skill{/g} {g|Encyclopedia:Check}checks{/g} made for intimidation and {g|Encyclopedia:Knowledge_World}Knowledge (world){/g} checks equal to 1/2 his cavalier level (minimum +1).",
+        "ruRU": "Магистарт получает {g|Encyclopedia:Bonus}бонус{/g} мастерства ко всем {g|Encyclopedia:Check}проверкам{/g}  {g|Encyclopedia:Skills}навыка{/g} {g|Encyclopedia:Persuasion}Убеждение{/g}, совершаемым для устрашения, и всем проверкам навыка {g|Encyclopedia:Knowledge_World}Знания (Мир){/g}. Этот бонус равен половине уровня всадника (минимум +1).",
         "ProcessTemplates": false
     },
     {
@@ -2031,6 +1977,90 @@
         "Key": "CourtTrialFeature.Description",
         "enGB": "",
         "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ReprimandFeature.Name",
+        "enGB": "Reprimand",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "ReprimandFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VerdictFeature.Name",
+        "enGB": "Verdict",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "VerdictFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NeutralizerArchetype.Name",
+        "enGB": "Neutralizer",
+        "ruRU": "Нейтрализатор",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NeutralizerArchetype.Description",
+        "enGB": "Neutralizers specialize in tracking and executing targets that are under the heavy protection of their patrons or powerful magic.",
+        "ruRU": "Нейтрализаторы специализируются на отслеживании и уничтожении целей, находящихся под покровительством высших сил или могущественной магии.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CautiosStudyFeature.Name",
+        "enGB": "Cautious Study",
+        "ruRU": "Тщательное изучение",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "CautiosStudyFeature.Description",
+        "enGB": "A neutralizer can study an opponent he can see as a {g|Encyclopedia:Move_Action}move action{/g} to prepare for any resistance it may offer. The neutralizer then gains a +1 {g|Encyclopedia:Bonus}bonus{/g} on weapon {g|Encyclopedia:Attack}attack rolls{/g} against it, and a +1 bonus on all {g|Encyclopedia:Saving_Throw}saving throws{/g} against {g|Encyclopedia:Spell}spells{/g} and {g|Encyclopedia:Special_Abilities}spell-like abilities{/g} from the target.\nIf a neutralizer deals sneak attack damage to a target, he studies that target, allowing him to apply his studied target bonuses against that target.\nAt 5th, 10th, 15th, and 20th levels, the bonuses on weapon attack rolls and saving throws increase by 1.",
+        "ruRU": "Совершив {g|Encyclopedia:Move_Action}сопутствующее действие{/g}, нейтрализатор может изучить цель, которую видит, подготавливаясь к возможному сопротивлению. После этого он получает {g|Encyclopedia:Bonus}бонус{/g} +1 к {g|Encyclopedia:Attack}броскам на попадание{/g} против этой цели, и бонус +1 ко всем {g|Encyclopedia:Saving_Throw}спасброскам{/g} против {g|Encyclopedia:Spell}заклинаний{/g} и {g|Encyclopedia:Special_Abilities}псевдозаклинаний{/g}, совершаемых целью.\nЕсли персонаж наносит цели урон атакой исподтишка, он изучает эту цель, что позволяет ему применять против нее бонусы за исследованную цель.\nНа 5, 10, 15 и 20 уровнях бонусы к броскам на попадание и к спасброскам против изученной цели увеличиваются на 1.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeFeature.Name",
+        "enGB": "Jaw Strike",
+        "ruRU": "Удар в челюсть",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeFeature.Description",
+        "enGB": "At 3rd level, a neutralizer can make a single {g|Encyclopedia:UnarmedAttack}unarmed{/g} {g|Encyclopedia:Attack}attack{/g} as a {g|Encyclopedia:Standard_Actions}standard action{/g}. If this attack is delivered as part of a sneak attack, the target must succeed at a {g|Encyclopedia:Saving_Throw}Fortitude save{/g} or be struck {g|LC_Mute}mute{/g} for {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}rounds{/g}. The {g|Encyclopedia:DC}DC{/g} of this save is equal to 10 + 1/2 the slayer's level + the slayer's {g|Encyclopedia:Strength}Strength{/g} modifier.",
+        "ruRU": "Начиная с 3 уровня, нейтрализатор может совершить одиночную {g|Encyclopedia:UnarmedAttack}безоружную{/g} {g|Encyclopedia:Attack}атаку{/g} в качестве {g|Encyclopedia:Standard_Actions}основного действия{/g}. Если эта атака наносит урон от удара исподтишка, цель должна совершить успешный {g|Encyclopedia:Saving_Throw}спасбросок стойкости{/g}, или оказаться {g|LC_Mute}немой{/g} на {g|Encyclopedia:Dice}1d4{/g} {g|Encyclopedia:Combat_Round}раунда{/g}. {g|Encyclopedia:DC}Сложность{/g} спасброска равна 10 + половина уровня палача + модификатор {g|Encyclopedia:Strength}Силы{/g} палача.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeUpgradeFeature.Name",
+        "enGB": "Jaw Strike – Swift",
+        "ruRU": "Удар в челюсть – Быстрый",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "JawStrikeUpgradeFeature.Description",
+        "enGB": "At 8th level, a neutralizer can make a {g|LC_JawStrike}jaw strike{/g} as a {g|Encyclopedia:Swift_Action}swift action{/g}.",
+        "ruRU": "Начиная с 8 уровня, нейтрализатор может совершить {g|LC_JawStrike}удар в челюсть{/g} в качестве {g|Encyclopedia:Swift_Action}быстрого действия{/g}.",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NeutralizerFeature.Name",
+        "enGB": "Nullifier",
+        "ruRU": "Нуллификатор",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "NeutralizerFeature.Description",
+        "enGB": "At 6th level, a neutralizer can select dispelling attack and slippery mind as rogue talents, even if he does not meet the prerequisites for them.",
+        "ruRU": "Начиная с 6 уровня нейтрализатор может выбрать воровские приемы рассеивающая атака и скользкий ум, даже если не соответствует их требованиям.",
         "ProcessTemplates": false
     },
     {
@@ -2511,6 +2541,72 @@
         "Key": "ScrollWeaving.Description",
         "enGB": "At 15th level, the cavalier receives a {g|Encyclopedia:Bonus}bonus{/g} equal to half his cavalier level to the {g|Encyclopedia:Caster_Level}caster level{/g} of an item when using a scroll.",
         "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PlagueKnightPrestigeClass.Name\r\n",
+        "enGB": "Plague Knight",
+        "ruRU": "Чумной рыцарь",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "PlagueKnightPrestigeClass.Description\n",
+        "enGB": "for some this gift its worse than death",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlackrotFeature.Name",
+        "enGB": "Blackrot",
+        "ruRU": "Черный гной",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "BlackrotFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "UrgathoasKissFeatureSelection.Name",
+        "enGB": "Urgathoa's Kiss",
+        "ruRU": "Поцелуй Ургатоа",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "UrgathoasKissFeatureSelection.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AuraOfDecayFeature.Name",
+        "enGB": "Aura of Decay",
+        "ruRU": "Аура разложения",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "AuraOfDecayFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "IncubatingPainFeature.Name",
+        "enGB": "Incubating Pain",
+        "ruRU": "Инкубация боли",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "IncubatingPainFeature.Description",
+        "enGB": "",
+        "ruRU": "",
+        "ProcessTemplates": false
+    },
+    {
+        "Key": "RequiemFeature.Name",
+        "enGB": "Requiem",
+        "ruRU": "Реквием",
         "ProcessTemplates": false
     }
 ]

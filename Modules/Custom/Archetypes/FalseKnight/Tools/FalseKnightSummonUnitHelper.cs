@@ -5,9 +5,11 @@ using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
+using Kingmaker.Localization;
 using Kingmaker.Utility;
 using LostChapters.Tools;
 using System.Linq;
+using UnityEngine;
 
 namespace LostChapters.Modules.Custom.Archetypes.FalseKnight.Tools;
 
@@ -42,6 +44,12 @@ internal class FalseKnightSummonUnitHelper
 
         var dumbBrain = "5abc8884c6f15204c8604cb01a2efbab";
 
+        var localizedName = ScriptableObject.CreateInstance<SharedStringAsset>();
+        localizedName.String = new LocalizedString()
+        {
+            m_Key = displayName
+        };
+
         return UnitConfigurator.New(unitName, guid)
             .AddClassLevels(levels: levelAndBaB, characterClass: CharacterClassRefs.WarriorClass.ToString(), raceStat: StatType.Constitution, skills: [StatType.SkillAthletics, StatType.SkillMobility], selections: selections)
             .AddBuffOnEntityCreated(BuffRefs.Unlootable.ToString())
@@ -73,6 +81,7 @@ internal class FalseKnightSummonUnitHelper
             .AddUnitUpgraderComponent(upgraders: [UnitUpgraderRefs.PF_359232_RemoveBrokenSummonOnLoad.ToString()])
             .SetPortrait(ghostPaladin.m_Portrait)
             .SetDisplayName(displayName)
+            .SetLocalizedName(localizedName)
             .Configure();
     }
 }

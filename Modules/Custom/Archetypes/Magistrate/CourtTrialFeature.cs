@@ -1,16 +1,26 @@
 ﻿using BlueprintCore.Actions.Builder;
 using BlueprintCore.Actions.Builder.ContextEx;
+using BlueprintCore.Blueprints.Components.Replacements;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Conditions.Builder;
 using BlueprintCore.Conditions.Builder.ContextEx;
+using BlueprintCore.Utils;
+using BlueprintCore.Utils.Types;
+using Kingmaker.Blueprints;
 using Kingmaker.Enums;
 using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
+using Kingmaker.UnitLogic.Abilities.Components.TargetCheckers;
+using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Commands.Base;
+using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.Visual.Animation.Kingmaker.Actions;
+using LostChapters._test;
+using LostChapters.Modules.Other;
 
 namespace LostChapters.Modules.Custom.Archetypes.Magistrate;
 
@@ -56,13 +66,16 @@ internal class CourtTrialFeature
         {
             Buff.Configure();
 
-            var action = ActionsBuilder.New().ApplyBuffPermanent(buff: Buff.Guid, asChild: true);
+            var action = ActionsBuilder.New()
+                .ApplyBuffPermanent(buff: BuffRefs.CavalierChallengeBuffTarget.ToString(), asChild: true)
+                .ApplyBuffPermanent(buff: Buff.Guid, asChild: true);
 
             AbilityConfigurator.New(AbilityName, Guid)
+                .CopyFrom(blueprint: AbilityRefs.CavalierChallengeAbility,
+                    typeof(AbilityResourceLogic),
+                    typeof(AbilityTargetHasFact),
+                    typeof(AbilityTargetIsAlly))
                 .AddAbilityEffectRunAction(actions: action)
-                .AddAbilityResourceLogic(isSpendResource: true, amount: 1, requiredResource: AbilityResourceRefs.CavalierChallengeResource.ToString())
-                .AddAbilityTargetHasFact(checkedFacts: [Buff.Guid], inverted: true, fromCaster: true)
-                .AddAbilityTargetIsAlly(not: true)
                 .SetType(AbilityType.Extraordinary)
                 .SetRange(AbilityRange.Long)
                 .SetCanTargetEnemies(true)
@@ -84,7 +97,10 @@ internal class CourtTrialFeature
         internal static void Configure()
         {
             var restoreResource = ActionsBuilder.New().OnContextCaster(
-                ActionsBuilder.New().RestoreResource(resource: VerdictAbility.Resource.Guid, value: 1));
+                ActionsBuilder.New()
+                .RestoreResource(resource: AbilityResourceRefs.CavalierChallengeResource.ToString(), value: 1)
+                .RestoreResource(resource: VerdictAbility.Resource.Guid, value: 1)
+                .ApplyBuffWithDurationSeconds(BuffRefs.BlessBuff.ToString(), durationSeconds: 3));
 
             var aligmentCondition = ConditionsBuilder.New().Alignment(AlignmentComponent.Lawful);
             var hasFactCondition = ConditionsBuilder.New().CasterHasFact(fact: ReprimandFeature.Guid);
@@ -92,9 +108,21 @@ internal class CourtTrialFeature
             var onHitAction = ActionsBuilder.New().Conditional(aligmentCondition, ifTrue: restoreResource);
             var turnAction = ActionsBuilder.New().Conditional(hasFactCondition, ifTrue: restoreResource);
 
+            var supressBuff = new SuppressBuffsFixed()
+            {
+                m_Buffs = [BlueprintTool.GetRef<BlueprintBuffReference>(BuffRefs.CavalierChallengeBuffTarget.ToString())]
+            };
+
             BuffConfigurator.New(BuffName, Guid)
+                .AddComponent<LinkBuffRemoval>(x =>
+                {
+                    x.Target = BlueprintTool.Get<BlueprintBuff>(BuffRefs.CavalierChallengeBuffTarget.ToString());
+                })
                 .AddRunActionOnTurnStart(turnAction)
-                .AddTargetAttackWithWeaponTrigger(actionOnSelf: onHitAction, onlyOnFirstAttack: true, onlyHit: true, onlyMelee: true)
+                .AddTargetAttackWithWeaponTrigger(actionsOnAttacker: onHitAction, onlyOnFirstAttack: true, onlyHit: true, onlyMelee: true)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
+                .SetIcon(BuffRefs.BlessBuff.Reference.Get().Icon)
                 .Configure();
         }
     }

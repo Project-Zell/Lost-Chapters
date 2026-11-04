@@ -87,6 +87,7 @@ internal class DemonologistSummonUnitHelper
             .SetFactionOverrides(new FactionOverrides())
             .AddUnitUpgraderComponent(upgraders: [UnitUpgraderRefs.PF_359232_RemoveBrokenSummonOnLoad.ToString()])
             .SetPortrait(baseUnit.m_Portrait)
+            .SetDisplayName(displayName)
             .SetLocalizedName(localizedName)
             .Configure();
 

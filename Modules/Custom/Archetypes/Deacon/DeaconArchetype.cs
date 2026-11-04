@@ -1,7 +1,8 @@
 ﻿using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Utils.Types;
-using LostChapters.Modules.Custom.Archetypes.Deacon.Incense;
+using Kingmaker.Blueprints.Classes;
+using LostChapters.Modules.Custom.Archetypes.Deacon.Tools;
 
 namespace LostChapters.Modules.Custom.Archetypes.Deacon;
 
@@ -17,11 +18,22 @@ internal class DeaconArchetype
 
     public static void Configure()
     {
+        //Progression Feats
         CenserBurnerFeature.Configure();
         BlessedIncenseSelector.Configure();
-        IncenseInsufionFeature.Configure();
+        IncenseInfusionFeature.Configure();
+        FogOfWarFeature.Configure();
 
-        ImposibleIncenseSelector.Configure();
+        //Mythic Feats
+        ImpossibleIncenseSelector.Configure();
+
+        //Configurators
+        BlessedIncenseFeatConfigurator.Configure();
+
+        //Class Specific Feats
+        ExtraIncenseFeature.Configure();
+        ObsequialKindleFeature.Configure();
+        SwiftIgnitionFeature.Configure();
 
         var removeFeaturesEntryBuilder = LevelEntryBuilder.New()
             .AddEntry(level: 01, features: FeatureSelectionRefs.BlessingSelection.ToString())
@@ -35,19 +47,19 @@ internal class DeaconArchetype
             .AddEntry(level: 16, features: FeatureRefs.SacredWeaponEnchantPlus4.ToString())
             .AddEntry(level: 16, features: FeatureRefs.SacredArmorEnchantPlus4.ToString())
             .AddEntry(level: 19, features: FeatureRefs.SacredArmorEnchantPlus5.ToString())
+            .AddEntry(level: 20, features: FeatureRefs.WarpriestAspectOfWar.ToString())
             .AddEntry(level: 20, features: FeatureRefs.SacredWeaponEnchantPlus5.ToString());
 
         var addFeaturesEntryBuilder = LevelEntryBuilder.New()
             .AddEntry(level: 01, features: CenserBurnerFeature.Guid)
-            //.AddEntry(level: 04, features: BlessedIncenseSelector.Guid)
-            //.AddEntry(level: 07, features: BlessedIncenseSelector.Guid)
-            .AddEntry(level: 09, features: BlessedIncenseSelector.Guid)
+            .AddEntry(level: 04, features: BlessedIncenseSelector.Guid)
+            .AddEntry(level: 07, features: BlessedIncenseSelector.Guid)
             .AddEntry(level: 10, features: BlessedIncenseSelector.Guid)
-            .AddEntry(level: 10, features: IncenseInsufionFeature.Guid)
-            //.AddEntry(level: 13, features: BlessedIncenseSelector.Guid)
-            //.AddEntry(level: 16, features: BlessedIncenseSelector.Guid)
-            //.AddEntry(level: 19, features: BlessedIncenseSelector.Guid)
-            ;
+            .AddEntry(level: 10, features: IncenseInfusionFeature.Guid)
+            .AddEntry(level: 13, features: BlessedIncenseSelector.Guid)
+            .AddEntry(level: 16, features: BlessedIncenseSelector.Guid)
+            .AddEntry(level: 19, features: BlessedIncenseSelector.Guid)
+            .AddEntry(level: 20, features: FogOfWarFeature.Guid);
 
         ArchetypeConfigurator.New(ArchetypeName, Guid, CharacterClassRefs.WarpriestClass)
             .SetAddFeatures(addFeaturesEntryBuilder)
@@ -58,18 +70,7 @@ internal class DeaconArchetype
 
         ProgressionConfigurator.For(ProgressionRefs.WarpriestProgression)
             .AddToUIGroups([CenserBurnerFeature.Guid, BlessedIncenseSelector.Guid])
+            .AddToUIGroups([ExtraIncenseFeature.Guid, SwiftIgnitionFeature.Guid])
             .Configure();
-
-        AirDomainIncenseFeature.Configure();
-        AnimalDomainIncense.Configure();
-        ArtificeDomainIncense.Configure();
-        ChaosDomainIncense.Configure();
-        CharmDomainIncense.Configure();
-        CommunityDomainIncense.Configure();
-        DarknessDomainIncense.Configure();
-        //DeathDomainIncense.Configure();
-        DestructionDomainIncense.Configure();
-        EarthDomainIncense.Configure();
-        EvilDomainIncense.Configure();
     }
 }

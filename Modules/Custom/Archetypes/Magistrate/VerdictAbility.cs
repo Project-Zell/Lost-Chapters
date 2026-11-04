@@ -10,7 +10,9 @@ internal class VerdictAbility
 {
     public static readonly string Guid = "{c3c50bb6-d259-4cec-9d08-2ce63a1f7a64}";
 
-    private static readonly string FeatureName = "VerdictAbility";
+    private static readonly string BaseName = "Verdict";
+
+    private static readonly string FeatureName = $"{BaseName}Feature";
     private static readonly string DisplayName = $"{FeatureName}.Name";
     private static readonly string Description = $"{FeatureName}.Description";
 
@@ -23,6 +25,7 @@ internal class VerdictAbility
 
         FeatureConfigurator.New(FeatureName, Guid)
             .AddFacts([BaseAbility.Guid, Resource.Guid])
+            .AddAbilityResources(resource: Resource.Guid)
             .SetDisplayName(DisplayName)
             .SetDescription(Description)
             //.AddFeatureTagsComponent()
@@ -38,7 +41,7 @@ internal class VerdictAbility
 
         internal static void Configure()
         {
-            var amount = ResourceAmountBuilder.New(10);
+            var amount = ResourceAmountBuilder.New(6);
 
             AbilityResourceConfigurator.New(ResourceName, Guid)
                 .SetMaxAmount(amount)
